@@ -95,6 +95,8 @@ def collect():
     event_sources = defaultdict(list)
     namespace_sources = defaultdict(list)
     styles = set()
+    tree_sources = defaultdict(list)
+    mission_metadata = {}
     source_files = defaultdict(int)
     decision_metadata = {
         'allowed', 'visible', 'available', 'custom_cost_trigger', 'custom_cost_text',
@@ -113,6 +115,11 @@ def collect():
                         raise ValueError(f'{path}: unexpected focus identifier {ident}')
                     focus_sources[ident].append(str(path.relative_to(GAME)))
         for key, op, value in nodes:
+            if key == 'focus_tree' and isinstance(value, list):
+                ident = scalar(value, 'id')
+                if ident and not ident.lower().startswith(PREFIX):
+                    if not IDENT.fullmatch(ident): raise ValueError(f'Unexpected native focus-tree ID {ident}')
+                    tree_sources[ident].append(str(path.relative_to(GAME)))
             if key == 'style' and isinstance(value, list):
                 name = scalar(value, 'name')
                 if name:
@@ -132,6 +139,13 @@ def collect():
                 if not IDENT.fullmatch(ident):
                     raise ValueError(f'{path}: unexpected decision identifier {ident}')
                 decision_sources[ident].append(str(path.relative_to(GAME)) + ':' + category)
+                timeout = scalar(body, 'days_mission_timeout')
+                if timeout is not None:
+                    # Mission TYPE is required by has_active_mission/activate_mission.
+                    # Native variable expressions depend on deliberately removed
+                    # plots; retain provenance but use an inert positive sentinel.
+                    value = timeout if timeout.isdecimal() and int(timeout) > 0 else '1'
+                    mission_metadata[ident] = {'native_timeout': timeout, 'registry_timeout': value}
     for path in sorted((GAME / 'events').glob('*.txt')):
         nodes = parse(path, tolerant=True)
         source_files['event'] += 1
@@ -178,19 +192,33 @@ def collect():
         folded = [key.lower() for key in items]
         if len(folded) != len(set(folded)):
             raise ValueError(f'Installed {kind} IDs collide ignoring letter case')
-    return focus_sources, decision_sources, event_sources, namespace_sources, styles, source_files
+    active_tree_ids=set()
+    for path in (ROOT/'common/national_focus').glob('*.txt'):
+        if path.name=='aof_compatibility_registry.txt': continue
+        for key,op,value in parse(path):
+            if key=='focus_tree' and isinstance(value,list):
+                ident=scalar(value,'id')
+                if ident: active_tree_ids.add(ident)
+    for ident in set(tree_sources)&active_tree_ids:
+        del tree_sources[ident]  # Do not shadow any deliberately retained real tree.
+    return focus_sources, decision_sources, event_sources, namespace_sources, styles, source_files, tree_sources, mission_metadata
 
 
 def render(data):
-    focuses, decisions, events, namespaces, styles, source_files = data
+    focuses, decisions, events, namespaces, styles, source_files, trees, missions = data
     warning = '# Inert vanilla identifier registry. No original effects, prerequisites, triggers or plots are restored.\n'
     focus_text = warning + 'focus_tree = {\n id = aof_compatibility\n country = { factor = 0 }\n default = no\n reset_on_civilwar = no\n'
     for ident in sorted(focuses):
         focus_text += f' focus = {{ id = {ident} cost = 1 icon = GFX_goal_generic_political_pressure available = {{ always = no }} }}\n'
     focus_text += '}\n'
+    # Retained scripted effects also validate load_focus_tree IDs. Empty,
+    # unassigned native-ID shells resolve those references without old branches.
+    for ident in sorted(trees):
+        focus_text += f'focus_tree = {{ id = {ident} country = {{ factor = 0 }} default = no reset_on_civilwar = no }}\n'
     decision_text = warning + 'aof_legacy_compat = {\n'
     for ident in sorted(decisions):
-        decision_text += f' {ident} = {{ allowed = {{ always = no }} visible = {{ always = no }} available = {{ always = no }} ai_will_do = {{ factor = 0 }} }}\n'
+        mission = f' days_mission_timeout = {missions[ident]["registry_timeout"]} activation = {{ always = no }}' if ident in missions else ''
+        decision_text += f' {ident} = {{ allowed = {{ always = no }} visible = {{ always = no }} available = {{ always = no }}{mission} ai_will_do = {{ factor = 0 }} }}\n'
     decision_text += '}\n'
     category_text = warning + 'aof_legacy_compat = { allowed = { always = no } visible = { always = no } }\n'
     original_namespace_case = {n.lower(): n for n in namespaces}
@@ -219,7 +247,9 @@ def render(data):
         'purpose': 'Unreachable/no-op vanilla identifier metadata; not restored gameplay.',
         'source_file_counts': dict(source_files),
         'native_parse_warnings': PARSE_WARNINGS,
-        'counts': {'focuses': len(focuses), 'decisions': len(decisions), 'events': len(events), 'namespaces': len(used_namespaces), 'focus_styles': len(styles | {'default_style'})},
+        'counts': {'focuses': len(focuses), 'unassigned_native_tree_shells':len(trees), 'decisions': len(decisions), 'inert_mission_types':len(missions), 'events': len(events), 'namespaces': len(used_namespaces), 'focus_styles': len(styles | {'default_style'})},
+        'focus_tree_sources':dict(sorted(trees.items())),
+        'mission_type_metadata':dict(sorted(missions.items())),
         'focus_sources': dict(sorted(focuses.items())),
         'decision_sources': dict(sorted(decisions.items())),
         'event_sources': {k: [{'type': kind, 'file': p} for kind, p in v] for k, v in sorted(events.items())},

@@ -1,7 +1,12 @@
+# Approximate owner-requested oblast, native province geometry unchanged.
 # PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
 state={
+resources = { 
+ 
+  }
+
 	id=587
-	name="STATE_587"
+	name = "aof_kaz_region_587"
 
 	history={
 		controller = KAZ
@@ -9,18 +14,22 @@ state={
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 1
-		}
-		victory_points = {
-			1517 1 
-		}
+		
+			 # isolated Caspian test base
+		
+1517 = { naval_base = 1 }
+}
+		
 		add_core_of = SOV
 
-	}
+	
+victory_points = { 1517 1 }
+}
 
 	provinces={
-		475 642 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008 
-	}
-	manpower=245133
+ 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008
+ }
+	manpower = 206547
 	buildings_max_level_factor=1.000
 	state_category=rural
 

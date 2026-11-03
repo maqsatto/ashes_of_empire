@@ -1,0 +1,19 @@
+# Approximate owner-requested oblast, native province geometry unchanged.
+state = {
+ id = 1083
+ name = "aof_kaz_region_1083"
+ manpower = 984231
+ state_category = pastoral
+ resources = {
+ aluminium = 4 chromium = 5 steel = 8 tungsten = 2
+ }
+ history = { owner = KAZ controller = KAZ add_core_of = KAZ add_core_of = SOV buildings = { infrastructure = 2 } 
+
+
+		victory_points = { 12640 3 }
+	}
+ provinces = {
+ 7706 10603 12385 12640 12658
+ }
+ local_supplies = 0.0
+}

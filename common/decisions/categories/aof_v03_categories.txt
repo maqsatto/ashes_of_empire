@@ -1,1 +1,3 @@
 aof_v03_diplomacy_category = { icon = generic_political_actions visible = { is_ai = no } }
+aof_v03_canal_policy = { icon = generic_political_actions allowed = { tag = CAU } visible = { tag = CAU } }
+aof_v03_federation_category = { icon = generic_political_actions allowed = { OR = { tag = CHI tag = SIB tag = SOV } } visible = { OR = { tag = CHI tag = SIB tag = SOV } } }

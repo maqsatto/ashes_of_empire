@@ -1,0 +1,1579 @@
+{
+  "coordinate_data_source": "https://download.geonames.org/export/dump/cities15000.zip",
+  "small_town_coordinate_source": "https://download.geonames.org/export/dump/cities5000.zip",
+  "attribution": "GeoNames geographic coordinate registry; coordinate facts only, no third-party map or art assets.",
+  "native_bitmap_sha256": "e131d30e5dcb13d9c2a8598f820a2de0ae9828f3a24f2bddc1bcfff40f71660a",
+  "native_definition_sha256": "86846be71198d6772c651638aa22e3656133198de9b7c49c6234ed48cf33d87b",
+  "method": "Thin-plate-spline fits at smoothing0/1 and a local enclosing-triangle affine fit, using 33 named native province/unitstack anchors. The native game map is distorted; use province-scale placement and retain uncertainty. Turkestan12340 chosen over12397 by nearest marker position and separate Shiyeli province; capitals kept explicit.",
+  "anchors": [
+    {
+      "province": 7341,
+      "map": [
+        3708.0,
+        1526.0
+      ],
+      "geonames_id": 610611,
+      "lat": 50.27969,
+      "lon": 57.20718
+    },
+    {
+      "province": 7597,
+      "map": [
+        3856.0,
+        1409.0
+      ],
+      "geonames_id": 1519922,
+      "lat": 44.85278,
+      "lon": 65.50917
+    },
+    {
+      "province": 3618,
+      "map": [
+        3626.0,
+        1459.0
+      ],
+      "geonames_id": 610529,
+      "lat": 47.1048,
+      "lon": 51.88427
+    },
+    {
+      "province": 11537,
+      "map": [
+        3600.0,
+        1538.0
+      ],
+      "geonames_id": 608668,
+      "lat": 51.24601,
+      "lon": 51.42558
+    },
+    {
+      "province": 10312,
+      "map": [
+        3798.0,
+        1568.0
+      ],
+      "geonames_id": 1519928,
+      "lat": 53.21435,
+      "lon": 63.62463
+    },
+    {
+      "province": 1591,
+      "map": [
+        4011.0,
+        1382.0
+      ],
+      "geonames_id": 1526384,
+      "lat": 43.25249,
+      "lon": 76.9115
+    },
+    {
+      "province": 12594,
+      "map": [
+        4070.0,
+        1530.0
+      ],
+      "geonames_id": 1519422,
+      "lat": 50.42064,
+      "lon": 80.25025
+    },
+    {
+      "province": 1668,
+      "map": [
+        4043.0,
+        1476.0
+      ],
+      "geonames_id": 1525988,
+      "lat": 47.96447,
+      "lon": 80.43437
+    },
+    {
+      "province": 4333,
+      "map": [
+        3948.0,
+        1517.0
+      ],
+      "geonames_id": 1526273,
+      "lat": 51.1801,
+      "lon": 71.44598
+    },
+    {
+      "province": 7708,
+      "map": [
+        4025.0,
+        1559.0
+      ],
+      "geonames_id": 1520240,
+      "lat": 52.27601,
+      "lon": 76.96881
+    },
+    {
+      "province": 1459,
+      "map": [
+        3894.0,
+        1342.0
+      ],
+      "geonames_id": 1512569,
+      "lat": 41.26465,
+      "lon": 69.21627
+    },
+    {
+      "province": 10488,
+      "map": [
+        3915.0,
+        1336.0
+      ],
+      "geonames_id": 1512979,
+      "lat": 40.52861,
+      "lon": 70.9425
+    },
+    {
+      "province": 12333,
+      "map": [
+        3720.0,
+        1289.0
+      ],
+      "geonames_id": 162183,
+      "lat": 37.95,
+      "lon": 58.38333
+    },
+    {
+      "province": 1554,
+      "map": [
+        3819.0,
+        1345.0
+      ],
+      "geonames_id": 1513131,
+      "lat": 40.08444,
+      "lon": 65.37917
+    },
+    {
+      "province": 12583,
+      "map": [
+        3969.0,
+        1374.0
+      ],
+      "geonames_id": 1528675,
+      "lat": 42.87,
+      "lon": 74.59
+    },
+    {
+      "province": 1384,
+      "map": [
+        3883.0,
+        1296.0
+      ],
+      "geonames_id": 1221874,
+      "lat": 38.53575,
+      "lon": 68.77905
+    },
+    {
+      "province": 1614,
+      "map": [
+        3744.0,
+        1370.0
+      ],
+      "geonames_id": 601294,
+      "lat": 42.45861,
+      "lon": 59.60576
+    },
+    {
+      "province": 1573,
+      "map": [
+        3823.0,
+        1312.0
+      ],
+      "geonames_id": 1217662,
+      "lat": 39.77026,
+      "lon": 64.43069
+    },
+    {
+      "province": 10671,
+      "map": [
+        3847.0,
+        1307.0
+      ],
+      "geonames_id": 1216265,
+      "lat": 39.65456,
+      "lon": 66.96445
+    },
+    {
+      "province": 12465,
+      "map": [
+        3749.0,
+        1345.0
+      ],
+      "geonames_id": 1513604,
+      "lat": 41.38555,
+      "lon": 60.36408
+    },
+    {
+      "province": 1493,
+      "map": [
+        3724.0,
+        1335.0
+      ],
+      "geonames_id": 601734,
+      "lat": 41.83625,
+      "lon": 59.96661
+    },
+    {
+      "province": 7274,
+      "map": [
+        4105.0,
+        1624.0
+      ],
+      "geonames_id": 1496747,
+      "lat": 55.02259,
+      "lon": 82.93175
+    },
+    {
+      "province": 10696,
+      "map": [
+        3962.0,
+        1629.0
+      ],
+      "geonames_id": 1496153,
+      "lat": 54.99244,
+      "lon": 73.36859
+    },
+    {
+      "province": 4824,
+      "map": [
+        3836.0,
+        1676.0
+      ],
+      "geonames_id": 1488754,
+      "lat": 57.15222,
+      "lon": 65.52722
+    },
+    {
+      "province": 1794,
+      "map": [
+        4100.0,
+        1574.0
+      ],
+      "geonames_id": 1510853,
+      "lat": 53.36199,
+      "lon": 83.72786
+    },
+    {
+      "province": 7789,
+      "map": [
+        4132.0,
+        1664.0
+      ],
+      "geonames_id": 1489425,
+      "lat": 56.50049,
+      "lon": 84.98216
+    },
+    {
+      "province": 2015,
+      "map": [
+        4006.0,
+        1305.0
+      ],
+      "geonames_id": 1280849,
+      "lat": 39.46718,
+      "lon": 75.98675
+    },
+    {
+      "province": 4823,
+      "map": [
+        4180.0,
+        1469.0
+      ],
+      "geonames_id": 1529651,
+      "lat": 47.8505,
+      "lon": 88.13286
+    },
+    {
+      "province": 5029,
+      "map": [
+        3740.0,
+        1256.0
+      ],
+      "geonames_id": 124665,
+      "lat": 36.29807,
+      "lon": 59.60567
+    },
+    {
+      "province": 4893,
+      "map": [
+        3770.0,
+        1230.0
+      ],
+      "geonames_id": 1140026,
+      "lat": 34.34817,
+      "lon": 62.19967
+    },
+    {
+      "province": 10737,
+      "map": [
+        3884.0,
+        1231.0
+      ],
+      "geonames_id": 1138958,
+      "lat": 34.52813,
+      "lon": 69.17233
+    },
+    {
+      "province": 4709,
+      "map": [
+        4153.0,
+        1376.0
+      ],
+      "geonames_id": 1529102,
+      "lat": 43.80096,
+      "lon": 87.60046
+    },
+    {
+      "province": 12601,
+      "map": [
+        4070.0,
+        1399.0
+      ],
+      "geonames_id": 1529435,
+      "lat": 43.91515,
+      "lon": 81.32151
+    }
+  ],
+  "additional_markers": [
+    {
+      "name": "Petropavl",
+      "geonameid": 1520172,
+      "lat": 54.87343,
+      "lon": 69.15065,
+      "predictions": [
+        [
+          3896.27,
+          1616.5
+        ],
+        [
+          3896.41,
+          1616.27
+        ],
+        [
+          3899.21,
+          1617.84
+        ]
+      ],
+      "provinces": [
+        7874,
+        7874,
+        7874
+      ],
+      "states": [
+        590,
+        590,
+        590
+      ],
+      "province": 7874,
+      "ru": "Кызылжар",
+      "en": "Qyzylzhar",
+      "victory_points": 3,
+      "historical_reference": "kaz_1897",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1520172/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Kokshetau",
+      "geonameid": 1522203,
+      "lat": 53.28414,
+      "lon": 69.39364,
+      "predictions": [
+        [
+          3905.13,
+          1571.04
+        ],
+        [
+          3905.11,
+          1571.21
+        ],
+        [
+          3900.31,
+          1575.73
+        ]
+      ],
+      "provinces": [
+        7298,
+        7298,
+        7298
+      ],
+      "states": [
+        590,
+        590,
+        590
+      ],
+      "province": 7298,
+      "ru": "Кокшетау",
+      "en": "Kokshetau",
+      "victory_points": 1,
+      "historical_reference": "kokshetau",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1522203/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Ust-Kamenogorsk",
+      "geonameid": 1520316,
+      "lat": 49.97143,
+      "lon": 82.60586,
+      "predictions": [
+        [
+          4091.33,
+          1516.53
+        ],
+        [
+          4091.14,
+          1516.17
+        ],
+        [
+          4101.42,
+          1517.32
+        ]
+      ],
+      "provinces": [
+        1864,
+        1864,
+        1864
+      ],
+      "states": [
+        588,
+        588,
+        588
+      ],
+      "province": 1864,
+      "ru": "Оскемен",
+      "en": "Oskemen",
+      "victory_points": 3,
+      "historical_reference": "kaz_1897",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1520316/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Taraz",
+      "geonameid": 1516905,
+      "lat": 42.89799,
+      "lon": 71.37334,
+      "predictions": [
+        [
+          3925.75,
+          1372.35
+        ],
+        [
+          3926.43,
+          1373.51
+        ],
+        [
+          3931.14,
+          1373.64
+        ]
+      ],
+      "provinces": [
+        12640,
+        12640,
+        7706
+      ],
+      "states": [
+        586,
+        586,
+        586
+      ],
+      "province": 12640,
+      "ru": "Тараз",
+      "en": "Taraz",
+      "victory_points": 3,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1516905/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Taldykorgan",
+      "geonameid": 1518542,
+      "lat": 45.01556,
+      "lon": 78.37389,
+      "predictions": [
+        [
+          4024.51,
+          1417.98
+        ],
+        [
+          4024.77,
+          1418.13
+        ],
+        [
+          4024.98,
+          1417.31
+        ]
+      ],
+      "provinces": [
+        10619,
+        10619,
+        10619
+      ],
+      "states": [
+        589,
+        589,
+        589
+      ],
+      "province": 10619,
+      "ru": "Талдыкорган",
+      "en": "Taldykorgan",
+      "victory_points": 1,
+      "historical_reference": "taldykorgan",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1518542/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Shymkent",
+      "geonameid": 1518980,
+      "lat": 42.30988,
+      "lon": 69.60042,
+      "predictions": [
+        [
+          3901.97,
+          1361.65
+        ],
+        [
+          3901.47,
+          1362.55
+        ],
+        [
+          3902.08,
+          1361.94
+        ]
+      ],
+      "provinces": [
+        4686,
+        4686,
+        4686
+      ],
+      "states": [
+        404,
+        404,
+        404
+      ],
+      "province": 4686,
+      "ru": "Шымкент",
+      "en": "Shymkent",
+      "victory_points": 3,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1518980/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Turkistan",
+      "geonameid": 1517945,
+      "lat": 43.29458,
+      "lon": 68.25685,
+      "predictions": [
+        [
+          3885.51,
+          1381.14
+        ],
+        [
+          3886.3,
+          1380.86
+        ],
+        [
+          3887.39,
+          1380.23
+        ]
+      ],
+      "provinces": [
+        12397,
+        12397,
+        12340
+      ],
+      "states": [
+        404,
+        404,
+        404
+      ],
+      "province": 12340,
+      "ru": "Туркестан",
+      "en": "Turkestan",
+      "victory_points": 3,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1517945/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Zaysan",
+      "geonameid": 1517060,
+      "lat": 47.46657,
+      "lon": 84.87144,
+      "predictions": [
+        [
+          4118.75,
+          1464.49
+        ],
+        [
+          4119.22,
+          1464.24
+        ],
+        [
+          4120.09,
+          1462.01
+        ]
+      ],
+      "provinces": [
+        10610,
+        10610,
+        10610
+      ],
+      "states": [
+        588,
+        588,
+        588
+      ],
+      "province": 10610,
+      "ru": "Зайсан",
+      "en": "Zaysan",
+      "victory_points": 1,
+      "historical_reference": "kaz_1897",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1517060/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Atbasar",
+      "geonameid": 1526038,
+      "lat": 51.80854,
+      "lon": 68.35823,
+      "predictions": [
+        [
+          3892.64,
+          1531.25
+        ],
+        [
+          3892.32,
+          1532.06
+        ],
+        [
+          3889.27,
+          1533.88
+        ]
+      ],
+      "provinces": [
+        1223,
+        1223,
+        4281
+      ],
+      "states": [
+        590,
+        590,
+        590
+      ],
+      "province": 1223,
+      "ru": "Атбасар",
+      "en": "Atbasar",
+      "victory_points": 1,
+      "historical_reference": "atbasar",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1526038/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Zharkent",
+      "geonameid": 1520253,
+      "lat": 44.16619,
+      "lon": 80.00736,
+      "predictions": [
+        [
+          4051.12,
+          1403.87
+        ],
+        [
+          4050.72,
+          1403.48
+        ],
+        [
+          4050.8,
+          1402.56
+        ]
+      ],
+      "provinces": [
+        4845,
+        4845,
+        4845
+      ],
+      "states": [
+        586,
+        586,
+        586
+      ],
+      "province": 4845,
+      "ru": "Жаркент",
+      "en": "Zharkent",
+      "victory_points": 1,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1520253/",
+      "country": "KAZ",
+      "historical_pdf_page": 42
+    },
+    {
+      "name": "Ekibastuz",
+      "geonameid": 1524325,
+      "lat": 51.72371,
+      "lon": 75.32287,
+      "predictions": [
+        [
+          4001.79,
+          1542.06
+        ],
+        [
+          4001.92,
+          1542.54
+        ],
+        [
+          4001.98,
+          1541.62
+        ]
+      ],
+      "provinces": [
+        10235,
+        10235,
+        10235
+      ],
+      "states": [
+        882,
+        882,
+        882
+      ],
+      "province": 10235,
+      "ru": "Экибастуз",
+      "en": "Ekibastuz",
+      "victory_points": 1,
+      "historical_reference": "ekibastuz",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1524325/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Zhitikara",
+      "geonameid": 1516601,
+      "lat": 52.19019,
+      "lon": 61.19894,
+      "predictions": [
+        [
+          3762.47,
+          1551.78
+        ],
+        [
+          3763.13,
+          1552.2
+        ],
+        [
+          3764.3,
+          1554.77
+        ]
+      ],
+      "provinces": [
+        7233,
+        7233,
+        7233
+      ],
+      "states": [
+        583,
+        583,
+        583
+      ],
+      "province": 7233,
+      "ru": "Житикара",
+      "en": "Zhitikara",
+      "victory_points": 1,
+      "historical_reference": "zhitikara",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1516601/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Zhosaly",
+      "geonameid": 1516519,
+      "lat": 45.48778,
+      "lon": 64.07806,
+      "predictions": [
+        [
+          3837.59,
+          1424.23
+        ],
+        [
+          3833.47,
+          1421.77
+        ],
+        [
+          3823.24,
+          1425.36
+        ]
+      ],
+      "provinces": [
+        12329,
+        12329,
+        7657
+      ],
+      "states": [
+        404,
+        404,
+        404
+      ],
+      "province": 12329,
+      "ru": "Жосалы",
+      "en": "Zhosaly",
+      "victory_points": 1,
+      "historical_reference": "zhosaly",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1516519/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Shiyeli",
+      "geonameid": 1524801,
+      "lat": 44.17057,
+      "lon": 66.73376,
+      "predictions": [
+        [
+          3868.84,
+          1397.21
+        ],
+        [
+          3869.61,
+          1396.94
+        ],
+        [
+          3870.02,
+          1396.41
+        ]
+      ],
+      "provinces": [
+        12397,
+        12397,
+        12397
+      ],
+      "states": [
+        404,
+        404,
+        404
+      ],
+      "province": 12397,
+      "ru": "Шиели",
+      "en": "Shiyeli",
+      "victory_points": 1,
+      "historical_reference": "shiyeli",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1524801/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Karagandy",
+      "geonameid": 609655,
+      "lat": 49.80187,
+      "lon": 73.10211,
+      "predictions": [
+        [
+          3970.18,
+          1492.15
+        ],
+        [
+          3970.07,
+          1493.41
+        ],
+        [
+          3967.48,
+          1496.76
+        ]
+      ],
+      "provinces": [
+        7407,
+        7407,
+        7407
+      ],
+      "states": [
+        590,
+        590,
+        590
+      ],
+      "province": 7407,
+      "ru": "Караганды",
+      "en": "Karagandy",
+      "victory_points": 1,
+      "historical_reference": "karagandy",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/609655/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Qarqaraly",
+      "geonameid": 1519934,
+      "lat": 49.41244,
+      "lon": 75.47228,
+      "predictions": [
+        [
+          3998.71,
+          1493.34
+        ],
+        [
+          3998.87,
+          1494.16
+        ],
+        [
+          4001.37,
+          1495.69
+        ]
+      ],
+      "provinces": [
+        10161,
+        10161,
+        10161
+      ],
+      "states": [
+        588,
+        588,
+        588
+      ],
+      "province": 10161,
+      "ru": "Каркаралы",
+      "en": "Karkaraly",
+      "victory_points": 1,
+      "historical_reference": "karkaraly",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1519934/",
+      "country": "KAZ"
+    },
+    {
+      "name": "Qarshi",
+      "geonameid": 1216311,
+      "lat": 38.86056,
+      "lon": 65.78905,
+      "predictions": [
+        [
+          3835.96,
+          1291.1
+        ],
+        [
+          3833.81,
+          1299.15
+        ],
+        [
+          3841.3,
+          1298.55
+        ]
+      ],
+      "provinces": [
+        7639,
+        7639,
+        7639
+      ],
+      "states": [
+        830,
+        830,
+        830
+      ],
+      "province": 7639,
+      "ru": "Карши",
+      "en": "Karshi",
+      "victory_points": 1,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1216311/",
+      "country": "TRK",
+      "historical_pdf_page": 33
+    },
+    {
+      "name": "Fergana",
+      "geonameid": 1514019,
+      "lat": 40.38421,
+      "lon": 71.78432,
+      "predictions": [
+        [
+          3928.25,
+          1334.09
+        ],
+        [
+          3929.57,
+          1332.03
+        ],
+        [
+          3931.08,
+          1330.42
+        ]
+      ],
+      "provinces": [
+        2058,
+        2058,
+        2058
+      ],
+      "states": [
+        732,
+        732,
+        732
+      ],
+      "province": 2058,
+      "ru": "Фергана",
+      "en": "Fergana",
+      "victory_points": 1,
+      "historical_reference": "fergana",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1514019/",
+      "country": "TRK"
+    },
+    {
+      "name": "Khujand",
+      "geonameid": 1514879,
+      "lat": 40.28256,
+      "lon": 69.62216,
+      "predictions": [
+        [
+          3895.75,
+          1326.3
+        ],
+        [
+          3895.42,
+          1326.81
+        ],
+        [
+          3897.36,
+          1327.4
+        ]
+      ],
+      "provinces": [
+        10187,
+        10187,
+        10187
+      ],
+      "states": [
+        742,
+        742,
+        742
+      ],
+      "province": 10187,
+      "ru": "Худжанд",
+      "en": "Khujand",
+      "victory_points": 3,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1514879/",
+      "country": "TRK",
+      "historical_pdf_page": 33
+    },
+    {
+      "name": "Karakol",
+      "geonameid": 1528121,
+      "lat": 42.49047,
+      "lon": 78.39197,
+      "predictions": [
+        [
+          4035.91,
+          1367.3
+        ],
+        [
+          4034.48,
+          1367.39
+        ],
+        [
+          4032.8,
+          1367.88
+        ]
+      ],
+      "provinces": [
+        4768,
+        4768,
+        4768
+      ],
+      "states": [
+        732,
+        732,
+        732
+      ],
+      "province": 4768,
+      "ru": "Каракол",
+      "en": "Karakol",
+      "victory_points": 1,
+      "historical_reference": "kyrgyz_history",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1528121/",
+      "country": "TRK"
+    },
+    {
+      "name": "Talas",
+      "geonameid": 1527299,
+      "lat": 42.52256,
+      "lon": 72.2417,
+      "predictions": [
+        [
+          3935.99,
+          1367.17
+        ],
+        [
+          3937.04,
+          1367.65
+        ],
+        [
+          3941.92,
+          1366.77
+        ]
+      ],
+      "provinces": [
+        10408,
+        10408,
+        10408
+      ],
+      "states": [
+        732,
+        732,
+        732
+      ],
+      "province": 10408,
+      "ru": "Талас",
+      "en": "Talas",
+      "victory_points": 1,
+      "historical_reference": "kyrgyz_history",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1527299/",
+      "country": "TRK"
+    },
+    {
+      "name": "Naryn",
+      "geonameid": 1527592,
+      "lat": 41.4283,
+      "lon": 75.9957,
+      "predictions": [
+        [
+          3998.93,
+          1345.42
+        ],
+        [
+          3998.72,
+          1345.52
+        ],
+        [
+          3999.83,
+          1344.85
+        ]
+      ],
+      "provinces": [
+        5062,
+        5062,
+        5062
+      ],
+      "states": [
+        732,
+        732,
+        732
+      ],
+      "province": 5062,
+      "ru": "Нарын",
+      "en": "Naryn",
+      "victory_points": 1,
+      "historical_reference": "kyrgyz_history",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1527592/",
+      "country": "TRK",
+      "historical_pdf_page": 50
+    },
+    {
+      "name": "Tejen",
+      "geonameid": 1218239,
+      "lat": 37.38338,
+      "lon": 60.50545,
+      "predictions": [
+        [
+          3761.0,
+          1270.29
+        ],
+        [
+          3755.66,
+          1273.74
+        ],
+        [
+          3755.66,
+          1274.6
+        ]
+      ],
+      "provinces": [
+        7560,
+        7560,
+        7560
+      ],
+      "states": [
+        584,
+        584,
+        584
+      ],
+      "province": 7560,
+      "ru": "Теджен",
+      "en": "Tejen",
+      "victory_points": 1,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1218239/",
+      "country": "TRK",
+      "historical_pdf_page": 21
+    },
+    {
+      "name": "Kulob",
+      "geonameid": 1221194,
+      "lat": 37.91459,
+      "lon": 69.78454,
+      "predictions": [
+        [
+          3899.87,
+          1289.33
+        ],
+        [
+          3899.53,
+          1286.19
+        ],
+        [
+          3896.56,
+          1288.89
+        ]
+      ],
+      "provinces": [
+        7224,
+        7224,
+        7224
+      ],
+      "states": [
+        742,
+        742,
+        742
+      ],
+      "province": 7224,
+      "ru": "Куляб",
+      "en": "Kulob",
+      "victory_points": 1,
+      "historical_reference": "kulob",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1221194/",
+      "country": "TRK"
+    },
+    {
+      "name": "Khorugh",
+      "geonameid": 1221328,
+      "lat": 37.49039,
+      "lon": 71.55337,
+      "predictions": [
+        [
+          3928.99,
+          1282.36
+        ],
+        [
+          3929.18,
+          1278.61
+        ],
+        [
+          3926.45,
+          1279.34
+        ]
+      ],
+      "provinces": [
+        10417,
+        10417,
+        10417
+      ],
+      "states": [
+        742,
+        742,
+        742
+      ],
+      "province": 10417,
+      "ru": "Хорог",
+      "en": "Khorog",
+      "victory_points": 1,
+      "historical_reference": "khorog",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1221328/",
+      "country": "TRK"
+    },
+    {
+      "name": "Baeherden",
+      "geonameid": 162158,
+      "lat": 38.43624,
+      "lon": 57.43158,
+      "predictions": [
+        [
+          3701.17,
+          1298.32
+        ],
+        [
+          3703.28,
+          1296.95
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "provinces": [
+        10510,
+        10510,
+        null
+      ],
+      "states": [
+        584,
+        584,
+        null
+      ],
+      "province": 10510,
+      "ru": "Бахарден",
+      "en": "Baherden",
+      "victory_points": 1,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/162158/",
+      "country": "TRK",
+      "historical_pdf_page": 44
+    },
+    {
+      "name": "Shahrisabz",
+      "geonameid": 1216187,
+      "lat": 39.05778,
+      "lon": 66.83417,
+      "predictions": [
+        [
+          3848.37,
+          1293.8
+        ],
+        [
+          3847.58,
+          1300.85
+        ],
+        [
+          3845.44,
+          1319.52
+        ]
+      ],
+      "provinces": [
+        12722,
+        12722,
+        7775
+      ],
+      "states": [
+        830,
+        830,
+        830
+      ],
+      "province": 12722,
+      "ru": "Шахрисабз",
+      "en": "Shahrisabz",
+      "victory_points": 1,
+      "historical_reference": "shahrisabz",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1216187/",
+      "country": "TRK"
+    },
+    {
+      "name": "Jizzax",
+      "geonameid": 1513886,
+      "lat": 40.13351,
+      "lon": 67.82956,
+      "predictions": [
+        [
+          3862.95,
+          1319.21
+        ],
+        [
+          3863.57,
+          1321.72
+        ],
+        [
+          3866.23,
+          1330.5
+        ]
+      ],
+      "provinces": [
+        4629,
+        4629,
+        7682
+      ],
+      "states": [
+        405,
+        405,
+        405
+      ],
+      "province": 4629,
+      "ru": "Джизак",
+      "en": "Jizzakh",
+      "victory_points": 1,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1513886/",
+      "country": "TRK",
+      "historical_pdf_page": 19
+    },
+    {
+      "name": "Kattaqo'rg'on Shahri",
+      "geonameid": 1216982,
+      "lat": 39.90546,
+      "lon": 66.26556,
+      "predictions": [
+        [
+          3832.39,
+          1327.41
+        ],
+        [
+          3836.14,
+          1324.32
+        ],
+        [
+          3835.9,
+          1336.24
+        ]
+      ],
+      "provinces": [
+        7775,
+        7775,
+        1554
+      ],
+      "states": [
+        830,
+        830,
+        585
+      ],
+      "province": 7775,
+      "ru": "Каттакурган",
+      "en": "Kattakurgan",
+      "victory_points": 1,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1216982/",
+      "country": "TRK",
+      "historical_pdf_page": 20
+    },
+    {
+      "name": "Osh",
+      "geonameid": 1527534,
+      "lat": 40.52828,
+      "lon": 72.7985,
+      "predictions": [
+        [
+          3945.21,
+          1334.96
+        ],
+        [
+          3946.48,
+          1333.24
+        ],
+        [
+          3952.27,
+          1326.77
+        ]
+      ],
+      "provinces": [
+        1483,
+        1483,
+        2058
+      ],
+      "states": [
+        732,
+        732,
+        732
+      ],
+      "province": 1483,
+      "ru": "Ош",
+      "en": "Osh",
+      "victory_points": 3,
+      "historical_reference": "turkestan_1924",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1527534/",
+      "country": "TRK"
+    },
+    {
+      "name": "Suluktu",
+      "geonameid": 1222562,
+      "lat": 39.93652,
+      "lon": 69.56779,
+      "predictions": [
+        [
+          3894.27,
+          1320.26
+        ],
+        [
+          3894.08,
+          1320.49
+        ],
+        [
+          3895.98,
+          1321.57
+        ]
+      ],
+      "provinces": [
+        12430,
+        12430,
+        10187
+      ],
+      "states": [
+        742,
+        742,
+        742
+      ],
+      "province": 12430,
+      "ru": "Сулюкта",
+      "en": "Sulukta",
+      "victory_points": 1,
+      "historical_reference": "sulukta",
+      "provenance": "GeoNames coordinates + 33 native VP/unitstack anchors + province bitmap; reconstructed, not a native city label",
+      "coordinate_source": "https://www.geonames.org/1222562/",
+      "country": "TRK"
+    },
+    {
+      "name": "Qarsaqbay",
+      "geonameid": 1519933,
+      "lat": 47.83678,
+      "lon": 66.72639,
+      "predictions": [
+        [
+          3876.39,
+          1453.8
+        ],
+        [
+          3875.47,
+          1456.36
+        ],
+        [
+          3870.18,
+          1462.58
+        ]
+      ],
+      "provinces": [
+        1312,
+        1312,
+        12177
+      ],
+      "states": [
+        881,
+        881,
+        881
+      ],
+      "province": 1312,
+      "ru": "Карсакпай",
+      "en": "Karsakpay",
+      "victory_points": 1,
+      "historical_reference": "karsakpay",
+      "historical_note": "Construction settlement with pre1917 buildings; smelting startup1928 is not assumed.",
+      "provenance": "GeoNames KZ coordinate registry +33nativeVP/unitstack anchors +provincebitmap; two spline fits agree1312, localtriangle12177; both mapped to Ulytau1085.",
+      "coordinate_source": "https://www.geonames.org/1519933/",
+      "country": "KAZ"
+    }
+  ],
+  "excluded": [
+    "Kurchatov: post1947",
+    "Balkhash: planned city founded1932",
+    "Shu: town/station developed1928, excluded despite initial candidate",
+    "Zhezkazgan modern planned city: excluded; no invented pre1924 urban centre",
+    "Batken: insufficient pre1924 settlement evidence in inspected sources",
+    "Namangan/Tokmok/Urgench/Bokhtar: same coarse provinces as existing Kokand/Bishkek/Khiva/Dushanbe; avoid duplicate city labels",
+    "Aktau: planned city founded1958; no new marker",
+    "Konaev/Kapchagay: modern planned city; no new marker",
+    "Existing Mangystau marker remains a native regional label; it is not presented as1924Aktau"
+  ],
+  "small_settlement_coordinate_source": "https://download.geonames.org/export/dump/KZ.zip"
+}

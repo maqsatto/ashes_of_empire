@@ -1,7 +1,8 @@
 """Deterministic DesignBook v0.3 national campaign authoring."""
 from contentlib import write, localize, render_tree, capital_building
 from ideaicons import idea_picture
-LOC={}; IDEAS={}; EVENTS=[]; COUNTS={}
+from focus_flavour import national_descriptions
+LOC={}; IDEAS={}; EVENTS=[]; EVENT_INDEX={}; COUNTS={}
 CIV=capital_building(); MIL=capital_building('arms_factory'); INF=capital_building('infrastructure')
 TECH='add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry }'
 LOC['aof_v03_practical_school']=('Прикладная школа','Practical school')
@@ -13,11 +14,15 @@ POL={p:'set_popularities = { '+' '.join(f+' = '+str(70 if f==p else 6) for f in 
 def call(tag,n):
     return f'if = {{ limit = {{ country_exists = {tag} NOT = {{ has_war_with = {tag} }} }} {tag} = {{ country_event = {{ id = aof_diplomacy.{n} days = 2 }} }} }}'
 def event(number,ru,en,dr,de,options):
+    assert number not in EVENT_INDEX or number in {10,30,40,70}, f'Duplicate national event ID: {number}'
     ident='aof_nations.'+str(number);LOC[ident+'.t']=(ru,en);LOC[ident+'.d']=(dr,de)
     s=f'country_event = {{ id = {ident} title = {ident}.t desc = {ident}.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes\n'
-    for i,(r,e,fx) in enumerate(options):
-        key=ident+'.'+chr(97+i);LOC[key]=(r,e);s+=' option = { name = '+key+' ai_chance = { factor = 1 } '+fx+' }\n'
-    EVENTS.append(s+'}\n');return 'country_event = { id = '+ident+' days = 1 }'
+    for i,option in enumerate(options):
+        r,e,fx=option[:3];condition=' trigger = { '+option[3]+' }' if len(option)>3 else ''
+        key=ident+'.'+chr(97+i);LOC[key]=(r,e);s+=' option = { name = '+key+condition+' ai_chance = { factor = 1 } '+fx+' }\n'
+    if number in EVENT_INDEX:EVENTS[EVENT_INDEX[number]]=s+'}\n'
+    else:EVENT_INDEX[number]=len(EVENTS);EVENTS.append(s+'}\n')
+    return 'country_event = { id = '+ident+' days = 1 }'
 class Tree:
     def __init__(self,tag,ru,en,mods):
         self.tag=tag;self.nodes=[];self.prefix='aof_v03_'+tag.lower()+'_'
@@ -234,6 +239,162 @@ ar.find('industry3')['effect']+=' random_owned_controlled_state = { limit = { is
 ar.find('atlantic2')['effect']='navy_experience = 25'
 ar.find('atlantic3')['effect']='add_equipment_to_stockpile = { type = convoy amount = 20 producer = ARG }'
 
+# Material DesignBook audit: a named project must change its actual subject,
+# and an offer must leave the other country's player a real response.
+# Verified playtest railway spurs: join the capital and Caspian home base to
+# the existing level-two main line, without changing foreign infrastructure.
+kaz_rail_spurs=[[1591,10146,4773,10603,12640,4686,12397],[1517,4523,10262,12163,10131,4303,4374]]
+kaz_rail_network=[12397,7597,12329,7657,7600,7243,4300,4374]
+kaz_rail_provinces=sorted(set(kaz_rail_network+sum(kaz_rail_spurs,[])))
+kaz_rail_guard='tag = KAZ '+' '.join(str(sid)+' = { is_owned_by = ROOT }' for sid in [402,404,586,587,1083,1086])+' '+' '.join('controls_province = '+str(prov) for prov in kaz_rail_provinces)
+k.find('entry2')['effect']+=' if = { limit = { '+kaz_rail_guard+' } '+' '.join('build_railway = { level = 1 build_only_on_allied = yes path = { '+' '.join(map(str,path))+' } }' for path in kaz_rail_spurs)+' }'
+k.find('entry2')['final_desc_ru']='Улучшим инфраструктуру и соединим столицу и каспийскую базу с главной железнодорожной сетью. Обе перемычки требуют владения и контроля Алаш над всем маршрутом.'
+k.find('entry2')['final_desc_en']='Improve infrastructure and connect the capital and Caspian base to the main railway network. Both spurs require Alash to own and control the entire route.'
+c.find('transit_crisis')['available']='has_global_flag = aof_caspian_navigation_verified KAZ = { exists = yes has_war = yes has_country_flag = aof_caspian_agreement_accepted } NOT = { has_war_with = KAZ }'
+c.find('transit_crisis')['effect']=event(10,'Конвенция и воюющий клиент','The convention and a belligerent client','Алаш участвует в войне и требует сохранить проход. Охрана требует наших средств. Ограничение страны перекрывает её военные перевозки и торговые конвои; чрезвычайное закрытие всего канала затрагивает всех клиентов. Ни одно решение не вводит Кавказ в чужую войну.','Alash is at war and requests continued passage. Protection costs us resources. A country restriction blocks its military shipping and trade convoys; emergency closure affects every customer. None of these decisions joins another country’s war.',[
+ ('Сохранить проход за счёт собственной охраны','Maintain passage with our own protection','add_political_power = -30 clr_global_flag = aof_caucasian_canal_closed KAZ = { clr_country_flag = aof_caucasian_canal_blocked_for_country set_country_flag = aof_caspian_wartime_access } army_experience = 15'),
+ ('Приостановить проход воюющего клиента','Suspend passage for the belligerent client','KAZ = { set_country_flag = aof_caucasian_canal_blocked_for_country set_country_flag = aof_caspian_overland_fallback } add_stability = -0.03'),
+ ('Временно закрыть канал для всех','Temporarily close the canal to everyone','set_global_flag = aof_caucasian_canal_closed add_political_power = -25 add_stability = -0.05'),
+])
+def answered(flag):return 'OR = { has_country_flag = '+flag+'_accepted has_country_flag = '+flag+'_limited has_country_flag = '+flag+'_refused }'
+
+# Existing parties receive an overt organising proposal, never a generated
+# rebellion. The neighbour's government makes the political decision itself.
+movement_target='is_subject = no communism > 0 NOT = { has_government = communism } NOT = { has_war_with = ROOT }'
+movement_response='is_subject = no FROM = { exists = yes tag = SOV } NOT = { has_war_with = FROM }'
+event(81,'Зарубежная помощь и местное движение','Foreign support and a local movement','Представители существующего коммунистического движения предлагают принять советскую помощь для открытой политической работы. Правительство может разрешить организацию, поддержать собственную парламентскую реформу или выслать организаторов. Это меняет поддержку партий, а не объявляет восстание, войну или смену власти.','Representatives of an existing communist movement propose accepting Soviet support for public political organising. The government may permit it, pursue its own parliamentary reform, or expel the organisers. This changes party support; it creates no rebellion, war or imposed government.',[
+ ('Разрешить открытую организационную работу','Permit public organising','add_popularity = { ideology = communism popularity = 0.03 } add_stability = -0.02',movement_response),
+ ('Ответить собственной парламентской реформой','Respond with domestic parliamentary reform','add_political_power = -15 add_popularity = { ideology = aof_social_democracy popularity = 0.02 } add_stability = 0.01',movement_response),
+ ('Выслать иностранных организаторов','Expel foreign organisers','add_popularity = { ideology = communism popularity = -0.02 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure }',movement_response),
+ ('Обстоятельства изменились: оставить вопрос без продолжения','Circumstances changed: take no further action','','NOT = { AND = { '+movement_response+' } }'),
+])
+v.find('pressure2')['available']='has_government = communism'
+v.find('pressure2')['effect']='add_political_power = -35 if = { limit = { any_neighbor_country = { '+movement_target+' } } random_neighbor_country = { limit = { '+movement_target+' } country_event = { id = aof_nations.81 days = 2 } } } else = { '+TECH+' add_stability = 0.02 }'
+v.find('pressure2')['details_ru']='На организационную программу уйдут 35 единиц политического ресурса. Одному независимому соседу с существующей коммунистической поддержкой поступит предложение: его правительство может отказать или выбрать собственную реформу. Если подходящего соседа нет, средства пойдут на внутреннюю прикладную школу и согласование хозяйственного плана.'
+v.find('pressure2')['details_en']='The organising programme costs 35 political power. One independent neighbour with existing communist support receives a proposal; its government may reject it or choose its own reform. If no eligible neighbour exists, the funds support a domestic applied school and agreement on the economic plan.'
+def union_offer(tag):
+    return 'if = { limit = { has_war = no is_subject = no '+tag+' = { exists = yes has_war = no is_subject = no is_in_faction_with = ROOT } } '+tag+' = { country_event = { id = aof_diplomacy.160 days = 2 } } }'
+SOUTH_AMERICA=['BRA','ARG','CHL','PRU','BOL','PAR','URG','ECU','COL','VEN']
+def conference_offers(sender):return ' '.join(call(tag,90) for tag in SOUTH_AMERICA if tag!=sender)
+def conference_defence(sender):
+    return 'every_other_country = { limit = { has_country_flag = aof_conference_participant_'+sender.lower()+' is_subject = no NOT = { has_war_with = ROOT } } country_event = { id = aof_diplomacy.120 days = 2 } }'
+
+# One bounded industrial project in an actually owned, controlled state. The
+# existing resource determines the small recovery; no ore field is invented.
+resources=['steel','oil','aluminium','tungsten','chromium','rubber']
+known_resource='OR = { '+' '.join('has_resources_amount = { resource = '+r+' amount > 0 }' for r in resources)+' }'
+project='has_state_flag = aof_kaz_survey_project'
+survey='if = { limit = { any_owned_state = { is_controlled_by = ROOT '+known_resource+' } } random_owned_controlled_state = { limit = { '+known_resource+' } set_state_flag = aof_kaz_survey_project } } else = { capital_scope = { set_state_flag = aof_kaz_survey_project } }'
+road='add_building_construction = { type = infrastructure level = 1 instant_build = yes }'
+recovery=''
+for i,r in enumerate(resources):
+    recovery+=('if' if i==0 else 'else_if')+' = { limit = { has_resources_amount = { resource = '+r+' amount > 0 } } add_resource = { type = '+r+' amount = '+('1' if r=='oil' else '2')+' } } '
+processing='add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } '+recovery
+k.find('industry2')['effect']='add_political_power = -25 '+survey
+k.find('industry3')['effect']='if = { limit = { any_owned_state = { is_controlled_by = ROOT '+project+' } } random_owned_controlled_state = { limit = { '+project+' } '+road+' } } else = { '+INF+' }'
+k.find('industry4')['effect']='if = { limit = { any_owned_state = { is_controlled_by = ROOT '+project+' } } random_owned_controlled_state = { limit = { '+project+' } '+processing+' } } else = { '+CIV+' }'
+k.find('industry2')['details_ru']='Один контролируемый район с уже известным сырьём станет местом ограниченного проекта. После дороги переработка увеличит выпуск только того ресурса, который уже производится здесь.'
+k.find('industry2')['details_en']='One controlled state with a known resource becomes the site of a limited project. After a road is built, processing recovers a little more of a resource already produced there.'
+k.find('siberia1')['effect']=call('SIB',120)
+k.find('siberia2')['effect']='if = { limit = { any_owned_state = { is_controlled_by = ROOT any_neighbor_state = { is_owned_by = SIB } } } random_owned_controlled_state = { limit = { any_neighbor_state = { is_owned_by = SIB } } '+road+' } } else = { '+INF+' }'
+k.find('soviet1')['effect']=call('SOV',183)
+k.find('noninterference')['available']='has_country_flag = aof_kaz_sov_noninterference_accepted'
+k.find('noninterference')['effect']='add_stability = 0.04 '+TECH
+k.find('border_defence')['available']='OR = { has_country_flag = aof_kaz_sov_noninterference_refused SOV = { has_country_flag = aof_v03_sov_external_pressure } }'
+k.find('turkestan1')['effect']='if = { limit = { TRK = { exists = yes is_subject = no has_war = no } NOT = { has_war_with = TRK } } '+call('TRK',182)+' } else = { set_country_flag = aof_turkestan_mediation_refused add_stability = 0.02 }'
+k.find('turkestan2')['available']=answered('aof_turkestan_mediation')
+k.find('turkestan2')['effect']='if = { limit = { has_country_flag = aof_turkestan_mediation_accepted TRK = { exists = yes is_subject = no } NOT = { has_war_with = TRK } } give_guarantee = TRK } else = { army_experience = 15 }'
+k.find('turk_union')['effect']=call('TRK',120)
+k.find('turk_exit')['effect']='if = { limit = { has_country_flag = aof_turkestan_mediation_accepted TRK = { exists = yes has_war = no } } TRK = { country_event = { id = aof_partition.1 days = 2 } } } else = { add_stability = 0.03 }'
+k.find('turk_exit')['details_ru']='Предложение поступит съезду Туркестана. Только его правительство может принять конкретный договор о разделе; отказ не передаёт нам территории и не начинает войну.'
+k.find('turk_exit')['details_en']='The proposal goes to the Turkestani congress. Only its government can accept the specific partition treaty; refusal transfers no territory and starts no war.'
+k.find('independent')['effect']=idea('aof_v03_kaz_self_reliant','Самостоятельная производственная цепочка','A self-reliant production chain','research_speed_factor = 0.03 production_factory_max_efficiency_factor = 0.04 stability_factor = 0.05')
+k.find('regional')['effect']=idea('aof_v03_kaz_regional_capacity','Средства региональной политики','The means of a regional policy','industrial_capacity_factory = 0.05 army_org_factor = 0.05 stability_factor = -0.04')+' army_experience = 25'
+
+# The civil Siberian route buys access, not an unwanted alliance. Its other
+# Russian route and the Soviet treaty route can propose actual consensual union.
+s.find('civil4')['effect']=s.find('civil4')['effect'].replace(call('FER',120),call('FER',81))
+s.find('russia2')['effect']=call('SOV',120)+' '+call('FER',120)
+s.find('russia4')['effect']=idea('aof_v03_sib_russia_settlement','Договор российских республик','A compact of Russian republics',IDEAS['aof_v03_sib_russia_settlement'])+' '+union_offer('SOV')+' '+union_offer('FER')
+v.find('treaty3')['effect']=call('SIB',120)+' '+call('KAZ',120)
+v.find('treaty4')['effect']=idea('aof_v03_sov_treaty_settlement','Союз согласившихся республик','A union of consenting republics',IDEAS['aof_v03_sov_treaty_settlement'])+' '+union_offer('SIB')+' '+union_offer('KAZ')
+ch.find('agreement4')['effect']+=' '+' '.join(union_offer(tag) for tag in ['SHX','YUN','GXC','XSM'])
+s.find('port_conditions')['effect']=event(70,'Порт и японские условия','The port and Japanese conditions','Выход через Владивосток зависит от местного правительства и японской гарантии. Можно согласовать торговлю, вложиться в другой маршрут или предложить поддержку самостоятельности. Ни одно решение не начинает войну само по себе.','Access through Vladivostok depends on its government and the Japanese guarantee. Negotiate trade, invest in another route, or offer support for autonomy. None of these choices automatically starts a war.',[('Торговое сотрудничество без военных обязательств','Trade without military commitments',call('FER',81)+' add_political_power = -30'),('Вложиться в сухопутный маршрут через Алаш','Invest in an overland route through Alash',INF+' add_political_power = -25'),('Предложить поддержку самостоятельности','Offer support for autonomy',call('FER',190)+' add_political_power = -35')])
+
+# Commercial government: constitutional reform, procurement and a prospective
+# dependency are different bargains, each with a sovereign counterparty.
+employment=idea('aof_v03_cmt_employment_transition','Гарантии переходной занятости','Transitional employment guarantees','stability_factor = 0.05 industrial_capacity_factory = -0.04 consumer_goods_factor = 0.02')
+market=idea('aof_v03_cmt_market_charter','Выборный надзор над контрактами','Elected oversight of contracts','production_factory_efficiency_gain_factor = 0.05 consumer_goods_factor = 0.02')
+social=idea('aof_v03_cmt_social_charter','Общественный договор труда','A social compact of labour','research_speed_factor = 0.03 consumer_goods_factor = -0.02 industrial_capacity_factory = -0.03')
+domestic_orders=idea('aof_v03_cmt_internal_orders','Внутренний заказ без покровителя','Domestic orders without a patron','industrial_capacity_factory = 0.06 production_factory_max_efficiency_factor = 0.03 stability_factor = -0.05')
+m.find('charter_end')['effect']=event(40,'Не остановить страну вместе с контрактом','Do not close the country with the contract','Рабочие требуют представительства, подрядчики предупреждают о срыве снабжения. Можно оплатить гарантии занятости, исполнить старые обязательства до пересмотра или до выбора авторитарного пути профинансировать гражданский переход.','Workers demand representation, while contractors warn of disrupted supplies. Fund transitional employment, honour old obligations pending revision, or fund a civilian transition before committing to an authoritarian course.',[('Переходные гарантии занятости','Transitional employment guarantees','add_political_power = -50 add_timed_idea = { idea = aof_v03_cmt_employment_transition days = 365 }'),('Сохранить договоры до пересмотра','Honour contracts pending revision','add_political_power = 40 add_stability = -0.03 set_country_flag = aof_cmt_contracts_honoured'),('Оплатить гражданский переход','Fund a civilian transition','add_political_power = -80 add_stability = 0.06 set_country_flag = aof_cmt_civil_charter '+POL['democratic'],'NOT = { OR = { has_completed_focus = aof_v03_cmt_board1 has_completed_focus = aof_v03_cmt_patrons1 has_completed_focus = aof_v03_cmt_residents3 } }')])
+for key in ['board1','patrons1']:m.find(key)['available']='NOT = { has_country_flag = aof_cmt_civil_charter }'
+m.find('residents3')['effect']=event(41,'Кому подотчётна гражданская республика?','To whom is the civilian republic accountable?','Представительство жителей стало законом. Выборный надзор может сохранить рыночные договоры или опереться на парламентскую программу труда и образования. Ни один вариант не отменяет независимость и многопартийность.','Resident representation has become law. Elected oversight may preserve market contracts or rest on a parliamentary programme for labour and education. Both choices retain independence and competitive government.',[('Выборный рыночный кабинет','An elected market cabinet',POL['democratic']+' '+market),('Парламентский социальный договор','A parliamentary social compact',POL['aof_social_democracy']+' '+social)])
+m.find('residents4')['effect']+=' '+call('USA',110)
+def cmt_partner(protection=False):
+    return 'is_subject = no '+('has_war = no ' if protection else '')+'USA = { exists = yes is_subject = no has_war = no } NOT = { has_war_with = USA }'
+def cmt_request(flag,number,protection=False):
+    return 'set_country_flag = '+flag+'_requested if = { limit = { '+cmt_partner(protection)+' } '+call('USA',number)+' } else = { set_country_flag = '+flag+'_refused set_country_flag = '+flag+'_closed add_political_power = 10 }'
+def cmt_answer_or_expiry(flag,protection=False):
+    return 'OR = { '+answered(flag)+' has_country_flag = { flag = '+flag+'_requested days > 30 } NOT = { AND = { '+cmt_partner(protection)+' } } }'
+def cmt_close_unanswered(flag):
+    return 'if = { limit = { NOT = { '+answered(flag)+' } } set_country_flag = '+flag+'_refused set_country_flag = '+flag+'_closed } '
+m.find('board2')['effect']=cmt_request('aof_cmt_procurement',171)
+m.find('board2').pop('available',None)
+m.find('board3')['available']=cmt_answer_or_expiry('aof_cmt_procurement')
+m.find('board3')['effect']=cmt_close_unanswered('aof_cmt_procurement')+m.find('board3')['effect']
+m.find('board4')['effect']='if = { limit = { OR = { has_country_flag = aof_cmt_procurement_accepted has_country_flag = aof_cmt_procurement_limited } } add_ideas = aof_v03_cmt_board_settlement } else = { '+domestic_orders+' }'
+m.find('patrons3')['effect']=cmt_request('aof_cmt_protection',170,True)
+m.find('patrons3').pop('available',None)
+m.find('patrons3')['details_ru']='Предложение новой защиты США допускает добровольную зависимость, ограниченную гарантию или отказ. Оно не утверждает, что США были прежним покровителем.'
+m.find('patrons3')['details_en']='The request for new American protection may produce voluntary dependency, a limited guarantee or refusal. It does not make America an original patron.'
+m.find('patrons4')['available']=cmt_answer_or_expiry('aof_cmt_protection',True)
+m.find('patrons4')['effect']=cmt_close_unanswered('aof_cmt_protection')+'if = { limit = { OR = { has_country_flag = aof_cmt_protection_accepted has_country_flag = aof_cmt_protection_limited } } add_ideas = aof_v03_cmt_patrons_settlement } else = { army_experience = 20 '+INF+' }'
+for key in ['board3','patrons4']:
+    m.find(key)['details_ru']='Продолжить можно после ответа, через тридцать дней без ответа либо при недоступности партнёра. Без действительного согласия правительство закроет запрос как отклонённый и продолжит внутреннюю программу; иностранные гарантии не появятся.'
+    m.find(key)['details_en']='Continue after a reply, after thirty days without one, or when the partner becomes unavailable. Without actual consent the government closes the request as refused and continues domestically; no foreign guarantees are invented.'
+
+# Neutrality now includes accepted mediation and real, stock-limited aid.
+n.find('voice1')['effect']='add_political_power = -25 if = { limit = { country_exists = CMT NOT = { has_war_with = CMT } } '+call('CMT',180)+' } else = { '+TECH+' }'
+n.find('voice4')['effect']=TECH+' if = { limit = { has_country_flag = aof_naf_mediation_accepted country_exists = CMT } CMT = { '+TECH+' } }'
+n.find('voice3')['effect']+=' add_equipment_to_stockpile = { type = convoy amount = 10 producer = NAF } random_owned_controlled_state = { limit = { is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } }'
+african_war='is_subject = no has_war = yes capital_scope = { is_on_continent = africa } NOT = { has_war_with = ROOT }'
+n.find('aid_crisis')['available']='any_other_country = { '+african_war+' }'
+n.find('aid_crisis')['effect']='random_other_country = { limit = { '+african_war+' } country_event = { id = aof_diplomacy.181 days = 2 } }'
+aid_partner='FROM = { exists = yes is_subject = no has_war = yes capital_scope = { is_on_continent = africa } } NOT = { has_war_with = FROM }'
+event(31,'Просьба о помощи изменилась','The aid request has changed','Получатель больше не соответствует условиям согласованной помощи. Вооружение и гарантии не переданы; можно вернуться к дипломатии при новых обстоятельствах.','The recipient no longer meets the agreed conditions. No arms or guarantees were transferred; diplomacy can resume when circumstances change.',[('Учесть новые обстоятельства','Acknowledge the changed circumstances','')])
+def aid_recheck(fx,extra=''):
+    return 'if = { limit = { '+aid_partner+' '+extra+' } '+fx+' } else = { country_event = { id = aof_nations.31 days = 1 } }'
+event(30,'Оружие и нейтралитет','Arms and neutrality','Иностранное правительство ответило на наше предложение. Гражданская помощь не создаёт военного союза. Оружие берётся из наших запасов, а гарантия безопасности означает сознательное расширение обязательств, но не вступление в текущую войну.','A foreign government has answered our offer. Civilian relief creates no alliance. Arms come from our stockpile; a guarantee deliberately expands our commitments without entering the current war.',[
+ ('Гражданская помощь без военных обязательств','Civilian aid without military commitments',aid_recheck('add_political_power = -30 FROM = { add_stability = 0.04 add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } }'),aid_partner),
+ ('Передать двести винтовок из наших запасов','Send two hundred rifles from our stockpile',aid_recheck('send_equipment = { equipment = infantry_equipment amount = 200 target = FROM } army_experience = 10 add_stability = -0.02','has_equipment = { infantry_equipment > 199 }'),aid_partner+' FROM = { has_country_flag = aof_naf_military_aid_requested } has_equipment = { infantry_equipment > 199 }'),
+ ('Дать собственную гарантию безопасности','Offer our own security guarantee',aid_recheck('give_guarantee = FROM remove_ideas = aof_v03_naf_neutral add_war_support = 0.08 add_stability = -0.04'),aid_partner+' FROM = { has_country_flag = aof_naf_military_aid_requested }'),
+ ('Сохранить нейтралитет без новой помощи','Retain neutrality without new assistance','add_political_power = 15'),
+])
+
+# Invitations reach actual sovereign governments. Equal-term counteroffers
+# return to the proposer; defence membership still needs each recipient's yes.
+b.find('peace2')['effect']='add_political_power = -35 '+conference_offers('BRA')
+b.find('peace3')['effect']=conference_defence('BRA')+' army_experience = 15'
+b.find('hegemony3')['effect']='set_country_flag = aof_brazil_hegemonic_conference '+conference_offers('BRA')+' add_stability = -0.04'
+ar.find('league1')['effect']=POL['democratic']+' add_political_power = -35 '+conference_offers('ARG')
+ar.find('league4')['effect']=idea('aof_v03_arg_league_settlement','Лига равных республик','A league of equal republics',IDEAS['aof_v03_arg_league_settlement'])+' '+conference_defence('ARG')
+ar.node('counterconference','Равноправная конференция вместо первенства','An equal conference instead of primacy',-6,3,['entry3'],'add_political_power = -50 '+conference_offers('ARG'),available='OR = { has_country_flag = aof_counterconference_mandate BRA = { has_country_flag = aof_brazil_hegemonic_conference } }')
+ar.node('counterdefence','Оборона без чужого первенства','Defence without another state’s primacy',-6,4,['counterconference'],conference_defence('ARG')+' army_experience = 20')
+
+disruption=idea('aof_v03_mex_supply_disruption','Издержки одностороннего пересмотра','Costs of unilateral revision','industrial_capacity_factory = -0.08 research_speed_factor = -0.03')
+oil_event=event(90,'Нефтяной договор после ответа','The oil contract after the reply','Ответ США не завершает наш выбор. Согласованный переход сохраняет поставки ценой компенсаций. Новые партнёры требуют новых переговоров. Односторонний пересмотр ускоряет внутренний заказ, но нарушает снабжение и ухудшает отношения.','The American reply does not end our choices. An agreed transition preserves supplies at the cost of compensation. New partners require new negotiations. Unilateral revision accelerates domestic orders but disrupts supply and worsens relations.',[
+ ('Выполнить согласованный компенсационный переход','Implement the agreed compensation transition','add_political_power = -35 add_timed_idea = { idea = aof_v03_compensated_trade days = 730 }','has_country_flag = aof_oil_compromise_accepted'),
+ ('Искать других инвесторов без войны','Seek other investors without war','add_political_power = -40 country_event = { id = aof_v03_regions.1 days = 1 }'),
+ ('Провести односторонний пересмотр','Revise the terms unilaterally','set_country_flag = aof_mex_unilateral_oil add_timed_idea = { idea = aof_v03_mex_supply_disruption days = 365 } '+MIL+' if = { limit = { country_exists = USA } add_opinion_modifier = { target = USA modifier = aof_v03_diplomatic_pressure } } '+call('USA',10)),
+])
+mx.node('oil_outcome','Самостоятельность после нефтяного спора','Independence after the oil dispute',-5,7,['oil_settlement'],oil_event,available='OR = { has_country_flag = aof_oil_compromise_accepted has_country_flag = aof_oil_compromise_refused }')
+for tree,key,ru,en in [
+ (ar,'counterconference','Первенство Бразилии не обязывает нас отказываться от сотрудничества. Предложим равноправную конференцию независимым соседям: каждый вправе принять условия, предложить свои или отказаться.','Brazilian primacy need not end cooperation. We will invite independent neighbours to an equal conference; each may accept, counteroffer or refuse.'),
+ (ar,'counterdefence','Ответившие на нашу конференцию правительства получат отдельное предложение оборонительного союза. Участие в обсуждении не заменяет их согласия на военные обязательства.','Governments participating in our conference receive a separate defence proposal. Joining talks never substitutes for consent to military obligations.'),
+ (mx,'oil_outcome','Полученный ответ открывает выбор между согласованными компенсациями, переговорами с другими инвесторами и односторонним пересмотром. Последний ускорит внутренний заказ ценой перебоев снабжения и ухудшения отношений.','The reply opens a choice between agreed compensation, talks with other investors and unilateral revision. The latter accelerates domestic orders at the cost of supply disruption and relations.')]:
+    tree.find(key)['desc_ru']=ru;tree.find(key)['desc_en']=en
+
 # Explanatory text describes each programme's political bargain rather than
 # treating all branches as interchangeable factory ladders.
 CONTEXT={
@@ -283,9 +444,17 @@ for tree in [k,c,s,v,n,m,mx,b,ar,ch]:
         if context:
             node['desc_ru']=node['ru']+'. '+context[0]
             node['desc_en']=node['en']+'. '+context[1]
+        for lang in ['ru','en']:
+            if node.get('details_'+lang):node['desc_'+lang]=node.get('desc_'+lang,node[lang])+ ' '+node['details_'+lang]
+            if node.get('final_desc_'+lang):node['desc_'+lang]=node['final_desc_'+lang]
+    for ident,descriptions in national_descriptions(tree.tag,tree.nodes).items():
+        for node in tree.nodes:
+            if node['id']==ident:node['desc_ru'],node['desc_en']=descriptions
     tree.save()
 
 write('common/ideas/aof_v03_nations.txt','ideas = { country = {\n'+''.join(f' {key} = {{ picture = {idea_picture(key)} allowed = {{ always = yes }} allowed_civil_war = {{ always = yes }} removal_cost = -1 modifier = {{ {mods} }} }}\n' for key,mods in IDEAS.items())+'} }\n')
+event_ids=[re.search(r'country_event = \{ id = (aof_nations\.\d+)',body).group(1) for body in EVENTS]
+assert len(event_ids)==len(set(event_ids)), 'Duplicate generated national event IDs'
 write('events/aof_v03_nations.txt','add_namespace = aof_nations\n'+''.join(EVENTS))
 localize('aof_v03_nations',LOC)
 if __name__=='__main__':print(COUNTS,'total',sum(COUNTS.values()),'ideas',len(IDEAS),'events',len(EVENTS))

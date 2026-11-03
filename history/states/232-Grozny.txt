@@ -17,6 +17,8 @@ state = {
 
 		buildings = {
 			infrastructure = 2
+		
+			3668 = { naval_base = 1 } # isolated Caspian test base
 		}
 
 		victory_points = {

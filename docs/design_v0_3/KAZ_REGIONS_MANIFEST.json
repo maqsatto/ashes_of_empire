@@ -1,0 +1,5532 @@
+{
+  "source_native_max_state_id": 1081,
+  "custom_state_ids": [
+    1082,
+    1083,
+    1084,
+    1085,
+    1086
+  ],
+  "id_audit": {
+    "installed_max": 1081,
+    "installed_count": 1081,
+    "new_ids_contiguous_after_installed_max": true,
+    "custom_definitions": {
+      "1082": "history/states/1082-AOF-KAZ-1082.txt",
+      "1083": "history/states/1083-AOF-KAZ-1083.txt",
+      "1084": "history/states/1084-AOF-KAZ-1084.txt",
+      "1085": "history/states/1085-AOF-KAZ-1085.txt",
+      "1086": "history/states/1086-AOF-KAZ-1086.txt"
+    },
+    "not_assumed_native_ids": true
+  },
+  "official_sources": [
+    "https://www.gov.kz/article/19305?lang=kk",
+    "https://stat.gov.kz/ru/industries/socialstatistics/demography/publications/335820/",
+    "https://www.gov.kz/uploads/2025/12/29/28d1a632f23ee3e9f8c7e5c949910735_original.10102332.pdf",
+    "https://primeminister.kz/assets/media/prilozhenie-rus_113.pdf"
+  ],
+  "reference": {
+    "method": "author-traced official schematic + exact native city anchor thin-plate warp; nearest whole-province assignment, not GIS boundaries",
+    "source_image_page": 4,
+    "source_image_render_size": [
+      1800,
+      1274
+    ],
+    "anchors": {
+      "7341": {
+        "native_map_xy": [
+          3708.0,
+          522.0
+        ],
+        "official_reference_xy": [
+          560,
+          310
+        ]
+      },
+      "3618": {
+        "native_map_xy": [
+          3626.0,
+          589.0
+        ],
+        "official_reference_xy": [
+          320,
+          454
+        ]
+      },
+      "11537": {
+        "native_map_xy": [
+          3600.0,
+          510.0
+        ],
+        "official_reference_xy": [
+          355,
+          211
+        ]
+      },
+      "7597": {
+        "native_map_xy": [
+          3856.0,
+          639.0
+        ],
+        "official_reference_xy": [
+          860,
+          658
+        ]
+      },
+      "1591": {
+        "native_map_xy": [
+          4011.0,
+          666.0
+        ],
+        "official_reference_xy": [
+          1364,
+          742
+        ]
+      },
+      "12594": {
+        "native_map_xy": [
+          4070.0,
+          518.0
+        ],
+        "official_reference_xy": [
+          1434,
+          307
+        ]
+      },
+      "1668": {
+        "native_map_xy": [
+          4043.0,
+          572.0
+        ],
+        "official_reference_xy": [
+          1463,
+          449
+        ]
+      },
+      "10312": {
+        "native_map_xy": [
+          3798.0,
+          480.0
+        ],
+        "official_reference_xy": [
+          842,
+          153
+        ]
+      },
+      "4333": {
+        "native_map_xy": [
+          3948.0,
+          531.0
+        ],
+        "official_reference_xy": [
+          1097,
+          290
+        ]
+      },
+      "7708": {
+        "native_map_xy": [
+          4025.0,
+          489.0
+        ],
+        "official_reference_xy": [
+          1297,
+          208
+        ]
+      }
+    }
+  },
+  "ambiguous_snapping": [
+    {
+      "province": 566,
+      "reference_xy": [
+        392.9172618370599,
+        195.7468727000888
+      ],
+      "polygon_hits": [],
+      "assigned": 407
+    },
+    {
+      "province": 1309,
+      "reference_xy": [
+        1093.1845762270207,
+        66.9835006503551
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 1391,
+      "reference_xy": [
+        971.9286253851834,
+        63.522787848577806
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 1694,
+      "reference_xy": [
+        991.7417792929241,
+        -18.975395473257688
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 3404,
+      "reference_xy": [
+        349.29359294126255,
+        190.29625448856075
+      ],
+      "polygon_hits": [],
+      "assigned": 407
+    },
+    {
+      "province": 4340,
+      "reference_xy": [
+        846.6383022740685,
+        56.898204724919886
+      ],
+      "polygon_hits": [],
+      "assigned": 583
+    },
+    {
+      "province": 4369,
+      "reference_xy": [
+        921.3623874039133,
+        75.7614175353517
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 4651,
+      "reference_xy": [
+        1257.022216099448,
+        562.8708101978223
+      ],
+      "polygon_hits": [],
+      "assigned": 1084
+    },
+    {
+      "province": 4670,
+      "reference_xy": [
+        1152.3845878306572,
+        103.69372049420907
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 4850,
+      "reference_xy": [
+        947.9631943285826,
+        25.05307737040283
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 7317,
+      "reference_xy": [
+        1155.497822937709,
+        169.2902321726113
+      ],
+      "polygon_hits": [],
+      "assigned": 882
+    },
+    {
+      "province": 7357,
+      "reference_xy": [
+        886.0126112116129,
+        50.6319122133342
+      ],
+      "polygon_hits": [],
+      "assigned": 583
+    },
+    {
+      "province": 7392,
+      "reference_xy": [
+        778.4569718803577,
+        487.8244344694527
+      ],
+      "polygon_hits": [],
+      "assigned": 404
+    },
+    {
+      "province": 7741,
+      "reference_xy": [
+        1002.9527779102913,
+        24.18597463791247
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 7777,
+      "reference_xy": [
+        879.0505330574841,
+        817.1484320067871
+      ],
+      "polygon_hits": [],
+      "assigned": 1086
+    },
+    {
+      "province": 7874,
+      "reference_xy": [
+        1038.2324693609035,
+        -18.12650985587607
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 10275,
+      "reference_xy": [
+        831.5753060295459,
+        485.3276853193375
+      ],
+      "polygon_hits": [
+        1085,
+        404
+      ],
+      "assigned": 404
+    },
+    {
+      "province": 10610,
+      "reference_xy": [
+        1646.7766849597817,
+        520.1222014207823
+      ],
+      "polygon_hits": [],
+      "assigned": 589
+    },
+    {
+      "province": 11537,
+      "reference_xy": [
+        358.6768550719293,
+        206.0996519673724
+      ],
+      "polygon_hits": [],
+      "assigned": 407
+    },
+    {
+      "province": 12185,
+      "reference_xy": [
+        915.7226391449201,
+        18.63090998791449
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 12229,
+      "reference_xy": [
+        790.8448290276111,
+        84.93609904763761
+      ],
+      "polygon_hits": [],
+      "assigned": 583
+    },
+    {
+      "province": 12616,
+      "reference_xy": [
+        1206.8023600494419,
+        86.2191634298936
+      ],
+      "polygon_hits": [],
+      "assigned": 882
+    },
+    {
+      "province": 12619,
+      "reference_xy": [
+        1044.2342428716897,
+        45.49791217269545
+      ],
+      "polygon_hits": [],
+      "assigned": 1082
+    },
+    {
+      "province": 12662,
+      "reference_xy": [
+        1583.1673768007777,
+        528.7273445353121
+      ],
+      "polygon_hits": [],
+      "assigned": 588
+    },
+    {
+      "province": 13197,
+      "reference_xy": [
+        1583.1523494995402,
+        603.2167073460272
+      ],
+      "polygon_hits": [],
+      "assigned": 1084
+    }
+  ],
+  "region_connected_components": {
+    "402": [
+      [
+        1220,
+        1247,
+        1314,
+        1360,
+        1371,
+        1429,
+        4227,
+        4254,
+        4294,
+        4300,
+        4303,
+        4374,
+        4376,
+        4394,
+        7313,
+        7337,
+        7341,
+        7354,
+        7370,
+        7410,
+        7438,
+        9528,
+        10131,
+        10164,
+        10253,
+        10264,
+        10295,
+        12108,
+        12170,
+        12179,
+        12198,
+        12227,
+        12294
+      ]
+    ],
+    "404": [
+      [
+        4578,
+        4581,
+        4636,
+        4638,
+        7243,
+        7392,
+        7486,
+        7556,
+        7597,
+        7600,
+        7657,
+        10275,
+        10353,
+        10366,
+        10452,
+        10508,
+        12329,
+        12397
+      ]
+    ],
+    "406": [
+      [
+        464,
+        475,
+        477,
+        554,
+        615,
+        642,
+        3459,
+        3618,
+        3622,
+        6498,
+        6514,
+        6615,
+        7322,
+        9453,
+        9469,
+        11442,
+        11455,
+        11469,
+        11578,
+        11591,
+        12235,
+        12254
+      ]
+    ],
+    "407": [
+      [
+        432,
+        468,
+        470,
+        508,
+        545,
+        566,
+        576,
+        1290,
+        1318,
+        3404,
+        3406,
+        3467,
+        3502,
+        3515,
+        3538,
+        4351,
+        6491,
+        6523,
+        6525,
+        6551,
+        6564,
+        6588,
+        9462,
+        9487,
+        9513,
+        9526,
+        9538,
+        9549,
+        11457,
+        11472,
+        11473,
+        11480,
+        11482,
+        11510,
+        11524,
+        11537,
+        11538,
+        11552
+      ]
+    ],
+    "583": [
+      [
+        1272,
+        1276,
+        1303,
+        1331,
+        1363,
+        4277,
+        4337,
+        4340,
+        7233,
+        7357,
+        7383,
+        7429,
+        10140,
+        10168,
+        10220,
+        10268,
+        10277,
+        10284,
+        10312,
+        12115,
+        12121,
+        12139,
+        12143,
+        12229,
+        12257,
+        12266,
+        12285
+      ]
+    ],
+    "586": [
+      [
+        1591,
+        1840,
+        4773,
+        7711,
+        10146,
+        10547
+      ]
+    ],
+    "587": [
+      [
+        1517,
+        3593,
+        4523,
+        4620,
+        7641,
+        10262,
+        11701,
+        12163,
+        12383,
+        13008
+      ]
+    ],
+    "588": [
+      [
+        1668,
+        4674,
+        4764,
+        4867,
+        7784,
+        10218,
+        10290,
+        10584,
+        10653,
+        12564,
+        12594,
+        12635,
+        12662,
+        13151
+      ]
+    ],
+    "589": [
+      [
+        1749,
+        1818,
+        1864,
+        7890,
+        10610,
+        12427
+      ]
+    ],
+    "590": [
+      [
+        1223,
+        1375,
+        1680,
+        1879,
+        4232,
+        4281,
+        4333,
+        7298,
+        7326,
+        7425,
+        10211,
+        10239,
+        10308,
+        12111,
+        12152
+      ]
+    ],
+    "881": [
+      [
+        1239,
+        1243,
+        1402,
+        4250,
+        4389,
+        7335,
+        7405,
+        7407,
+        10161,
+        10179,
+        10292,
+        12194
+      ]
+    ],
+    "882": [
+      [
+        1287,
+        4661,
+        4685,
+        7317,
+        7350,
+        7708,
+        10202,
+        10235,
+        10630,
+        12616
+      ]
+    ],
+    "1082": [
+      [
+        1229,
+        1309,
+        1391,
+        1418,
+        1662,
+        1694,
+        4238,
+        4309,
+        4369,
+        4670,
+        4850,
+        7741,
+        7874,
+        10633,
+        12185,
+        12619
+      ]
+    ],
+    "1083": [
+      [
+        7706,
+        10603,
+        12385,
+        12640,
+        12658
+      ]
+    ],
+    "1084": [
+      [
+        4651,
+        4845,
+        7332,
+        7795,
+        7856,
+        10550,
+        10619,
+        10680,
+        12529,
+        13148,
+        13149,
+        13197
+      ]
+    ],
+    "1085": [
+      [
+        1312,
+        1382,
+        4492,
+        4595,
+        12177,
+        12487
+      ]
+    ],
+    "1086": [
+      [
+        4686,
+        7777,
+        10148,
+        10506,
+        10601,
+        12340
+      ]
+    ]
+  },
+  "province_to_state": {
+    "432": 407,
+    "464": 406,
+    "468": 407,
+    "470": 407,
+    "475": 406,
+    "477": 406,
+    "508": 407,
+    "545": 407,
+    "554": 406,
+    "566": 407,
+    "576": 407,
+    "615": 406,
+    "642": 406,
+    "1220": 402,
+    "1223": 590,
+    "1229": 1082,
+    "1239": 881,
+    "1243": 881,
+    "1247": 402,
+    "1272": 583,
+    "1276": 583,
+    "1287": 882,
+    "1290": 407,
+    "1303": 583,
+    "1309": 1082,
+    "1312": 1085,
+    "1314": 402,
+    "1318": 407,
+    "1331": 583,
+    "1360": 402,
+    "1363": 583,
+    "1371": 402,
+    "1375": 590,
+    "1382": 1085,
+    "1391": 1082,
+    "1402": 881,
+    "1418": 1082,
+    "1429": 402,
+    "1517": 587,
+    "1591": 586,
+    "1662": 1082,
+    "1668": 588,
+    "1680": 590,
+    "1694": 1082,
+    "1749": 589,
+    "1818": 589,
+    "1840": 586,
+    "1864": 589,
+    "1879": 590,
+    "3404": 407,
+    "3406": 407,
+    "3459": 406,
+    "3467": 407,
+    "3502": 407,
+    "3515": 407,
+    "3538": 407,
+    "3593": 587,
+    "3618": 406,
+    "3622": 406,
+    "4227": 402,
+    "4232": 590,
+    "4238": 1082,
+    "4250": 881,
+    "4254": 402,
+    "4277": 583,
+    "4281": 590,
+    "4294": 402,
+    "4300": 402,
+    "4303": 402,
+    "4309": 1082,
+    "4333": 590,
+    "4337": 583,
+    "4340": 583,
+    "4351": 407,
+    "4369": 1082,
+    "4374": 402,
+    "4376": 402,
+    "4389": 881,
+    "4394": 402,
+    "4492": 1085,
+    "4523": 587,
+    "4578": 404,
+    "4581": 404,
+    "4595": 1085,
+    "4620": 587,
+    "4636": 404,
+    "4638": 404,
+    "4651": 1084,
+    "4661": 882,
+    "4670": 1082,
+    "4674": 588,
+    "4685": 882,
+    "4686": 1086,
+    "4764": 588,
+    "4773": 586,
+    "4845": 1084,
+    "4850": 1082,
+    "4867": 588,
+    "6491": 407,
+    "6498": 406,
+    "6514": 406,
+    "6523": 407,
+    "6525": 407,
+    "6551": 407,
+    "6564": 407,
+    "6588": 407,
+    "6615": 406,
+    "7233": 583,
+    "7243": 404,
+    "7298": 590,
+    "7313": 402,
+    "7317": 882,
+    "7322": 406,
+    "7326": 590,
+    "7332": 1084,
+    "7335": 881,
+    "7337": 402,
+    "7341": 402,
+    "7350": 882,
+    "7354": 402,
+    "7357": 583,
+    "7370": 402,
+    "7383": 583,
+    "7392": 404,
+    "7405": 881,
+    "7407": 881,
+    "7410": 402,
+    "7425": 590,
+    "7429": 583,
+    "7438": 402,
+    "7486": 404,
+    "7556": 404,
+    "7597": 404,
+    "7600": 404,
+    "7641": 587,
+    "7657": 404,
+    "7706": 1083,
+    "7708": 882,
+    "7711": 586,
+    "7741": 1082,
+    "7777": 1086,
+    "7784": 588,
+    "7795": 1084,
+    "7856": 1084,
+    "7874": 1082,
+    "7890": 589,
+    "9453": 406,
+    "9462": 407,
+    "9469": 406,
+    "9487": 407,
+    "9513": 407,
+    "9526": 407,
+    "9528": 402,
+    "9538": 407,
+    "9549": 407,
+    "10131": 402,
+    "10140": 583,
+    "10146": 586,
+    "10148": 1086,
+    "10161": 881,
+    "10164": 402,
+    "10168": 583,
+    "10179": 881,
+    "10202": 882,
+    "10211": 590,
+    "10218": 588,
+    "10220": 583,
+    "10235": 882,
+    "10239": 590,
+    "10253": 402,
+    "10262": 587,
+    "10264": 402,
+    "10268": 583,
+    "10275": 404,
+    "10277": 583,
+    "10284": 583,
+    "10290": 588,
+    "10292": 881,
+    "10295": 402,
+    "10308": 590,
+    "10312": 583,
+    "10353": 404,
+    "10366": 404,
+    "10452": 404,
+    "10506": 1086,
+    "10508": 404,
+    "10547": 586,
+    "10550": 1084,
+    "10584": 588,
+    "10601": 1086,
+    "10603": 1083,
+    "10610": 589,
+    "10619": 1084,
+    "10630": 882,
+    "10633": 1082,
+    "10653": 588,
+    "10680": 1084,
+    "11442": 406,
+    "11455": 406,
+    "11457": 407,
+    "11469": 406,
+    "11472": 407,
+    "11473": 407,
+    "11480": 407,
+    "11482": 407,
+    "11510": 407,
+    "11524": 407,
+    "11537": 407,
+    "11538": 407,
+    "11552": 407,
+    "11578": 406,
+    "11591": 406,
+    "11701": 587,
+    "12108": 402,
+    "12111": 590,
+    "12115": 583,
+    "12121": 583,
+    "12139": 583,
+    "12143": 583,
+    "12152": 590,
+    "12163": 587,
+    "12170": 402,
+    "12177": 1085,
+    "12179": 402,
+    "12185": 1082,
+    "12194": 881,
+    "12198": 402,
+    "12227": 402,
+    "12229": 583,
+    "12235": 406,
+    "12254": 406,
+    "12257": 583,
+    "12266": 583,
+    "12285": 583,
+    "12294": 402,
+    "12329": 404,
+    "12340": 1086,
+    "12383": 587,
+    "12385": 1083,
+    "12397": 404,
+    "12427": 589,
+    "12487": 1085,
+    "12529": 1084,
+    "12564": 588,
+    "12594": 588,
+    "12616": 882,
+    "12619": 1082,
+    "12635": 588,
+    "12640": 1083,
+    "12658": 1083,
+    "12662": 588,
+    "13008": 587,
+    "13148": 1084,
+    "13149": 1084,
+    "13151": 588,
+    "13197": 1084
+  },
+  "regions": {
+    "402": {
+      "name": "Актобинская область",
+      "file": "history/states/402-Akhtubinsk.txt",
+      "provinces": [
+        1220,
+        1247,
+        1314,
+        1360,
+        1371,
+        1429,
+        4227,
+        4254,
+        4294,
+        4300,
+        4303,
+        4374,
+        4376,
+        4394,
+        7313,
+        7337,
+        7341,
+        7354,
+        7370,
+        7410,
+        7438,
+        9528,
+        10131,
+        10164,
+        10253,
+        10264,
+        10295,
+        12108,
+        12170,
+        12179,
+        12198,
+        12227,
+        12294
+      ],
+      "manpower": 300907,
+      "resources": {
+        "chromium": 12
+      }
+    },
+    "404": {
+      "name": "Акмешитская область",
+      "file": "history/states/404-Saykhin.txt",
+      "provinces": [
+        4578,
+        4581,
+        4636,
+        4638,
+        7243,
+        7392,
+        7486,
+        7556,
+        7597,
+        7600,
+        7657,
+        10275,
+        10353,
+        10366,
+        10452,
+        10508,
+        12329,
+        12397
+      ],
+      "manpower": 369451,
+      "resources": {
+        "chromium": 2,
+        "coal": 1
+      }
+    },
+    "406": {
+      "name": "Атырауская область",
+      "file": "history/states/406-Krasnyy Yar.txt",
+      "provinces": [
+        464,
+        475,
+        477,
+        554,
+        615,
+        642,
+        3459,
+        3618,
+        3622,
+        6498,
+        6514,
+        6615,
+        7322,
+        9453,
+        9469,
+        11442,
+        11455,
+        11469,
+        11578,
+        11591,
+        12235,
+        12254
+      ],
+      "manpower": 192457,
+      "resources": {
+        "chromium": 1
+      }
+    },
+    "407": {
+      "name": "Западно-Казахстанская область",
+      "file": "history/states/407-Uralsk.txt",
+      "provinces": [
+        432,
+        468,
+        470,
+        508,
+        545,
+        566,
+        576,
+        1290,
+        1318,
+        3404,
+        3406,
+        3467,
+        3502,
+        3515,
+        3538,
+        4351,
+        6491,
+        6523,
+        6525,
+        6551,
+        6564,
+        6588,
+        9462,
+        9487,
+        9513,
+        9526,
+        9538,
+        9549,
+        11457,
+        11472,
+        11473,
+        11480,
+        11482,
+        11510,
+        11524,
+        11537,
+        11538,
+        11552
+      ],
+      "manpower": 251134,
+      "resources": {}
+    },
+    "583": {
+      "name": "Костанайская область",
+      "file": "history/states/583-Kazakhstan.txt",
+      "provinces": [
+        1272,
+        1276,
+        1303,
+        1331,
+        1363,
+        4277,
+        4337,
+        4340,
+        7233,
+        7357,
+        7383,
+        7429,
+        10140,
+        10168,
+        10220,
+        10268,
+        10277,
+        10284,
+        10312,
+        12115,
+        12121,
+        12139,
+        12143,
+        12229,
+        12257,
+        12266,
+        12285
+      ],
+      "manpower": 322380,
+      "resources": {
+        "coal": 1
+      }
+    },
+    "586": {
+      "name": "Алматинская область",
+      "file": "history/states/586-Kyrgyzstan.txt",
+      "provinces": [
+        1591,
+        1840,
+        4773,
+        7711,
+        10146,
+        10547
+      ],
+      "manpower": 1300310,
+      "resources": {
+        "steel": 10,
+        "chromium": 6,
+        "tungsten": 2,
+        "aluminium": 5
+      }
+    },
+    "587": {
+      "name": "Мангистауская область",
+      "file": "history/states/587-Western Kazakstan.txt",
+      "provinces": [
+        1517,
+        3593,
+        4523,
+        4620,
+        7641,
+        10262,
+        11701,
+        12163,
+        12383,
+        13008
+      ],
+      "manpower": 206547,
+      "resources": {}
+    },
+    "588": {
+      "name": "Абайская область",
+      "file": "history/states/588-Some Mountains.txt",
+      "provinces": [
+        1668,
+        4674,
+        4764,
+        4867,
+        7784,
+        10218,
+        10290,
+        10584,
+        10653,
+        12564,
+        12594,
+        12635,
+        12662,
+        13151
+      ],
+      "manpower": 314119,
+      "resources": {
+        "chromium": 4
+      }
+    },
+    "589": {
+      "name": "Восточно-Казахстанская область",
+      "file": "history/states/589-Eastern Kazakhstan.txt",
+      "provinces": [
+        1749,
+        1818,
+        1864,
+        7890,
+        10610,
+        12427
+      ],
+      "manpower": 136658,
+      "resources": {
+        "chromium": 3
+      }
+    },
+    "590": {
+      "name": "Акмолинская область",
+      "file": "history/states/590-Northern Kazakhstan.txt",
+      "provinces": [
+        1223,
+        1375,
+        1680,
+        1879,
+        4232,
+        4281,
+        4333,
+        7298,
+        7326,
+        7425,
+        10211,
+        10239,
+        10308,
+        12111,
+        12152
+      ],
+      "manpower": 439425,
+      "resources": {
+        "coal": 0,
+        "chromium": 1
+      }
+    },
+    "881": {
+      "name": "Карагандинская область",
+      "file": "history/states/881-Karagandy.txt",
+      "provinces": [
+        1239,
+        1243,
+        1402,
+        4250,
+        4389,
+        7335,
+        7405,
+        7407,
+        10161,
+        10179,
+        10292,
+        12194
+      ],
+      "manpower": 213530,
+      "resources": {
+        "chromium": 1,
+        "coal": 2
+      }
+    },
+    "882": {
+      "name": "Керекуская область",
+      "file": "history/states/882-Pavlodar.txt",
+      "provinces": [
+        1287,
+        4661,
+        4685,
+        7317,
+        7350,
+        7708,
+        10202,
+        10235,
+        10630,
+        12616
+      ],
+      "manpower": 253513,
+      "resources": {
+        "chromium": 6
+      }
+    },
+    "1082": {
+      "name": "Северо-Казахстанская область",
+      "file": "history/states/1082-AOF-KAZ-1082.txt",
+      "provinces": [
+        1229,
+        1309,
+        1391,
+        1418,
+        1662,
+        1694,
+        4238,
+        4309,
+        4369,
+        4670,
+        4850,
+        7741,
+        7874,
+        10633,
+        12185,
+        12619
+      ],
+      "manpower": 555423,
+      "resources": {
+        "chromium": 1
+      }
+    },
+    "1083": {
+      "name": "Жамбылская область",
+      "file": "history/states/1083-AOF-KAZ-1083.txt",
+      "provinces": [
+        7706,
+        10603,
+        12385,
+        12640,
+        12658
+      ],
+      "manpower": 984231,
+      "resources": {
+        "steel": 8,
+        "chromium": 5,
+        "tungsten": 2,
+        "aluminium": 4,
+        "coal": 0
+      }
+    },
+    "1084": {
+      "name": "Жетысуская область",
+      "file": "history/states/1084-AOF-KAZ-1084.txt",
+      "provinces": [
+        4651,
+        4845,
+        7332,
+        7795,
+        7856,
+        10550,
+        10619,
+        10680,
+        12529,
+        13148,
+        13149,
+        13197
+      ],
+      "manpower": 618185,
+      "resources": {
+        "steel": 2,
+        "chromium": 1,
+        "tungsten": 0,
+        "aluminium": 1
+      }
+    },
+    "1085": {
+      "name": "Улытауская область",
+      "file": "history/states/1085-AOF-KAZ-1085.txt",
+      "provinces": [
+        1312,
+        1382,
+        4492,
+        4595,
+        12177,
+        12487
+      ],
+      "manpower": 70455,
+      "resources": {
+        "coal": 2
+      }
+    },
+    "1086": {
+      "name": "Туркестанская область",
+      "file": "history/states/1086-AOF-KAZ-1086.txt",
+      "provinces": [
+        4686,
+        7777,
+        10148,
+        10506,
+        10601,
+        12340
+      ],
+      "manpower": 141756,
+      "resources": {}
+    }
+  },
+  "conservation": {
+    "manpower_before_after": [
+      6670481,
+      6670481
+    ],
+    "resources_before_after": [
+      {
+        "chromium": 43,
+        "steel": 20,
+        "tungsten": 4,
+        "aluminium": 10,
+        "coal": 6
+      },
+      {
+        "chromium": 43,
+        "coal": 6,
+        "steel": 20,
+        "tungsten": 4,
+        "aluminium": 10
+      }
+    ],
+    "factories_before_after": [
+      {
+        "industrial_complex": 5.0,
+        "arms_factory": 2.0,
+        "dockyard": 0
+      },
+      {
+        "industrial_complex": 5.0,
+        "arms_factory": 2.0,
+        "dockyard": 0
+      }
+    ]
+  },
+  "capital_preserved": {
+    "state": 586,
+    "province": 1591
+  },
+  "dedicated_port_preserved": {
+    "state": 587,
+    "province": 1517
+  },
+  "outside_states_unchanged": [
+    236,
+    582,
+    652
+  ],
+  "no_TRK_transfer": true,
+  "model_state_reindex": [
+    {
+      "line": 9295,
+      "province": 6523,
+      "from_state": 406,
+      "to_state": 407,
+      "type": "bunker"
+    },
+    {
+      "line": 12200,
+      "province": 7874,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "arms_factory"
+    },
+    {
+      "line": 12201,
+      "province": 7383,
+      "from_state": 590,
+      "to_state": 583,
+      "type": "arms_factory"
+    },
+    {
+      "line": 12202,
+      "province": 1391,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "arms_factory"
+    },
+    {
+      "line": 12203,
+      "province": 7874,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "arms_factory"
+    },
+    {
+      "line": 12204,
+      "province": 7383,
+      "from_state": 590,
+      "to_state": 583,
+      "type": "arms_factory"
+    },
+    {
+      "line": 12205,
+      "province": 1418,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "arms_factory"
+    },
+    {
+      "line": 12208,
+      "province": 1418,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 12210,
+      "province": 4238,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 12211,
+      "province": 1418,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 12213,
+      "province": 4238,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12217,
+      "province": 1309,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12218,
+      "province": 4850,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12219,
+      "province": 4309,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12220,
+      "province": 1694,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12222,
+      "province": 10633,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12223,
+      "province": 7383,
+      "from_state": 590,
+      "to_state": 583,
+      "type": "bunker"
+    },
+    {
+      "line": 12224,
+      "province": 7741,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12227,
+      "province": 1418,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12228,
+      "province": 12619,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12230,
+      "province": 1229,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12231,
+      "province": 7874,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12232,
+      "province": 1391,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12233,
+      "province": 1662,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 12238,
+      "province": 7407,
+      "from_state": 590,
+      "to_state": 881,
+      "type": "bunker"
+    },
+    {
+      "line": 12243,
+      "province": 12619,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17079,
+      "province": 475,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17091,
+      "province": 475,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "bunker"
+    },
+    {
+      "line": 17098,
+      "province": 642,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "bunker"
+    },
+    {
+      "line": 17102,
+      "province": 642,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17107,
+      "province": 475,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "rocket_site_spawn"
+    },
+    {
+      "line": 17118,
+      "province": 4638,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17121,
+      "province": 4581,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "air_base"
+    },
+    {
+      "line": 17122,
+      "province": 4638,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "bunker"
+    },
+    {
+      "line": 17128,
+      "province": 12254,
+      "from_state": 402,
+      "to_state": 406,
+      "type": "bunker"
+    },
+    {
+      "line": 17132,
+      "province": 7486,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "bunker"
+    },
+    {
+      "line": 17144,
+      "province": 12235,
+      "from_state": 402,
+      "to_state": 406,
+      "type": "bunker"
+    },
+    {
+      "line": 17145,
+      "province": 4581,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "bunker"
+    },
+    {
+      "line": 17152,
+      "province": 7243,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "bunker"
+    },
+    {
+      "line": 17154,
+      "province": 7486,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17159,
+      "province": 4638,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "rocket_site_spawn"
+    },
+    {
+      "line": 17161,
+      "province": 7405,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17162,
+      "province": 7795,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17163,
+      "province": 7332,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17164,
+      "province": 7405,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17165,
+      "province": 7795,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17166,
+      "province": 1668,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17167,
+      "province": 7405,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17168,
+      "province": 7795,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17169,
+      "province": 4651,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17170,
+      "province": 7405,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17171,
+      "province": 7711,
+      "from_state": 589,
+      "to_state": 586,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17172,
+      "province": 4651,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17173,
+      "province": 4651,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "air_base"
+    },
+    {
+      "line": 17174,
+      "province": 7711,
+      "from_state": 589,
+      "to_state": 586,
+      "type": "bunker"
+    },
+    {
+      "line": 17175,
+      "province": 10680,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17176,
+      "province": 7784,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "bunker"
+    },
+    {
+      "line": 17177,
+      "province": 1239,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "bunker"
+    },
+    {
+      "line": 17178,
+      "province": 10619,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17179,
+      "province": 4651,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17180,
+      "province": 7856,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17181,
+      "province": 7332,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17182,
+      "province": 1668,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "bunker"
+    },
+    {
+      "line": 17183,
+      "province": 12529,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17184,
+      "province": 10550,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17185,
+      "province": 4764,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "bunker"
+    },
+    {
+      "line": 17186,
+      "province": 7795,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17187,
+      "province": 12662,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "bunker"
+    },
+    {
+      "line": 17188,
+      "province": 7405,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "bunker"
+    },
+    {
+      "line": 17189,
+      "province": 10290,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "bunker"
+    },
+    {
+      "line": 17190,
+      "province": 13197,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17191,
+      "province": 1668,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17192,
+      "province": 7405,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17193,
+      "province": 12529,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17194,
+      "province": 1668,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "synthetic_refinery"
+    },
+    {
+      "line": 17195,
+      "province": 10550,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "radar_station"
+    },
+    {
+      "line": 17196,
+      "province": 12529,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "rocket_site_spawn"
+    },
+    {
+      "line": 17197,
+      "province": 1668,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "nuclear_reactor_spawn"
+    },
+    {
+      "line": 17200,
+      "province": 4845,
+      "from_state": 586,
+      "to_state": 1084,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17202,
+      "province": 12658,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17203,
+      "province": 12658,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17204,
+      "province": 12658,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17207,
+      "province": 7706,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17208,
+      "province": 7706,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17209,
+      "province": 7706,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17212,
+      "province": 10603,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "bunker"
+    },
+    {
+      "line": 17215,
+      "province": 12640,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "bunker"
+    },
+    {
+      "line": 17216,
+      "province": 12658,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "bunker"
+    },
+    {
+      "line": 17218,
+      "province": 4845,
+      "from_state": 586,
+      "to_state": 1084,
+      "type": "bunker"
+    },
+    {
+      "line": 17220,
+      "province": 7706,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "bunker"
+    },
+    {
+      "line": 17221,
+      "province": 12658,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17222,
+      "province": 10603,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17226,
+      "province": 7706,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "rocket_site_spawn"
+    },
+    {
+      "line": 17287,
+      "province": 12185,
+      "from_state": 583,
+      "to_state": 1082,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17291,
+      "province": 1360,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17298,
+      "province": 12185,
+      "from_state": 583,
+      "to_state": 1082,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 17300,
+      "province": 10295,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "bunker"
+    },
+    {
+      "line": 17304,
+      "province": 12170,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "bunker"
+    },
+    {
+      "line": 17307,
+      "province": 12198,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "bunker"
+    },
+    {
+      "line": 17310,
+      "province": 4369,
+      "from_state": 583,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 17312,
+      "province": 1360,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "bunker"
+    },
+    {
+      "line": 17323,
+      "province": 12185,
+      "from_state": 583,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 17328,
+      "province": 10295,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 17331,
+      "province": 12198,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "radar_station"
+    },
+    {
+      "line": 17333,
+      "province": 10295,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "nuclear_reactor_spawn"
+    },
+    {
+      "line": 17336,
+      "province": 9528,
+      "from_state": 407,
+      "to_state": 402,
+      "type": "arms_factory"
+    },
+    {
+      "line": 17347,
+      "province": 7438,
+      "from_state": 407,
+      "to_state": 402,
+      "type": "bunker"
+    },
+    {
+      "line": 17370,
+      "province": 9528,
+      "from_state": 407,
+      "to_state": 402,
+      "type": "bunker"
+    },
+    {
+      "line": 17389,
+      "province": 9528,
+      "from_state": 407,
+      "to_state": 402,
+      "type": "synthetic_refinery"
+    },
+    {
+      "line": 18738,
+      "province": 4651,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "fuel_silo"
+    },
+    {
+      "line": 18739,
+      "province": 1309,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "fuel_silo"
+    },
+    {
+      "line": 24166,
+      "province": 4581,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "supply_node"
+    },
+    {
+      "line": 24167,
+      "province": 4638,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "supply_node"
+    },
+    {
+      "line": 24168,
+      "province": 7243,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "supply_node"
+    },
+    {
+      "line": 24175,
+      "province": 7486,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "supply_node"
+    },
+    {
+      "line": 24183,
+      "province": 12235,
+      "from_state": 402,
+      "to_state": 406,
+      "type": "supply_node"
+    },
+    {
+      "line": 24184,
+      "province": 12254,
+      "from_state": 402,
+      "to_state": 406,
+      "type": "supply_node"
+    },
+    {
+      "line": 24214,
+      "province": 6523,
+      "from_state": 406,
+      "to_state": 407,
+      "type": "supply_node"
+    },
+    {
+      "line": 24245,
+      "province": 7438,
+      "from_state": 407,
+      "to_state": 402,
+      "type": "supply_node"
+    },
+    {
+      "line": 24250,
+      "province": 9528,
+      "from_state": 407,
+      "to_state": 402,
+      "type": "supply_node"
+    },
+    {
+      "line": 25268,
+      "province": 1360,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "supply_node"
+    },
+    {
+      "line": 25272,
+      "province": 4369,
+      "from_state": 583,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25279,
+      "province": 10295,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "supply_node"
+    },
+    {
+      "line": 25284,
+      "province": 12170,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "supply_node"
+    },
+    {
+      "line": 25285,
+      "province": 12185,
+      "from_state": 583,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25286,
+      "province": 12198,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "supply_node"
+    },
+    {
+      "line": 25294,
+      "province": 4845,
+      "from_state": 586,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25295,
+      "province": 7706,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "supply_node"
+    },
+    {
+      "line": 25298,
+      "province": 10603,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "supply_node"
+    },
+    {
+      "line": 25299,
+      "province": 12640,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "supply_node"
+    },
+    {
+      "line": 25300,
+      "province": 12658,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "supply_node"
+    },
+    {
+      "line": 25301,
+      "province": 475,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "supply_node"
+    },
+    {
+      "line": 25302,
+      "province": 642,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "supply_node"
+    },
+    {
+      "line": 25313,
+      "province": 1239,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "supply_node"
+    },
+    {
+      "line": 25314,
+      "province": 1668,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "supply_node"
+    },
+    {
+      "line": 25315,
+      "province": 4651,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25316,
+      "province": 4764,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "supply_node"
+    },
+    {
+      "line": 25317,
+      "province": 7332,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25318,
+      "province": 7405,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "supply_node"
+    },
+    {
+      "line": 25319,
+      "province": 7711,
+      "from_state": 589,
+      "to_state": 586,
+      "type": "supply_node"
+    },
+    {
+      "line": 25320,
+      "province": 7784,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "supply_node"
+    },
+    {
+      "line": 25321,
+      "province": 7795,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25322,
+      "province": 7856,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25323,
+      "province": 10290,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "supply_node"
+    },
+    {
+      "line": 25324,
+      "province": 10550,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25325,
+      "province": 10619,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25326,
+      "province": 10680,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25327,
+      "province": 12529,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25328,
+      "province": 12662,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "supply_node"
+    },
+    {
+      "line": 25329,
+      "province": 13197,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "supply_node"
+    },
+    {
+      "line": 25331,
+      "province": 1229,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25332,
+      "province": 1309,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25334,
+      "province": 1391,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25335,
+      "province": 1418,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25336,
+      "province": 1662,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25338,
+      "province": 1694,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25340,
+      "province": 4238,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25342,
+      "province": 4309,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25344,
+      "province": 4850,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25347,
+      "province": 7383,
+      "from_state": 590,
+      "to_state": 583,
+      "type": "supply_node"
+    },
+    {
+      "line": 25348,
+      "province": 7407,
+      "from_state": 590,
+      "to_state": 881,
+      "type": "supply_node"
+    },
+    {
+      "line": 25350,
+      "province": 7741,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25351,
+      "province": 7874,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25355,
+      "province": 10633,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 25357,
+      "province": 12619,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 32313,
+      "province": 12487,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32314,
+      "province": 10220,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32315,
+      "province": 12385,
+      "from_state": 881,
+      "to_state": 1083,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32316,
+      "province": 12177,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32318,
+      "province": 12177,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32319,
+      "province": 12111,
+      "from_state": 881,
+      "to_state": 590,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32320,
+      "province": 1382,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32321,
+      "province": 10508,
+      "from_state": 881,
+      "to_state": 404,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32322,
+      "province": 10277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32324,
+      "province": 10275,
+      "from_state": 881,
+      "to_state": 404,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32327,
+      "province": 1312,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "supply_node"
+    },
+    {
+      "line": 32328,
+      "province": 1382,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "supply_node"
+    },
+    {
+      "line": 32331,
+      "province": 4277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "supply_node"
+    },
+    {
+      "line": 32333,
+      "province": 4492,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "supply_node"
+    },
+    {
+      "line": 32334,
+      "province": 4595,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "supply_node"
+    },
+    {
+      "line": 32337,
+      "province": 10220,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "supply_node"
+    },
+    {
+      "line": 32338,
+      "province": 10268,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "supply_node"
+    },
+    {
+      "line": 32339,
+      "province": 10275,
+      "from_state": 881,
+      "to_state": 404,
+      "type": "supply_node"
+    },
+    {
+      "line": 32340,
+      "province": 10277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "supply_node"
+    },
+    {
+      "line": 32341,
+      "province": 10508,
+      "from_state": 881,
+      "to_state": 404,
+      "type": "supply_node"
+    },
+    {
+      "line": 32342,
+      "province": 12111,
+      "from_state": 881,
+      "to_state": 590,
+      "type": "supply_node"
+    },
+    {
+      "line": 32343,
+      "province": 12121,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "supply_node"
+    },
+    {
+      "line": 32344,
+      "province": 12177,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "supply_node"
+    },
+    {
+      "line": 32346,
+      "province": 12385,
+      "from_state": 881,
+      "to_state": 1083,
+      "type": "supply_node"
+    },
+    {
+      "line": 32347,
+      "province": 12487,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "supply_node"
+    },
+    {
+      "line": 32348,
+      "province": 4595,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "bunker"
+    },
+    {
+      "line": 32349,
+      "province": 12385,
+      "from_state": 881,
+      "to_state": 1083,
+      "type": "bunker"
+    },
+    {
+      "line": 32350,
+      "province": 1382,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "bunker"
+    },
+    {
+      "line": 32351,
+      "province": 10275,
+      "from_state": 881,
+      "to_state": 404,
+      "type": "bunker"
+    },
+    {
+      "line": 32352,
+      "province": 10220,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "bunker"
+    },
+    {
+      "line": 32354,
+      "province": 4277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "bunker"
+    },
+    {
+      "line": 32355,
+      "province": 12111,
+      "from_state": 881,
+      "to_state": 590,
+      "type": "bunker"
+    },
+    {
+      "line": 32356,
+      "province": 12487,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "bunker"
+    },
+    {
+      "line": 32357,
+      "province": 4492,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "bunker"
+    },
+    {
+      "line": 32361,
+      "province": 12177,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "bunker"
+    },
+    {
+      "line": 32363,
+      "province": 10508,
+      "from_state": 881,
+      "to_state": 404,
+      "type": "bunker"
+    },
+    {
+      "line": 32364,
+      "province": 1312,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "bunker"
+    },
+    {
+      "line": 32365,
+      "province": 10268,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "bunker"
+    },
+    {
+      "line": 32367,
+      "province": 12121,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "bunker"
+    },
+    {
+      "line": 32368,
+      "province": 10277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "bunker"
+    },
+    {
+      "line": 32370,
+      "province": 12177,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 32371,
+      "province": 12121,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 32373,
+      "province": 12111,
+      "from_state": 881,
+      "to_state": 590,
+      "type": "synthetic_refinery"
+    },
+    {
+      "line": 32375,
+      "province": 1312,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "radar_station"
+    },
+    {
+      "line": 32376,
+      "province": 10277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "rocket_site_spawn"
+    },
+    {
+      "line": 32377,
+      "province": 4492,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "nuclear_reactor_spawn"
+    },
+    {
+      "line": 32378,
+      "province": 7777,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32381,
+      "province": 7777,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32382,
+      "province": 12340,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32385,
+      "province": 7777,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32386,
+      "province": 12340,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32388,
+      "province": 7777,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32389,
+      "province": 12340,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32393,
+      "province": 4686,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "supply_node"
+    },
+    {
+      "line": 32399,
+      "province": 7777,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "supply_node"
+    },
+    {
+      "line": 32400,
+      "province": 10148,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "supply_node"
+    },
+    {
+      "line": 32404,
+      "province": 10506,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "supply_node"
+    },
+    {
+      "line": 32405,
+      "province": 10601,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "supply_node"
+    },
+    {
+      "line": 32407,
+      "province": 12340,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "supply_node"
+    },
+    {
+      "line": 32410,
+      "province": 7777,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "bunker"
+    },
+    {
+      "line": 32419,
+      "province": 10148,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "bunker"
+    },
+    {
+      "line": 32420,
+      "province": 10506,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "bunker"
+    },
+    {
+      "line": 32421,
+      "province": 12340,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "bunker"
+    },
+    {
+      "line": 32423,
+      "province": 10601,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "bunker"
+    },
+    {
+      "line": 32425,
+      "province": 4686,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "bunker"
+    },
+    {
+      "line": 32427,
+      "province": 10601,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 32430,
+      "province": 10506,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "synthetic_refinery"
+    },
+    {
+      "line": 32433,
+      "province": 10506,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "rocket_site_spawn"
+    },
+    {
+      "line": 32436,
+      "province": 1818,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32437,
+      "province": 7890,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32438,
+      "province": 1287,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32439,
+      "province": 7350,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32440,
+      "province": 1818,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32443,
+      "province": 7890,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32445,
+      "province": 7350,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32446,
+      "province": 10610,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32448,
+      "province": 1287,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "supply_node"
+    },
+    {
+      "line": 32449,
+      "province": 1749,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "supply_node"
+    },
+    {
+      "line": 32450,
+      "province": 1818,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "supply_node"
+    },
+    {
+      "line": 32451,
+      "province": 1864,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "supply_node"
+    },
+    {
+      "line": 32452,
+      "province": 4661,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "supply_node"
+    },
+    {
+      "line": 32455,
+      "province": 7350,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "supply_node"
+    },
+    {
+      "line": 32456,
+      "province": 7890,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "supply_node"
+    },
+    {
+      "line": 32457,
+      "province": 10161,
+      "from_state": 588,
+      "to_state": 881,
+      "type": "supply_node"
+    },
+    {
+      "line": 32459,
+      "province": 10292,
+      "from_state": 588,
+      "to_state": 881,
+      "type": "supply_node"
+    },
+    {
+      "line": 32461,
+      "province": 10610,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "supply_node"
+    },
+    {
+      "line": 32463,
+      "province": 12427,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "supply_node"
+    },
+    {
+      "line": 32467,
+      "province": 1818,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "bunker"
+    },
+    {
+      "line": 32469,
+      "province": 12427,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "bunker"
+    },
+    {
+      "line": 32471,
+      "province": 10610,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "bunker"
+    },
+    {
+      "line": 32474,
+      "province": 10161,
+      "from_state": 588,
+      "to_state": 881,
+      "type": "bunker"
+    },
+    {
+      "line": 32475,
+      "province": 10292,
+      "from_state": 588,
+      "to_state": 881,
+      "type": "bunker"
+    },
+    {
+      "line": 32476,
+      "province": 1749,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "bunker"
+    },
+    {
+      "line": 32479,
+      "province": 7890,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "bunker"
+    },
+    {
+      "line": 32480,
+      "province": 1287,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "bunker"
+    },
+    {
+      "line": 32481,
+      "province": 4661,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "bunker"
+    },
+    {
+      "line": 32484,
+      "province": 1864,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "bunker"
+    },
+    {
+      "line": 32485,
+      "province": 7350,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "bunker"
+    },
+    {
+      "line": 32486,
+      "province": 1749,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 32487,
+      "province": 10292,
+      "from_state": 588,
+      "to_state": 881,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 32492,
+      "province": 1749,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "rocket_site_spawn"
+    },
+    {
+      "line": 32493,
+      "province": 1864,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "nuclear_reactor_spawn"
+    },
+    {
+      "line": 32496,
+      "province": 4670,
+      "from_state": 882,
+      "to_state": 1082,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32498,
+      "province": 1879,
+      "from_state": 882,
+      "to_state": 590,
+      "type": "arms_factory"
+    },
+    {
+      "line": 32500,
+      "province": 1879,
+      "from_state": 882,
+      "to_state": 590,
+      "type": "industrial_complex"
+    },
+    {
+      "line": 32507,
+      "province": 1879,
+      "from_state": 882,
+      "to_state": 590,
+      "type": "supply_node"
+    },
+    {
+      "line": 32508,
+      "province": 4670,
+      "from_state": 882,
+      "to_state": 1082,
+      "type": "supply_node"
+    },
+    {
+      "line": 32516,
+      "province": 1879,
+      "from_state": 882,
+      "to_state": 590,
+      "type": "bunker"
+    },
+    {
+      "line": 32518,
+      "province": 4670,
+      "from_state": 882,
+      "to_state": 1082,
+      "type": "bunker"
+    },
+    {
+      "line": 32527,
+      "province": 4670,
+      "from_state": 882,
+      "to_state": 1082,
+      "type": "anti_air_building"
+    },
+    {
+      "line": 32529,
+      "province": 4670,
+      "from_state": 882,
+      "to_state": 1082,
+      "type": "fuel_silo"
+    },
+    {
+      "line": 32531,
+      "province": 1879,
+      "from_state": 882,
+      "to_state": 590,
+      "type": "rocket_site_spawn"
+    },
+    {
+      "line": 44506,
+      "province": 4638,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44522,
+      "province": 12254,
+      "from_state": 402,
+      "to_state": 406,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44525,
+      "province": 12235,
+      "from_state": 402,
+      "to_state": 406,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44528,
+      "province": 4581,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44531,
+      "province": 7486,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44537,
+      "province": 7243,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44557,
+      "province": 12340,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44559,
+      "province": 10506,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44561,
+      "province": 7777,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44564,
+      "province": 10148,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44568,
+      "province": 4686,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44574,
+      "province": 10601,
+      "from_state": 404,
+      "to_state": 1086,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44581,
+      "province": 6523,
+      "from_state": 406,
+      "to_state": 407,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44605,
+      "province": 7438,
+      "from_state": 407,
+      "to_state": 402,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 44609,
+      "province": 9528,
+      "from_state": 407,
+      "to_state": 402,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46116,
+      "province": 10295,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46117,
+      "province": 12185,
+      "from_state": 583,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46119,
+      "province": 4369,
+      "from_state": 583,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46123,
+      "province": 12170,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46129,
+      "province": 12198,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46132,
+      "province": 1360,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46172,
+      "province": 4845,
+      "from_state": 586,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46173,
+      "province": 12658,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46176,
+      "province": 10603,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46178,
+      "province": 7706,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46180,
+      "province": 12640,
+      "from_state": 586,
+      "to_state": 1083,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46182,
+      "province": 475,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46188,
+      "province": 642,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46197,
+      "province": 10161,
+      "from_state": 588,
+      "to_state": 881,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46198,
+      "province": 7890,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46199,
+      "province": 12427,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46201,
+      "province": 4661,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46202,
+      "province": 1818,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46204,
+      "province": 1864,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46205,
+      "province": 10610,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46206,
+      "province": 10292,
+      "from_state": 588,
+      "to_state": 881,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46209,
+      "province": 7350,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46211,
+      "province": 1287,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46212,
+      "province": 1749,
+      "from_state": 588,
+      "to_state": 589,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46213,
+      "province": 12662,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46214,
+      "province": 13197,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46215,
+      "province": 1239,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46216,
+      "province": 10680,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46217,
+      "province": 7856,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46218,
+      "province": 10550,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46219,
+      "province": 4764,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46220,
+      "province": 10290,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46221,
+      "province": 1668,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46222,
+      "province": 7784,
+      "from_state": 589,
+      "to_state": 588,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46223,
+      "province": 7332,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46224,
+      "province": 12529,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46225,
+      "province": 4651,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46226,
+      "province": 7795,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46227,
+      "province": 7711,
+      "from_state": 589,
+      "to_state": 586,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46228,
+      "province": 7405,
+      "from_state": 589,
+      "to_state": 881,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46229,
+      "province": 10619,
+      "from_state": 589,
+      "to_state": 1084,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46230,
+      "province": 7874,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46231,
+      "province": 1391,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46232,
+      "province": 4850,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46233,
+      "province": 1418,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46234,
+      "province": 7741,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46235,
+      "province": 7383,
+      "from_state": 590,
+      "to_state": 583,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46240,
+      "province": 10633,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46241,
+      "province": 7407,
+      "from_state": 590,
+      "to_state": 881,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46243,
+      "province": 1229,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46244,
+      "province": 1662,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46246,
+      "province": 4309,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46247,
+      "province": 4238,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46248,
+      "province": 12619,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46254,
+      "province": 1694,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 46255,
+      "province": 1309,
+      "from_state": 590,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47765,
+      "province": 1382,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47766,
+      "province": 10220,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47767,
+      "province": 4277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47768,
+      "province": 4595,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47769,
+      "province": 12111,
+      "from_state": 881,
+      "to_state": 590,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47773,
+      "province": 10508,
+      "from_state": 881,
+      "to_state": 404,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47774,
+      "province": 1312,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47776,
+      "province": 12121,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47777,
+      "province": 12177,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47778,
+      "province": 12487,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47779,
+      "province": 10268,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47780,
+      "province": 10277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47781,
+      "province": 10275,
+      "from_state": 881,
+      "to_state": 404,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47782,
+      "province": 12385,
+      "from_state": 881,
+      "to_state": 1083,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47783,
+      "province": 4492,
+      "from_state": 881,
+      "to_state": 1085,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47788,
+      "province": 1879,
+      "from_state": 882,
+      "to_state": 590,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 47793,
+      "province": 4670,
+      "from_state": 882,
+      "to_state": 1082,
+      "type": "special_project_facility_spawn"
+    },
+    {
+      "line": 48728,
+      "province": 7243,
+      "from_state": 402,
+      "to_state": 404,
+      "type": "stronghold_network"
+    },
+    {
+      "line": 48871,
+      "province": 12198,
+      "from_state": 583,
+      "to_state": 402,
+      "type": "stronghold_network"
+    },
+    {
+      "line": 48876,
+      "province": 7350,
+      "from_state": 588,
+      "to_state": 882,
+      "type": "stronghold_network"
+    },
+    {
+      "line": 48877,
+      "province": 7711,
+      "from_state": 589,
+      "to_state": 586,
+      "type": "stronghold_network"
+    },
+    {
+      "line": 49108,
+      "province": 4277,
+      "from_state": 881,
+      "to_state": 583,
+      "type": "stronghold_network"
+    },
+    {
+      "line": 66666,
+      "province": 475,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "naval_base_spawn"
+    },
+    {
+      "line": 66668,
+      "province": 642,
+      "from_state": 587,
+      "to_state": 406,
+      "type": "naval_base_spawn"
+    }
+  ],
+  "state_model_sites": {
+    "added_count": 48,
+    "added_rows": [
+      {
+        "row": 66705,
+        "state": 402,
+        "type": "air_base",
+        "province": 7341,
+        "map_xz": [
+          3704.5,
+          1526.5
+        ],
+        "image_pixel": [
+          3704,
+          521
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 9.8,
+        "native_heightmap_value": 98,
+        "native_rotation": "4.07",
+        "native_template_line": 17121,
+        "native_template_state": 402,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66706,
+        "state": 402,
+        "type": "rocket_site_spawn",
+        "province": 7341,
+        "map_xz": [
+          3705.5,
+          1523.5
+        ],
+        "image_pixel": [
+          3705,
+          524
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 9.8,
+        "native_heightmap_value": 98,
+        "native_rotation": "2.15",
+        "native_template_line": 17159,
+        "native_template_state": 402,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66707,
+        "state": 404,
+        "type": "synthetic_refinery",
+        "province": 7597,
+        "map_xz": [
+          3852.5,
+          1409.5
+        ],
+        "image_pixel": [
+          3852,
+          638
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.8,
+        "native_heightmap_value": 108,
+        "native_rotation": "5.17",
+        "native_template_line": 32430,
+        "native_template_state": 404,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66708,
+        "state": 407,
+        "type": "synthetic_refinery",
+        "province": 9538,
+        "map_xz": [
+          3594.5,
+          1508.5
+        ],
+        "image_pixel": [
+          3594,
+          539
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 9.6,
+        "native_heightmap_value": 96,
+        "native_rotation": "4.64",
+        "native_template_line": 17389,
+        "native_template_state": 407,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66709,
+        "state": 583,
+        "type": "nuclear_reactor_spawn",
+        "province": 10312,
+        "map_xz": [
+          3794.5,
+          1568.5
+        ],
+        "image_pixel": [
+          3794,
+          479
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.1,
+        "native_heightmap_value": 101,
+        "native_rotation": "0.23",
+        "native_template_line": 17333,
+        "native_template_state": 583,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66710,
+        "state": 583,
+        "type": "radar_station",
+        "province": 10312,
+        "map_xz": [
+          3797.5,
+          1571.5
+        ],
+        "image_pixel": [
+          3797,
+          476
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.0,
+        "native_heightmap_value": 100,
+        "native_rotation": "0.17",
+        "native_template_line": 17331,
+        "native_template_state": 583,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66711,
+        "state": 586,
+        "type": "rocket_site_spawn",
+        "province": 1591,
+        "map_xz": [
+          4014.5,
+          1382.5
+        ],
+        "image_pixel": [
+          4014,
+          665
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 11.1,
+        "native_heightmap_value": 111,
+        "native_rotation": "0.45",
+        "native_template_line": 17226,
+        "native_template_state": 586,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66712,
+        "state": 587,
+        "type": "rocket_site_spawn",
+        "province": 1517,
+        "map_xz": [
+          3626.5,
+          1382.5
+        ],
+        "image_pixel": [
+          3626,
+          665
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 9.7,
+        "native_heightmap_value": 97,
+        "native_rotation": "1.42",
+        "native_template_line": 17107,
+        "native_template_state": 587,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66713,
+        "state": 588,
+        "type": "rocket_site_spawn",
+        "province": 12594,
+        "map_xz": [
+          4066.5,
+          1530.5
+        ],
+        "image_pixel": [
+          4066,
+          517
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.7,
+        "native_heightmap_value": 107,
+        "native_rotation": "5.62",
+        "native_template_line": 32492,
+        "native_template_state": 588,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66714,
+        "state": 588,
+        "type": "stronghold_network",
+        "province": 12594,
+        "map_xz": [
+          4067.5,
+          1527.5
+        ],
+        "image_pixel": [
+          4067,
+          520
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.9,
+        "native_heightmap_value": 109,
+        "native_rotation": "2.83",
+        "native_template_line": 48876,
+        "native_template_state": 588,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66715,
+        "state": 589,
+        "type": "air_base",
+        "province": 1818,
+        "map_xz": [
+          4119.5,
+          1483.5
+        ],
+        "image_pixel": [
+          4119,
+          564
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 13.9,
+        "native_heightmap_value": 139,
+        "native_rotation": "3.76",
+        "native_template_line": 32447,
+        "native_template_state": 588,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66716,
+        "state": 589,
+        "type": "synthetic_refinery",
+        "province": 1818,
+        "map_xz": [
+          4120.5,
+          1480.5
+        ],
+        "image_pixel": [
+          4120,
+          567
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 13.9,
+        "native_heightmap_value": 139,
+        "native_rotation": "3.56",
+        "native_template_line": 32489,
+        "native_template_state": 588,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66717,
+        "state": 589,
+        "type": "radar_station",
+        "province": 1818,
+        "map_xz": [
+          4122.5,
+          1486.5
+        ],
+        "image_pixel": [
+          4122,
+          561
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 13.0,
+        "native_heightmap_value": 130,
+        "native_rotation": "1.93",
+        "native_template_line": 32491,
+        "native_template_state": 588,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66718,
+        "state": 589,
+        "type": "fuel_silo",
+        "province": 1818,
+        "map_xz": [
+          4123.5,
+          1479.5
+        ],
+        "image_pixel": [
+          4123,
+          568
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 13.6,
+        "native_heightmap_value": 136,
+        "native_rotation": "0.30",
+        "native_template_line": 32490,
+        "native_template_state": 588,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66719,
+        "state": 589,
+        "type": "stronghold_network",
+        "province": 1818,
+        "map_xz": [
+          4125.5,
+          1485.5
+        ],
+        "image_pixel": [
+          4125,
+          562
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 14.4,
+        "native_heightmap_value": 144,
+        "native_rotation": "2.83",
+        "native_template_line": 48876,
+        "native_template_state": 588,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66720,
+        "state": 590,
+        "type": "fuel_silo",
+        "province": 4333,
+        "map_xz": [
+          3944.5,
+          1517.5
+        ],
+        "image_pixel": [
+          3944,
+          530
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 9.8,
+        "native_heightmap_value": 98,
+        "native_rotation": "4.79",
+        "native_template_line": 18739,
+        "native_template_state": 590,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66721,
+        "state": 881,
+        "type": "rocket_site_spawn",
+        "province": 7335,
+        "map_xz": [
+          3950.5,
+          1480.5
+        ],
+        "image_pixel": [
+          3950,
+          567
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.8,
+        "native_heightmap_value": 108,
+        "native_rotation": "0.82",
+        "native_template_line": 32376,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66722,
+        "state": 881,
+        "type": "synthetic_refinery",
+        "province": 7335,
+        "map_xz": [
+          3951.5,
+          1477.5
+        ],
+        "image_pixel": [
+          3951,
+          570
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 11.0,
+        "native_heightmap_value": 110,
+        "native_rotation": "5.05",
+        "native_template_line": 32373,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66723,
+        "state": 881,
+        "type": "nuclear_reactor_spawn",
+        "province": 7335,
+        "map_xz": [
+          3953.5,
+          1483.5
+        ],
+        "image_pixel": [
+          3953,
+          564
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.7,
+        "native_heightmap_value": 107,
+        "native_rotation": "3.49",
+        "native_template_line": 32377,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66724,
+        "state": 881,
+        "type": "radar_station",
+        "province": 7335,
+        "map_xz": [
+          3954.5,
+          1476.5
+        ],
+        "image_pixel": [
+          3954,
+          571
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 11.0,
+        "native_heightmap_value": 110,
+        "native_rotation": "1.46",
+        "native_template_line": 32375,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66725,
+        "state": 881,
+        "type": "stronghold_network",
+        "province": 7335,
+        "map_xz": [
+          3956.5,
+          1482.5
+        ],
+        "image_pixel": [
+          3956,
+          565
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.8,
+        "native_heightmap_value": 108,
+        "native_rotation": "5.52",
+        "native_template_line": 49108,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66726,
+        "state": 882,
+        "type": "rocket_site_spawn",
+        "province": 7708,
+        "map_xz": [
+          4021.5,
+          1559.5
+        ],
+        "image_pixel": [
+          4021,
+          488
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.2,
+        "native_heightmap_value": 102,
+        "native_rotation": "6.09",
+        "native_template_line": 32531,
+        "native_template_state": 882,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66727,
+        "state": 882,
+        "type": "fuel_silo",
+        "province": 7708,
+        "map_xz": [
+          4022.5,
+          1556.5
+        ],
+        "image_pixel": [
+          4022,
+          491
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.3,
+        "native_heightmap_value": 103,
+        "native_rotation": "1.87",
+        "native_template_line": 32529,
+        "native_template_state": 882,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66728,
+        "state": 1082,
+        "type": "air_base",
+        "province": 1418,
+        "map_xz": [
+          3893.5,
+          1585.5
+        ],
+        "image_pixel": [
+          3893,
+          462
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.3,
+        "native_heightmap_value": 103,
+        "native_rotation": "4.76",
+        "native_template_line": 12212,
+        "native_template_state": 590,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66729,
+        "state": 1082,
+        "type": "rocket_site_spawn",
+        "province": 1418,
+        "map_xz": [
+          3894.5,
+          1582.5
+        ],
+        "image_pixel": [
+          3894,
+          465
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.2,
+        "native_heightmap_value": 102,
+        "native_rotation": "0.31",
+        "native_template_line": 14905,
+        "native_template_state": 590,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66730,
+        "state": 1082,
+        "type": "synthetic_refinery",
+        "province": 1418,
+        "map_xz": [
+          3896.5,
+          1588.5
+        ],
+        "image_pixel": [
+          3896,
+          459
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.2,
+        "native_heightmap_value": 102,
+        "native_rotation": "2.33",
+        "native_template_line": 12244,
+        "native_template_state": 590,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66731,
+        "state": 1082,
+        "type": "nuclear_reactor_spawn",
+        "province": 1418,
+        "map_xz": [
+          3899.5,
+          1587.5
+        ],
+        "image_pixel": [
+          3899,
+          460
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.1,
+        "native_heightmap_value": 101,
+        "native_rotation": "2.84",
+        "native_template_line": 12245,
+        "native_template_state": 590,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66732,
+        "state": 1082,
+        "type": "radar_station",
+        "province": 1418,
+        "map_xz": [
+          3900.5,
+          1584.5
+        ],
+        "image_pixel": [
+          3900,
+          463
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.1,
+        "native_heightmap_value": 101,
+        "native_rotation": "3.37",
+        "native_template_line": 15911,
+        "native_template_state": 590,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66733,
+        "state": 1082,
+        "type": "stronghold_network",
+        "province": 1418,
+        "map_xz": [
+          3893.5,
+          1588.5
+        ],
+        "image_pixel": [
+          3893,
+          459
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.3,
+        "native_heightmap_value": 103,
+        "native_rotation": "1.28",
+        "native_template_line": 48878,
+        "native_template_state": 590,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66734,
+        "state": 1083,
+        "type": "air_base",
+        "province": 10603,
+        "map_xz": [
+          3942.5,
+          1391.5
+        ],
+        "image_pixel": [
+          3942,
+          656
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.7,
+        "native_heightmap_value": 107,
+        "native_rotation": "0.38",
+        "native_template_line": 17210,
+        "native_template_state": 586,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66735,
+        "state": 1083,
+        "type": "synthetic_refinery",
+        "province": 10603,
+        "map_xz": [
+          3942.5,
+          1386.5
+        ],
+        "image_pixel": [
+          3942,
+          661
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.4,
+        "native_heightmap_value": 104,
+        "native_rotation": "1.05",
+        "native_template_line": 17224,
+        "native_template_state": 586,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66736,
+        "state": 1083,
+        "type": "nuclear_reactor_spawn",
+        "province": 10603,
+        "map_xz": [
+          3945.5,
+          1392.5
+        ],
+        "image_pixel": [
+          3945,
+          655
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.8,
+        "native_heightmap_value": 108,
+        "native_rotation": "1.65",
+        "native_template_line": 17227,
+        "native_template_state": 586,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66737,
+        "state": 1083,
+        "type": "radar_station",
+        "province": 10603,
+        "map_xz": [
+          3945.5,
+          1385.5
+        ],
+        "image_pixel": [
+          3945,
+          662
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.5,
+        "native_heightmap_value": 105,
+        "native_rotation": "1.09",
+        "native_template_line": 17225,
+        "native_template_state": 586,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66738,
+        "state": 1083,
+        "type": "fuel_silo",
+        "province": 10603,
+        "map_xz": [
+          3948.5,
+          1389.5
+        ],
+        "image_pixel": [
+          3948,
+          658
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.8,
+        "native_heightmap_value": 108,
+        "native_rotation": "1.26",
+        "native_template_line": 18736,
+        "native_template_state": 586,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66739,
+        "state": 1083,
+        "type": "stronghold_network",
+        "province": 10603,
+        "map_xz": [
+          3948.5,
+          1386.5
+        ],
+        "image_pixel": [
+          3948,
+          661
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.6,
+        "native_heightmap_value": 106,
+        "native_rotation": "4.39",
+        "native_template_line": 48874,
+        "native_template_state": 586,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66740,
+        "state": 1084,
+        "type": "synthetic_refinery",
+        "province": 10550,
+        "map_xz": [
+          4034.5,
+          1434.5
+        ],
+        "image_pixel": [
+          4034,
+          613
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.8,
+        "native_heightmap_value": 108,
+        "native_rotation": "3.55",
+        "native_template_line": 17194,
+        "native_template_state": 589,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66741,
+        "state": 1084,
+        "type": "nuclear_reactor_spawn",
+        "province": 10550,
+        "map_xz": [
+          4035.5,
+          1431.5
+        ],
+        "image_pixel": [
+          4035,
+          616
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.7,
+        "native_heightmap_value": 107,
+        "native_rotation": "4.15",
+        "native_template_line": 17197,
+        "native_template_state": 589,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66742,
+        "state": 1084,
+        "type": "stronghold_network",
+        "province": 10550,
+        "map_xz": [
+          4037.5,
+          1437.5
+        ],
+        "image_pixel": [
+          4037,
+          610
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.7,
+        "native_heightmap_value": 107,
+        "native_rotation": "0.77",
+        "native_template_line": 48877,
+        "native_template_state": 589,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66743,
+        "state": 1085,
+        "type": "air_base",
+        "province": 1382,
+        "map_xz": [
+          3905.5,
+          1453.5
+        ],
+        "image_pixel": [
+          3905,
+          594
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.8,
+        "native_heightmap_value": 108,
+        "native_rotation": "1.12",
+        "native_template_line": 32325,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66744,
+        "state": 1085,
+        "type": "rocket_site_spawn",
+        "province": 1382,
+        "map_xz": [
+          3908.5,
+          1454.5
+        ],
+        "image_pixel": [
+          3908,
+          593
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.9,
+        "native_heightmap_value": 109,
+        "native_rotation": "0.82",
+        "native_template_line": 32376,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66745,
+        "state": 1085,
+        "type": "synthetic_refinery",
+        "province": 1382,
+        "map_xz": [
+          3911.5,
+          1451.5
+        ],
+        "image_pixel": [
+          3911,
+          596
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.8,
+        "native_heightmap_value": 108,
+        "native_rotation": "5.05",
+        "native_template_line": 32373,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66746,
+        "state": 1085,
+        "type": "fuel_silo",
+        "province": 1382,
+        "map_xz": [
+          3911.5,
+          1454.5
+        ],
+        "image_pixel": [
+          3911,
+          593
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.9,
+        "native_heightmap_value": 109,
+        "native_rotation": "2.88",
+        "native_template_line": 32374,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66747,
+        "state": 1085,
+        "type": "stronghold_network",
+        "province": 1382,
+        "map_xz": [
+          3905.5,
+          1446.5
+        ],
+        "image_pixel": [
+          3905,
+          601
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 10.7,
+        "native_heightmap_value": 107,
+        "native_rotation": "5.52",
+        "native_template_line": 49108,
+        "native_template_state": 881,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66748,
+        "state": 1086,
+        "type": "air_base",
+        "province": 4686,
+        "map_xz": [
+          3888.5,
+          1367.5
+        ],
+        "image_pixel": [
+          3888,
+          680
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 12.0,
+        "native_heightmap_value": 120,
+        "native_rotation": "3.32",
+        "native_template_line": 32390,
+        "native_template_state": 404,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66749,
+        "state": 1086,
+        "type": "nuclear_reactor_spawn",
+        "province": 4686,
+        "map_xz": [
+          3891.5,
+          1370.5
+        ],
+        "image_pixel": [
+          3891,
+          677
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 12.9,
+        "native_heightmap_value": 129,
+        "native_rotation": "3.61",
+        "native_template_line": 32434,
+        "native_template_state": 404,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66750,
+        "state": 1086,
+        "type": "radar_station",
+        "province": 4686,
+        "map_xz": [
+          3894.5,
+          1369.5
+        ],
+        "image_pixel": [
+          3894,
+          678
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 13.4,
+        "native_heightmap_value": 134,
+        "native_rotation": "3.62",
+        "native_template_line": 32432,
+        "native_template_state": 404,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66751,
+        "state": 1086,
+        "type": "fuel_silo",
+        "province": 4686,
+        "map_xz": [
+          3894.5,
+          1364.5
+        ],
+        "image_pixel": [
+          3894,
+          683
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 12.8,
+        "native_heightmap_value": 128,
+        "native_rotation": "1.90",
+        "native_template_line": 32431,
+        "native_template_state": 404,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      },
+      {
+        "row": 66752,
+        "state": 1086,
+        "type": "stronghold_network",
+        "province": 4686,
+        "map_xz": [
+          3897.5,
+          1367.5
+        ],
+        "image_pixel": [
+          3897,
+          680
+        ],
+        "interior_clearance_pixels": 2,
+        "height": 14.0,
+        "native_heightmap_value": 140,
+        "native_rotation": "2.98",
+        "native_template_line": 48730,
+        "native_template_state": 404,
+        "building_level_added": 0,
+        "anchor": "native VP province then native unitstack0 where present; otherwise verified bitmap centroid nearest area-weighted state centre"
+      }
+    ],
+    "required_native_state_site_types": [
+      "air_base",
+      "rocket_site_spawn",
+      "synthetic_refinery",
+      "nuclear_reactor_spawn",
+      "radar_station",
+      "fuel_silo",
+      "stronghold_network"
+    ],
+    "rocket_and_gun_share": "rocket_site_spawn",
+    "coverage": {
+      "402": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 2,
+        "nuclear_reactor_spawn": 2,
+        "radar_station": 2,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "404": {
+        "air_base": 2,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 2
+      },
+      "406": {
+        "air_base": 1,
+        "rocket_site_spawn": 2,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "407": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "583": {
+        "air_base": 1,
+        "rocket_site_spawn": 2,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "586": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 2
+      },
+      "587": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "588": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 2,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "589": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "590": {
+        "air_base": 1,
+        "rocket_site_spawn": 2,
+        "synthetic_refinery": 2,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "881": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "882": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 2
+      },
+      "1082": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 2,
+        "stronghold_network": 1
+      },
+      "1083": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "1084": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "1085": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      },
+      "1086": {
+        "air_base": 1,
+        "rocket_site_spawn": 1,
+        "synthetic_refinery": 1,
+        "nuclear_reactor_spawn": 1,
+        "radar_station": 1,
+        "fuel_silo": 1,
+        "stronghold_network": 1
+      }
+    },
+    "normal_model_coverage": {
+      "402": {
+        "industrial_complex": 5,
+        "arms_factory": 8,
+        "anti_air_building": 3,
+        "special_project_facility_spawn": 33,
+        "supply_node": 33
+      },
+      "404": {
+        "industrial_complex": 5,
+        "arms_factory": 3,
+        "anti_air_building": 3,
+        "special_project_facility_spawn": 18,
+        "supply_node": 18
+      },
+      "406": {
+        "industrial_complex": 6,
+        "arms_factory": 7,
+        "anti_air_building": 4,
+        "special_project_facility_spawn": 22,
+        "supply_node": 22
+      },
+      "407": {
+        "industrial_complex": 6,
+        "arms_factory": 5,
+        "anti_air_building": 3,
+        "special_project_facility_spawn": 38,
+        "supply_node": 38
+      },
+      "583": {
+        "industrial_complex": 6,
+        "arms_factory": 7,
+        "anti_air_building": 3,
+        "special_project_facility_spawn": 27,
+        "supply_node": 27
+      },
+      "586": {
+        "industrial_complex": 3,
+        "arms_factory": 3,
+        "anti_air_building": 1,
+        "special_project_facility_spawn": 6,
+        "supply_node": 6
+      },
+      "587": {
+        "industrial_complex": 6,
+        "arms_factory": 5,
+        "anti_air_building": 2,
+        "special_project_facility_spawn": 10,
+        "supply_node": 10
+      },
+      "588": {
+        "industrial_complex": 3,
+        "arms_factory": 2,
+        "anti_air_building": 2,
+        "special_project_facility_spawn": 13,
+        "supply_node": 13
+      },
+      "589": {
+        "industrial_complex": 2,
+        "arms_factory": 3,
+        "anti_air_building": 1,
+        "special_project_facility_spawn": 6,
+        "supply_node": 6
+      },
+      "590": {
+        "industrial_complex": 5,
+        "arms_factory": 1,
+        "anti_air_building": 2,
+        "special_project_facility_spawn": 15,
+        "supply_node": 15
+      },
+      "881": {
+        "industrial_complex": 3,
+        "arms_factory": 3,
+        "anti_air_building": 3,
+        "special_project_facility_spawn": 12,
+        "supply_node": 12
+      },
+      "882": {
+        "industrial_complex": 6,
+        "arms_factory": 6,
+        "anti_air_building": 2,
+        "special_project_facility_spawn": 10,
+        "supply_node": 10
+      },
+      "1082": {
+        "industrial_complex": 4,
+        "arms_factory": 6,
+        "anti_air_building": 2,
+        "special_project_facility_spawn": 16,
+        "supply_node": 16
+      },
+      "1083": {
+        "industrial_complex": 4,
+        "arms_factory": 3,
+        "anti_air_building": 2,
+        "special_project_facility_spawn": 5,
+        "supply_node": 5
+      },
+      "1084": {
+        "industrial_complex": 3,
+        "arms_factory": 4,
+        "anti_air_building": 1,
+        "special_project_facility_spawn": 10,
+        "supply_node": 10
+      },
+      "1085": {
+        "industrial_complex": 1,
+        "arms_factory": 3,
+        "anti_air_building": 1,
+        "special_project_facility_spawn": 6,
+        "supply_node": 6
+      },
+      "1086": {
+        "industrial_complex": 4,
+        "arms_factory": 3,
+        "anti_air_building": 1,
+        "special_project_facility_spawn": 6,
+        "supply_node": 6
+      }
+    },
+    "actual_building_levels_added": 0,
+    "native_heightmap_sha256": "615300ea13a136ed99d3cba1a8f0b71bb9677d60b27cf474f8abe028f3db4aa4",
+    "height_method": "native terrain byte /10; close local native height references inspected; visual elevation still requires game review"
+  },
+  "model_sampling": {
+    "formula": "x=floor(X); image_y=H-1-floor(Z)",
+    "actual_engine_observations_matched": 9,
+    "floating_harbor_mismatches_preserved": [
+      {
+        "line": 30479,
+        "province": 7385,
+        "from_state": 625,
+        "to_state": 628,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 31168,
+        "province": 4623,
+        "from_state": 465,
+        "to_state": 464,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 31378,
+        "province": 7385,
+        "from_state": 625,
+        "to_state": 628,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 31379,
+        "province": 7385,
+        "from_state": 625,
+        "to_state": 628,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 34136,
+        "province": 13260,
+        "from_state": 58,
+        "to_state": 911,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 34269,
+        "province": 13260,
+        "from_state": 99,
+        "to_state": 911,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 34271,
+        "province": 13260,
+        "from_state": 99,
+        "to_state": 911,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 34355,
+        "province": 13260,
+        "from_state": 37,
+        "to_state": 911,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 34394,
+        "province": 13260,
+        "from_state": 912,
+        "to_state": 911,
+        "type": "floating_harbor"
+      },
+      {
+        "line": 38512,
+        "province": 13369,
+        "from_state": 412,
+        "to_state": 1013,
+        "type": "floating_harbor"
+      }
+    ],
+    "unrelated_mismatches_preserved": []
+  },
+  "map_model_coordinates_unchanged": true,
+  "transport_geometry_unchanged": true,
+  "actual_game_test": "UNVERIFIED; full restart and new campaign required",
+  "backup_directory": "C:\\Users\\maqsatto\\.codex\\backups\\ashes_of_empires\\kaz-regions-20261103",
+  "branch": "spike/caspian-navigation",
+  "base_commit": "e397dd0177991258336871b3a04cc27a3781ee9a",
+  "input_sha256": {
+    "history/states/402-Akhtubinsk.txt": "d6ecb513cfe7a8bea1135cd14272c3304e54732f90ba51fd76d612de676414a4",
+    "history/states/404-Saykhin.txt": "b405b2f7cc46d2cf1fcaf3fb1cbb53830643d05417614e8493205719ffeb197a",
+    "history/states/406-Krasnyy Yar.txt": "4612dbf8d101517243996a2eb18ae293d5c1083689e5248a73f7a86cbc8ed5b5",
+    "history/states/407-Uralsk.txt": "e4f6c03f4c4e111fbd27f05604b68b18d699882aa6219f8a2c28b33a29f48966",
+    "history/states/583-Kazakhstan.txt": "aaf2bd6dd371410c2b3801be89bfec0268c703b1d4285c980a3c6e335e3de1bc",
+    "history/states/586-Kyrgyzstan.txt": "0afc8692137ac0d0a16852528196e3f724a9621e46cdc5e83bdac9f2562f9655",
+    "history/states/587-Western Kazakstan.txt": "26d5ff74c6155b4b2d969ca2e6e092c441f150d072357fa227b324341bb09003",
+    "history/states/588-Some Mountains.txt": "9146f8553aa7f1a00b402592b339626e794162c36a058c26bf3391e57128884b",
+    "history/states/589-Eastern Kazakhstan.txt": "093de16180c68689ced028b9ecb343594a8014886d54c390aae247a8a1e517ad",
+    "history/states/590-Northern Kazakhstan.txt": "9458a8c91486cbb7b10e8a272a171e92a0f894b6d002e0142b2576a0c6bb7f36",
+    "history/states/881-Karagandy.txt": "36174c06014c8f1e20ca6aca369244507ddb42a6bd6ba333c05b910513aff364",
+    "history/states/882-Pavlodar.txt": "a277fbe0271f07a5b14cf1170d454350242435490e14dce920a3dda70d6c804a",
+    "map/buildings.txt": "2c8d96e0b47b000101f0754884c98c1f4ce18616230d6ee4fa8ba0037c32e636",
+    "docs/design_v0_3/WORLD_MANIFEST.json": "6eeee2ec2dc7fb196a648382a95f0572cebafcc09bf7dda7dc22da33f502c798"
+  },
+  "backup_input_sha256": {
+    "history/states/402-Akhtubinsk.txt": "d6ecb513cfe7a8bea1135cd14272c3304e54732f90ba51fd76d612de676414a4",
+    "history/states/404-Saykhin.txt": "b405b2f7cc46d2cf1fcaf3fb1cbb53830643d05417614e8493205719ffeb197a",
+    "history/states/406-Krasnyy Yar.txt": "4612dbf8d101517243996a2eb18ae293d5c1083689e5248a73f7a86cbc8ed5b5",
+    "history/states/407-Uralsk.txt": "e4f6c03f4c4e111fbd27f05604b68b18d699882aa6219f8a2c28b33a29f48966",
+    "history/states/583-Kazakhstan.txt": "aaf2bd6dd371410c2b3801be89bfec0268c703b1d4285c980a3c6e335e3de1bc",
+    "history/states/586-Kyrgyzstan.txt": "0afc8692137ac0d0a16852528196e3f724a9621e46cdc5e83bdac9f2562f9655",
+    "history/states/587-Western Kazakstan.txt": "26d5ff74c6155b4b2d969ca2e6e092c441f150d072357fa227b324341bb09003",
+    "history/states/588-Some Mountains.txt": "9146f8553aa7f1a00b402592b339626e794162c36a058c26bf3391e57128884b",
+    "history/states/589-Eastern Kazakhstan.txt": "093de16180c68689ced028b9ecb343594a8014886d54c390aae247a8a1e517ad",
+    "history/states/590-Northern Kazakhstan.txt": "9458a8c91486cbb7b10e8a272a171e92a0f894b6d002e0142b2576a0c6bb7f36",
+    "history/states/881-Karagandy.txt": "36174c06014c8f1e20ca6aca369244507ddb42a6bd6ba333c05b910513aff364",
+    "history/states/882-Pavlodar.txt": "a277fbe0271f07a5b14cf1170d454350242435490e14dce920a3dda70d6c804a",
+    "map/buildings.txt": "16445120e45c7cf4ac36be6fc308a613196f153bb338840088595aea23e6816e",
+    "docs/design_v0_3/WORLD_MANIFEST.json": "6eeee2ec2dc7fb196a648382a95f0572cebafcc09bf7dda7dc22da33f502c798"
+  },
+  "output_sha256": {
+    "history/states/402-Akhtubinsk.txt": "4019f5922d197ea3ffda8bad967fe159a445f94ae39e83f4785012ce270a486d",
+    "history/states/404-Saykhin.txt": "9dcd8c33b5d4125267a372405a1e583a26cd388ff619645eaa772557779dbbab",
+    "history/states/406-Krasnyy Yar.txt": "1944c334c0102ad5e74c00662ab0205ac50de1dbe8bdd0f98854b129e600fa26",
+    "history/states/407-Uralsk.txt": "011ad06048dd777a0b6f3876dccc4e53760a5b19527d1cc44f8c5ef666fd3256",
+    "history/states/583-Kazakhstan.txt": "426dbd18de38d73e9faf4bba0c3b9bee9dcbfd439df24cbe34e98c0c5a05e0c5",
+    "history/states/586-Kyrgyzstan.txt": "bfcfe5500eecc0ce1bf8d640c9e250a1759a4607ac695432fed77822094fb55c",
+    "history/states/587-Western Kazakstan.txt": "76b7cb8735c5f57de96757b41b44857710faa29a5f99cf91f358d6acf72d98ad",
+    "history/states/588-Some Mountains.txt": "1b09926b030939e3371ed3f126a368bc6635f72684f9e51344e41c4e4dd17f3e",
+    "history/states/589-Eastern Kazakhstan.txt": "f5851164012f84a7e0f3cdc454b01a915702efa24bd806d35d2fbdb5c696551b",
+    "history/states/590-Northern Kazakhstan.txt": "780965aa98dcf7a02c978c45b630a6f708ad686f2af6110324b1a931858c93cc",
+    "history/states/881-Karagandy.txt": "0b3afc6cf46df8518bb76034102f2faab123d810c7ddc6a67446ce8a48b0c052",
+    "history/states/882-Pavlodar.txt": "2b2ed232066d2cb55b6455859633c0d448697c601c46fb7429540315ae7fad0e",
+    "history/states/1082-AOF-KAZ-1082.txt": "f78fd51a6d3c7b88acc14b8d409aee292f7ddedad0e17f025ade1b18059a0239",
+    "history/states/1083-AOF-KAZ-1083.txt": "5896d4c16e163da6ff877c0b4a0e7de041bda21570b71db730d39ed698bbaf1c",
+    "history/states/1084-AOF-KAZ-1084.txt": "f4e8ce212c4a79a86cb8a09220def5b01ecbb8532185471aa1ce08c07cdb52c1",
+    "history/states/1085-AOF-KAZ-1085.txt": "de705d57f3955ae78b0e87fe5d05d58e84c0c9b92714f5833a69b0f958ae89a7",
+    "history/states/1086-AOF-KAZ-1086.txt": "f38306e0030adb195c7ca999665cfaadd51d793a701f80f35c7d55771712069a",
+    "map/buildings.txt": "f32c4d1410dc926e41a13dd17c9e4693ea279e5215f5b9c8558a9557f4adf415",
+    "docs/design_v0_3/WORLD_MANIFEST.json": "d9bbdd0d70b9b1d25be05ee157a919de65b750abd57f353caed92cf3a9e5c6de",
+    "localisation/russian/aof_v03_kaz_regions_l_russian.yml": "d98cab31164d057a9d5b793f01fce54dee907f0b2d503d70397b0f2ade13fc4b",
+    "localisation/english/aof_v03_kaz_regions_l_english.yml": "729bb05a27e9dfbafd91bd29f8b15e693afc2e29db1f3c3358b113639c50d4a0"
+  },
+  "upstream_caspian_backup_directory": "C:\\Users\\maqsatto\\.codex\\backups\\ashes_of_empires\\caspian-e397dd0",
+  "upstream_caspian_base_commit": "e397dd0177991258336871b3a04cc27a3781ee9a"
+}

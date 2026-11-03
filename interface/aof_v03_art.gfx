@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_aof_event_american_science"
+        texturefile = "gfx/event_pictures/aof_event_american_science.dds"
+    }
+    spriteType = {
+        name = "GFX_aof_event_japanese_orders"
+        texturefile = "gfx/event_pictures/aof_event_japanese_orders.dds"
+    }
+}

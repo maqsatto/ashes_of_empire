@@ -1,0 +1,24 @@
+aof_v03_core_projects = {
+ aof_v03_domestic_investment_fallback = {
+  icon = generic_research allowed = { always = yes }
+  visible = { has_country_flag = aof_v03_investment_pending NOT = { has_country_flag = aof_v03_investment_signed } }
+  available = { has_country_flag = aof_v03_investment_pending NOT = { has_country_flag = aof_v03_investment_signed } OR = { has_country_flag = { flag = aof_v03_investment_pending days > 30 } AND = { has_country_flag = aof_v03_investment_pending_USA OR = { NOT = { country_exists = USA } has_war_with = USA } } AND = { has_country_flag = aof_v03_investment_pending_JAP OR = { NOT = { country_exists = JAP } has_war_with = JAP } } } }
+  cost = 0 complete_effect = { if = { limit = { has_country_flag = aof_v03_investment_pending NOT = { has_country_flag = aof_v03_investment_signed } OR = { has_country_flag = { flag = aof_v03_investment_pending days > 30 } AND = { has_country_flag = aof_v03_investment_pending_USA OR = { NOT = { country_exists = USA } has_war_with = USA } } AND = { has_country_flag = aof_v03_investment_pending_JAP OR = { NOT = { country_exists = JAP } has_war_with = JAP } } } } country_event = { id = aof_v03_regions.3 days = 1 } } }
+  ai_will_do = { factor = 1 }
+ }
+ aof_v03_chaco_limited_peace_offer = {
+  icon = generic_political_discourse allowed = { OR = { tag = BOL tag = PAR } }
+  visible = { OR = { AND = { tag = BOL has_war_with = PAR } AND = { tag = PAR has_war_with = BOL } } }
+  available = { OR = { tag = BOL tag = PAR } BOL = { exists = yes is_subject = no is_in_faction = no has_civil_war = no has_capitulated = no is_in_peace_conference = no has_war_with = PAR all_enemy_country = { tag = PAR } } PAR = { exists = yes is_subject = no is_in_faction = no has_civil_war = no has_capitulated = no is_in_peace_conference = no has_war_with = BOL all_enemy_country = { tag = BOL } } 688 = { OR = { is_owned_by = BOL is_owned_by = PAR } OR = { is_controlled_by = BOL is_controlled_by = PAR } } BOL = { NOT = { has_country_flag = aof_v03_chaco_peace_pending } } PAR = { NOT = { has_country_flag = aof_v03_chaco_peace_pending } } }
+  cost = 0 days_re_enable = 30
+  complete_effect = { if = { limit = { OR = { tag = BOL tag = PAR } BOL = { exists = yes is_subject = no is_in_faction = no has_civil_war = no has_capitulated = no is_in_peace_conference = no has_war_with = PAR all_enemy_country = { tag = PAR } } PAR = { exists = yes is_subject = no is_in_faction = no has_civil_war = no has_capitulated = no is_in_peace_conference = no has_war_with = BOL all_enemy_country = { tag = BOL } } 688 = { OR = { is_owned_by = BOL is_owned_by = PAR } OR = { is_controlled_by = BOL is_controlled_by = PAR } } BOL = { NOT = { has_country_flag = aof_v03_chaco_peace_pending } } PAR = { NOT = { has_country_flag = aof_v03_chaco_peace_pending } } } country_event = { id = aof_v03_regions.52 days = 1 } } }
+  ai_will_do = { factor = 1 }
+ }
+ aof_v03_chaco_withdraw_stale_offer = {
+  icon = generic_political_discourse allowed = { OR = { tag = BOL tag = PAR } }
+  visible = { has_country_flag = aof_v03_chaco_peace_pending }
+  available = { has_country_flag = aof_v03_chaco_peace_pending }
+  cost = 0 complete_effect = { BOL = { clr_country_flag = aof_v03_chaco_peace_pending clr_country_flag = aof_v03_chaco_peace_to_BOL clr_country_flag = aof_v03_chaco_peace_to_PAR clr_country_flag = aof_v03_chaco_peace_initiator } PAR = { clr_country_flag = aof_v03_chaco_peace_pending clr_country_flag = aof_v03_chaco_peace_to_BOL clr_country_flag = aof_v03_chaco_peace_to_PAR clr_country_flag = aof_v03_chaco_peace_initiator } }
+  ai_will_do = { factor = 1 modifier = { factor = 0 BOL = { exists = yes is_subject = no is_in_faction = no has_civil_war = no has_capitulated = no is_in_peace_conference = no has_war_with = PAR all_enemy_country = { tag = PAR } } PAR = { exists = yes is_subject = no is_in_faction = no has_civil_war = no has_capitulated = no is_in_peace_conference = no has_war_with = BOL all_enemy_country = { tag = BOL } } 688 = { OR = { is_owned_by = BOL is_owned_by = PAR } OR = { is_controlled_by = BOL is_controlled_by = PAR } } NOT = { has_country_flag = { flag = aof_v03_chaco_peace_pending days > 30 } } } }
+ }
+}

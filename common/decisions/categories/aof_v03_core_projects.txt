@@ -1,0 +1,1 @@
+aof_v03_core_projects = { icon = generic_research allowed = { always = yes } visible = { OR = { has_country_flag = aof_v03_investment_pending AND = { OR = { tag = BOL tag = PAR } OR = { has_war = yes has_country_flag = aof_v03_chaco_peace_pending } } } } }

@@ -1,7 +1,12 @@
+# Approximate owner-requested oblast, native province geometry unchanged.
 # PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
 state={
+resources = { 
+ coal = 1
+  }
+
 	id=583
-	name="STATE_583"
+	name = "aof_kaz_region_583"
 
 	history={
 		controller = KAZ
@@ -12,15 +17,17 @@ state={
 
 		}
 		add_core_of = SOV
-		victory_points = {
-			10312 1
-		}
+		
+	
+victory_points = { 10312 1 }
+
+		victory_points = { 7233 1 }
 	}
 
 	provinces={
-		1272 1276 1303 1331 1360 1363 4337 4340 4369 7233 7357 7429 10140 10168 10284 10295 10312 12115 12139 12143 12170 12185 12198 12229 12257 12266 12285 
-	}
-	manpower=315450
+ 1272 1276 1303 1331 1363 4277 4337 4340 7233 7357 7383 7429 10140 10168 10220 10268 10277 10284 10312 12115 12121 12139 12143 12229 12257 12266 12285
+ }
+	manpower = 322380
 	buildings_max_level_factor=1.000
 	state_category=rural
 

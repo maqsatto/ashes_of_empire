@@ -6,8 +6,8 @@ focus_tree = {
  initial_show_position = { focus = aof_v03_cau_entry1 }
  focus = {
   id = aof_v03_cau_entry1
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 9
   y = 0
   cost = 5
   ai_will_do = { factor = 1 }
@@ -16,8 +16,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_entry2
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 9
   y = 1
   cost = 5
  prerequisite = { focus = aof_v03_cau_entry1 }
@@ -27,8 +27,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_entry3
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 9
   y = 2
   cost = 5
  prerequisite = { focus = aof_v03_cau_entry2 }
@@ -38,8 +38,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_compact1
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_national_unity
+  x = 12
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_cau_entry3 }
@@ -50,8 +50,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_compact2
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_national_unity
+  x = 12
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_cau_compact1 }
@@ -61,8 +61,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_compact3
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 12
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_cau_compact2 }
@@ -72,8 +72,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_compact4
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_national_unity
+  x = 12
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_cau_compact3 }
@@ -83,8 +83,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_central1
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_army_doctrines
+  x = 18
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_cau_entry3 }
@@ -95,8 +95,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_central2
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_national_unity
+  x = 18
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_cau_central1 }
@@ -106,8 +106,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_central3
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 18
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_cau_central2 }
@@ -117,8 +117,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_central4
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_alliance
+  x = 18
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_cau_central3 }
@@ -128,8 +128,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_neutral1
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_alliance
+  x = 4
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_cau_entry3 }
@@ -139,8 +139,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_neutral2
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_army_doctrines
+  x = 4
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_cau_neutral1 }
@@ -150,8 +150,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_neutral3
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_army_doctrines
+  x = 4
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_cau_neutral2 }
@@ -161,8 +161,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_neutral4
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_national_unity
+  x = 4
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_cau_neutral3 }
@@ -172,20 +172,20 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_cau_transit_crisis
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_national_unity
+  x = 4
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_cau_neutral4 }
- available = { has_global_flag = aof_caspian_navigation_verified }
+ available = { has_global_flag = aof_caspian_navigation_verified KAZ = { exists = yes has_war = yes has_country_flag = aof_caspian_agreement_accepted } NOT = { has_war_with = KAZ } }
   ai_will_do = { factor = 1 }
   completion_reward = { country_event = { id = aof_nations.10 days = 1 } }
   
  }
  focus = {
   id = aof_v03_cau_alash
-  icon = GFX_goal_generic_political_pressure
-  x = -9
+  icon = GFX_goal_generic_alliance
+  x = 0
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_cau_entry3 }

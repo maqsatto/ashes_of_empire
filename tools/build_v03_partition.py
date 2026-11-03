@@ -7,7 +7,11 @@ GAME=Path('C:/Hearts of Iron IV')
 manifest=json.loads((ROOT/'docs/design_v0_3/WORLD_MANIFEST.json').read_text(encoding='utf8'))
 FIXTURE=[405,584,585,732,742,823,830,831,832]
 PARTS={'UZB':[585,823,830,831],'TMS':[584,832],'TAJ':[742],'KYR':[732]}
-CAPS={'UZB':585,'TMS':584,'TAJ':742,'KYR':732}
+# Chosen successor fixtures, NOT native historical capitals. Native UZB uses
+# Tashkent405, retained by TRK; Samarkand10671 is in state830, not585.
+CAPS={'UZB':830,'TMS':584,'TAJ':742,'KYR':732}
+CAP_PROVINCES={'UZB':10671,'TMS':12333,'TAJ':1384,'KYR':12583}
+for tag,province in CAP_PROVINCES.items():assert province in manifest['states'][str(CAPS[tag])]['provinces'],(tag,'successor capital province outside state')
 assert set(manifest['countries']['TRK']['states'])==set(FIXTURE),'Partition fixture changed: review territorial agreement first'
 for tag,ids in PARTS.items():
     for sid in ids:
@@ -25,8 +29,8 @@ for tag,ids in PARTS.items():
 GUARD='tag = TRK has_war = no is_subject = no NOT = { has_country_flag = aof_partition_completed } '+absent+' '+ownership+' '+cores+' '+' '.join(outside)
 LOC={
  'aof_partition.1.t':('Соглашение о мирном разделе','A negotiated peaceful partition'),
- 'aof_partition.1.d':('Это конкретный договор для временной игровой карты, а не утверждение исторических границ. Узбекистан получает Навои, Каракалпакстан, Бухару и Хиву; Туркменистан — Ашхабад и Ташауз; Таджикистан — Сталинабад; Кыргызстан — Памир. Ташкент (область 405) остаётся за правопреемственным кабинетом Туркестана, поэтому текущий игрок продолжит партию. Новые страны становятся независимыми. Их национальные права сохраняются, включая узбекское право на Ташкент; владение городом остаётся отдельным временным компромиссом. Перед исполнением все условия будут проверены повторно.',
- 'This is a specific treaty for the provisional playtest map, not a declaration of historical boundaries. Uzbekistan receives Navoi, Karakalpakstan, Bukhara and Khiva; Turkmenistan receives Ashkhabad and Tashauz; Tajikistan receives Stalinabad; Kyrgyzstan receives Pamir. Tashkent (state 405) remains with the Turkestani continuity cabinet so the current player can continue. The new states become independent. Their national rights are preserved, including the Uzbek core on Tashkent; possession of that city remains a separate provisional compromise. Every condition is checked again immediately before execution.'),
+ 'aof_partition.1.d':('Это конкретный договор для временной игровой карты, а не утверждение исторических границ. Узбекистан получает Карману, Каракалпакстан, Бухару и Хиву; его переходный кабинет разместится в Самарканде. Туркменистан получает Ашхабад и Дашогуз; Таджикистан — Душанбе; Кыргызстан — Памир. Ташкент (область 405) остаётся за правопреемственным кабинетом Туркестана, поэтому текущий игрок продолжит партию. Новые страны становятся независимыми. Их национальные права сохраняются, включая узбекское право на Ташкент; владение городом остаётся отдельным временным компромиссом. Перед исполнением все условия будут проверены повторно.',
+ 'This is a specific treaty for the provisional playtest map, not a declaration of historical boundaries. Uzbekistan receives Karmana, Karakalpakstan, Bukhara and Khiva; its transitional cabinet will sit in Samarkand. Turkmenistan receives Ashgabat and Dashoguz; Tajikistan receives Dushanbe; Kyrgyzstan receives Pamir. Tashkent (state 405) remains with the Turkestani continuity cabinet so the current player can continue. The new states become independent. Their national rights are preserved, including the Uzbek core on Tashkent; possession of that city remains a separate provisional compromise. Every condition is checked again immediately before execution.'),
  'aof_partition.1.a':('Исполнить договор и сохранить кабинет в Ташкенте','Execute the treaty and retain the Tashkent cabinet'),
  'aof_partition.1.b':('Сохранить общее государство','Preserve the common state'),
  'aof_partition.2.t':('Четыре независимых правительства','Four independent governments'),
@@ -47,13 +51,13 @@ def institutions(tag):
     for family,ideology in FAMILIES.items():
         key='aof_partition_'+tag+'_'+family+'_cabinet'
         LOC[key]=('Правопреемственный кабинет' if tag=='TRK' else 'Учредительный кабинет','Continuity Cabinet' if tag=='TRK' else 'Constituent Cabinet')
-        out+='create_country_leader = { name = "'+key+'" desc = "" expire = "1960.1.1" ideology = '+ideology+' traits = { } } '
+        out+='create_country_leader = { name = "'+key+'" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = '+ideology+' traits = { } } '
     return out
 commit='set_country_flag = aof_partition_case_validated\n405 = { remove_core_of = UZB }\n'
 for tag,ids in PARTS.items():
     commit+='release_autonomy = { target = '+tag+' autonomy_state = autonomy_puppet freedom_level = 0.0 }\n'
     commit+='set_autonomy = { target = '+tag+' autonomy_state = autonomy_free }\n'
-    cap=CAPS[tag];province=next(p for p,_ in manifest['states'][str(cap)]['victory_points'])
+    cap=CAPS[tag];province=CAP_PROVINCES[tag]
     commit+=tag+' = { if = { limit = { is_in_faction = yes } leave_faction = yes } set_capital = { state = '+str(cap)+' remember_old_capital = no } '+institutions(tag)+' set_country_flag = aof_partition_successor set_stability = 0.55 set_technology = { infantry_weapons = 1 } add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 200 producer = '+tag+' } '
     # Small local guard, using a verified province in the new capital state.
     commit+='division_template = { name = "AOF Local Guard" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } } '

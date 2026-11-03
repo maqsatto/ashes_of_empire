@@ -167,3 +167,33 @@ SHA-256 computed during inspection; these can verify the inputs when creating th
 | `map/adjacencies.csv` | `26A26C3F42A4B01FB905C99659024E857FFC05E3172FCD9953395321FB76ED64` |
 | `map/adjacency_rules.txt` | `9D430DEB495F4F4AD20CE4C773A36AED0E2083C7987CF29559FA5ED86A846452` |
 | `map/strategicregions/70-Caspian Sea.txt` | `4ADA0E072169BE1EE571E9C1BED9309CFF0321E55FC7F3627B5C39932F4AF7EA` |
+
+## Source-only deterministic generator addendum
+
+`tools/build_v03_caspian.py` now authors the minimal proposal above. During authoring **only `--inspect` was run**: it constructed and parsed proposed text in memory, verified the native input fingerprints, re-read the bitmap, verified all forty shore provinces, all eight contiguous CAU corridor provinces/state ownership, and every selected land/water coordinate. It wrote no map file, history file, backup or generated manifest. This is still not a navigation test.
+
+Default invocation is also read-only. Mutating modes require a closed `hoi4` process check and the exact Git branch **`spike/caspian-navigation`**. The parent prepares and owns that branch. The generator never creates/switches branches or edits the installation. It does not create a fleet or set any verified-navigation flag.
+
+The two explicit mutating commands, to be run by the parent only when ready for the isolated restart, are:
+
+```powershell
+& 'C:/Users/maqsatto/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' tools/build_v03_caspian.py --prepare-backup C:/Users/maqsatto/.codex/backups/ashes_of_empires/caspian-e397dd0
+& 'C:/Users/maqsatto/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' tools/build_v03_caspian.py --apply --backup-dir C:/Users/maqsatto/.codex/backups/ashes_of_empires/caspian-e397dd0
+```
+
+The backup directory must be an explicit absolute path outside both the repository and the installed game. A nonempty backup directory is never overwritten. Preparation snapshots the actual native map inputs (including original bitmap), the current provisional state inputs, and any pre-existing target mod files, with SHA-256 hashes and the current commit. It does **not** write mod runtime output. Apply requires that manifest, intact backup bytes, the original commit as an ancestor of HEAD, matching installed map fingerprints, the same isolated branch and no intervening changes to any target mod file. Reapplying the same prepared backup generates the same bytes and leaves identical files untouched. The original snapshots remain available for a deliberate rollback; the generator never recursively deletes or moves files.
+
+The eight proposed runtime outputs are:
+
+- `map/definition.csv`: four lake→sea rows and forty existing land coastal booleans; all IDs and RGB colours unchanged.
+- `map/strategicregions/70-Caspian Sea.txt`: preserve the existing region/provinces/weather and add the native shallow-sea terrain assignment.
+- `map/adjacencies.csv`: preserve native rows and terminator, inserting one prefixed 1050↔8334 shortcut through3668.
+- `map/adjacency_rules.txt`: preserve native rules, append the prefixed eight-province Suez-like physical-test rule and closure flag.
+- `map/buildings.txt`: preserve native placement rows, append two `naval_base_spawn` rows at measured land-side pixels. Height9.50 and rotation0 are provisional native-format placements requiring visual inspection.
+- `map/unitstacks.txt`: preserve native rows; append **37 slots for each of four new sea provinces**. Slot types, height, rotation and icon scale come from actual native sea8334 records; X/Z are deterministic projected positions snapped onto verified Caspian water pixels, not copied Black Sea coordinates. Spacing and sprites remain unverified.
+- `history/states/587-Western Kazakstan.txt`: preserve the current mod fixture and add only province1517 `naval_base = 1` in its existing buildings block.
+- `history/states/232-Grozny.txt`: preserve the current mod fixture and add only province3668 `naval_base = 1` in its existing buildings block.
+
+Apply also writes `docs/design_v0_3/CASPIAN_SPIKE_MANIFEST.json` with output hashes and `navigation_verified: false`. `map/default.map`, `positions.txt`, all bitmap files, railways, supply nodes, national borders, fleets, equipment and technologies remain inherited/unchanged. No broad map replacement is added. Run the spike **after** the general world generator, which otherwise regenerates the provisional state histories and could remove the test bases.
+
+The choice of KAZ1517 permits a concrete build/spawn/movement test but does not solve its missing observed railway attachment. That gap, the long shortcut's routing, native port mesh placement, new sea icon spacing, trade capacity and actual mission/supply behaviour remain the listed test risks. A state-level dockyard or an available naval focus is still insufficient evidence of an operational maritime economy.

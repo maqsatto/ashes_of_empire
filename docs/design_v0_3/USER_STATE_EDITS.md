@@ -1,0 +1,7 @@
+# Explicit owner-authorised state corrections — 3 November 2026
+
+The owner explicitly requested provinces 4265 and 10185 from Magnitogorsk 582 to Ufa 651; province 1334 from Magnitogorsk to Zlatoust 573; and provinces 3265, 4324 and 227 from Orenburg 652 to Kuybyshev 251. Whole states 582, 652 and 236 (Astrakhan) belong to Alash. This records those specific border decisions; it does not approve other provisional geography, capitals or personalities.
+
+Installed initial history attaches no victory point or province-level building to these six provinces. The generator nevertheless moves either attachment if present in current effective history. State-level resources, population, factories and infrastructure remain with their respective states. Static building model state indices follow the provinces, without changing model positions or types. Railway province IDs and supply nodes are preserved; the native Ufa route uses provinces 3265 and 4324, and will now follow the new political boundary. No new railway or supply node is invented. Astrakhan 236 is distinct from Stavropol 235 and is not in the current canal corridor.
+
+Back up outside the repository, apply only on the isolated map branch with HOI4 closed, then fully restart and inspect a new campaign. Province membership and ownership checks are static; the generator does not claim an actual game test or mark Caspian navigation verified.

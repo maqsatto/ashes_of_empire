@@ -6,8 +6,8 @@ focus_tree = {
  initial_show_position = { focus = aof_v03_sov_entry1 }
  focus = {
   id = aof_v03_sov_entry1
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 8
   y = 0
   cost = 5
   ai_will_do = { factor = 1 }
@@ -16,8 +16,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_entry2
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_production
+  x = 8
   y = 1
   cost = 5
  prerequisite = { focus = aof_v03_sov_entry1 }
@@ -27,8 +27,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_entry3
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 8
   y = 2
   cost = 5
  prerequisite = { focus = aof_v03_sov_entry2 }
@@ -38,8 +38,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_recovery1
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_production
+  x = 11
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_sov_entry3 }
@@ -50,8 +50,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_recovery2
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_production
+  x = 11
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_sov_recovery1 }
@@ -61,8 +61,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_recovery3
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_army_doctrines
+  x = 11
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_sov_recovery2 }
@@ -72,8 +72,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_recovery4
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_national_unity
+  x = 11
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_sov_recovery3 }
@@ -83,8 +83,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_treaty1
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_national_unity
+  x = 17
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_sov_entry3 }
@@ -95,8 +95,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_treaty2
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_alliance
+  x = 17
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_sov_treaty1 }
@@ -106,30 +106,30 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_treaty3
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_alliance
+  x = 17
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_sov_treaty2 }
   ai_will_do = { factor = 1 }
-  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  completion_reward = { if = { limit = { country_exists = SIB NOT = { has_war_with = SIB } } SIB = { country_event = { id = aof_diplomacy.120 days = 2 } } } if = { limit = { country_exists = KAZ NOT = { has_war_with = KAZ } } KAZ = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
   
  }
  focus = {
   id = aof_v03_sov_treaty4
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_national_unity
+  x = 17
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_sov_treaty3 }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_political_power = 50 add_ideas = aof_v03_sov_treaty_settlement if = { limit = { country_exists = SIB NOT = { has_war_with = SIB } } SIB = { country_event = { id = aof_diplomacy.120 days = 2 } } } if = { limit = { country_exists = KAZ NOT = { has_war_with = KAZ } } KAZ = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  completion_reward = { add_ideas = aof_v03_sov_treaty_settlement if = { limit = { has_war = no is_subject = no SIB = { exists = yes has_war = no is_subject = no is_in_faction_with = ROOT } } SIB = { country_event = { id = aof_diplomacy.160 days = 2 } } } if = { limit = { has_war = no is_subject = no KAZ = { exists = yes has_war = no is_subject = no is_in_faction_with = ROOT } } KAZ = { country_event = { id = aof_diplomacy.160 days = 2 } } } }
   
  }
  focus = {
   id = aof_v03_sov_pressure1
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_national_unity
+  x = 23
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_sov_entry3 }
@@ -140,19 +140,20 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_pressure2
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_scientific_exchange
+  x = 23
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_sov_pressure1 }
+ available = { has_government = communism }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_stability = 0.04 army_experience = 20 }
+  completion_reward = { add_political_power = -35 if = { limit = { any_neighbor_country = { is_subject = no communism > 0 NOT = { has_government = communism } NOT = { has_war_with = ROOT } } } random_neighbor_country = { limit = { is_subject = no communism > 0 NOT = { has_government = communism } NOT = { has_war_with = ROOT } } country_event = { id = aof_nations.81 days = 2 } } } else = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } add_stability = 0.02 } }
   
  }
  focus = {
   id = aof_v03_sov_pressure3
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_army_doctrines
+  x = 23
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_sov_pressure2 }
@@ -162,8 +163,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_pressure4
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_army_doctrines
+  x = 23
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_sov_pressure3 }
@@ -173,8 +174,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_council_central
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_national_unity
+  x = 3
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_sov_entry3 }
@@ -185,8 +186,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_council_local
-  icon = GFX_goal_generic_political_pressure
-  x = -8
+  icon = GFX_goal_generic_national_unity
+  x = 0
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_sov_entry3 }
@@ -197,8 +198,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_sov_ultimatum
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_national_unity
+  x = 23
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_sov_pressure4 }

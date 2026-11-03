@@ -7,12 +7,15 @@ set_war_support = 0.25
 set_popularities = { democratic = 6 aof_social_democracy = 6 communism = 70 aof_conservatism = 6 neutrality = 6 fascism = 6 }
 set_politics = { ruling_party = communism elections_allowed = no last_election = "1924.9.1" election_frequency = 48 }
 set_technology = { infantry_weapons = 1 tech_support = 1 tech_engineers = 1 tech_recon = 1 gw_artillery = 1 infantry_weapons1 = 1 basic_machine_tools = 1 }
-create_country_leader = { name = "aof_world_SOV_democratic_cabinet" desc = "" expire = "1960.1.1" ideology = aof_constitutional_federalism traits = { } }
-create_country_leader = { name = "aof_world_SOV_aof_social_democracy_cabinet" desc = "" expire = "1960.1.1" ideology = aof_parliamentary_socialism traits = { } }
-create_country_leader = { name = "aof_world_SOV_communism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_soviet_centralism traits = { } }
-create_country_leader = { name = "aof_world_SOV_aof_conservatism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_parliamentary_conservatism traits = { } }
-create_country_leader = { name = "aof_world_SOV_neutrality_cabinet" desc = "" expire = "1960.1.1" ideology = aof_bureaucratic_technocracy traits = { } }
-create_country_leader = { name = "aof_world_SOV_fascism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_national_revolution traits = { } }
+create_country_leader = { name = "aof_world_SOV_democratic_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_constitutional_federalism traits = { } }
+create_country_leader = { name = "aof_world_SOV_aof_social_democracy_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_parliamentary_socialism traits = { } }
+create_country_leader = { name = "aof_world_SOV_communism_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_soviet_centralism traits = { } }
+create_country_leader = { name = "aof_world_SOV_aof_conservatism_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_parliamentary_conservatism traits = { } }
+create_country_leader = { name = "aof_world_SOV_neutrality_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_bureaucratic_technocracy traits = { } }
+create_country_leader = { name = "aof_world_SOV_fascism_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_national_revolution traits = { } }
 set_grand_doctrine = grand_battleplan
 starting_train_buffer = 5
 set_fuel_ratio = 0.7
+if = { limit = { has_dlc = "No Step Back" } set_technology = { gwtank_chassis = 1 basic_light_tank_chassis = 1 } }
+if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { gwtank = 1 basic_light_tank = 1 } }
+if = { limit = { has_dlc = "No Step Back" } create_equipment_variant = { name = "AOF Light Armour 1924" type = light_tank_chassis_1 modules = { main_armament_slot = tank_small_cannon turret_type_slot = tank_light_one_man_tank_turret suspension_type_slot = tank_bogie_suspension armor_type_slot = tank_riveted_armor engine_type_slot = tank_gasoline_engine } } create_equipment_variant = { name = "T-26TU mod. 1933" type = light_tank_chassis_1 obsolete = yes modules = { main_armament_slot = tank_small_cannon turret_type_slot = tank_light_one_man_tank_turret suspension_type_slot = tank_bogie_suspension armor_type_slot = tank_riveted_armor engine_type_slot = tank_gasoline_engine } } }

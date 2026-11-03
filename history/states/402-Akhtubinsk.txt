@@ -1,17 +1,16 @@
+# Approximate owner-requested oblast, native province geometry unchanged.
 # PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
 state={
 	id=402
-	name="STATE_402"
+	name = "aof_kaz_region_402"
 	resources={
-		chromium=15.000
-	}
+ chromium = 12
+ }
 
 	history={
 		controller = KAZ
 		owner = KAZ
-		victory_points = {
-			7341 1
-		}
+		
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2
@@ -19,12 +18,14 @@ state={
 		}
 		add_core_of = SOV
 
-	}
+	
+victory_points = { 7341 1 }
+}
 
 	provinces={
-		1220 1247 1314 1371 1429 4227 4254 4294 4300 4303 4374 4376 4394 4581 4638 7243 7313 7337 7341 7354 7370 7410 7486 10131 10164 10253 10264 12108 12179 12227 12235 12254 12294 
-	}
-	manpower=282245
+ 1220 1247 1314 1360 1371 1429 4227 4254 4294 4300 4303 4374 4376 4394 7313 7337 7341 7354 7370 7410 7438 9528 10131 10164 10253 10264 10295 12108 12170 12179 12198 12227 12294
+ }
+	manpower = 300907
 	buildings_max_level_factor=1.000
 	state_category=rural
 

@@ -30,7 +30,9 @@ state = {
 		add_core_of = TRK
 
 		add_extra_state_shared_building_slots = 4
-}
+
+		victory_points = { 4629 1 }
+	}
 
 	provinces = {
 		1459 4629 7682 10488 11687 

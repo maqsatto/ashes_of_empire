@@ -14,7 +14,7 @@ state = {
 			1573 2 
 		}
 		victory_points = {
-			10671 1 
+			10671 3 
 		}
 		
 		buildings = {
@@ -29,7 +29,13 @@ state = {
 
 	
 		add_core_of = TRK
-}
+
+		victory_points = { 7639 1 }
+	
+		victory_points = { 12722 1 }
+	
+		victory_points = { 7775 1 }
+	}
 
 	provinces={
 		1573 1623 7639 7775 10205 10470 10671 12161 12239 12722

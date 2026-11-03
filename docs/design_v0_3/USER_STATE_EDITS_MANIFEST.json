@@ -1,0 +1,213 @@
+{
+  "moves": {
+    "4265": {
+      "native_from": 582,
+      "to": 651,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "10185": {
+      "native_from": 582,
+      "to": 651,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "1334": {
+      "native_from": 582,
+      "to": 573,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "3265": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "4324": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "227": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    }
+  },
+  "owners": {
+    "582": "KAZ",
+    "652": "KAZ",
+    "236": "KAZ"
+  },
+  "railways_unchanged": true,
+  "supply_nodes_unchanged": true,
+  "province_bitmap_unchanged": true,
+  "navigation_verified": false,
+  "building_model_state_indices": [
+    {
+      "province": 3265,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "industrial_complex",
+      "line": 17403
+    },
+    {
+      "province": 3265,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "bunker",
+      "line": 17409
+    },
+    {
+      "province": 4324,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "bunker",
+      "line": 17427
+    },
+    {
+      "province": 227,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "bunker",
+      "line": 17429
+    },
+    {
+      "province": 227,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "supply_node",
+      "line": 25509
+    },
+    {
+      "province": 3265,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "supply_node",
+      "line": 25514
+    },
+    {
+      "province": 4324,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "supply_node",
+      "line": 25521
+    },
+    {
+      "province": 1334,
+      "native_province_state": 582,
+      "to_state": 573,
+      "type": "arms_factory",
+      "line": 28138
+    },
+    {
+      "province": 10185,
+      "native_province_state": 582,
+      "to_state": 651,
+      "type": "industrial_complex",
+      "line": 28143
+    },
+    {
+      "province": 1334,
+      "native_province_state": 582,
+      "to_state": 573,
+      "type": "supply_node",
+      "line": 28147
+    },
+    {
+      "province": 4265,
+      "native_province_state": 582,
+      "to_state": 651,
+      "type": "supply_node",
+      "line": 28151
+    },
+    {
+      "province": 10185,
+      "native_province_state": 582,
+      "to_state": 651,
+      "type": "supply_node",
+      "line": 28159
+    },
+    {
+      "province": 4265,
+      "native_province_state": 582,
+      "to_state": 651,
+      "type": "bunker",
+      "line": 28167
+    },
+    {
+      "province": 1334,
+      "native_province_state": 582,
+      "to_state": 573,
+      "type": "bunker",
+      "line": 28172
+    },
+    {
+      "province": 10185,
+      "native_province_state": 582,
+      "to_state": 651,
+      "type": "bunker",
+      "line": 28176
+    },
+    {
+      "province": 1334,
+      "native_province_state": 582,
+      "to_state": 573,
+      "type": "special_project_facility_spawn",
+      "line": 46099
+    },
+    {
+      "province": 10185,
+      "native_province_state": 582,
+      "to_state": 651,
+      "type": "special_project_facility_spawn",
+      "line": 46106
+    },
+    {
+      "province": 4265,
+      "native_province_state": 582,
+      "to_state": 651,
+      "type": "special_project_facility_spawn",
+      "line": 46108
+    },
+    {
+      "province": 3265,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "special_project_facility_spawn",
+      "line": 46461
+    },
+    {
+      "province": 4324,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "special_project_facility_spawn",
+      "line": 46468
+    },
+    {
+      "province": 227,
+      "native_province_state": 652,
+      "to_state": 251,
+      "type": "special_project_facility_spawn",
+      "line": 46475
+    }
+  ],
+  "backup_directory": "C:\\Users\\maqsatto\\.codex\\backups\\ashes_of_empires\\user-state-edits-20261103",
+  "branch": "spike/caspian-navigation",
+  "upstream_caspian_backup_directory": "C:\\Users\\maqsatto\\.codex\\backups\\ashes_of_empires\\caspian-e397dd0",
+  "upstream_caspian_base_commit": "e397dd0177991258336871b3a04cc27a3781ee9a",
+  "output_sha256": {
+    "history/states/236-Astrakhan.txt": "1fc0f297faf96452dec72a73bca6c8c5feeec96ca44adea6406ce2d63f317c06",
+    "history/states/582-Sourthern Urals.txt": "5edca0e9dfcfb327f97afc0c2f03bc81151d699cd73dd87a0d217ae54e061e96",
+    "history/states/651-Sov state 5.txt": "5eb4d9af6069643cfe2817ecca3016ab9f0bc3928afa3b46561c4ead0d3177b7",
+    "history/states/652-Sov state 6.txt": "b2dfbe1f5adaa4801fcda9cc056eac46418df42be0dd6e47474eeb7f8a1ee41b",
+    "history/states/573-Ts 15.txt": "73fc0e36445cb2dd956b0d296a93a37a93ca279e8d9ccf27525e1bf4f685cb46",
+    "history/states/251-Samara.txt": "b4d59d6e8aee26bd0780671a00ff92d81ba53be03a8cc20435263f866247a8a3",
+    "map/buildings.txt": "2c8d96e0b47b000101f0754884c98c1f4ce18616230d6ee4fa8ba0037c32e636",
+    "docs/design_v0_3/WORLD_MANIFEST.json": "6eeee2ec2dc7fb196a648382a95f0572cebafcc09bf7dda7dc22da33f502c798"
+  },
+  "actual_game_test": "UNVERIFIED; full restart and new campaign required"
+}

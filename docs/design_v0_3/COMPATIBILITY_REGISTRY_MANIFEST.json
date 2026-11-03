@@ -14,10 +14,1989 @@
   ],
   "counts": {
     "focuses": 10948,
+    "unassigned_native_tree_shells": 67,
     "decisions": 4148,
+    "inert_mission_types": 443,
     "events": 6974,
     "namespaces": 434,
     "focus_styles": 22
+  },
+  "focus_tree_sources": {
+    "afghanistan_tree": [
+      "common\\national_focus\\afghanistan.txt"
+    ],
+    "argentine_focus_tree": [
+      "common\\national_focus\\argentina.txt"
+    ],
+    "australia_taog_focus": [
+      "common\\national_focus\\australia_taog.txt"
+    ],
+    "australian_focus": [
+      "common\\national_focus\\australia.txt"
+    ],
+    "austria_focus_tree": [
+      "common\\national_focus\\austria.txt"
+    ],
+    "austro_hungarian_releasable_focus": [
+      "common\\national_focus\\austro_hungarian_releasable_shared.txt"
+    ],
+    "belgium_focus": [
+      "common\\national_focus\\belgium.txt"
+    ],
+    "brazil_tree": [
+      "common\\national_focus\\brazil.txt"
+    ],
+    "british_focus": [
+      "common\\national_focus\\uk.txt"
+    ],
+    "bulgarian_focus": [
+      "common\\national_focus\\bulgaria.txt"
+    ],
+    "canadian_focus": [
+      "common\\national_focus\\canada.txt"
+    ],
+    "chilean_focus_tree": [
+      "common\\national_focus\\chile.txt"
+    ],
+    "china_communist_focus": [
+      "common\\national_focus\\china_communist.txt"
+    ],
+    "china_communist_focus_sea": [
+      "common\\national_focus\\china_communist_sea.txt"
+    ],
+    "china_communist_warlord_focus": [
+      "common\\national_focus\\china_communist_warlord_TSR.txt"
+    ],
+    "china_nationalist_focus": [
+      "common\\national_focus\\china_nationalist.txt"
+    ],
+    "china_nationalist_sea_focus": [
+      "common\\national_focus\\china_nationalist_sea.txt"
+    ],
+    "china_nationalist_warlord_focus": [
+      "common\\national_focus\\china_nationalist_warlord_TSR.txt"
+    ],
+    "china_warlord_focus": [
+      "common\\national_focus\\china_warlord.txt"
+    ],
+    "china_warlord_sea_focus": [
+      "common\\national_focus\\china_warlord_sea.txt"
+    ],
+    "congo_focus": [
+      "common\\national_focus\\congo.txt"
+    ],
+    "czech_focus": [
+      "common\\national_focus\\czechoslovakia.txt"
+    ],
+    "danish_focus": [
+      "common\\national_focus\\denmark.txt"
+    ],
+    "estonia_tree": [
+      "common\\national_focus\\estonia.txt"
+    ],
+    "ethiopia_tree": [
+      "common\\national_focus\\ethiopia.txt"
+    ],
+    "finnish_focus": [
+      "common\\national_focus\\finland.txt"
+    ],
+    "free_french_focus": [
+      "common\\national_focus\\free_france.txt"
+    ],
+    "french_focus": [
+      "common\\national_focus\\france.txt"
+    ],
+    "generic_focus": [
+      "common\\national_focus\\generic.txt"
+    ],
+    "german_focus": [
+      "common\\national_focus\\germany.txt"
+    ],
+    "greek_focus": [
+      "common\\national_focus\\greece.txt"
+    ],
+    "horn_of_africa_tree": [
+      "common\\national_focus\\horn_of_africa.txt"
+    ],
+    "hungarian_focus": [
+      "common\\national_focus\\hungary.txt"
+    ],
+    "iceland_tree": [
+      "common\\national_focus\\iceland.txt"
+    ],
+    "indian_focus": [
+      "common\\national_focus\\india.txt"
+    ],
+    "indian_focus_goe": [
+      "common\\national_focus\\india_goe.txt"
+    ],
+    "indonesia_focus": [
+      "common\\national_focus\\indonesia.txt"
+    ],
+    "iraq_focus": [
+      "common\\national_focus\\iraq.txt"
+    ],
+    "italian_focus": [
+      "common\\national_focus\\italy.txt"
+    ],
+    "japan_wtt_focus": [
+      "common\\national_focus\\japan.txt"
+    ],
+    "latvia_tree": [
+      "common\\national_focus\\latvia.txt"
+    ],
+    "lithuania_tree": [
+      "common\\national_focus\\lithuania.txt"
+    ],
+    "manchukuo_focus": [
+      "common\\national_focus\\manchukuo.txt"
+    ],
+    "manchukuo_focus_tsr": [
+      "common\\national_focus\\manchukuo_TSR.txt"
+    ],
+    "mexico_focus_tree": [
+      "common\\national_focus\\mexico.txt"
+    ],
+    "mu_czech_focus": [
+      "common\\national_focus\\czechoslovakia_mu.txt"
+    ],
+    "netherlands_focus": [
+      "common\\national_focus\\netherlands.txt"
+    ],
+    "new_zealander_focus": [
+      "common\\national_focus\\new_zealand.txt"
+    ],
+    "norwegian_focus": [
+      "common\\national_focus\\norway.txt"
+    ],
+    "paraguay_focus": [
+      "common\\national_focus\\paraguay.txt"
+    ],
+    "persian_focus_tree": [
+      "common\\national_focus\\persia.txt"
+    ],
+    "philippines_focus": [
+      "common\\national_focus\\philippines.txt"
+    ],
+    "polish_focus": [
+      "common\\national_focus\\poland.txt"
+    ],
+    "portuguese_focus": [
+      "common\\national_focus\\portugal.txt"
+    ],
+    "romanian_focus": [
+      "common\\national_focus\\romania.txt"
+    ],
+    "siam_focus": [
+      "common\\national_focus\\siam.txt"
+    ],
+    "south_african_focus": [
+      "common\\national_focus\\south_africa.txt"
+    ],
+    "soviet_focus": [
+      "common\\national_focus\\soviet.txt"
+    ],
+    "spanish_focus": [
+      "common\\national_focus\\spain.txt"
+    ],
+    "sweden_focus": [
+      "common\\national_focus\\sweden.txt"
+    ],
+    "swiss_focus": [
+      "common\\national_focus\\switzerland.txt"
+    ],
+    "turkish_focus": [
+      "common\\national_focus\\turkey.txt"
+    ],
+    "uruguay_focus": [
+      "common\\national_focus\\uruguay.txt"
+    ],
+    "usa_focus": [
+      "common\\national_focus\\usa.txt"
+    ],
+    "vichy_french_focus": [
+      "common\\national_focus\\vichy_france.txt"
+    ],
+    "wuw_hungarian_focus": [
+      "common\\national_focus\\hungary_wuw.txt"
+    ],
+    "yugoslavian_focus": [
+      "common\\national_focus\\yugoslavia.txt"
+    ]
+  },
+  "mission_type_metadata": {
+    "AFG_radical_students_countdown": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "ARG_military_coup_attempt": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "ARG_military_state_absorption_mission": {
+      "native_timeout": "75",
+      "registry_timeout": "75"
+    },
+    "AST_castle_crumbling_mission": {
+      "native_timeout": "417",
+      "registry_timeout": "417"
+    },
+    "AST_deteriorating_prime_minister_nerves_mission": {
+      "native_timeout": "270",
+      "registry_timeout": "270"
+    },
+    "AST_election_countdown": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "AST_final_reforms_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "AST_foreign_overlord_reclaim_foothold_in_target_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "AST_government_formation_period": {
+      "native_timeout": "15",
+      "registry_timeout": "15"
+    },
+    "AST_insufficient_funds_mission": {
+      "native_timeout": "100",
+      "registry_timeout": "100"
+    },
+    "AST_japanese_war_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "AST_labor_campaign_tour_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "AST_northern_ireland_rises_up": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "AST_push_foreign_overlord_out_of_target": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "AST_summon_the_cabinet_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "AST_veterans_revolt": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "AUS_german_animosity_towards_high_command": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "BALTIC_belarus_uprising": {
+      "native_timeout": "200",
+      "registry_timeout": "200"
+    },
+    "BALTIC_forest_brothers_resistance": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "BRA_cangaceiro_mission": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "BRA_execute_the_cohen_plan": {
+      "native_timeout": "100",
+      "registry_timeout": "100"
+    },
+    "BRA_washington_accords_mission": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "BUL_dominance_in_the_adriatic_sea_mission": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "BUL_dominance_in_the_aegean_sea_mission": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "BUL_dominance_in_the_black_sea_mission": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "BUL_ff_approaching_bs_mission": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "BUL_ff_approaching_bzns_mission": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "BUL_ff_approaching_zveno_mission": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "BUL_ff_impending_coup_mission": {
+      "native_timeout": "500",
+      "registry_timeout": "500"
+    },
+    "BUL_impending_zveno_coup": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "CHI_bolster_our_ranks": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "CHI_build_a_carrier": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "CHI_burma_campaign_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "CHI_china_pledging_to_hold_state_mission": {
+      "native_timeout": "CHI.CHI_holding_state_mission_time_var",
+      "registry_timeout": "1"
+    },
+    "CHI_growing_impatience": {
+      "native_timeout": "160",
+      "registry_timeout": "160"
+    },
+    "CHI_growing_impatience_dummy": {
+      "native_timeout": "160",
+      "registry_timeout": "160"
+    },
+    "CHI_holding_state_mission": {
+      "native_timeout": "CHI.CHI_holding_state_mission_time_var",
+      "registry_timeout": "1"
+    },
+    "CHI_improving_inefficient_economy_mission": {
+      "native_timeout": "var:CHI_improving_inefficient_economy_mission_time",
+      "registry_timeout": "1"
+    },
+    "CHI_improving_neglected_countryside_mission": {
+      "native_timeout": "var:CHI_improving_neglected_countryside_mission_time",
+      "registry_timeout": "1"
+    },
+    "CHI_indo_chinese_campaign_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "CHI_kwantung_army_impatience_dummy": {
+      "native_timeout": "JAP.kwantung_army_timeout_dummy_time_var",
+      "registry_timeout": "1"
+    },
+    "CHI_overlordship_over_indochina": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "CHI_release_korea": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "CHI_war_in_south_halting": {
+      "native_timeout": "184",
+      "registry_timeout": "184"
+    },
+    "CHL_anti_fascist_coalition_forming": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "CHL_carabineros_being_secured_mission": {
+      "native_timeout": "42",
+      "registry_timeout": "42"
+    },
+    "CHL_crackdown_on_fascists_bad_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "CHL_government_funds_being_extracted_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "CHL_ibanez_alianza_popular_libertadora_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "CHL_ibanez_approaching_argentinian_army_mission": {
+      "native_timeout": "160",
+      "registry_timeout": "160"
+    },
+    "CHL_ibanez_cracking_down_on_mapuche_organizations_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "CHL_ibanez_outlaw_socialism_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "CHL_ibanez_ruling_by_decree_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "CHL_ibanez_securing_weapon_arsenals_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "CHL_ibanez_seeking_foreign_investments_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "CHL_ibanez_selling_arica_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "CHL_ibanez_strengthening_the_carabineros_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "CHL_ibanez_utlilizing_national_populism_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "CHL_nacista_coup_attempt": {
+      "native_timeout": "978",
+      "registry_timeout": "978"
+    },
+    "CHL_nacista_influence_in_the_universities_mission": {
+      "native_timeout": "210",
+      "registry_timeout": "210"
+    },
+    "CHL_nacista_newpapers_propaganda_mission": {
+      "native_timeout": "86",
+      "registry_timeout": "86"
+    },
+    "CHL_nacistas_approaching_foreign_fascists_mission": {
+      "native_timeout": "300",
+      "registry_timeout": "300"
+    },
+    "CHL_nacistas_approaching_ibanez_mission": {
+      "native_timeout": "140",
+      "registry_timeout": "140"
+    },
+    "CHL_nacistas_gathering_support_mission": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "CHL_nacistas_making_final_preparations_mission": {
+      "native_timeout": "160",
+      "registry_timeout": "160"
+    },
+    "CHL_national_falange_cooperation_mission": {
+      "native_timeout": "56",
+      "registry_timeout": "56"
+    },
+    "CHL_preparing_another_naval_mutiny_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "CHL_republican_guards_in_exile_mission": {
+      "native_timeout": "85",
+      "registry_timeout": "85"
+    },
+    "CZE_fate_of_the_ro": {
+      "native_timeout": "106",
+      "registry_timeout": "106"
+    },
+    "CZE_sudeten_promise_mission": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "CZE_the_autonomous_bloc_demands": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "CZE_the_rut_demands": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "ENG_abdication_crisis": {
+      "native_timeout": "200",
+      "registry_timeout": "200"
+    },
+    "ENG_britain_demands_treaty_compliance": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "ENG_expected_decolonization": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "ENG_explode_the_swedish_iron_ore_mine": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "ENG_imperial_conference_decision": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "ENG_support_imperialist_coup_in_australia_mission_1": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ENG_support_imperialist_coup_in_australia_mission_2": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ENG_support_imperialist_coup_in_canada_mission_1": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ENG_support_imperialist_coup_in_canada_mission_2": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ENG_support_imperialist_coup_in_new_zealand_mission_1": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ENG_support_imperialist_coup_in_new_zealand_mission_2": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ENG_support_imperialist_coup_in_south_africa_mission_1": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ENG_support_imperialist_coup_in_south_africa_mission_2": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ENG_trade_unions_demand_conscription_limitations_mission": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "ENG_trade_unions_demand_construction_safety_legislation_mission": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "ENG_trade_unions_demand_increase_in_paid_leave_mission": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "ENG_trade_unions_demand_legislation_amendment_mission": {
+      "native_timeout": "300",
+      "registry_timeout": "300"
+    },
+    "ENG_trade_unions_demand_mandatory_union_days_mission": {
+      "native_timeout": "200",
+      "registry_timeout": "200"
+    },
+    "ENG_trade_unions_demand_minimum_pay_increase_mission": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "ENG_trade_unions_demand_minister_appointment_mission": {
+      "native_timeout": "200",
+      "registry_timeout": "200"
+    },
+    "ENG_trade_unions_demand_referendum_mission": {
+      "native_timeout": "200",
+      "registry_timeout": "200"
+    },
+    "ENG_trade_unions_demand_workplace_safety_legislation_mission": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "EST_stomp_the_vaps": {
+      "native_timeout": "480",
+      "registry_timeout": "480"
+    },
+    "EST_vaps_crackdown": {
+      "native_timeout": "vaps_crackdown_var",
+      "registry_timeout": "1"
+    },
+    "EST_vaps_uprising": {
+      "native_timeout": "vaps_days_var",
+      "registry_timeout": "1"
+    },
+    "ETH_christmas_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "ETH_conquer_addis_ababa_mission": {
+      "native_timeout": "ETH.ETH_hold_the_capital_time",
+      "registry_timeout": "1"
+    },
+    "ETH_conquer_harar_mission": {
+      "native_timeout": "ETH.ETH_hold_the_south_time",
+      "registry_timeout": "1"
+    },
+    "ETH_hold_addis_ababa_mission": {
+      "native_timeout": "ETH.ETH_hold_the_capital_time",
+      "registry_timeout": "1"
+    },
+    "ETH_hold_harar_mission": {
+      "native_timeout": "ETH.ETH_hold_the_south_time",
+      "registry_timeout": "1"
+    },
+    "ETH_hold_the_north_mission": {
+      "native_timeout": "ETH.ETH_hold_the_north_time",
+      "registry_timeout": "1"
+    },
+    "ETH_hold_the_south_mission": {
+      "native_timeout": "ETH.ETH_hold_the_south_time",
+      "registry_timeout": "1"
+    },
+    "ETH_italian_control_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ETH_italian_uprising_warning_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "ETH_local_development_arms_industry_grows_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ETH_local_development_improved_production_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ETH_local_development_industry_grows_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ETH_local_development_state_grows_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ETH_retake_territory_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "ETH_time_based_war_escalation_mission": {
+      "native_timeout": "ETH_war_escalation_length",
+      "registry_timeout": "1"
+    },
+    "FIN_hold_leningrad_mission": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "FIN_retake_leningrad_mission": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "FRA_case_anton_mission": {
+      "native_timeout": "7",
+      "registry_timeout": "7"
+    },
+    "FRA_communist_civil_war_decision": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "FRA_fascist_civil_war_decision": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "FRA_independence_for_central_africa_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "FRA_independence_for_indochina_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "FRA_independence_for_madagascar_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "FRA_independence_for_north_africa_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "FRA_independence_for_syria_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "FRA_independence_for_west_africa_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "GDC_holding_out": {
+      "native_timeout": "184",
+      "registry_timeout": "184"
+    },
+    "GER_barbarossa_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "GER_fourth_silesian_uprising_mission": {
+      "native_timeout": "210",
+      "registry_timeout": "210"
+    },
+    "GER_growing_public_dissent_mission": {
+      "native_timeout": "100",
+      "registry_timeout": "100"
+    },
+    "GER_imminent_proletarian_revolution_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "GER_kreigsmarine_revolt_mission": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "GER_mefo_bills_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "GER_plan_z": {
+      "native_timeout": "1800",
+      "registry_timeout": "1800"
+    },
+    "GRE_civil_war_imminent": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "GRE_civil_war_imminent_1": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "GRE_civil_war_imminent_2": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "GRE_civil_war_imminent_3": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "GRE_civil_war_imminent_4": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "GRE_the_election_of_1936": {
+      "native_timeout": "26",
+      "registry_timeout": "26"
+    },
+    "GUAY_land_owners_finding_funding": {
+      "native_timeout": "270",
+      "registry_timeout": "270"
+    },
+    "GUAY_military_coup_mission": {
+      "native_timeout": "750",
+      "registry_timeout": "750"
+    },
+    "GUAY_military_play_arg": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "GUAY_military_play_bra": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "HUN_the_incoming_fascist_civil_war_mission": {
+      "native_timeout": "420",
+      "registry_timeout": "420"
+    },
+    "INS_gradual_escalation_HOL": {
+      "native_timeout": "400",
+      "registry_timeout": "400"
+    },
+    "INS_gradual_escalation_republic": {
+      "native_timeout": "400",
+      "registry_timeout": "400"
+    },
+    "INS_hold_batavia_HOL": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "INS_limited_war_borneo": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "INS_limited_war_malaya": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "INS_militias_di_mission": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "INS_militias_jakarta_pemuda_mission": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "INS_militias_kris_repayment": {
+      "native_timeout": "1095",
+      "registry_timeout": "1095"
+    },
+    "INS_militias_moestopo_mission": {
+      "native_timeout": "480",
+      "registry_timeout": "480"
+    },
+    "INS_militias_pki_uprising_mission": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "INS_militias_railway_pemuda_mission": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "INS_national_revolution_republic_sukarno_threatened": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "INS_national_revolution_republic_warning_police_action": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "INS_renville_timer_mission_HOL": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "INS_renville_timer_mission_republic": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "INS_soetardjo_pending": {
+      "native_timeout": "140",
+      "registry_timeout": "140"
+    },
+    "INS_take_batavia": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "INS_win_condition_base_republic_real": {
+      "native_timeout": "0",
+      "registry_timeout": "1"
+    },
+    "IRQ_march_on_syrian_kurdistan_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "ITA_conquer_the_north_mission": {
+      "native_timeout": "ETH.ETH_hold_the_north_time",
+      "registry_timeout": "1"
+    },
+    "ITA_conquer_the_south_mission": {
+      "native_timeout": "ETH.ETH_hold_the_south_time",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_bolster_military_high_command": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_bolster_political_cabinet": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_conquer_ethiopia": {
+      "native_timeout": "ITA_missiolinis_conquer_ethiopia_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_expand_intelligence_agency": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_industrial_research": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_occupy_albania": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_occupy_dalmatia": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_occupy_greece": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_occupy_ticino": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_pacify_ethiopia": {
+      "native_timeout": "ITA_missiolinis_pacify_ethiopia_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_pacify_ethiopia_vanilla": {
+      "native_timeout": "ITA_missiolinis_pacify_ethiopia_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_stockpile_fuel": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_stockpile_trucks": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_strengthen_heavy_industry": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_strengthen_the_airforce": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_missiolini_strengthen_the_army": {
+      "native_timeout": "ITA_missiolinis_default_days",
+      "registry_timeout": "1"
+    },
+    "ITA_time_based_war_escalation_mission": {
+      "native_timeout": "ETH.ETH_war_escalation_length",
+      "registry_timeout": "1"
+    },
+    "JAP_aizawa_trial_ongoing": {
+      "native_timeout": "56",
+      "registry_timeout": "56"
+    },
+    "JAP_army_broadcasting_militarist_propaganda_2_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_army_broadcasting_militarist_propaganda_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_army_ensuring_loyalty_within_the_regiments_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_army_faction_demands_conscription_law_change": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "JAP_army_faction_demands_larger_army": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_army_faction_demands_military_factories": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "JAP_army_faction_demands_more_artillery": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_army_faction_demands_more_tanks": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_army_faction_demands_more_trucks": {
+      "native_timeout": "270",
+      "registry_timeout": "270"
+    },
+    "JAP_army_faction_demands_political_appointment": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "JAP_army_politically_purging_disloyal_young_officers_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_army_recruiting_more_conscripts_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_army_securing_army_arsenals_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_army_securing_navy_support_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_army_smuggling_kwantung_army_units_to_the_home_islands_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_border_conflict_escalation_warning_MON": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "JAP_border_conflict_escalation_warning_SOV": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "JAP_border_conflict_time_until_cancelled": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "JAP_border_conflict_warning_SOV": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "JAP_border_incident_forgotten": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "JAP_conflict_between_faction_reaching_boiling_point_mission": {
+      "native_timeout": "265",
+      "registry_timeout": "265"
+    },
+    "JAP_conquer_china": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_government_faction_demands_limited_army_influence": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_government_faction_demands_limited_navy_influence": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_government_faction_demands_limited_zaibatsu_influence": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_government_faction_demands_political_appointment": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_government_faction_demands_trade_law_change": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_growing_unrest_in_the_shanghai_concession": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_implementing_unos_economic_reforms_mission": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "JAP_kwantung_army_impatience": {
+      "native_timeout": "JAP.kwantung_army_timeout_time_var",
+      "registry_timeout": "1"
+    },
+    "JAP_naval_faction_demands_conscription_law_change": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "JAP_naval_faction_demands_dockyards": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "JAP_naval_faction_demands_more_battleships": {
+      "native_timeout": "545",
+      "registry_timeout": "545"
+    },
+    "JAP_naval_faction_demands_more_carriers": {
+      "native_timeout": "545",
+      "registry_timeout": "545"
+    },
+    "JAP_naval_faction_demands_more_carriers_and_battleships": {
+      "native_timeout": "545",
+      "registry_timeout": "545"
+    },
+    "JAP_naval_faction_demands_political_appointment": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "JAP_naval_faction_demands_strike_south_happen_mission": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "JAP_release_korea": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "JAP_securing_control_over_osaka_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "JAP_sue_for_peace_nuke_mission": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "JAP_tauran_border_conflict_time_until_cancelled": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "JAP_tauran_border_conflict_warning_MON": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "JAP_tauran_border_incident_forgotten": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "JAP_tauran_border_incident_forgotten_1": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "JAP_the_suiyuan_offensive_mission": {
+      "native_timeout": "56",
+      "registry_timeout": "56"
+    },
+    "JAP_tokko_arresting_anti_army_disidents_mission": {
+      "native_timeout": "84",
+      "registry_timeout": "84"
+    },
+    "JAP_tora_tora_tora": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "JAP_zaibatsu_faction_demands_economy_law_change": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "JAP_zaibatsu_faction_demands_factories": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "JAP_zaibatsu_faction_demands_industrial_company_employment": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "JAP_zaibatsu_faction_demands_political_appointment": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "KHM_holding_out": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "LAT_perkonkrust_uprising": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "LIT_iron_wolf_partisans": {
+      "native_timeout": "iron_wolf_days_var",
+      "registry_timeout": "1"
+    },
+    "MAN_bandit_raids": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "MAN_maintain_eastern_control": {
+      "native_timeout": "MAN_main_control_timer",
+      "registry_timeout": "1"
+    },
+    "MAN_maintain_northern_control": {
+      "native_timeout": "MAN_main_control_timer",
+      "registry_timeout": "1"
+    },
+    "MAN_maintain_western_control": {
+      "native_timeout": "MAN_main_control_timer",
+      "registry_timeout": "1"
+    },
+    "MAN_march_on_beijing_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "MAN_march_on_hebei_chahar_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "MAN_march_on_hebei_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "MEX_mission_cedillos_rebellion": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "MEX_mission_second_cristiada": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "MEX_mission_second_revolution": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "MTG_escalator_clause_invocation_mission": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "MTG_treaty_reduction_mission": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "MTG_treaty_reduction_signatory_mission": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "MTG_treaty_renew_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "NORDIC_decision_dangerous_war_participation": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "NORDIC_decision_limited_war_participation": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "NORDIC_decision_risky_war_participation": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "PER_civil_war_imminent": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "PER_kur_azr_revolt_mission": {
+      "native_timeout": "730",
+      "registry_timeout": "730"
+    },
+    "PER_kurdish_revolt_mission": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "PHI_american_intervention_declare_war_mission": {
+      "native_timeout": "PHI_american_intervention_original_timer",
+      "registry_timeout": "1"
+    },
+    "PHI_defend_against_USA": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "PHI_investment_plan_1": {
+      "native_timeout": "240",
+      "registry_timeout": "240"
+    },
+    "PHI_investment_plan_2": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "PHI_investment_plan_3": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "POL_looming_peasants_strike_mission": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "POL_peasants_strike": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "POL_sanation_left_irritation": {
+      "native_timeout": "175",
+      "registry_timeout": "175"
+    },
+    "POL_sanation_right_irritation": {
+      "native_timeout": "175",
+      "registry_timeout": "175"
+    },
+    "PRC_assaulting_guyuan": {
+      "native_timeout": "275",
+      "registry_timeout": "275"
+    },
+    "PRC_assaulting_shanxi": {
+      "native_timeout": "275",
+      "registry_timeout": "275"
+    },
+    "PRC_assaulting_yanan": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "PRC_holding_out": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "PRC_initialize_five_year_plan_mission": {
+      "native_timeout": "PRC_five_year_plan_length",
+      "registry_timeout": "1"
+    },
+    "PRC_initialize_shorter_market_plans_mission": {
+      "native_timeout": "PRC_shorter_market_plan_length",
+      "registry_timeout": "1"
+    },
+    "PRC_the_peoples_doubt": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "RAJ_GOE_eic_the_taxman": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "RAJ_GOE_enforced_peace_decision": {
+      "native_timeout": "255",
+      "registry_timeout": "255"
+    },
+    "RAJ_GOE_enforced_peace_decision_eng": {
+      "native_timeout": "255",
+      "registry_timeout": "255"
+    },
+    "RAJ_GOE_eng_is_getting_involved_in_war": {
+      "native_timeout": "40",
+      "registry_timeout": "40"
+    },
+    "RAJ_GOE_princely_state_timeout": {
+      "native_timeout": "110",
+      "registry_timeout": "110"
+    },
+    "RAJ_GOE_provide_working_opportunities": {
+      "native_timeout": "1800",
+      "registry_timeout": "1800"
+    },
+    "RAJ_GOE_try_to_arrest_bose": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "RAJ_communist_unions_promised_minimum_wage_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "RAJ_communist_unions_promised_worker_safety_mission": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "RAJ_investments_from_local_leaders": {
+      "native_timeout": "270",
+      "registry_timeout": "270"
+    },
+    "SIA_appeal_to_navy_clique_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SIA_end_factionalism_mission": {
+      "native_timeout": "270",
+      "registry_timeout": "270"
+    },
+    "SIA_implement_absolutist_reforms_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SIA_implement_constitutionalist_reforms_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SIA_implement_industrialists_reforms_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SIA_implement_rural_reforms_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SIA_khana_ratsadon_civilian_coup_mission": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "SIA_khana_ratsadon_military_coup_mission": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "SIA_limited_war_indochina": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "SIA_standing_our_ground_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "SIA_war_fervor_coup": {
+      "native_timeout": "125",
+      "registry_timeout": "125"
+    },
+    "SIC_push_into_xikang_mission": {
+      "native_timeout": "240",
+      "registry_timeout": "240"
+    },
+    "SIK_war_halting": {
+      "native_timeout": "365",
+      "registry_timeout": "365"
+    },
+    "SOV_align_admiral_stalin": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "SOV_align_general_stalin": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "SOV_behead_the_snake_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SOV_hold_leningrad": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "SOV_hold_moscow": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "SOV_hold_stalingrad": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "SOV_ignite_uprising_timer_mission": {
+      "native_timeout": "SOV.SOV_permanent_revolution_uprising_days",
+      "registry_timeout": "1"
+    },
+    "SOV_military_offensive_ongoing": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "SOV_northern_crackdown_timer": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "SOV_operation_countenance": {
+      "native_timeout": "SOV.SOV_operation_countenance_mission_days",
+      "registry_timeout": "1"
+    },
+    "SOV_operation_iskra_ongoing": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "SOV_preparations_for_operation_countenance": {
+      "native_timeout": "SOV.SOV_operation_countenance_preparation_days",
+      "registry_timeout": "1"
+    },
+    "SOV_secure_the_administration_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SOV_siberian_crackdown_timer": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "SOV_sinkiang_military_aid_mission_dummy": {
+      "native_timeout": "SOV.SOV_sinkiang_military_aid_days",
+      "registry_timeout": "1"
+    },
+    "SOV_sinkiang_mineral_prospection_mission_dummy": {
+      "native_timeout": "SOV.SOV_sinkiang_mineral_prospection_days",
+      "registry_timeout": "1"
+    },
+    "SOV_sinkiang_oil_prospection_mission_dummy": {
+      "native_timeout": "SOV.SOV_sinkiang_oil_prospection_days",
+      "registry_timeout": "1"
+    },
+    "SOV_sinkiang_support_expansion_mission_dummy": {
+      "native_timeout": "SOV.SOV_sinkiang_support_expansion_days",
+      "registry_timeout": "1"
+    },
+    "SOV_socialism_in_one_country_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SOV_steppe_crackdown_timer": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "SOV_the_anti_soviet_trotskyist_center_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "SOV_the_bloc_of_rights_and_trotskyites_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SOV_the_military_conspiracy_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "SOV_the_stalin_constitution_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SOV_the_workers_dictatorship_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SOV_the_zinovyevite_terrorist_center_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SOV_ukraine_crackdown_timer": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "SOV_urals_crackdown_timer": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "SPA_asturias_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_burgos_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_carlist_uprising_mission": {
+      "native_timeout": "316",
+      "registry_timeout": "316"
+    },
+    "SPA_catalunya_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_ciudad_real_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_con_paquito_mission": {
+      "native_timeout": "28",
+      "registry_timeout": "28"
+    },
+    "SPA_concessions_to_the_left_mission": {
+      "native_timeout": "38",
+      "registry_timeout": "38"
+    },
+    "SPA_cordoba_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_eastern_aragon_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_asturias_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_burgos_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_catalunya_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_ciudad_real_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_cordoba_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_eastern_aragon_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_extremadura_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_galicia_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_granada_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_guadalajara_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_leon_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_madrid_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_murcia_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_navarra_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_pais_vasco_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_salamanca_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_sevilla_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_valencia_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_valladolid_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_expand_influence_in_the_western_aragon_garrison_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_extremadura_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_fascist_crackdown_mission": {
+      "native_timeout": "316",
+      "registry_timeout": "316"
+    },
+    "SPA_galicia_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_granada_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_guadalajara_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_hand_over_the_ceda_campaign_chest_mission": {
+      "native_timeout": "23",
+      "registry_timeout": "23"
+    },
+    "SPA_imprison_primo_de_rivera_mission": {
+      "native_timeout": "38",
+      "registry_timeout": "38"
+    },
+    "SPA_leon_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_madrid_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_military_plot_nationalists": {
+      "native_timeout": "250",
+      "registry_timeout": "250"
+    },
+    "SPA_murcia_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_navarra_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_negotiate_carlist_support_mission": {
+      "native_timeout": "28",
+      "registry_timeout": "28"
+    },
+    "SPA_pais_vasco_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_political_arrest_mission": {
+      "native_timeout": "38",
+      "registry_timeout": "38"
+    },
+    "SPA_reassign_disloyal_leader_mission": {
+      "native_timeout": "38",
+      "registry_timeout": "38"
+    },
+    "SPA_salamanca_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_save_the_alcazar_mission": {
+      "native_timeout": "140",
+      "registry_timeout": "140"
+    },
+    "SPA_secure_the_northern_garrisons_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "SPA_sevilla_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_sin_paquito_mission": {
+      "native_timeout": "28",
+      "registry_timeout": "28"
+    },
+    "SPA_the_army_of_africa_mission": {
+      "native_timeout": "35",
+      "registry_timeout": "35"
+    },
+    "SPA_valencia_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_valladolid_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPA_western_aragon_offensive_mission": {
+      "native_timeout": "14",
+      "registry_timeout": "14"
+    },
+    "SPR_anarchist_uprising_mission": {
+      "native_timeout": "246",
+      "registry_timeout": "246"
+    },
+    "SPR_disband_the_army_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SPR_distribute_arms_to_the_people_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SPR_enlarge_the_weapon_caches_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SPR_government_crackdown_mission": {
+      "native_timeout": "SPR_communists_uprising_mission_var",
+      "registry_timeout": "1"
+    },
+    "SPR_ignite_uprising_timer_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "SPR_military_plot_republicans": {
+      "native_timeout": "250",
+      "registry_timeout": "250"
+    },
+    "SPR_political_assassination_mission": {
+      "native_timeout": "38",
+      "registry_timeout": "38"
+    },
+    "SPR_preparing_offensive": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "SPR_primo_de_rivera_speech_mission": {
+      "native_timeout": "38",
+      "registry_timeout": "38"
+    },
+    "SPR_secure_the_guardia_civil_mission": {
+      "native_timeout": "58",
+      "registry_timeout": "58"
+    },
+    "SPR_secure_the_guardia_de_asalto_mission": {
+      "native_timeout": "58",
+      "registry_timeout": "58"
+    },
+    "SPR_suppress_the_strikes_mission": {
+      "native_timeout": "38",
+      "registry_timeout": "38"
+    },
+    "SPR_sway_leader_loyalty_mission": {
+      "native_timeout": "38",
+      "registry_timeout": "38"
+    },
+    "SPR_train_the_union_youth_mission": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "SWE_hungershield_mission": {
+      "native_timeout": "150",
+      "registry_timeout": "150"
+    },
+    "SWE_implement_aristocracy_reforms_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SWE_implement_industrialist_reforms_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SWE_implement_military_reforms_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SWE_implement_rural_reforms_countdown": {
+      "native_timeout": "720",
+      "registry_timeout": "720"
+    },
+    "SWE_time_until_can_pick_air_shelters": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "SWE_time_until_can_pick_civilian_tires": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "SWE_time_until_can_pick_food_stamps": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "SWE_time_until_can_pick_gengas": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "SWI_building_up_military_readiness_mission": {
+      "native_timeout": "10",
+      "registry_timeout": "10"
+    },
+    "SWI_country_angry_mission": {
+      "native_timeout": "SWI_time_to_appease_angry_country",
+      "registry_timeout": "1"
+    },
+    "SWI_militia_active": {
+      "native_timeout": "SWI_citizen_militia_activation_timeout",
+      "registry_timeout": "1"
+    },
+    "SWI_no_confederation_councilor": {
+      "native_timeout": "20",
+      "registry_timeout": "20"
+    },
+    "SWI_no_elected_president": {
+      "native_timeout": "30",
+      "registry_timeout": "30"
+    },
+    "SWI_recently_finished_president_initiative_mission": {
+      "native_timeout": "SWI_president_initiative_cooldown",
+      "registry_timeout": "1"
+    },
+    "TSR_pay_for_support_from_warlord_PP": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "TSR_pay_for_support_from_warlord_equipment": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "TSR_pay_for_support_from_warlord_manpower": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "TUR_ataturk_health_worsening_crisis": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "TUR_etatism_crisis_1": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "TUR_etatism_crisis_2": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "TUR_etatism_crisis_3": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "TUR_etatism_crisis_4": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "TUR_kemalist_infiltration_mission": {
+      "native_timeout": "45",
+      "registry_timeout": "45"
+    },
+    "TUR_kurdish_resistance_escalation_mission": {
+      "native_timeout": "80",
+      "registry_timeout": "80"
+    },
+    "TUR_traditionalist_infiltration_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "USA_execute_war_plan_brown": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "USA_invest_in_state_arms_factory": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "USA_invest_in_state_dockyard": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "USA_invest_in_state_factory": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "USA_invest_in_state_infrastructure": {
+      "native_timeout": "360",
+      "registry_timeout": "360"
+    },
+    "WTT_border_conflict_escalation_warning_defender": {
+      "native_timeout": "@border_conflict_incident_forgotten_timer",
+      "registry_timeout": "1"
+    },
+    "WTT_border_conflict_incident_warning_defender": {
+      "native_timeout": "@border_incident_escalation_countdown",
+      "registry_timeout": "1"
+    },
+    "WTT_border_conflict_time_until_cancelled": {
+      "native_timeout": "@border_conflict_time_until_cancelled",
+      "registry_timeout": "1"
+    },
+    "WTT_escalate_incident_to_border_conflict": {
+      "native_timeout": "@border_conflict_incident_forgotten_timer",
+      "registry_timeout": "1"
+    },
+    "WTT_pay_for_support_from_warlord_PP": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "WTT_pay_for_support_from_warlord_equipment": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "WTT_pay_for_support_from_warlord_xp": {
+      "native_timeout": "60",
+      "registry_timeout": "60"
+    },
+    "XIC_war_halting": {
+      "native_timeout": "180",
+      "registry_timeout": "180"
+    },
+    "YUG_arrest_ustasa_leaders_cooldown": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "YUG_croat_concessions_cooldown": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "YUG_croat_raid_cooldown": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "YUG_listening_posts_cooldown": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "YUG_positive_discrimination_croat_cooldown": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "YUG_shut_down_recruitment_centers_cooldown": {
+      "native_timeout": "70",
+      "registry_timeout": "70"
+    },
+    "YUG_ustasa_crushed_mission": {
+      "native_timeout": "200",
+      "registry_timeout": "200"
+    },
+    "YUG_ustasa_uprising": {
+      "native_timeout": "130",
+      "registry_timeout": "130"
+    },
+    "demob_economic_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "demob_manpower_mission": {
+      "native_timeout": "120",
+      "registry_timeout": "120"
+    },
+    "draft_dodging_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "mutiny_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    },
+    "strikes_mission": {
+      "native_timeout": "90",
+      "registry_timeout": "90"
+    }
   },
   "focus_sources": {
     "ABDA_abdacom": [

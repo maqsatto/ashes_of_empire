@@ -1,0 +1,1 @@
+aof_debug_caspian_fixture = { icon = generic_naval allowed = { OR = { tag = KAZ tag = CAU } } visible = { is_debug = yes is_ai = no OR = { tag = KAZ tag = CAU } } }

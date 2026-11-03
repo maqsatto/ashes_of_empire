@@ -1,0 +1,19 @@
+# Approximate owner-requested oblast, native province geometry unchanged.
+state = {
+ id = 1085
+ name = "aof_kaz_region_1085"
+ manpower = 70455
+ state_category = pastoral
+ resources = {
+ coal = 2
+ }
+ history = { owner = KAZ controller = KAZ add_core_of = KAZ add_core_of = SOV buildings = { infrastructure = 1 } 
+
+
+		victory_points = { 1312 1 }
+	}
+ provinces = {
+ 1312 1382 4492 4595 12177 12487
+ }
+ local_supplies = 0.0
+}

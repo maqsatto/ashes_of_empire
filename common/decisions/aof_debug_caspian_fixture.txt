@@ -1,0 +1,49 @@
+aof_debug_caspian_fixture = {
+ aof_debug_caspian_ship_kaz = { icon = generic_research cost = 0
+ allowed = { tag = KAZ }
+ visible = { is_debug = yes is_ai = no tag = KAZ NOT = { has_country_flag = aof_debug_caspian_ship_requested_kaz } }
+ available = { is_debug = yes is_ai = no tag = KAZ NOT = { has_country_flag = aof_debug_caspian_ship_requested_kaz } owns_state = 587 controls_province = 1517 587 = { is_owned_by = ROOT is_coastal = yes any_province_building_level = { province = { id = 1517 } building = naval_base level > 0 } } }
+ complete_effect = { if = { limit = { is_debug = yes is_ai = no tag = KAZ NOT = { has_country_flag = aof_debug_caspian_ship_requested_kaz } owns_state = 587 controls_province = 1517 587 = { is_owned_by = ROOT is_coastal = yes any_province_building_level = { province = { id = 1517 } building = naval_base level > 0 } } }
+ if = { limit = { has_dlc = "Man the Guns" }
+  set_technology = { early_ship_hull_light = 1 basic_battery = 1 basic_torpedo = 1 }
+  create_equipment_variant = { name = "AOF Debug Escort 1924" type = ship_hull_light_1 modules = { fixed_ship_battery_slot = ship_light_battery_1 fixed_ship_anti_air_slot = ship_anti_air_1 fixed_ship_fire_control_system_slot = ship_fire_control_system_0 fixed_ship_engine_slot = light_ship_engine_1 fixed_ship_torpedo_slot = ship_torpedo_1 } }
+  load_oob = "aof_debug_caspian_kaz_mtg"
+ } else = { set_technology = { early_destroyer = 1 } load_oob = "aof_debug_caspian_kaz_legacy" }
+ set_country_flag = aof_debug_caspian_ship_requested_kaz
+ log = "AOF Caspian DEBUG: requested one KAZ escort at port 1517; verify actual fleet and docking."
+} } ai_will_do = { factor = 0 }
+ }
+ aof_debug_caspian_ship_cau = { icon = generic_research cost = 0
+ allowed = { tag = CAU }
+ visible = { is_debug = yes is_ai = no tag = CAU NOT = { has_country_flag = aof_debug_caspian_ship_requested_cau } }
+ available = { is_debug = yes is_ai = no tag = CAU NOT = { has_country_flag = aof_debug_caspian_ship_requested_cau } owns_state = 232 controls_province = 3668 232 = { is_owned_by = ROOT is_coastal = yes any_province_building_level = { province = { id = 3668 } building = naval_base level > 0 } } }
+ complete_effect = { if = { limit = { is_debug = yes is_ai = no tag = CAU NOT = { has_country_flag = aof_debug_caspian_ship_requested_cau } owns_state = 232 controls_province = 3668 232 = { is_owned_by = ROOT is_coastal = yes any_province_building_level = { province = { id = 3668 } building = naval_base level > 0 } } }
+ if = { limit = { has_dlc = "Man the Guns" }
+  set_technology = { early_ship_hull_light = 1 basic_battery = 1 basic_torpedo = 1 }
+  create_equipment_variant = { name = "AOF Debug Escort 1924" type = ship_hull_light_1 modules = { fixed_ship_battery_slot = ship_light_battery_1 fixed_ship_anti_air_slot = ship_anti_air_1 fixed_ship_fire_control_system_slot = ship_fire_control_system_0 fixed_ship_engine_slot = light_ship_engine_1 fixed_ship_torpedo_slot = ship_torpedo_1 } }
+  load_oob = "aof_debug_caspian_cau_mtg"
+ } else = { set_technology = { early_destroyer = 1 } load_oob = "aof_debug_caspian_cau_legacy" }
+ set_country_flag = aof_debug_caspian_ship_requested_cau
+ log = "AOF Caspian DEBUG: requested one CAU escort at port 3668; verify actual fleet and docking."
+} } ai_will_do = { factor = 0 }
+ }
+ aof_debug_caspian_convoys = {
+ icon = generic_research cost = 0 allowed = { tag = KAZ }
+ visible = { is_debug = yes is_ai = no tag = KAZ NOT = { has_country_flag = aof_debug_convoys_requested } }
+ available = { is_debug = yes is_ai = no tag = KAZ }
+ complete_effect = { if = { limit = { is_debug = yes is_ai = no tag = KAZ NOT = { has_country_flag = aof_debug_convoys_requested } } add_equipment_to_stockpile = { type = convoy_1 amount = 20 producer = KAZ } set_country_flag = aof_debug_convoys_requested } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_debug_caspian_close_canal = { icon = generic_research cost = 0 days_re_enable = 1
+ allowed = { tag = CAU }
+ visible = { is_debug = yes is_ai = no tag = CAU NOT = { has_global_flag = aof_caucasian_canal_closed } }
+ available = { is_debug = yes is_ai = no tag = CAU owns_state = 232 owns_state = 233 owns_state = 234 owns_state = 235 owns_state = 821 owns_state = 827 owns_state = 828 controls_province = 700 controls_province = 6701 controls_province = 3682 controls_province = 6730 controls_province = 683 controls_province = 3672 controls_province = 11632 controls_province = 6702 controls_province = 9647 controls_province = 6733 controls_province = 685 controls_province = 6718 controls_province = 11633 controls_province = 9649 controls_province = 6674 controls_province = 11664 controls_province = 6692 controls_province = 714 controls_province = 11678 controls_province = 9694 controls_province = 11696 controls_province = 735 controls_province = 9726 controls_province = 9709 controls_province = 11681 controls_province = 6768 controls_province = 3734 controls_province = 9696 controls_province = 3760 controls_province = 11729 controls_province = 6741 }
+ complete_effect = { if = { limit = { is_debug = yes is_ai = no tag = CAU owns_state = 232 owns_state = 233 owns_state = 234 owns_state = 235 owns_state = 821 owns_state = 827 owns_state = 828 controls_province = 700 controls_province = 6701 controls_province = 3682 controls_province = 6730 controls_province = 683 controls_province = 3672 controls_province = 11632 controls_province = 6702 controls_province = 9647 controls_province = 6733 controls_province = 685 controls_province = 6718 controls_province = 11633 controls_province = 9649 controls_province = 6674 controls_province = 11664 controls_province = 6692 controls_province = 714 controls_province = 11678 controls_province = 9694 controls_province = 11696 controls_province = 735 controls_province = 9726 controls_province = 9709 controls_province = 11681 controls_province = 6768 controls_province = 3734 controls_province = 9696 controls_province = 3760 controls_province = 11729 controls_province = 6741 NOT = { has_global_flag = aof_caucasian_canal_closed } } set_global_flag = aof_caucasian_canal_closed log = "AOF Caspian DEBUG: canal closed flag requested; verify actual routing." } }
+ ai_will_do = { factor = 0 } }
+ aof_debug_caspian_open_canal = { icon = generic_research cost = 0 days_re_enable = 1
+ allowed = { tag = CAU }
+ visible = { is_debug = yes is_ai = no tag = CAU has_global_flag = aof_caucasian_canal_closed }
+ available = { is_debug = yes is_ai = no tag = CAU owns_state = 232 owns_state = 233 owns_state = 234 owns_state = 235 owns_state = 821 owns_state = 827 owns_state = 828 controls_province = 700 controls_province = 6701 controls_province = 3682 controls_province = 6730 controls_province = 683 controls_province = 3672 controls_province = 11632 controls_province = 6702 controls_province = 9647 controls_province = 6733 controls_province = 685 controls_province = 6718 controls_province = 11633 controls_province = 9649 controls_province = 6674 controls_province = 11664 controls_province = 6692 controls_province = 714 controls_province = 11678 controls_province = 9694 controls_province = 11696 controls_province = 735 controls_province = 9726 controls_province = 9709 controls_province = 11681 controls_province = 6768 controls_province = 3734 controls_province = 9696 controls_province = 3760 controls_province = 11729 controls_province = 6741 }
+ complete_effect = { if = { limit = { is_debug = yes is_ai = no tag = CAU owns_state = 232 owns_state = 233 owns_state = 234 owns_state = 235 owns_state = 821 owns_state = 827 owns_state = 828 controls_province = 700 controls_province = 6701 controls_province = 3682 controls_province = 6730 controls_province = 683 controls_province = 3672 controls_province = 11632 controls_province = 6702 controls_province = 9647 controls_province = 6733 controls_province = 685 controls_province = 6718 controls_province = 11633 controls_province = 9649 controls_province = 6674 controls_province = 11664 controls_province = 6692 controls_province = 714 controls_province = 11678 controls_province = 9694 controls_province = 11696 controls_province = 735 controls_province = 9726 controls_province = 9709 controls_province = 11681 controls_province = 6768 controls_province = 3734 controls_province = 9696 controls_province = 3760 controls_province = 11729 controls_province = 6741 has_global_flag = aof_caucasian_canal_closed } clr_global_flag = aof_caucasian_canal_closed log = "AOF Caspian DEBUG: canal open flag requested; verify actual routing." } }
+ ai_will_do = { factor = 0 } }
+}

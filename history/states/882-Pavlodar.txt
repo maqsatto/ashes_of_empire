@@ -1,13 +1,14 @@
+# Approximate owner-requested oblast, native province geometry unchanged.
 # PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
 state = {
 	id = 882
-	name = "STATE_882" # Pavlodar
+	name = "aof_kaz_region_882" # Pavlodar
 	
 	state_category = rural
 	
 	resources = {
-		chromium = 6 
-	}
+ chromium = 6
+ }
 
 	history = {
 		controller = KAZ
@@ -18,15 +19,17 @@ state = {
 
 		}
 		add_core_of = SOV
-		victory_points = {
-			7708 1
-		}
+		
+	
+victory_points = { 7708 1 }
+
+		victory_points = { 10235 1 }
 	}
 
 	provinces = {
-		1879 4670 4685 7317 7708 10202 10235 10630 12616
-	}
-	manpower = 230210
+ 1287 4661 4685 7317 7350 7708 10202 10235 10630 12616
+ }
+	manpower = 253513
 	buildings_max_level_factor = 1.000
 
 	local_supplies = 0.0 

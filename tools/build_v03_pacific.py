@@ -112,7 +112,9 @@ EVENTS='add_namespace = aof_v03_pacific\n'
 def event(i,title,desc,options):
  global EVENTS
  p='aof_v03_pacific.'+str(i);LOC[p+'.t']=title;LOC[p+'.d']=desc
- EVENTS+=f'country_event = {{ id = {p} title = {p}.t desc = {p}.d is_triggered_only = yes fire_only_once = yes\n'
+ picture={3:'GFX_aof_event_american_science',4:'GFX_aof_event_japanese_orders'}.get(i)
+ pic=f' picture = {picture}' if picture else ''
+ EVENTS+=f'country_event = {{ id = {p} title = {p}.t desc = {p}.d{pic} is_triggered_only = yes fire_only_once = yes\n'
  for j,(ru,en,e) in enumerate(options):
   key=p+'.'+chr(97+j);LOC[key]=(ru,en);EVENTS+=f'option = {{ name = {key} {e} }}\n'
  EVENTS+='}\n'

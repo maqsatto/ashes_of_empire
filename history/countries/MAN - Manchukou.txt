@@ -7,12 +7,12 @@ set_war_support = 0.25
 set_popularities = { democratic = 6 aof_social_democracy = 6 communism = 6 aof_conservatism = 6 neutrality = 70 fascism = 6 }
 set_politics = { ruling_party = neutrality elections_allowed = no last_election = "1924.9.1" election_frequency = 48 }
 set_technology = { infantry_weapons = 1 tech_support = 1 tech_engineers = 1 tech_recon = 1 gw_artillery = 1 }
-create_country_leader = { name = "aof_world_MAN_democratic_cabinet" desc = "" expire = "1960.1.1" ideology = aof_constitutional_federalism traits = { } }
-create_country_leader = { name = "aof_world_MAN_aof_social_democracy_cabinet" desc = "" expire = "1960.1.1" ideology = aof_parliamentary_socialism traits = { } }
-create_country_leader = { name = "aof_world_MAN_communism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_soviet_centralism traits = { } }
-create_country_leader = { name = "aof_world_MAN_aof_conservatism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_parliamentary_conservatism traits = { } }
-create_country_leader = { name = "aof_world_MAN_neutrality_cabinet" desc = "" expire = "1960.1.1" ideology = aof_bureaucratic_technocracy traits = { } }
-create_country_leader = { name = "aof_world_MAN_fascism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_national_revolution traits = { } }
+create_country_leader = { name = "aof_world_MAN_democratic_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_constitutional_federalism traits = { } }
+create_country_leader = { name = "aof_world_MAN_aof_social_democracy_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_parliamentary_socialism traits = { } }
+create_country_leader = { name = "aof_world_MAN_communism_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_soviet_centralism traits = { } }
+create_country_leader = { name = "aof_world_MAN_aof_conservatism_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_parliamentary_conservatism traits = { } }
+create_country_leader = { name = "aof_world_MAN_neutrality_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_bureaucratic_technocracy traits = { } }
+create_country_leader = { name = "aof_world_MAN_fascism_cabinet" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = aof_national_revolution traits = { } }
 set_grand_doctrine = grand_battleplan
 starting_train_buffer = 5
 set_fuel_ratio = 0.7

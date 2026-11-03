@@ -1,0 +1,6 @@
+# Debug-only fixture loaded by a guarded decision, never assigned in history.
+units = { fleet = { name = "AOF Caspian Debug Fleet" naval_base = 3668
+ task_force = { name = "AOF Test Escort" location = 3668
+  ship = { name = "CAU DEBUG Escort" definition = destroyer start_experience_factor = 0
+   equipment = { destroyer_1 = { amount = 1 owner = CAU } } }
+ } } }

@@ -7,5 +7,5 @@ units = {
  division = { name = "CAU 5" location = 9663 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
  division = { name = "CAU 6" location = 3734 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
  division = { name = "CAU 7" location = 11696 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
- division = { name = "CAU 8" location = 876 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CAU 8" location = 9932 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
 }

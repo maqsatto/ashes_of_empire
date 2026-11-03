@@ -1,6 +1,7 @@
 # AGENTS.md — Ashes of Empires HOI4 mod
 
 ## Priorities
+0. On another PC or a resumed session, read `docs/CODEX_HANDOFF.md` first for the latest observed results and pending work. The v0.3 is a playtest, not declared complete. Do not blindly run machine-bound generators after cloning.
 1. Respect `docs/LOREBOOK.md`. `[CANON]` is immutable without explicit creator decision; `[PROPOSAL]` and `[TBD]` are not canon.
 2. Keep the mod loadable and testable after each small change. Prefer vertically sliced increments over a large untested total conversion.
 3. Inspect the **installed HOI4 game** for files/keys/state IDs/province IDs/country tags before writing mod data. Never invent IDs or assume a wiki example applies to the installed patch.
@@ -65,6 +66,7 @@ The previous launcher-derived -debug_mode argument did not demonstrate live scri
 
 
 ### Hot reload limits found on 3 November
+Later in PID2136/checksum4996, reloading the existing KAZ focus file produced `no errors` and displayed the new railway rewards, but RESET completed focus statuses in the test campaign. Preserve an isolated test save before focus reload and do not treat the resulting campaign as normal progression. At handoff, Focus.AutoComplete was enabled for a separate accelerated reward test; the root was repeated, entry2 not yet started. Do not inherit these cheats into normal play. See CODEX_HANDOFF for the unverified railway/fuel fix and confirmed two-way canal transit.
 With actual -debug, existing national_focus and event edits produced explicit reload/no-errors log entries. Regenerating ideas triggered a database reload followed by 34 parser errors in installed economic/manpower laws; do not treat that live state as a clean test. Batch idea changes before a restart. Content generator must leave byte-identical files untouched to avoid unrelated reloads.
 
 
@@ -73,3 +75,17 @@ Actual -debug test confirmed: debug category and 'Тест: Война окон�
 
 Generator writes now compare byte output, using LF for generated files. The first run after changing the writer normalized eight CRLF outputs and triggered live reloads; subsequent identical runs were verified to preserve bytes and mtimes. Run generator with the game closed when changing its writer or output format. Do not assume a first migration is a no-op.
 
+
+### v0.3 isolated map authoring
+The current map experiment is on `spike/caspian-navigation`, based on commit `e397dd0`. Its verified-byte backup is outside the repository at `C:/Users/maqsatto/.codex/backups/ashes_of_empires/caspian-e397dd0`. `tools/build_v03.py` reapplies the guarded Caspian generator after world generation, using the recorded backup manifest, then generates debug-only fleet decisions. Never run the world generator alone and assume its baseline histories retained the experimental ports. Never set `aof_caspian_navigation_verified` from a debug decision or to bypass unfinished tests. The debug canal toggle controls the global closure flag; a country-specific wartime closure can independently deny that country passage.
+
+Decision `allowed` is evaluated at initialization: do not put `is_ai = no` there for tools intended to work after console tag switching. Keep the AI exclusion in `visible`, `available` and effect rechecks instead, plus AI weight zero.
+
+### Creator map refinements after the first working scenario
+The owner explicitly requested a river-aligned Grozny–Krasnodar canal, removal of the interior Turkish enclave (one or two contiguous border states only), states582/652/236 to KAZ, provinces4265+10185 to651,1334 to573,3265+4324+227 to251, approximately modern Kazakhstan oblast shapes, additional Central Asian cities and Kazakh place names in ordinary Cyrillic. These specific requests authorize the corresponding isolated map stages; they do not approve unrelated border changes. Existing native province IDs stay unchanged. Any new state IDs must be explicitly allocated after an installed/mod collision audit and fully defined; never refer to a guessed existing state.
+
+For names, ordinary Cyrillic is preferred; Kazakh-specific letters are optional. Avoid Soviet/imperial labels when a supported Kazakh alternative exists (e.g. Akmeshit rather than Kyzylorda). Do not invent a1924 city merely because a postwar modern city appears in a current settlement dataset. Record native IDs versus georeferenced additions distinctly.
+
+The owner stopped Computer Use with physical Escape during an earlier turn; that stop was respected. On 3 November the owner explicitly resumed control and authorized closing the test without saving and restarting. This supersedes the earlier pending authorization. A future physical Escape still stops that turn. Applying map/history changes requires a closed game and a full restart/new campaign; never hot-reload those edits into the owner's live test session.
+
+Console layout matters: verify English input before Enter. In checksum ac1c, `help` was actually processed (command list appeared and input cleared), and `goto_province 1517` printed `Centering to province.` and moved the camera. Native scan-code delivery alone remains insufficient evidence. Ordinary GUI clicks may appear in the following observation; inspect the resulting view before clicking again.

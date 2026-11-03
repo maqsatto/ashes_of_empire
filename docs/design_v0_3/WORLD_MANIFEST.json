@@ -4,18 +4,26 @@
   "countries": {
     "KAZ": {
       "states": [
+        236,
         402,
         404,
         406,
         407,
+        582,
         583,
         586,
         587,
         588,
         589,
         590,
+        652,
         881,
-        882
+        882,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086
       ],
       "capital_state": 586,
       "capital_province": 1591,
@@ -24,6 +32,10 @@
         {
           "state": 586,
           "province": 1591
+        },
+        {
+          "state": 236,
+          "province": 9753
         },
         {
           "state": 402,
@@ -42,16 +54,12 @@
           "province": 11537
         },
         {
+          "state": 582,
+          "province": 10256
+        },
+        {
           "state": 583,
           "province": 10312
-        },
-        {
-          "state": 587,
-          "province": 1517
-        },
-        {
-          "state": 588,
-          "province": 12594
         }
       ],
       "government": "democratic",
@@ -150,7 +158,7 @@
         233,
         234,
         235,
-        353,
+        354,
         821,
         826,
         827,
@@ -189,8 +197,8 @@
           "province": 11696
         },
         {
-          "state": 353,
-          "province": 876
+          "state": 354,
+          "province": 9932
         }
       ],
       "government": "democratic",
@@ -390,7 +398,6 @@
     },
     "USA": {
       "states": [
-        1072,
         261,
         357,
         358,
@@ -443,7 +450,8 @@
         685,
         686,
         727,
-        816
+        816,
+        1072
       ],
       "capital_state": 361,
       "capital_province": 3957,
@@ -589,13 +597,6 @@
     },
     "JAP": {
       "states": [
-        1018,
-        1019,
-        1020,
-        1028,
-        1029,
-        1030,
-        1031,
         282,
         524,
         525,
@@ -619,7 +620,14 @@
         647,
         648,
         684,
-        745
+        745,
+        1018,
+        1019,
+        1020,
+        1028,
+        1029,
+        1030,
+        1031
       ],
       "capital_state": 282,
       "capital_province": 1182,
@@ -783,7 +791,6 @@
         226,
         227,
         228,
-        236,
         237,
         238,
         239,
@@ -821,9 +828,7 @@
         572,
         573,
         581,
-        582,
         651,
-        652,
         653,
         825,
         829,
@@ -1193,13 +1198,6 @@
     },
     "CHI": {
       "states": [
-        1034,
-        1035,
-        1036,
-        1037,
-        1038,
-        1039,
-        1041,
         595,
         596,
         597,
@@ -1220,7 +1218,14 @@
         749,
         750,
         751,
-        752
+        752,
+        1034,
+        1035,
+        1036,
+        1037,
+        1038,
+        1039,
+        1041
       ],
       "capital_state": 1035,
       "capital_province": 11913,
@@ -1512,14 +1517,14 @@
     },
     "PAK": {
       "states": [
-        1012,
         440,
         442,
         443,
         444,
         445,
         987,
-        988
+        988,
+        1012
       ],
       "capital_state": 443,
       "capital_province": 3456,
@@ -1648,7 +1653,7 @@
   },
   "states": {
     "402": {
-      "name_key": "STATE_402",
+      "name_key": "aof_kaz_region_402",
       "installed_name": "Akhtubinsk",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
@@ -1657,6 +1662,7 @@
         1220,
         1247,
         1314,
+        1360,
         1371,
         1429,
         4227,
@@ -1667,25 +1673,24 @@
         4374,
         4376,
         4394,
-        4581,
-        4638,
-        7243,
         7313,
         7337,
         7341,
         7354,
         7370,
         7410,
-        7486,
+        7438,
+        9528,
         10131,
         10164,
         10253,
         10264,
+        10295,
         12108,
+        12170,
         12179,
+        12198,
         12227,
-        12235,
-        12254,
         12294
       ],
       "victory_points": [
@@ -1693,58 +1698,71 @@
           7341,
           1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "404": {
-      "name_key": "STATE_404",
+      "name_key": "aof_kaz_region_404",
       "installed_name": "Kyzyl Orda",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
       "source_file": "404-Saykhin.txt",
       "provinces": [
         4578,
+        4581,
         4636,
-        4686,
+        4638,
+        7243,
         7392,
+        7486,
         7556,
         7597,
         7600,
         7657,
-        7777,
-        10148,
+        10275,
         10353,
         10366,
         10452,
-        10506,
-        10601,
+        10508,
         12329,
-        12340,
         12397
       ],
       "victory_points": [
         [
           7597,
           1.0
+        ],
+        [
+          12329,
+          1.0
+        ],
+        [
+          12397,
+          1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "406": {
-      "name_key": "STATE_406",
+      "name_key": "aof_kaz_region_406",
       "installed_name": "Guryev",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
       "source_file": "406-Krasnyy Yar.txt",
       "provinces": [
         464,
+        475,
         477,
         554,
         615,
+        642,
         3459,
         3618,
         3622,
         6498,
         6514,
-        6523,
         6615,
         7322,
         9453,
@@ -1753,17 +1771,21 @@
         11455,
         11469,
         11578,
-        11591
+        11591,
+        12235,
+        12254
       ],
       "victory_points": [
         [
           3618,
           1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "407": {
-      "name_key": "STATE_407",
+      "name_key": "aof_kaz_region_407",
       "installed_name": "Ural'sk",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
@@ -1786,16 +1808,15 @@
         3538,
         4351,
         6491,
+        6523,
         6525,
         6551,
         6564,
         6588,
-        7438,
         9462,
         9487,
         9513,
         9526,
-        9528,
         9538,
         9549,
         11457,
@@ -1814,10 +1835,12 @@
           11537,
           1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "583": {
-      "name_key": "STATE_583",
+      "name_key": "aof_kaz_region_583",
       "installed_name": "Kostanay",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
@@ -1827,25 +1850,25 @@
         1276,
         1303,
         1331,
-        1360,
         1363,
+        4277,
         4337,
         4340,
-        4369,
         7233,
         7357,
+        7383,
         7429,
         10140,
         10168,
+        10220,
+        10268,
+        10277,
         10284,
-        10295,
         10312,
         12115,
+        12121,
         12139,
         12143,
-        12170,
-        12185,
-        12198,
         12229,
         12257,
         12266,
@@ -1853,13 +1876,19 @@
       ],
       "victory_points": [
         [
+          7233,
+          1.0
+        ],
+        [
           10312,
           1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "586": {
-      "name_key": "STATE_586",
+      "name_key": "aof_kaz_region_586",
       "installed_name": "Alma-Ata",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
@@ -1868,30 +1897,26 @@
         1591,
         1840,
         4773,
-        4845,
-        7706,
+        7711,
         10146,
-        10547,
-        10603,
-        12640,
-        12658
+        10547
       ],
       "victory_points": [
         [
           1591,
           3.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "587": {
-      "name_key": "STATE_587",
+      "name_key": "aof_kaz_region_587",
       "installed_name": "Ust Urt",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
       "source_file": "587-Western Kazakstan.txt",
       "provinces": [
-        475,
-        642,
         1517,
         3593,
         4523,
@@ -1908,163 +1933,157 @@
           1517,
           1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "588": {
-      "name_key": "STATE_588",
+      "name_key": "aof_kaz_region_588",
       "installed_name": "Semipalatinsk",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
       "source_file": "588-Some Mountains.txt",
       "provinces": [
-        1287,
-        1749,
-        1818,
-        1864,
-        4661,
+        1668,
         4674,
+        4764,
         4867,
-        7350,
-        7890,
-        10161,
+        7784,
         10218,
-        10292,
+        10290,
         10584,
-        10610,
         10653,
-        12427,
         12564,
         12594,
         12635,
+        12662,
         13151
       ],
       "victory_points": [
         [
           12594,
           2.0
+        ],
+        [
+          1668,
+          1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "589": {
-      "name_key": "STATE_589",
+      "name_key": "aof_kaz_region_589",
       "installed_name": "Ayaguz",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
       "source_file": "589-Eastern Kazakhstan.txt",
       "provinces": [
-        1239,
-        1668,
-        4651,
-        4764,
-        7332,
-        7405,
-        7711,
-        7784,
-        7795,
-        7856,
-        10290,
-        10550,
-        10619,
-        10680,
-        12529,
-        12662,
-        13148,
-        13149,
-        13197
+        1749,
+        1818,
+        1864,
+        7890,
+        10610,
+        12427
       ],
       "victory_points": [
         [
-          1668,
+          1864,
+          3.0
+        ],
+        [
+          10610,
           1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "590": {
-      "name_key": "STATE_590",
+      "name_key": "aof_kaz_region_590",
       "installed_name": "Akmolinsk",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
       "source_file": "590-Northern Kazakhstan.txt",
       "provinces": [
         1223,
-        1229,
-        1309,
         1375,
-        1391,
-        1418,
-        1662,
         1680,
-        1694,
+        1879,
         4232,
-        4238,
         4281,
-        4309,
         4333,
-        4850,
         7298,
         7326,
-        7383,
-        7407,
         7425,
-        7741,
-        7874,
         10211,
         10239,
         10308,
-        10633,
-        12152,
-        12619
+        12111,
+        12152
       ],
       "victory_points": [
         [
+          1223,
+          1.0
+        ],
+        [
           4333,
           1.0
+        ],
+        [
+          7298,
+          1.0
         ]
-      ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "881": {
-      "name_key": "STATE_881",
+      "name_key": "aof_kaz_region_881",
       "installed_name": "Karagandy",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
       "source_file": "881-Karagandy.txt",
       "provinces": [
+        1239,
         1243,
-        1312,
-        1382,
         1402,
         4250,
-        4277,
         4389,
-        4492,
-        4595,
         7335,
+        7405,
+        7407,
+        10161,
         10179,
-        10220,
-        10268,
-        10275,
-        10277,
-        10508,
-        12111,
-        12121,
-        12177,
-        12194,
-        12385,
-        12487
+        10292,
+        12194
       ],
-      "victory_points": []
+      "victory_points": [
+        [
+          7407,
+          1.0
+        ],
+        [
+          10161,
+          1.0
+        ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     },
     "882": {
-      "name_key": "STATE_882",
+      "name_key": "aof_kaz_region_882",
       "installed_name": "Pavlodar",
       "installed_owner": "SOV",
       "fixture_owner": "KAZ",
       "source_file": "882-Pavlodar.txt",
       "provinces": [
-        1879,
-        4670,
+        1287,
+        4661,
         4685,
         7317,
+        7350,
         7708,
         10202,
         10235,
@@ -2075,6 +2094,107 @@
         [
           7708,
           1.0
+        ],
+        [
+          10235,
+          1.0
+        ]
+      ],
+      "explicit_custom_state": false,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
+    },
+    "582": {
+      "name_key": "STATE_582",
+      "installed_name": "Magnitogorsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "582-Sourthern Urals.txt",
+      "provinces": [
+        1406,
+        4215,
+        4261,
+        4311,
+        4383,
+        4411,
+        7281,
+        7328,
+        7373,
+        7401,
+        10196,
+        10224,
+        10256,
+        12200
+      ],
+      "victory_points": [
+        [
+          10256,
+          3.0
+        ],
+        [
+          4311,
+          1.0
+        ]
+      ]
+    },
+    "652": {
+      "name_key": "STATE_652",
+      "installed_name": "Orenburg",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "652-Sov state 6.txt",
+      "provinces": [
+        1210,
+        1254,
+        1350,
+        1378,
+        3330,
+        3357,
+        3385,
+        3486,
+        3563,
+        4322,
+        6379,
+        6424,
+        6515,
+        7343,
+        9420,
+        9445,
+        10299,
+        11433,
+        12128,
+        12242,
+        12270,
+        12298
+      ],
+      "victory_points": []
+    },
+    "236": {
+      "name_key": "STATE_236",
+      "installed_name": "Astrakhan",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "236-Astrakhan.txt",
+      "provinces": [
+        618,
+        757,
+        3435,
+        3461,
+        3487,
+        6486,
+        6516,
+        6620,
+        9440,
+        9455,
+        9592,
+        9753,
+        11429,
+        11579,
+        11736
+      ],
+      "victory_points": [
+        [
+          9753,
+          3.0
         ]
       ]
     },
@@ -2095,6 +2215,10 @@
         [
           1459,
           3.0
+        ],
+        [
+          4629,
+          1.0
         ],
         [
           10488,
@@ -2140,6 +2264,14 @@
         [
           12333,
           2.0
+        ],
+        [
+          7560,
+          1.0
+        ],
+        [
+          10510,
+          1.0
         ]
       ]
     },
@@ -2194,6 +2326,26 @@
       "victory_points": [
         [
           12583,
+          4.0
+        ],
+        [
+          1483,
+          3.0
+        ],
+        [
+          2058,
+          1.0
+        ],
+        [
+          4768,
+          1.0
+        ],
+        [
+          5062,
+          1.0
+        ],
+        [
+          10408,
           1.0
         ]
       ]
@@ -2221,6 +2373,22 @@
       "victory_points": [
         [
           1384,
+          4.0
+        ],
+        [
+          10187,
+          3.0
+        ],
+        [
+          7224,
+          1.0
+        ],
+        [
+          10417,
+          1.0
+        ],
+        [
+          12430,
           1.0
         ]
       ]
@@ -2272,11 +2440,23 @@
       ],
       "victory_points": [
         [
+          10671,
+          3.0
+        ],
+        [
           1573,
           2.0
         ],
         [
-          10671,
+          7639,
+          1.0
+        ],
+        [
+          7775,
+          1.0
+        ],
+        [
+          12722,
           1.0
         ]
       ]
@@ -2638,33 +2818,42 @@
         ]
       ]
     },
-    "353": {
-      "name_key": "STATE_353",
-      "installed_name": "Tunceli",
+    "354": {
+      "name_key": "STATE_354",
+      "installed_name": "Trabzon",
       "installed_owner": "TUR",
       "fixture_owner": "CAU",
-      "source_file": "353-Erzurum.txt",
+      "source_file": "354-Trabzon.txt",
       "provinces": [
-        876,
-        9858,
-        9860,
-        9868,
-        9954,
-        10399,
-        11797
+        789,
+        3714,
+        3979,
+        6976,
+        6991,
+        7454,
+        9886,
+        9932,
+        10403,
+        10472,
+        11753,
+        11853
       ],
       "victory_points": [
         [
-          876,
-          1.0
+          9932,
+          15.0
         ],
         [
-          9860,
-          1.0
+          10472,
+          5.0
         ],
         [
-          9868,
-          1.0
+          3979,
+          3.0
+        ],
+        [
+          11853,
+          3.0
         ]
       ]
     },
@@ -4406,6 +4595,384 @@
           20.0
         ]
       ]
+    },
+    "651": {
+      "source_file": "651-Sov state 5.txt",
+      "name_key": "STATE_651",
+      "installed_name": "Ufa",
+      "installed_owner": "SOV",
+      "fixture_owner": "SOV",
+      "provinces": [
+        273,
+        291,
+        1258,
+        1278,
+        1305,
+        3289,
+        4265,
+        4283,
+        4354,
+        6246,
+        6285,
+        7237,
+        7300,
+        7416,
+        7431,
+        7444,
+        9349,
+        10142,
+        10185,
+        10226,
+        12117,
+        12130,
+        12172
+      ],
+      "victory_points": [
+        [
+          1278,
+          5.0
+        ],
+        [
+          4354,
+          1.0
+        ]
+      ]
+    },
+    "573": {
+      "source_file": "573-Ts 15.txt",
+      "name_key": "STATE_573",
+      "installed_name": "Zlatoust",
+      "installed_owner": "SOV",
+      "fixture_owner": "SOV",
+      "provinces": [
+        237,
+        278,
+        361,
+        1334,
+        3280,
+        4758,
+        7320,
+        10136,
+        10329,
+        11223,
+        11307
+      ],
+      "victory_points": [
+        [
+          10329,
+          1.0
+        ]
+      ]
+    },
+    "251": {
+      "source_file": "251-Samara.txt",
+      "name_key": "STATE_251",
+      "installed_name": "Kuybyshev",
+      "installed_owner": "SOV",
+      "fixture_owner": "SOV",
+      "provinces": [
+        227,
+        298,
+        338,
+        339,
+        365,
+        393,
+        497,
+        3216,
+        3265,
+        4324,
+        6275,
+        6404,
+        9243,
+        9271,
+        9299,
+        9365,
+        9391,
+        11225,
+        11256,
+        11281,
+        11348,
+        11377
+      ],
+      "victory_points": [
+        [
+          11225,
+          3.0
+        ]
+      ]
+    },
+    "1082": {
+      "name_key": "aof_kaz_region_1082",
+      "installed_name": "North Kazakhstan Oblast",
+      "fixture_owner": "KAZ",
+      "source_file": "1082-AOF-KAZ-1082.txt",
+      "provinces": [
+        1229,
+        1309,
+        1391,
+        1418,
+        1662,
+        1694,
+        4238,
+        4309,
+        4369,
+        4670,
+        4850,
+        7741,
+        7874,
+        10633,
+        12185,
+        12619
+      ],
+      "victory_points": [
+        [
+          7874,
+          3.0
+        ]
+      ],
+      "explicit_custom_state": true,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
+    },
+    "1083": {
+      "name_key": "aof_kaz_region_1083",
+      "installed_name": "Zhambyl Oblast",
+      "fixture_owner": "KAZ",
+      "source_file": "1083-AOF-KAZ-1083.txt",
+      "provinces": [
+        7706,
+        10603,
+        12385,
+        12640,
+        12658
+      ],
+      "victory_points": [
+        [
+          12640,
+          3.0
+        ]
+      ],
+      "explicit_custom_state": true,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
+    },
+    "1084": {
+      "name_key": "aof_kaz_region_1084",
+      "installed_name": "Zhetysu Oblast",
+      "fixture_owner": "KAZ",
+      "source_file": "1084-AOF-KAZ-1084.txt",
+      "provinces": [
+        4651,
+        4845,
+        7332,
+        7795,
+        7856,
+        10550,
+        10619,
+        10680,
+        12529,
+        13148,
+        13149,
+        13197
+      ],
+      "victory_points": [
+        [
+          4845,
+          1.0
+        ],
+        [
+          10619,
+          1.0
+        ]
+      ],
+      "explicit_custom_state": true,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
+    },
+    "1085": {
+      "name_key": "aof_kaz_region_1085",
+      "installed_name": "Ulytau Oblast",
+      "fixture_owner": "KAZ",
+      "source_file": "1085-AOF-KAZ-1085.txt",
+      "provinces": [
+        1312,
+        1382,
+        4492,
+        4595,
+        12177,
+        12487
+      ],
+      "victory_points": [
+        [
+          1312,
+          1.0
+        ]
+      ],
+      "explicit_custom_state": true,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
+    },
+    "1086": {
+      "name_key": "aof_kaz_region_1086",
+      "installed_name": "Turkestan Oblast",
+      "fixture_owner": "KAZ",
+      "source_file": "1086-AOF-KAZ-1086.txt",
+      "provinces": [
+        4686,
+        7777,
+        10148,
+        10506,
+        10601,
+        12340
+      ],
+      "victory_points": [
+        [
+          4686,
+          3.0
+        ],
+        [
+          12340,
+          3.0
+        ]
+      ],
+      "explicit_custom_state": true,
+      "region_reference_status": "Approximate modern oblast snapped to existing provinces, not 1924 canon"
     }
+  },
+  "caucasian_turkish_border": {
+    "authorization": "Owner requested only one or two adjacent Turkish border regions; minimal one-state allocation selected.",
+    "allocated_states": [
+      354
+    ],
+    "restored_native_states": [
+      353
+    ],
+    "native_bitmap_adjacencies": [
+      {
+        "turkish_state": 354,
+        "caucasian_state": 230,
+        "provinces": [
+          10403,
+          12441
+        ],
+        "pixels": [
+          [
+            3480,
+            701
+          ],
+          [
+            3481,
+            701
+          ]
+        ]
+      },
+      {
+        "turkish_state": 354,
+        "caucasian_state": 231,
+        "provinces": [
+          10403,
+          3656
+        ],
+        "pixels": [
+          [
+            3471,
+            694
+          ],
+          [
+            3470,
+            694
+          ]
+        ]
+      }
+    ],
+    "note": "This border instruction does not approve the other provisional capitals or unspecified world geography."
+  },
+  "user_authorized_state_allocations": {
+    "KAZ": [
+      582,
+      652,
+      236
+    ],
+    "note": "Explicit owner request; province-level corrections are applied afterward by the separately backed-up state-edits generator. No other borders or capitals are approved by this allocation."
+  },
+  "user_authorized_province_transfers": {
+    "4265": {
+      "native_from": 582,
+      "to": 651,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "10185": {
+      "native_from": 582,
+      "to": 651,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "1334": {
+      "native_from": 582,
+      "to": 573,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "3265": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "4324": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "227": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    }
+  },
+  "kazakhstan_oblasts": {
+    "states": [
+      402,
+      404,
+      406,
+      407,
+      583,
+      586,
+      587,
+      588,
+      589,
+      590,
+      881,
+      882,
+      1082,
+      1083,
+      1084,
+      1085,
+      1086
+    ],
+    "outside_authorised_states_unchanged": [
+      236,
+      582,
+      652
+    ],
+    "custom_ids_registered": [
+      1082,
+      1083,
+      1084,
+      1085,
+      1086
+    ],
+    "province_geometry_unchanged": true,
+    "official_reference_sources": [
+      "https://www.gov.kz/article/19305?lang=kk",
+      "https://stat.gov.kz/ru/industries/socialstatistics/demography/publications/335820/",
+      "https://www.gov.kz/uploads/2025/12/29/28d1a632f23ee3e9f8c7e5c949910735_original.10102332.pdf",
+      "https://primeminister.kz/assets/media/prilozhenie-rus_113.pdf"
+    ]
+  },
+  "city_catalog": {
+    "manifest": "docs/design_v0_3/CITY_MANIFEST.json",
+    "additional_markers": 32,
+    "native_renames": 21,
+    "geographic_placement": "Reconstructed at province scale; review in game."
   }
 }

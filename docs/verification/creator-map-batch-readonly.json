@@ -1,0 +1,408 @@
+{
+  "verification": "READ_ONLY_COMPOSED_DATA; NOT APPLIED OR GAME-TESTED",
+  "oblasts": 17,
+  "additional_city_markers": 32,
+  "native_city_renames": 21,
+  "requested_province_transfers": {
+    "4265": {
+      "native_from": 582,
+      "to": 651,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "10185": {
+      "native_from": 582,
+      "to": 651,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "1334": {
+      "native_from": 582,
+      "to": 573,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "3265": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "4324": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    },
+    "227": {
+      "native_from": 652,
+      "to": 251,
+      "victory_points_moved": [],
+      "province_building_moved": false
+    }
+  },
+  "capital": {
+    "state": 586,
+    "province": 1591
+  },
+  "city_catalog": [
+    {
+      "name": "Кызылжар",
+      "province": 7874,
+      "state": 1082,
+      "kind": "additional"
+    },
+    {
+      "name": "Кокшетау",
+      "province": 7298,
+      "state": 590,
+      "kind": "additional"
+    },
+    {
+      "name": "Оскемен",
+      "province": 1864,
+      "state": 589,
+      "kind": "additional"
+    },
+    {
+      "name": "Тараз",
+      "province": 12640,
+      "state": 1083,
+      "kind": "additional"
+    },
+    {
+      "name": "Талдыкорган",
+      "province": 10619,
+      "state": 1084,
+      "kind": "additional"
+    },
+    {
+      "name": "Шымкент",
+      "province": 4686,
+      "state": 1086,
+      "kind": "additional"
+    },
+    {
+      "name": "Туркестан",
+      "province": 12340,
+      "state": 1086,
+      "kind": "additional"
+    },
+    {
+      "name": "Зайсан",
+      "province": 10610,
+      "state": 589,
+      "kind": "additional"
+    },
+    {
+      "name": "Атбасар",
+      "province": 1223,
+      "state": 590,
+      "kind": "additional"
+    },
+    {
+      "name": "Жаркент",
+      "province": 4845,
+      "state": 1084,
+      "kind": "additional"
+    },
+    {
+      "name": "Экибастуз",
+      "province": 10235,
+      "state": 882,
+      "kind": "additional"
+    },
+    {
+      "name": "Житикара",
+      "province": 7233,
+      "state": 583,
+      "kind": "additional"
+    },
+    {
+      "name": "Жосалы",
+      "province": 12329,
+      "state": 404,
+      "kind": "additional"
+    },
+    {
+      "name": "Шиели",
+      "province": 12397,
+      "state": 404,
+      "kind": "additional"
+    },
+    {
+      "name": "Караганды",
+      "province": 7407,
+      "state": 881,
+      "kind": "additional"
+    },
+    {
+      "name": "Каркаралы",
+      "province": 10161,
+      "state": 881,
+      "kind": "additional"
+    },
+    {
+      "name": "Карши",
+      "province": 7639,
+      "state": 830,
+      "kind": "additional"
+    },
+    {
+      "name": "Фергана",
+      "province": 2058,
+      "state": 732,
+      "kind": "additional"
+    },
+    {
+      "name": "Худжанд",
+      "province": 10187,
+      "state": 742,
+      "kind": "additional"
+    },
+    {
+      "name": "Каракол",
+      "province": 4768,
+      "state": 732,
+      "kind": "additional"
+    },
+    {
+      "name": "Талас",
+      "province": 10408,
+      "state": 732,
+      "kind": "additional"
+    },
+    {
+      "name": "Нарын",
+      "province": 5062,
+      "state": 732,
+      "kind": "additional"
+    },
+    {
+      "name": "Теджен",
+      "province": 7560,
+      "state": 584,
+      "kind": "additional"
+    },
+    {
+      "name": "Куляб",
+      "province": 7224,
+      "state": 742,
+      "kind": "additional"
+    },
+    {
+      "name": "Хорог",
+      "province": 10417,
+      "state": 742,
+      "kind": "additional"
+    },
+    {
+      "name": "Бахарден",
+      "province": 10510,
+      "state": 584,
+      "kind": "additional"
+    },
+    {
+      "name": "Шахрисабз",
+      "province": 12722,
+      "state": 830,
+      "kind": "additional"
+    },
+    {
+      "name": "Джизак",
+      "province": 4629,
+      "state": 405,
+      "kind": "additional"
+    },
+    {
+      "name": "Каттакурган",
+      "province": 7775,
+      "state": 830,
+      "kind": "additional"
+    },
+    {
+      "name": "Ош",
+      "province": 1483,
+      "state": 732,
+      "kind": "additional"
+    },
+    {
+      "name": "Сулюкта",
+      "province": 12430,
+      "state": 742,
+      "kind": "additional"
+    },
+    {
+      "name": "Карсакпай",
+      "province": 1312,
+      "state": 1085,
+      "kind": "additional"
+    },
+    {
+      "name": "Актобе",
+      "province": 7341,
+      "state": 402,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Акмешит",
+      "province": 7597,
+      "state": 404,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Атырау",
+      "province": 3618,
+      "state": 406,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Орал",
+      "province": 11537,
+      "state": 407,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Костанай",
+      "province": 10312,
+      "state": 583,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Алматы",
+      "province": 1591,
+      "state": 586,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Семей",
+      "province": 12594,
+      "state": 588,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Аягоз",
+      "province": 1668,
+      "state": 588,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Акмола",
+      "province": 4333,
+      "state": 590,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Кереку",
+      "province": 7708,
+      "state": 882,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Бишкек",
+      "province": 12583,
+      "state": 732,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Душанбе",
+      "province": 1384,
+      "state": 742,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Кармана",
+      "province": 1554,
+      "state": 585,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Ашхабад",
+      "province": 12333,
+      "state": 584,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Дашогуз",
+      "province": 1493,
+      "state": 832,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Бухара",
+      "province": 1573,
+      "state": 830,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Самарканд",
+      "province": 10671,
+      "state": 830,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Ташкент",
+      "province": 1459,
+      "state": 405,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Коканд",
+      "province": 10488,
+      "state": 405,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Хива",
+      "province": 12465,
+      "state": 831,
+      "kind": "existing renamed"
+    },
+    {
+      "name": "Нукус",
+      "province": 1614,
+      "state": 823,
+      "kind": "existing renamed"
+    }
+  ],
+  "planned_output_sha256": {
+    "history/states/652-Sov state 6.txt": "30e56e0138f5338ea179cfe2c3f386e0f1b29e65de58680f378baa6c51c07264",
+    "history/states/582-Sourthern Urals.txt": "192b21d2c87d61a44ced7d3a8190eabe98367319043a9180ae4c3f52e0260126",
+    "history/states/651-Sov state 5.txt": "aefc3787c381b1b29c0686688e45e615e7856e489890c771ae6212f0cd836360",
+    "history/states/236-Astrakhan.txt": "a140d600e921ea1fdcb3bc7d75c239bf299bd6d043bd1f8a276ce3c37b357d16",
+    "history/states/573-Ts 15.txt": "b4ffb9a29f23c2e53496fc379524b98357db0be669b571e0dee637effc87cc33",
+    "history/states/251-Samara.txt": "87435e3ecf4a57d70a20c9caa07881098a777bb19f3b54fe0968531a8a6f5faa",
+    "map/buildings.txt": "a177de4bfe2d0f9398c6e7db43476ecdc3df34af1abc9e5d3e1ad39bb4e97648",
+    "docs/design_v0_3/WORLD_MANIFEST.json": "950cf410eabc6c56d84c5f20fc894d8766a71f53450cd364717b07baf341a931",
+    "history/states/402-Akhtubinsk.txt": "4019f5922d197ea3ffda8bad967fe159a445f94ae39e83f4785012ce270a486d",
+    "history/states/404-Saykhin.txt": "47e596aa7cb75427ae39d47df6259540fe310dec43752e633d738138ee5bb5a7",
+    "history/states/406-Krasnyy Yar.txt": "1944c334c0102ad5e74c00662ab0205ac50de1dbe8bdd0f98854b129e600fa26",
+    "history/states/407-Uralsk.txt": "011ad06048dd777a0b6f3876dccc4e53760a5b19527d1cc44f8c5ef666fd3256",
+    "history/states/583-Kazakhstan.txt": "d874ef6d6178b68170be6677a4af55e12c08ec34700528109bad8fed861f175d",
+    "history/states/586-Kyrgyzstan.txt": "bfcfe5500eecc0ce1bf8d640c9e250a1759a4607ac695432fed77822094fb55c",
+    "history/states/587-Western Kazakstan.txt": "76b7cb8735c5f57de96757b41b44857710faa29a5f99cf91f358d6acf72d98ad",
+    "history/states/588-Some Mountains.txt": "1b09926b030939e3371ed3f126a368bc6635f72684f9e51344e41c4e4dd17f3e",
+    "history/states/589-Eastern Kazakhstan.txt": "7738aa68e190de619b3eb14c0332aaedbf4014ecedfea51026297652e534ce18",
+    "history/states/590-Northern Kazakhstan.txt": "e71c3b3762bec546d7ec21a853ce830e0c17b5b9a6e95d6355386d3205ef0686",
+    "history/states/881-Karagandy.txt": "fd6fdac6389ed8b901ad3c9e19a7f7611bce1673e7138691e9d32d30758bf631",
+    "history/states/882-Pavlodar.txt": "c7f749d15514338327117ab3d653d42a1c5a0d94dd74ef18b9edd6104da37be6",
+    "history/states/1082-AOF-KAZ-1082.txt": "abe1d9d68a36012cabd4331fd100b07d021b5492a46ee7bd7cd498293586960b",
+    "history/states/1083-AOF-KAZ-1083.txt": "3426e8a21c25a9bee03a624a472395dcdf37f6529d101c80546af6d8b95bb3c3",
+    "history/states/1084-AOF-KAZ-1084.txt": "db84ab7e680c38b135a1a893bd0fae08d51b3bb0248959b8cb600cf2e7f41efc",
+    "history/states/1085-AOF-KAZ-1085.txt": "de2108f36028a0c77b15a802893512d9257710a116ee3fb9b152013aaa413916",
+    "history/states/1086-AOF-KAZ-1086.txt": "147914ba51b9aa038936ba90aa2636d08b6274bafa8bf95f2c83323b08110d35",
+    "localisation/russian/aof_v03_kaz_regions_l_russian.yml": "d98cab31164d057a9d5b793f01fce54dee907f0b2d503d70397b0f2ade13fc4b",
+    "localisation/english/aof_v03_kaz_regions_l_english.yml": "729bb05a27e9dfbafd91bd29f8b15e693afc2e29db1f3c3358b113639c50d4a0",
+    "history/states/405-Atyrau.txt": "f1ffe323138b7b68e2fd1e83de0f8f89747b49f2e332626c70578127c4b59728",
+    "history/states/584-Turkmenistan.txt": "55c7a00a703a4cb1b8851f1f3758148896105ed4868dfc7bab14d85df82cdf19",
+    "history/states/732-Pamir.txt": "df312de2d244e7b35ddd8de00dd7c7942a6c68cc1778458802cfa41e2e28dcb2",
+    "history/states/742-Stalinabad.txt": "d65554ae938204f7911bf2f370b852bd1ef66321aeb50ae932e090b8a2cf2a76",
+    "history/states/830 - Bukhara.txt": "ee06172568ab4445e8c57bc27458ad755a30f6f05d59e6f77e9f61e918353081",
+    "history/states/832 - Dashhowuz.txt": "1555bae6c70d47e3cde8358927aab2f698cf6d23ae55c618a77f9831f12e825d",
+    "history/states/585-Uzbekistan.txt": "39443bc18f762160327780e021aec2f667161acbc2e29016afb6554575e4e639",
+    "history/states/823 - Karakalpakstan.txt": "b5eb0236dfe78657e7402a21da59f0a630e6e7e8f550ad06981505849c3c4b14",
+    "history/states/831 - Khiva.txt": "780656fda0baa9fdc30538886960c2f8fde0459c93901c401f0335a6b67faeda",
+    "localisation/replace/aof_v03_cities_l_russian.yml": "22aafddf5d82451e73557c193bada58835c6a48b5b5ba7878df21b16005fd228",
+    "localisation/replace/aof_v03_cities_l_english.yml": "b3078a5149dc2cf34f3f4d9424f73e14a7713e6ef0b5ba0a22f0a18b15d167be"
+  }
+}

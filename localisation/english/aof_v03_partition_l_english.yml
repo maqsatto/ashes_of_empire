@@ -1,6 +1,6 @@
 ﻿l_english:
  aof_partition.1.t: "A negotiated peaceful partition"
- aof_partition.1.d: "This is a specific treaty for the provisional playtest map, not a declaration of historical boundaries. Uzbekistan receives Navoi, Karakalpakstan, Bukhara and Khiva; Turkmenistan receives Ashkhabad and Tashauz; Tajikistan receives Stalinabad; Kyrgyzstan receives Pamir. Tashkent (state 405) remains with the Turkestani continuity cabinet so the current player can continue. The new states become independent. Their national rights are preserved, including the Uzbek core on Tashkent; possession of that city remains a separate provisional compromise. Every condition is checked again immediately before execution."
+ aof_partition.1.d: "This is a specific treaty for the provisional playtest map, not a declaration of historical boundaries. Uzbekistan receives Karmana, Karakalpakstan, Bukhara and Khiva; its transitional cabinet will sit in Samarkand. Turkmenistan receives Ashgabat and Dashoguz; Tajikistan receives Dushanbe; Kyrgyzstan receives Pamir. Tashkent (state 405) remains with the Turkestani continuity cabinet so the current player can continue. The new states become independent. Their national rights are preserved, including the Uzbek core on Tashkent; possession of that city remains a separate provisional compromise. Every condition is checked again immediately before execution."
  aof_partition.1.a: "Execute the treaty and retain the Tashkent cabinet"
  aof_partition.1.b: "Preserve the common state"
  aof_partition.2.t: "Four independent governments"

@@ -1,0 +1,1277 @@
+{
+  "ordered_pixel_province_runs": [
+    {
+      "province": 1050,
+      "state": null,
+      "type": "lake",
+      "owner": null,
+      "first_pixel": [
+        3560,
+        650
+      ],
+      "last_pixel": [
+        3551,
+        650
+      ],
+      "pixels": 10
+    },
+    {
+      "province": 700,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3550,
+        650
+      ],
+      "last_pixel": [
+        3550,
+        650
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 6701,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3550,
+        651
+      ],
+      "last_pixel": [
+        3548,
+        652
+      ],
+      "pixels": 4
+    },
+    {
+      "province": 700,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3547,
+        652
+      ],
+      "last_pixel": [
+        3547,
+        652
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 6701,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3547,
+        653
+      ],
+      "last_pixel": [
+        3544,
+        653
+      ],
+      "pixels": 4
+    },
+    {
+      "province": 700,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3544,
+        652
+      ],
+      "last_pixel": [
+        3543,
+        652
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 6701,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3542,
+        652
+      ],
+      "last_pixel": [
+        3542,
+        652
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 700,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3542,
+        651
+      ],
+      "last_pixel": [
+        3542,
+        651
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 6701,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3541,
+        651
+      ],
+      "last_pixel": [
+        3538,
+        652
+      ],
+      "pixels": 5
+    },
+    {
+      "province": 3682,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3537,
+        652
+      ],
+      "last_pixel": [
+        3536,
+        652
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 6730,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3536,
+        651
+      ],
+      "last_pixel": [
+        3534,
+        651
+      ],
+      "pixels": 3
+    },
+    {
+      "province": 3682,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3534,
+        652
+      ],
+      "last_pixel": [
+        3534,
+        652
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 683,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3533,
+        652
+      ],
+      "last_pixel": [
+        3533,
+        653
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 3682,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3533,
+        654
+      ],
+      "last_pixel": [
+        3533,
+        654
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 683,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3532,
+        654
+      ],
+      "last_pixel": [
+        3531,
+        655
+      ],
+      "pixels": 3
+    },
+    {
+      "province": 3682,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3531,
+        656
+      ],
+      "last_pixel": [
+        3531,
+        656
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 683,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3530,
+        656
+      ],
+      "last_pixel": [
+        3530,
+        656
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 3682,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3530,
+        657
+      ],
+      "last_pixel": [
+        3530,
+        657
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 683,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3529,
+        657
+      ],
+      "last_pixel": [
+        3529,
+        657
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 3682,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3529,
+        658
+      ],
+      "last_pixel": [
+        3528,
+        658
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 683,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3527,
+        658
+      ],
+      "last_pixel": [
+        3524,
+        658
+      ],
+      "pixels": 4
+    },
+    {
+      "province": 3672,
+      "state": 821,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3524,
+        659
+      ],
+      "last_pixel": [
+        3516,
+        657
+      ],
+      "pixels": 17
+    },
+    {
+      "province": 11632,
+      "state": 232,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3516,
+        656
+      ],
+      "last_pixel": [
+        3511,
+        654
+      ],
+      "pixels": 8
+    },
+    {
+      "province": 6702,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3510,
+        654
+      ],
+      "last_pixel": [
+        3508,
+        653
+      ],
+      "pixels": 4
+    },
+    {
+      "province": 9647,
+      "state": 828,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3507,
+        653
+      ],
+      "last_pixel": [
+        3504,
+        653
+      ],
+      "pixels": 4
+    },
+    {
+      "province": 6702,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3504,
+        652
+      ],
+      "last_pixel": [
+        3504,
+        652
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 9647,
+      "state": 828,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3503,
+        652
+      ],
+      "last_pixel": [
+        3501,
+        653
+      ],
+      "pixels": 4
+    },
+    {
+      "province": 6733,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3500,
+        653
+      ],
+      "last_pixel": [
+        3492,
+        653
+      ],
+      "pixels": 9
+    },
+    {
+      "province": 685,
+      "state": 827,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3491,
+        653
+      ],
+      "last_pixel": [
+        3486,
+        654
+      ],
+      "pixels": 7
+    },
+    {
+      "province": 6718,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3486,
+        653
+      ],
+      "last_pixel": [
+        3482,
+        653
+      ],
+      "pixels": 5
+    },
+    {
+      "province": 685,
+      "state": 827,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3482,
+        654
+      ],
+      "last_pixel": [
+        3482,
+        654
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 11633,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3481,
+        654
+      ],
+      "last_pixel": [
+        3481,
+        654
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 685,
+      "state": 827,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3481,
+        655
+      ],
+      "last_pixel": [
+        3481,
+        655
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 11633,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3480,
+        655
+      ],
+      "last_pixel": [
+        3477,
+        658
+      ],
+      "pixels": 7
+    },
+    {
+      "province": 9649,
+      "state": 233,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3476,
+        658
+      ],
+      "last_pixel": [
+        3474,
+        660
+      ],
+      "pixels": 5
+    },
+    {
+      "province": 685,
+      "state": 827,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3474,
+        661
+      ],
+      "last_pixel": [
+        3474,
+        661
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 9649,
+      "state": 233,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3473,
+        661
+      ],
+      "last_pixel": [
+        3473,
+        661
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 6674,
+      "state": 827,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3472,
+        661
+      ],
+      "last_pixel": [
+        3469,
+        661
+      ],
+      "pixels": 4
+    },
+    {
+      "province": 11664,
+      "state": 233,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3468,
+        661
+      ],
+      "last_pixel": [
+        3459,
+        654
+      ],
+      "pixels": 17
+    },
+    {
+      "province": 6692,
+      "state": 233,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3459,
+        653
+      ],
+      "last_pixel": [
+        3458,
+        650
+      ],
+      "pixels": 5
+    },
+    {
+      "province": 714,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3459,
+        650
+      ],
+      "last_pixel": [
+        3462,
+        642
+      ],
+      "pixels": 12
+    },
+    {
+      "province": 11678,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3462,
+        641
+      ],
+      "last_pixel": [
+        3460,
+        635
+      ],
+      "pixels": 9
+    },
+    {
+      "province": 9694,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3459,
+        635
+      ],
+      "last_pixel": [
+        3459,
+        635
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 11696,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3459,
+        634
+      ],
+      "last_pixel": [
+        3459,
+        634
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 9694,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3458,
+        634
+      ],
+      "last_pixel": [
+        3458,
+        634
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 11696,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3458,
+        633
+      ],
+      "last_pixel": [
+        3456,
+        632
+      ],
+      "pixels": 4
+    },
+    {
+      "province": 9694,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3455,
+        632
+      ],
+      "last_pixel": [
+        3453,
+        632
+      ],
+      "pixels": 3
+    },
+    {
+      "province": 11696,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3453,
+        631
+      ],
+      "last_pixel": [
+        3452,
+        631
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 9694,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3451,
+        631
+      ],
+      "last_pixel": [
+        3450,
+        631
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 11696,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3450,
+        630
+      ],
+      "last_pixel": [
+        3449,
+        629
+      ],
+      "pixels": 3
+    },
+    {
+      "province": 735,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3448,
+        629
+      ],
+      "last_pixel": [
+        3448,
+        629
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 11696,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3448,
+        628
+      ],
+      "last_pixel": [
+        3448,
+        628
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 735,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3447,
+        628
+      ],
+      "last_pixel": [
+        3446,
+        623
+      ],
+      "pixels": 7
+    },
+    {
+      "province": 9726,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3446,
+        622
+      ],
+      "last_pixel": [
+        3446,
+        622
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 735,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3445,
+        622
+      ],
+      "last_pixel": [
+        3445,
+        621
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 9726,
+      "state": 235,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3445,
+        620
+      ],
+      "last_pixel": [
+        3445,
+        620
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 735,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3444,
+        620
+      ],
+      "last_pixel": [
+        3443,
+        620
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 9709,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3442,
+        620
+      ],
+      "last_pixel": [
+        3442,
+        620
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 735,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3442,
+        621
+      ],
+      "last_pixel": [
+        3442,
+        621
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 9709,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3441,
+        621
+      ],
+      "last_pixel": [
+        3432,
+        622
+      ],
+      "pixels": 11
+    },
+    {
+      "province": 11681,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3431,
+        622
+      ],
+      "last_pixel": [
+        3427,
+        625
+      ],
+      "pixels": 8
+    },
+    {
+      "province": 6768,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3426,
+        625
+      ],
+      "last_pixel": [
+        3424,
+        625
+      ],
+      "pixels": 3
+    },
+    {
+      "province": 3734,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3423,
+        625
+      ],
+      "last_pixel": [
+        3420,
+        627
+      ],
+      "pixels": 6
+    },
+    {
+      "province": 9696,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3420,
+        628
+      ],
+      "last_pixel": [
+        3420,
+        628
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 3734,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3419,
+        628
+      ],
+      "last_pixel": [
+        3419,
+        628
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 9696,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3419,
+        629
+      ],
+      "last_pixel": [
+        3413,
+        629
+      ],
+      "pixels": 7
+    },
+    {
+      "province": 3734,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3413,
+        628
+      ],
+      "last_pixel": [
+        3412,
+        628
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 3760,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3411,
+        628
+      ],
+      "last_pixel": [
+        3407,
+        628
+      ],
+      "pixels": 5
+    },
+    {
+      "province": 11729,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3407,
+        627
+      ],
+      "last_pixel": [
+        3406,
+        627
+      ],
+      "pixels": 2
+    },
+    {
+      "province": 3760,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3405,
+        627
+      ],
+      "last_pixel": [
+        3405,
+        627
+      ],
+      "pixels": 1
+    },
+    {
+      "province": 11729,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3405,
+        626
+      ],
+      "last_pixel": [
+        3396,
+        626
+      ],
+      "pixels": 10
+    },
+    {
+      "province": 6741,
+      "state": 234,
+      "type": "land",
+      "owner": "CAU",
+      "first_pixel": [
+        3395,
+        626
+      ],
+      "last_pixel": [
+        3385,
+        628
+      ],
+      "pixels": 13
+    }
+  ],
+  "ordered_land_runs": [
+    700,
+    6701,
+    700,
+    6701,
+    700,
+    6701,
+    700,
+    6701,
+    3682,
+    6730,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3672,
+    11632,
+    6702,
+    9647,
+    6702,
+    9647,
+    6733,
+    685,
+    6718,
+    685,
+    11633,
+    685,
+    11633,
+    9649,
+    685,
+    9649,
+    6674,
+    11664,
+    6692,
+    714,
+    11678,
+    9694,
+    11696,
+    9694,
+    11696,
+    9694,
+    11696,
+    9694,
+    11696,
+    735,
+    11696,
+    735,
+    9726,
+    735,
+    9726,
+    735,
+    9709,
+    735,
+    9709,
+    11681,
+    6768,
+    3734,
+    9696,
+    3734,
+    9696,
+    3734,
+    3760,
+    11729,
+    3760,
+    11729,
+    6741
+  ],
+  "unique_land_first_appearance": [
+    700,
+    6701,
+    3682,
+    6730,
+    683,
+    3672,
+    11632,
+    6702,
+    9647,
+    6733,
+    685,
+    6718,
+    11633,
+    9649,
+    6674,
+    11664,
+    6692,
+    714,
+    11678,
+    9694,
+    11696,
+    735,
+    9726,
+    9709,
+    11681,
+    6768,
+    3734,
+    9696,
+    3760,
+    11729,
+    6741
+  ],
+  "required_province_state_map": {
+    "700": 232,
+    "6701": 232,
+    "3682": 232,
+    "6730": 232,
+    "683": 232,
+    "3672": 821,
+    "11632": 232,
+    "6702": 235,
+    "9647": 828,
+    "6733": 235,
+    "685": 827,
+    "6718": 235,
+    "11633": 235,
+    "9649": 233,
+    "6674": 827,
+    "11664": 233,
+    "6692": 233,
+    "714": 235,
+    "11678": 235,
+    "9694": 234,
+    "11696": 235,
+    "735": 234,
+    "9726": 235,
+    "9709": 234,
+    "11681": 234,
+    "6768": 234,
+    "3734": 234,
+    "9696": 234,
+    "3760": 234,
+    "11729": 234,
+    "6741": 234
+  },
+  "states": {
+    "232": {
+      "file": "232-Grozny.txt",
+      "owner": "CAU",
+      "controller": "CAU"
+    },
+    "233": {
+      "file": "233-Caucasus Mountains.txt",
+      "owner": "CAU",
+      "controller": "CAU"
+    },
+    "234": {
+      "file": "234-Krasodar.txt",
+      "owner": "CAU",
+      "controller": "CAU"
+    },
+    "235": {
+      "file": "235-Stravropol.txt",
+      "owner": "CAU",
+      "controller": "CAU"
+    },
+    "821": {
+      "file": "821 - Chenchnya-Ingushetia.txt",
+      "owner": "CAU",
+      "controller": "CAU"
+    },
+    "827": {
+      "file": "827 - Kabardino-Balkaria.txt",
+      "owner": "CAU",
+      "controller": "CAU"
+    },
+    "828": {
+      "file": "828 - North Ossetia.txt",
+      "owner": "CAU",
+      "controller": "CAU"
+    }
+  },
+  "non_CAU_land": [],
+  "east": {
+    "water": 1050,
+    "shore": 700
+  },
+  "west": {
+    "water": 8308,
+    "shore": 6741,
+    "coast_pixel": [
+      3385,
+      628
+    ],
+    "water_pixel": [
+      3385,
+      629
+    ]
+  }
+}

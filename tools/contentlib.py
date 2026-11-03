@@ -1,6 +1,7 @@
 """Deterministic authoring helpers; not required by the running mod."""
 from pathlib import Path
 from functools import lru_cache
+from focusicons import focus_icon
 import json, re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,6 +42,9 @@ def render_tree(tree_id, tags, nodes, default=False):
     text = f'focus_tree = {{\n id = {tree_id}\n country = {{ {country} }}\n default = {"yes" if default else "no"}\n reset_on_civilwar = no\n'
     if nodes:
         text += f' initial_show_position = {{ focus = {nodes[0]["id"]} }}\n'
+    # Keep absolute coordinates nonnegative, as in the native generic tree.
+    # This preserves relative branch spacing and avoids a left-clamped camera.
+    x_offset=-min(0,min((n.get('x',0) for n in nodes),default=0))
     loc = {}
     for n in nodes:
         ident=n['id']
@@ -52,8 +56,8 @@ def render_tree(tree_id, tags, nodes, default=False):
         optional=''.join(f' {key} = {{ {n[value]} }}\n' for key,value in [('available','available'),('allow_branch','branch'),('bypass','bypass')] if n.get(value))
         text += f''' focus = {{
   id = {ident}
-  icon = {n.get('icon','GFX_goal_generic_political_pressure')}
-  x = {n.get('x',0)}
+  icon = {focus_icon(n)}
+  x = {n.get('x',0)+x_offset}
   y = {n.get('y',0)}
   cost = {n.get('cost',5)}
 {pre}{ex}{optional}  ai_will_do = {{ factor = {n.get('ai',1)} }}

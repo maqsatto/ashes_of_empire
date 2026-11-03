@@ -6,8 +6,8 @@ focus_tree = {
  initial_show_position = { focus = aof_v03_chi_entry1 }
  focus = {
   id = aof_v03_chi_entry1
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 5
   y = 0
   cost = 5
   ai_will_do = { factor = 1 }
@@ -16,8 +16,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_entry2
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_army_doctrines
+  x = 5
   y = 1
   cost = 5
  prerequisite = { focus = aof_v03_chi_entry1 }
@@ -27,8 +27,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_entry3
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 5
   y = 2
   cost = 5
  prerequisite = { focus = aof_v03_chi_entry2 }
@@ -38,8 +38,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_agreement1
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_alliance
+  x = 8
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_chi_entry3 }
@@ -50,8 +50,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_agreement2
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_army_doctrines
+  x = 8
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_chi_agreement1 }
@@ -61,8 +61,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_agreement3
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_national_unity
+  x = 8
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_chi_agreement2 }
@@ -72,19 +72,19 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_agreement4
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_alliance
+  x = 8
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_chi_agreement3 }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_political_power = 50 add_ideas = aof_v03_chi_agreement_settlement }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_chi_agreement_settlement if = { limit = { has_war = no is_subject = no SHX = { exists = yes has_war = no is_subject = no is_in_faction_with = ROOT } } SHX = { country_event = { id = aof_diplomacy.160 days = 2 } } } if = { limit = { has_war = no is_subject = no YUN = { exists = yes has_war = no is_subject = no is_in_faction_with = ROOT } } YUN = { country_event = { id = aof_diplomacy.160 days = 2 } } } if = { limit = { has_war = no is_subject = no GXC = { exists = yes has_war = no is_subject = no is_in_faction_with = ROOT } } GXC = { country_event = { id = aof_diplomacy.160 days = 2 } } } if = { limit = { has_war = no is_subject = no XSM = { exists = yes has_war = no is_subject = no is_in_faction_with = ROOT } } XSM = { country_event = { id = aof_diplomacy.160 days = 2 } } } }
   
  }
  focus = {
   id = aof_v03_chi_army1
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_national_unity
+  x = 14
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_chi_entry3 }
@@ -95,8 +95,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_army2
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_construct_mil_factory
+  x = 14
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_chi_army1 }
@@ -106,8 +106,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_army3
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_army_doctrines
+  x = 14
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_chi_army2 }
@@ -117,8 +117,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_land1
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_alliance
+  x = 20
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_chi_entry3 }
@@ -129,8 +129,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_land2
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_national_unity
+  x = 20
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_chi_land1 }
@@ -140,8 +140,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_land3
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_army_doctrines
+  x = 20
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_chi_land2 }
@@ -151,8 +151,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_army_civil
-  icon = GFX_goal_generic_political_pressure
-  x = 8
+  icon = GFX_goal_generic_national_unity
+  x = 13
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_chi_army3 }
@@ -163,8 +163,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_army_state
-  icon = GFX_goal_generic_political_pressure
-  x = 11
+  icon = GFX_goal_generic_army_doctrines
+  x = 16
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_chi_army3 }
@@ -175,8 +175,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_social
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_national_unity
+  x = 20
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_chi_land3 }
@@ -187,8 +187,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_revolution
-  icon = GFX_goal_generic_political_pressure
-  x = 18
+  icon = GFX_goal_generic_national_unity
+  x = 23
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_chi_land3 }
@@ -199,8 +199,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_chi_foreign_price
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_national_unity
+  x = 0
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_chi_entry3 }

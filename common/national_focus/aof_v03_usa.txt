@@ -6,7 +6,7 @@ focus_tree = {
  initial_show_position = { focus = aof_v03_usa_order }
  focus = {
   id = aof_v03_usa_order
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 8
   y = 0
   cost = 3
@@ -16,7 +16,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_audit
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 8
   y = 1
   cost = 3
@@ -27,7 +27,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_commission
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 8
   y = 2
   cost = 3
@@ -38,7 +38,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_profits
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 8
   y = 3
   cost = 3
@@ -49,7 +49,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_credit
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 2
   y = 4
   cost = 5
@@ -61,7 +61,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_welfare
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 8
   y = 4
   cost = 5
@@ -73,7 +73,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_oceans
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 14
   y = 4
   cost = 5
@@ -85,7 +85,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_export
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 2
   y = 5
   cost = 5
@@ -96,7 +96,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_debts
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_civ_factory
   x = 2
   y = 6
   cost = 5
@@ -107,7 +107,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_standards
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 2
   y = 7
   cost = 5
@@ -118,7 +118,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_long_contracts
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 2
   y = 8
   cost = 5
@@ -129,7 +129,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_flag
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 0
   y = 9
   cost = 5
@@ -141,7 +141,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_investments
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 4
   y = 9
   cost = 5
@@ -153,7 +153,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_civilian
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 8
   y = 5
   cost = 5
@@ -164,7 +164,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_labor
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 8
   y = 6
   cost = 5
@@ -175,7 +175,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_education
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 8
   y = 7
   cost = 5
@@ -186,7 +186,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_prosperity
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 8
   y = 8
   cost = 5
@@ -197,7 +197,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_trusts
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 6
   y = 9
   cost = 5
@@ -209,7 +209,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_business
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 10
   y = 9
   cost = 5
@@ -221,7 +221,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_coasts
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 14
   y = 5
   cost = 5
@@ -232,7 +232,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_conference
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 14
   y = 6
   cost = 5
@@ -243,7 +243,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_neighbors
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 12
   y = 7
   cost = 5
@@ -255,7 +255,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_tutelage
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 16
   y = 7
   cost = 5
@@ -267,7 +267,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_continent
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_infrastructure
   x = 14
   y = 8
   cost = 5
@@ -278,7 +278,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_labs
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 20
   y = 0
   cost = 5
@@ -288,7 +288,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_production
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 20
   y = 1
   cost = 5
@@ -299,7 +299,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_machine
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 20
   y = 2
   cost = 5
@@ -310,7 +310,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_school
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 20
   y = 3
   cost = 5
@@ -321,7 +321,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_tank
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_tanks
   x = 24
   y = 0
   cost = 5
@@ -331,7 +331,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_trials
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 24
   y = 1
   cost = 5
@@ -342,7 +342,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_repair
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 24
   y = 2
   cost = 5
@@ -353,7 +353,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_series
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_tanks
   x = 24
   y = 3
   cost = 5
@@ -364,7 +364,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_motor_age
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 24
   y = 4
   cost = 5
@@ -375,7 +375,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_ports
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 28
   y = 0
   cost = 5
@@ -385,7 +385,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_routes
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 27
   y = 1
   cost = 5
@@ -397,7 +397,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_project
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 29
   y = 1
   cost = 5
@@ -409,7 +409,7 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_usa_exercises
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 28
   y = 2
   cost = 5

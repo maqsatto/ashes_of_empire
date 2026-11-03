@@ -28,10 +28,10 @@ on_actions = {
     TRK = { set_country_flag = aof_war_exhausted }
     NAF = { set_country_flag = aof_war_exhausted }
     JAP = {
-     if = { limit = { MAN = { exists = yes } } set_autonomy = { target = MAN autonomy_state = autonomy_puppet } }
-     if = { limit = { FER = { exists = yes } } set_autonomy = { target = FER autonomy_state = autonomy_puppet } }
+     if = { limit = { MAN = { exists = yes } } set_autonomy = { target = MAN autonomy_state = autonomy_puppet end_wars = no end_civil_wars = no } }
+     if = { limit = { FER = { exists = yes } } set_autonomy = { target = FER autonomy_state = autonomy_puppet end_wars = no end_civil_wars = no } }
     }
-    ENG = { if = { limit = { RAJ = { is_subject_of = ENG } } set_autonomy = { target = RAJ autonomy_state = autonomy_free } } }
+    ENG = { if = { limit = { RAJ = { is_subject_of = ENG } } set_autonomy = { target = RAJ autonomy_state = autonomy_free end_wars = no end_civil_wars = no } } }
     RAJ = {
      if = { limit = { PAK = { exists = yes } NOT = { has_war_with = PAK } }
       declare_war_on = { target = PAK type = annex_everything }

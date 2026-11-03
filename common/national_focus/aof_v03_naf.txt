@@ -6,8 +6,8 @@ focus_tree = {
  initial_show_position = { focus = aof_v03_naf_entry1 }
  focus = {
   id = aof_v03_naf_entry1
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 5
   y = 0
   cost = 5
   ai_will_do = { factor = 1 }
@@ -16,8 +16,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_entry2
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 5
   y = 1
   cost = 5
  prerequisite = { focus = aof_v03_naf_entry1 }
@@ -27,8 +27,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_entry3
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 5
   y = 2
   cost = 5
  prerequisite = { focus = aof_v03_naf_entry2 }
@@ -38,8 +38,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_neutral1
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_alliance
+  x = 0
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_naf_entry3 }
@@ -49,8 +49,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_neutral2
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_navy_cruiser
+  x = 0
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_naf_neutral1 }
@@ -61,8 +61,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_neutral3
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_construct_mil_factory
+  x = 0
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_naf_neutral2 }
@@ -72,8 +72,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_neutral4
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_national_unity
+  x = 0
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_naf_neutral3 }
@@ -83,8 +83,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_citizen1
-  icon = GFX_goal_generic_political_pressure
-  x = 1
+  icon = GFX_goal_generic_national_unity
+  x = 6
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_naf_entry3 }
@@ -94,8 +94,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_citizen2
-  icon = GFX_goal_generic_political_pressure
-  x = 1
+  icon = GFX_goal_generic_scientific_exchange
+  x = 6
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_naf_citizen1 }
@@ -105,8 +105,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_citizen3
-  icon = GFX_goal_generic_political_pressure
-  x = 1
+  icon = GFX_goal_generic_national_unity
+  x = 6
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_naf_citizen2 }
@@ -116,8 +116,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_citizen4
-  icon = GFX_goal_generic_political_pressure
-  x = 1
+  icon = GFX_goal_generic_national_unity
+  x = 6
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_naf_citizen3 }
@@ -127,19 +127,19 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_voice1
-  icon = GFX_goal_generic_political_pressure
-  x = 7
+  icon = GFX_goal_generic_alliance
+  x = 12
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_naf_entry3 }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = { add_political_power = -25 if = { limit = { country_exists = CMT NOT = { has_war_with = CMT } } if = { limit = { country_exists = CMT NOT = { has_war_with = CMT } } CMT = { country_event = { id = aof_diplomacy.180 days = 2 } } } } else = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } } }
   
  }
  focus = {
   id = aof_v03_naf_voice2
-  icon = GFX_goal_generic_political_pressure
-  x = 7
+  icon = GFX_goal_generic_scientific_exchange
+  x = 12
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_naf_voice1 }
@@ -149,36 +149,37 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_naf_voice3
-  icon = GFX_goal_generic_political_pressure
-  x = 7
+  icon = GFX_goal_generic_navy_cruiser
+  x = 12
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_naf_voice2 }
  available = { any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
   ai_will_do = { factor = 1 }
-  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } add_equipment_to_stockpile = { type = convoy amount = 10 producer = NAF } random_owned_controlled_state = { limit = { is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } } }
   
  }
  focus = {
   id = aof_v03_naf_voice4
-  icon = GFX_goal_generic_political_pressure
-  x = 7
+  icon = GFX_goal_generic_scientific_exchange
+  x = 12
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_naf_voice3 }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_stability = 0.05 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } if = { limit = { has_country_flag = aof_naf_mediation_accepted country_exists = CMT } CMT = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } } } }
   
  }
  focus = {
   id = aof_v03_naf_aid_crisis
-  icon = GFX_goal_generic_political_pressure
-  x = 7
+  icon = GFX_goal_generic_alliance
+  x = 12
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_naf_voice4 }
+ available = { any_other_country = { is_subject = no has_war = yes capital_scope = { is_on_continent = africa } NOT = { has_war_with = ROOT } } }
   ai_will_do = { factor = 1 }
-  completion_reward = { country_event = { id = aof_nations.30 days = 1 } }
+  completion_reward = { random_other_country = { limit = { is_subject = no has_war = yes capital_scope = { is_on_continent = africa } NOT = { has_war_with = ROOT } } country_event = { id = aof_diplomacy.181 days = 2 } } }
   
  }
 }

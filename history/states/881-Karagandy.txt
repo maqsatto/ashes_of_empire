@@ -1,7 +1,8 @@
+# Approximate owner-requested oblast, native province geometry unchanged.
 # PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
 state = {
 	id = 881
-	name = "STATE_881" # Karagandy
+	name = "aof_kaz_region_881" # Karagandy
 
 	history = {
 		controller = KAZ
@@ -16,16 +17,22 @@ state = {
 		}
 		add_core_of = SOV
 
+	
+
+
+		victory_points = { 7407 1 }
+	
+		victory_points = { 10161 1 }
 	}
 
 	provinces = {
-		1243 1312 1382 1402 4250 4277 4389 4492 4595 7335 10179 10220 10268 10275 10277 10508 12111 12121 12177 12194 12385 12487
-	}
-	manpower = 227016
+ 1239 1243 1402 4250 4389 7335 7405 7407 10161 10179 10292 12194
+ }
+	manpower = 213530
 
 	resources = {
-		coal = 6 # initial distribution
-	}
+ chromium = 1 coal = 2
+ }
 
 	buildings_max_level_factor = 1.000
 	state_category = pastoral

@@ -48,10 +48,28 @@ CUSTOM={
 }
 installed_tags='\n'.join(p.read_text(encoding='utf-8-sig') for p in (GAME/'common/country_tags').glob('*.txt'))
 for tag in CUSTOM:assert not re.search(r'^\s*'+tag+r'\s*=',installed_tags,re.M),('installed tag collision',tag)
+# Owner-approved extent: only one or two genuinely bordering Turkish regions.
+# Choose the minimal one-state implementation. Native provinces.bmp contacts:
+# 354/230: Ardahan 10403 -> Gyumri 12441, pixels (3480,701)/(3481,701).
+# 354/231: Georgia 3656 -> Ardahan 10403, pixels (3470,694)/(3471,694).
+# 353 is Tunceli, despite filename '353-Erzurum.txt'; it has no CAU border.
+CAU_TURKISH_BORDER_STATES=[354]
+assert all(STATES[i]['owner']=='TUR' for i in CAU_TURKISH_BORDER_STATES)
+MANIFEST['caucasian_turkish_border']={
+ 'authorization':'Owner requested only one or two adjacent Turkish border regions; minimal one-state allocation selected.',
+ 'allocated_states':CAU_TURKISH_BORDER_STATES,
+ 'restored_native_states':[353],
+ 'native_bitmap_adjacencies':[
+  {'turkish_state':354,'caucasian_state':230,'provinces':[10403,12441],'pixels':[[3480,701],[3481,701]]},
+  {'turkish_state':354,'caucasian_state':231,'provinces':[10403,3656],'pixels':[[3471,694],[3470,694]]},
+ ],
+ 'note':'This border instruction does not approve the other provisional capitals or unspecified world geography.',
+}
+MANIFEST['user_authorized_state_allocations']={'KAZ':[582,652,236],'note':'Explicit owner request; province-level corrections are applied afterward by the separately backed-up state-edits generator. No other borders or capitals are approved by this allocation.'}
 ASSIGN={
- 'KAZ':[i for i,s in STATES.items() if s['owner']=='SOV' and 'KAZ' in s['cores']],
+ 'KAZ':[i for i,s in STATES.items() if s['owner']=='SOV' and 'KAZ' in s['cores']]+[582,652,236],
  'TRK':[i for i,s in STATES.items() if s['owner']=='SOV' and s['cores']&{'UZB','TMS','TAJ','KYR'}],
- 'CAU':[229,230,231,232,233,234,235,821,826,827,828,353],
+ 'CAU':[229,230,231,232,233,234,235,821,826,827,828]+CAU_TURKISH_BORDER_STATES,
  'SIB':[40,403,516,564,565,566,567,568,569,570,571,574,575,576,577,578,579,580,654,824,876,877,878],
  'FER':[408,409,560,561,562,563,637,644,655,657,822,874,875],
  'NAF':[i for i,s in STATES.items() if s['owner'] in {'FRA','ITA'} and s['cores']&{'MOR','ALG','TUN','LBA'}],
@@ -73,7 +91,7 @@ def set_number(body,key,value):
     pat=r'(?m)^(\s*)'+re.escape(key)+r'\s*=\s*\d+(?:\.\d+)?'
     if re.search(pat,body):return re.sub(pat,lambda m:m[1]+key+' = '+str(value),body,count=1)
     return '\n\t\t\t'+key+' = '+str(value)+body
-def state_output(sid,tag,industry=None):
+def state_text(sid,tag,industry=None):
     source=STATES[sid];s=source['text'];_,a,b,_=span(s,'history');h=s[a:b]
     h=re.sub(r'\bowner\s*=\s*\w+','owner = '+tag,h,count=1)
     h=re.sub(r'\bcontroller\s*=\s*\w+','controller = '+tag,h,count=1)
@@ -91,9 +109,23 @@ def state_output(sid,tag,industry=None):
         air=re.search(r'\bair_base\s*=\s*(\d+)',masked(body))
         if not air or int(air[1])<1:h=h[:ba]+set_number(body,'air_base',1)+h[bb:]
     s='# PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.\n'+s[:a]+h+s[b:]
+    return s
+def state_output(sid,tag,industry=None):
+    source=STATES[sid];s=state_text(sid,tag,industry)
     write('history/states/'+source['path'].name,s)
     MANIFEST['states'][str(sid)]={'name_key':'STATE_'+str(sid),'installed_name':STATE_NAMES.get(sid,source['path'].stem),'installed_owner':source['owner'],'fixture_owner':tag,'source_file':source['path'].name,'provinces':source['provinces'],'victory_points':source['vps']}
     source['fixture_owner']=tag
+# Remove only the exact old world-generated enclave override. Never delete an
+# altered history (including somebody else's map-spike changes) by filename.
+# Removing this mod override restores the installed TUR history and all its
+# native cores, rather than leaving a ghost CAU core on Tunceli.
+obsolete=ROOT/'history/states'/STATES[353]['path'].name
+if obsolete.exists():
+    assert obsolete.resolve().parent==(ROOT/'history/states').resolve()
+    expected=state_text(353,'CAU').replace('\r\n','\n').encode('utf8')
+    native=STATES[353]['path'].read_bytes()
+    if obsolete.read_bytes() in [expected,native]:obsolete.unlink()
+    else:raise RuntimeError('State353 override has independent changes: inspect before restoring native TUR history.')
 for sid,tag in assigned.items():state_output(sid,tag,INDUSTRY.get(tag) if CAPITALS.get(tag)==sid else None)
 for tag,industry in INDUSTRY.items():
     sid=CAPITALS[tag]
@@ -143,7 +175,7 @@ def country_history(tag):
     # Institutions for all six families avoid auto-generated historical personalities after a route changes government.
     for f,(ru,en,ideology) in LEADERS.items():
         key='aof_world_'+tag+'_'+f+'_cabinet';LOC[key]=(ru,en)
-        text+='create_country_leader = { name = "'+key+'" desc = "" expire = "1960.1.1" ideology = '+ideology+' traits = { } }\n'
+        text+='create_country_leader = { name = "'+key+'" desc = "" picture = "gfx/leaders/leader_unknown.dds" expire = "1960.1.1" ideology = '+ideology+' traits = { } }\n'
     text+='set_grand_doctrine = grand_battleplan\nstarting_train_buffer = 5\nset_fuel_ratio = 0.7\n'
     if tag in ['USA','JAP']:
         text+='if = { limit = { has_dlc = "Man the Guns" } set_technology = { '+NAVAL_TECH+' } }\n'
@@ -151,10 +183,19 @@ def country_history(tag):
         text+='if = { limit = { has_dlc = "Man the Guns" } set_naval_oob = "aof_v03_'+tag+'_naval_mtg" }\n'
         text+='if = { limit = { NOT = { has_dlc = "Man the Guns" } } set_technology = { '+LEGACY_TECH+' } set_naval_oob = "aof_v03_'+tag+'_naval_legacy" }\n'
     if tag in AIRCRAFT:
-        text+='if = { limit = { has_dlc = "By Blood Alone" } set_technology = { iw_small_airframe = 1 engines_1 = 1 aa_lmg = 1 aircraft_construction = 1 } create_equipment_variant = { name = "AOF Scout Fighter 1924" type = small_plane_airframe_0 modules = { fixed_main_weapon_slot = light_mg_2x engine_type_slot = engine_1_1x special_type_slot_1 = empty } } set_air_oob = "aof_v03_'+tag+'_air_bba" }\n'
+        text+=early_air_setup(tag)
         text+='if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { early_fighter = 1 } set_air_oob = "aof_v03_'+tag+'_air_legacy" }\n'
-    if tag=='USA':
+    if tag in ['USA','SOV']:
         text+='if = { limit = { has_dlc = "No Step Back" } set_technology = { gwtank_chassis = 1 basic_light_tank_chassis = 1 } }\nif = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { gwtank = 1 basic_light_tank = 1 } }\n'
+    if tag=='SOV':
+        # Compatibility version zero, not a late historical Soviet design.
+        # All modules are enabled by native 1918 chassis / Great War artillery.
+        modules='main_armament_slot = tank_small_cannon turret_type_slot = tank_light_one_man_tank_turret suspension_type_slot = tank_bogie_suspension armor_type_slot = tank_riveted_armor engine_type_slot = tank_gasoline_engine'
+        text+='if = { limit = { has_dlc = "No Step Back" } create_equipment_variant = { name = "AOF Light Armour 1924" type = light_tank_chassis_1 modules = { '+modules+' } }'
+        # Native TUR_1936_nsb.txt:162 identifies a Soviet export by NAME,
+        # not by numeric version zero. Preserve that lookup using obsolete
+        # early equipment, without importing its 1933 modules or MIO.
+        text+=' create_equipment_variant = { name = "T-26TU mod. 1933" type = light_tank_chassis_1 obsolete = yes modules = { '+modules+' } } }\n'
     filename=country_file(tag) if tag not in CUSTOM else tag+' - AOF '+tag+'.txt'
     write('history/countries/'+filename,text)
 
@@ -181,6 +222,18 @@ def naval_variants(tag):
         out+='create_equipment_variant = { name = "AOF '+key+' 1924" type = '+hull+' modules = { '+modules+' } }\n'
     return out+'}\n'
 
+def early_air_setup(tag):
+    fighter='fixed_main_weapon_slot = light_mg_2x engine_type_slot = engine_1_1x special_type_slot_1 = empty'
+    out='if = { limit = { has_dlc = "By Blood Alone" } set_technology = { iw_small_airframe = 1 engines_1 = 1 aa_lmg = 1 aircraft_construction = 1'+(' early_bombs = 1' if tag=='USA' else '')+' }\n'
+    if tag=='USA':
+        # Foreign native OOBs request these exact names. They are obsolete
+        # compatibility aliases using early modules, not approved 1924 names.
+        for name in ['P-6','P-26A']:
+            out+='create_equipment_variant = { name = "'+name+'" type = small_plane_airframe_0 modules = { '+fighter+' } obsolete = yes }\n'
+        out+='create_equipment_variant = { name = "O2U" type = small_plane_cas_airframe_0 modules = { fixed_main_weapon_slot = bomb_locks fixed_auxiliary_weapon_slot_1 = light_mg_2x engine_type_slot = engine_1_1x } obsolete = yes }\n'
+    out+='create_equipment_variant = { name = "AOF Scout Fighter 1924" type = small_plane_airframe_0 modules = { '+fighter+' } }\nset_air_oob = "aof_v03_'+tag+'_air_bba" }\n'
+    return out
+
 def navy(tag):
     # Native base provinces read from the installed fleet, then checked for ownership.
     native=(GAME/'history/units'/(f'{tag}_1936_naval_mtg.txt' if tag=='USA' else 'JAP_1936_naval.txt')).read_text(encoding='utf-8-sig')
@@ -205,6 +258,22 @@ for tag,number in AIRCRAFT.items():
         text='air_wings = { '+str(sid)+' = { '+equipment+' = { owner = "'+tag+'" amount = '+str(number)+variant+' } } }\n'
         write('history/units/aof_v03_'+tag+'_air_'+mode+'.txt',text)
     MANIFEST['countries'][tag]['air_fixture']={'state':sid,'early_fighters':number,'modes':['bba','legacy']}
+
+# Procedural recruits need explicit pools for new tags even when every cabinet
+# is an anonymous institution. Copy only native personal-name fields, not
+# operations or any historical country leader. These are technical defaults.
+NAME_POOL_SOURCES={'SIB':'SOV','CAU':'GEO','TRK':'UZB','NAF':'MOR','CMT':'TOG'}
+def procedural_names():
+    native=(GAME/'common/names/00_names.txt').read_text(encoding='utf-8-sig')
+    out='# Provisional procedural-name pools from this same game installation; not historical leaders or approved ethnic composition.\n'
+    for tag,source in NAME_POOL_SOURCES.items():
+        _,a,b,_=span(native,source);body=native[a:b];out+=tag+' = {\n'
+        for field in ['male','female','surnames','callsigns']:
+            if re.search(r'\b'+field+r'\s*=\s*\{',masked(body)):
+                start,_,_,end=span(body,field);out+=body[start:end]+'\n'
+        out+='}\n'
+    return out
+write('common/names/aof_v03_world.txt',procedural_names())
 
 # Original geometric placeholders: uncompressed 32-bit BGRA TGA, opaque alpha.
 # The engine rejected 24-bit flags during the first actual boot. Change the
@@ -272,9 +341,13 @@ These are explicitly provisional fixtures, not approved historical geography, ca
 
 The generator reads installed state history and preserves native resources, population, geometry and infrastructure. Only owner/controller, additional fixture-country cores, minimum capital industry and matching additional building slots change; Nanjing and Sind additionally receive one airbase level for their early fighter wings. Future-dated state blocks are removed from changed states so 1939 history cannot silently reverse the fixture. Detailed state IDs, installed names, source owners, capital provinces and troop placements are in WORLD_MANIFEST.json.
 
-KAZ uses installed Soviet-owned Kazakh-core states. TRK uses installed Soviet-owned Uzbek, Turkmen, Tajik and Kyrgyz cores. CAU includes states 229–235, 821, 826–828 and provisional state 353: the installed state contains Erzurum VP 11853 although its state localisation is Tunceli. SIB and FER use the reviewed explicit lists. Finland additionally owns Onega and Olonets, never Leningrad; Murmansk is retained by Soviet Russia because it is not Karelia. NAF combines French/Italian-owned Moroccan, Algerian, Tunisian and Libyan core territory, excludes Egypt and Spanish possessions. CMT temporarily occupies Togo state 777. Pakistan receives western native Pakistani cores; East Bengal 430 and contested North Kashmir 787 remain with India.
+KAZ uses installed Soviet-owned Kazakh-core states. TRK uses installed Soviet-owned Uzbek, Turkmen, Tajik and Kyrgyz cores. CAU includes states 229–235, 821, 826–828 and one Turkish border region, state 354 (Trabzon). The owner explicitly limited the Turkish allocation to one or two adjacent border regions; the generator chooses the minimal one. Native provinces.bmp confirms that state 354 directly borders both Armenia 230 and Georgia 231: Ardahan province 10403 touches Gyumri 12441 and Georgian province 3656. State 354 contains Trabzon 9932, Kars 10472, Gümüşhane 3979 and Erzurum 11853. The previous state 353 allocation was an erroneous enclave: its filename says Erzurum, but its actual state name and victory points are Tunceli, Xarpêt and Erzîngan. The cold builder removes only its exact unmodified prior generated override, restoring native Turkish ownership and removing the added CAU core; independent edits cause a safe abort. State 355 is Samsun and does not border the Caucasian fixture. This limited-border instruction does not approve other provisional capitals or unspecified geography. SIB and FER use the reviewed explicit lists. Finland additionally owns Onega and Olonets, never Leningrad; Murmansk is retained by Soviet Russia because it is not Karelia. NAF combines French/Italian-owned Moroccan, Algerian, Tunisian and Libyan core territory, excludes Egypt and Spanish possessions. CMT temporarily occupies Togo state 777. Pakistan receives western native Pakistani cores; East Bengal 430 and contested North Kashmir 787 remain with India.
 
 Eighteen named countries receive native six-battalion infantry formations placed in owned states; numbers and readiness are balance fixtures. Named 1936 historical leaders are replaced by localised generic institutional cabinets for all six political families. Initial research uses early native technology and small research-slot counts. USA receives the 1924 light tank technology, not a fabricated model designation. USA/Japan have compact original early naval fixtures with separate MTG/legacy definitions; these deliberately do not reproduce historical fleet sizes or import later-era ships. USA, Japan, China, India and Pakistan receive respectively 100, 80, 30, 40 and 20 early fighters, with separate BBA and legacy OOBs. Named equipment variants precede their OOB loads. All other countries retain installed history/OOB until separately curated.
+
+Native foreign air OOBs still request USA variants P-6, P-26A and O2U: obsolete aliases with early modules preserve those references without endorsing their names as 1924 canon. Soviet Russia has a basic early light-chassis design and an obsolete same-module compatibility alias named "T-26TU mod. 1933", required by native Turkish OOB lookup; its name is not a 1924 historical assertion, and no 1933 improved modules or design bureau are imported. Procedural names for the five custom tags borrow native SOV/GEO/UZB/MOR/TOG personal-name pools; these technical defaults neither appoint historical leaders nor determine an approved population composition.
+
+The owner separately authorised states 582 (Magnitogorsk), 652 (Orenburg) and 236 (Astrakhan) for Alash. Province corrections 4265/10185 to Ufa 651, 1334 to Zlatoust 573, and 3265/4324/227 to Kuybyshev 251 are applied by the isolated, backed-up state-edits stage after the world and Caspian generators. No other geography or capital is approved by that request. Astrakhan is distinct from Stavropol 235 and is outside the current canal corridor. Province IDs, railways and supply-node identities are retained.
 
 Five custom tags use original geometric placeholder TGA flags in all sizes and political variants. Added ideology-family flags for native tags copy the corresponding democratic flag from this same local game installation; these are compatibility fallbacks, not approved vexillology. No third-party artwork or mods are used.
 

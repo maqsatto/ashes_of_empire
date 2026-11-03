@@ -1,0 +1,1048 @@
+{
+  "water_provinces": [
+    843,
+    1050,
+    1271,
+    1496
+  ],
+  "coastal_land_provinces": [
+    464,
+    475,
+    615,
+    642,
+    700,
+    757,
+    1517,
+    1536,
+    1593,
+    3593,
+    3618,
+    3622,
+    3668,
+    3726,
+    4458,
+    4463,
+    4473,
+    4563,
+    4580,
+    4609,
+    4637,
+    4901,
+    6701,
+    6748,
+    6758,
+    7477,
+    7495,
+    7563,
+    7602,
+    7624,
+    7661,
+    9453,
+    10385,
+    10406,
+    10768,
+    11578,
+    11701,
+    11736,
+    12359,
+    12434
+  ],
+  "canal_land_corridor": [
+    700,
+    6701,
+    3682,
+    6730,
+    683,
+    3672,
+    11632,
+    6702,
+    9647,
+    6733,
+    685,
+    6718,
+    11633,
+    9649,
+    6674,
+    11664,
+    6692,
+    714,
+    11678,
+    9694,
+    11696,
+    735,
+    9726,
+    9709,
+    11681,
+    6768,
+    3734,
+    9696,
+    3760,
+    11729,
+    6741
+  ],
+  "canal_ordered_province_runs": [
+    1050,
+    700,
+    6701,
+    700,
+    6701,
+    700,
+    6701,
+    700,
+    6701,
+    3682,
+    6730,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3672,
+    11632,
+    6702,
+    9647,
+    6702,
+    9647,
+    6733,
+    685,
+    6718,
+    685,
+    11633,
+    685,
+    11633,
+    9649,
+    685,
+    9649,
+    6674,
+    11664,
+    6692,
+    714,
+    11678,
+    9694,
+    11696,
+    9694,
+    11696,
+    9694,
+    11696,
+    9694,
+    11696,
+    735,
+    11696,
+    735,
+    9726,
+    735,
+    9726,
+    735,
+    9709,
+    735,
+    9709,
+    11681,
+    6768,
+    3734,
+    9696,
+    3734,
+    9696,
+    3734,
+    3760,
+    11729,
+    3760,
+    11729,
+    6741
+  ],
+  "canal_ordered_land_runs": [
+    700,
+    6701,
+    700,
+    6701,
+    700,
+    6701,
+    700,
+    6701,
+    3682,
+    6730,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3682,
+    683,
+    3672,
+    11632,
+    6702,
+    9647,
+    6702,
+    9647,
+    6733,
+    685,
+    6718,
+    685,
+    11633,
+    685,
+    11633,
+    9649,
+    685,
+    9649,
+    6674,
+    11664,
+    6692,
+    714,
+    11678,
+    9694,
+    11696,
+    9694,
+    11696,
+    9694,
+    11696,
+    9694,
+    11696,
+    735,
+    11696,
+    735,
+    9726,
+    735,
+    9726,
+    735,
+    9709,
+    735,
+    9709,
+    11681,
+    6768,
+    3734,
+    9696,
+    3734,
+    9696,
+    3734,
+    3760,
+    11729,
+    3760,
+    11729,
+    6741
+  ],
+  "canal_sea_endpoints": [
+    1050,
+    8308
+  ],
+  "canal_through_and_icon": 3672,
+  "canal_control_states": [
+    232,
+    233,
+    234,
+    235,
+    821,
+    827,
+    828
+  ],
+  "canal_visual_draft_changed_bytes": 33,
+  "port_levels": {
+    "1517": 1,
+    "3668": 1
+  },
+  "coastal_nudger_spawn_count": 40,
+  "coastal_nudger_spawns": [
+    {
+      "state": 406,
+      "owner": "KAZ",
+      "province": 464,
+      "water_province": 843,
+      "land_xz": [
+        3608,
+        1460
+      ],
+      "water_xz": [
+        3608,
+        1459
+      ],
+      "spawn_xz": [
+        3608.5,
+        1459.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 587,
+      "owner": "KAZ",
+      "province": 475,
+      "water_province": 843,
+      "land_xz": [
+        3637,
+        1435
+      ],
+      "water_xz": [
+        3636,
+        1435
+      ],
+      "spawn_xz": [
+        3637.5,
+        1434.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 406,
+      "owner": "KAZ",
+      "province": 615,
+      "water_province": 843,
+      "land_xz": [
+        3595,
+        1453
+      ],
+      "water_xz": [
+        3595,
+        1452
+      ],
+      "spawn_xz": [
+        3595.5,
+        1452.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 587,
+      "owner": "KAZ",
+      "province": 642,
+      "water_province": 843,
+      "land_xz": [
+        3639,
+        1450
+      ],
+      "water_xz": [
+        3638,
+        1450
+      ],
+      "spawn_xz": [
+        3639.5,
+        1449.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 232,
+      "owner": "CAU",
+      "province": 700,
+      "water_province": 1050,
+      "land_xz": [
+        3547,
+        1403
+      ],
+      "water_xz": [
+        3547,
+        1404
+      ],
+      "spawn_xz": [
+        3547.5,
+        1402.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 236,
+      "owner": "SOV",
+      "province": 757,
+      "water_province": 843,
+      "land_xz": [
+        3559,
+        1433
+      ],
+      "water_xz": [
+        3559,
+        1432
+      ],
+      "spawn_xz": [
+        3559.5,
+        1432.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 587,
+      "owner": "KAZ",
+      "province": 1517,
+      "water_province": 1050,
+      "land_xz": [
+        3612,
+        1385
+      ],
+      "water_xz": [
+        3612,
+        1384
+      ],
+      "spawn_xz": [
+        3612.5,
+        1384.5
+      ],
+      "dedicated_history_port": true
+    },
+    {
+      "state": 229,
+      "owner": "CAU",
+      "province": 1536,
+      "water_province": 1271,
+      "land_xz": [
+        3577,
+        1321
+      ],
+      "water_xz": [
+        3578,
+        1321
+      ],
+      "spawn_xz": [
+        3577.5,
+        1320.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 584,
+      "owner": "TRK",
+      "province": 1593,
+      "water_province": 1496,
+      "land_xz": [
+        3642,
+        1309
+      ],
+      "water_xz": [
+        3641,
+        1309
+      ],
+      "spawn_xz": [
+        3642.5,
+        1308.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 587,
+      "owner": "KAZ",
+      "province": 3593,
+      "water_province": 843,
+      "land_xz": [
+        3616,
+        1426
+      ],
+      "water_xz": [
+        3616,
+        1427
+      ],
+      "spawn_xz": [
+        3616.5,
+        1425.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 406,
+      "owner": "KAZ",
+      "province": 3618,
+      "water_province": 843,
+      "land_xz": [
+        3625,
+        1456
+      ],
+      "water_xz": [
+        3625,
+        1455
+      ],
+      "spawn_xz": [
+        3625.5,
+        1455.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 406,
+      "owner": "KAZ",
+      "province": 3622,
+      "water_province": 843,
+      "land_xz": [
+        3578,
+        1445
+      ],
+      "water_xz": [
+        3578,
+        1444
+      ],
+      "spawn_xz": [
+        3578.5,
+        1444.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 232,
+      "owner": "CAU",
+      "province": 3668,
+      "water_province": 1050,
+      "land_xz": [
+        3553,
+        1380
+      ],
+      "water_xz": [
+        3554,
+        1380
+      ],
+      "spawn_xz": [
+        3553.5,
+        1379.5
+      ],
+      "dedicated_history_port": true
+    },
+    {
+      "state": 237,
+      "owner": "SOV",
+      "province": 3726,
+      "water_province": 1050,
+      "land_xz": [
+        3544,
+        1416
+      ],
+      "water_xz": [
+        3544,
+        1415
+      ],
+      "spawn_xz": [
+        3544.5,
+        1415.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 229,
+      "owner": "CAU",
+      "province": 4458,
+      "water_province": 1050,
+      "land_xz": [
+        3570,
+        1352
+      ],
+      "water_xz": [
+        3570,
+        1353
+      ],
+      "spawn_xz": [
+        3570.5,
+        1351.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 232,
+      "owner": "CAU",
+      "province": 4463,
+      "water_province": 1050,
+      "land_xz": [
+        3558,
+        1372
+      ],
+      "water_xz": [
+        3559,
+        1372
+      ],
+      "spawn_xz": [
+        3558.5,
+        1371.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 229,
+      "owner": "CAU",
+      "province": 4473,
+      "water_province": 1496,
+      "land_xz": [
+        3569,
+        1304
+      ],
+      "water_xz": [
+        3569,
+        1303
+      ],
+      "spawn_xz": [
+        3569.5,
+        1303.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 584,
+      "owner": "TRK",
+      "province": 4563,
+      "water_province": 1271,
+      "land_xz": [
+        3636,
+        1363
+      ],
+      "water_xz": [
+        3636,
+        1362
+      ],
+      "spawn_xz": [
+        3636.5,
+        1362.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 266,
+      "owner": "PER",
+      "province": 4580,
+      "water_province": 1496,
+      "land_xz": [
+        3603,
+        1263
+      ],
+      "water_xz": [
+        3603,
+        1264
+      ],
+      "spawn_xz": [
+        3603.5,
+        1262.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 420,
+      "owner": "PER",
+      "province": 4609,
+      "water_province": 1496,
+      "land_xz": [
+        3576,
+        1278
+      ],
+      "water_xz": [
+        3576,
+        1279
+      ],
+      "spawn_xz": [
+        3576.5,
+        1277.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 420,
+      "owner": "PER",
+      "province": 4637,
+      "water_province": 1496,
+      "land_xz": [
+        3589,
+        1274
+      ],
+      "water_xz": [
+        3590,
+        1274
+      ],
+      "spawn_xz": [
+        3589.5,
+        1273.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 420,
+      "owner": "PER",
+      "province": 4901,
+      "water_province": 1496,
+      "land_xz": [
+        3569,
+        1287
+      ],
+      "water_xz": [
+        3570,
+        1287
+      ],
+      "spawn_xz": [
+        3569.5,
+        1286.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 232,
+      "owner": "CAU",
+      "province": 6701,
+      "water_province": 1050,
+      "land_xz": [
+        3553,
+        1394
+      ],
+      "water_xz": [
+        3553,
+        1393
+      ],
+      "spawn_xz": [
+        3553.5,
+        1393.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 232,
+      "owner": "CAU",
+      "province": 6748,
+      "water_province": 1050,
+      "land_xz": [
+        3539,
+        1410
+      ],
+      "water_xz": [
+        3540,
+        1410
+      ],
+      "spawn_xz": [
+        3539.5,
+        1409.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 237,
+      "owner": "SOV",
+      "province": 6758,
+      "water_province": 1050,
+      "land_xz": [
+        3550,
+        1426
+      ],
+      "water_xz": [
+        3550,
+        1425
+      ],
+      "spawn_xz": [
+        3550.5,
+        1425.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 584,
+      "owner": "TRK",
+      "province": 7477,
+      "water_province": 1271,
+      "land_xz": [
+        3637,
+        1338
+      ],
+      "water_xz": [
+        3637,
+        1339
+      ],
+      "spawn_xz": [
+        3637.5,
+        1337.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 229,
+      "owner": "CAU",
+      "province": 7495,
+      "water_province": 1050,
+      "land_xz": [
+        3576,
+        1341
+      ],
+      "water_xz": [
+        3577,
+        1341
+      ],
+      "spawn_xz": [
+        3576.5,
+        1340.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 584,
+      "owner": "TRK",
+      "province": 7563,
+      "water_province": 1271,
+      "land_xz": [
+        3655,
+        1340
+      ],
+      "water_xz": [
+        3655,
+        1341
+      ],
+      "spawn_xz": [
+        3655.5,
+        1339.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 266,
+      "owner": "PER",
+      "province": 7602,
+      "water_province": 1496,
+      "land_xz": [
+        3648,
+        1270
+      ],
+      "water_xz": [
+        3647,
+        1270
+      ],
+      "spawn_xz": [
+        3648.5,
+        1269.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 232,
+      "owner": "CAU",
+      "province": 7624,
+      "water_province": 1050,
+      "land_xz": [
+        3565,
+        1363
+      ],
+      "water_xz": [
+        3565,
+        1364
+      ],
+      "spawn_xz": [
+        3565.5,
+        1362.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 229,
+      "owner": "CAU",
+      "province": 7661,
+      "water_province": 1271,
+      "land_xz": [
+        3585,
+        1331
+      ],
+      "water_xz": [
+        3585,
+        1330
+      ],
+      "spawn_xz": [
+        3585.5,
+        1330.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 406,
+      "owner": "KAZ",
+      "province": 9453,
+      "water_province": 843,
+      "land_xz": [
+        3638,
+        1456
+      ],
+      "water_xz": [
+        3637,
+        1456
+      ],
+      "spawn_xz": [
+        3638.5,
+        1455.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 266,
+      "owner": "PER",
+      "province": 10385,
+      "water_province": 1496,
+      "land_xz": [
+        3636,
+        1265
+      ],
+      "water_xz": [
+        3636,
+        1266
+      ],
+      "spawn_xz": [
+        3636.5,
+        1264.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 584,
+      "owner": "TRK",
+      "province": 10406,
+      "water_province": 1271,
+      "land_xz": [
+        3655,
+        1349
+      ],
+      "water_xz": [
+        3655,
+        1348
+      ],
+      "spawn_xz": [
+        3655.5,
+        1348.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 266,
+      "owner": "PER",
+      "province": 10768,
+      "water_province": 1496,
+      "land_xz": [
+        3620,
+        1261
+      ],
+      "water_xz": [
+        3620,
+        1262
+      ],
+      "spawn_xz": [
+        3620.5,
+        1260.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 406,
+      "owner": "KAZ",
+      "province": 11578,
+      "water_province": 843,
+      "land_xz": [
+        3585,
+        1449
+      ],
+      "water_xz": [
+        3585,
+        1448
+      ],
+      "spawn_xz": [
+        3585.5,
+        1448.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 587,
+      "owner": "KAZ",
+      "province": 11701,
+      "water_province": 843,
+      "land_xz": [
+        3604,
+        1404
+      ],
+      "water_xz": [
+        3603,
+        1404
+      ],
+      "spawn_xz": [
+        3604.5,
+        1403.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 236,
+      "owner": "SOV",
+      "province": 11736,
+      "water_province": 843,
+      "land_xz": [
+        3571,
+        1439
+      ],
+      "water_xz": [
+        3572,
+        1439
+      ],
+      "spawn_xz": [
+        3571.5,
+        1438.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 584,
+      "owner": "TRK",
+      "province": 12359,
+      "water_province": 1496,
+      "land_xz": [
+        3646,
+        1282
+      ],
+      "water_xz": [
+        3645,
+        1282
+      ],
+      "spawn_xz": [
+        3646.5,
+        1281.5
+      ],
+      "dedicated_history_port": false
+    },
+    {
+      "state": 229,
+      "owner": "CAU",
+      "province": 12434,
+      "water_province": 1496,
+      "land_xz": [
+        3574,
+        1310
+      ],
+      "water_xz": [
+        3575,
+        1310
+      ],
+      "spawn_xz": [
+        3574.5,
+        1309.5
+      ],
+      "dedicated_history_port": false
+    }
+  ],
+  "new_sea_unitstack_slots_per_province": 37,
+  "uncertainties": [
+    "This is unplayed map authoring, not verified navigation. Keep the verified-navigation flag unset.",
+    "A long sea-to-sea shortcut follows native canal syntax; its fleet/trade/mission routing and visual line need actual tests.",
+    "Port spawn height9.50 and rotation0 follow native numeric format but their models/docking need nudge/visual inspection.",
+    "New sea unitstack coordinates are projected from native8334 slot metadata onto verified water pixels; their icon spacing remains unverified.",
+    "KAZ1517 has no existing railway/supply-node attachment found in the spike inspection. No invented railway or supply network is generated.",
+    "No dockyard, fleet, convoy, technology, country boundary, ownership, supply-node or railway is gifted by this spike.",
+    "Neutral passage follows Suez-like open navy/trade permissions for the physical test; final treaty-specific military rights are separate.",
+    "Existing lake terrain/heightmap pixels are retained. Sea rendering after definition conversion is unverified."
+  ],
+  "backup_directory": "C:\\Users\\maqsatto\\.codex\\backups\\ashes_of_empires\\caspian-e397dd0",
+  "branch": "spike/caspian-navigation",
+  "base_commit": "e397dd0177991258336871b3a04cc27a3781ee9a",
+  "output_sha256": {
+    "history/states/587-Western Kazakstan.txt": "26D5FF74C6155B4B2D969CA2E6E092C441F150D072357FA227B324341BB09003",
+    "history/states/232-Grozny.txt": "FFB9E0988FC53A37529304D790044BC780E5DEC15BB4090E52A1CE231937DF72",
+    "map/definition.csv": "A5CED3E4643FBF1D7C216463323201F4E2B0AC985A3A90EF11EB5B7D743D7915",
+    "map/strategicregions/70-Caspian Sea.txt": "13B8E369864BD2DBF70973F712A09B3F4CFEACB2E60D2981BDAC35614DB6E658",
+    "map/adjacencies.csv": "BA8C66B54472EAC22C8B6621C2FE0B5E8D4E42E22D428241FB61A87C835B221B",
+    "map/adjacency_rules.txt": "A1F191584ED636C884FAA265E070209B9A03AA4E824BDFA7488B2706EDC90A29",
+    "map/buildings.txt": "C1A50B1F044EB70D5BE03B62EABEE656DCC7F9B2AB48217326EDB07850072EFD",
+    "map/unitstacks.txt": "A33A52FF12EB0020692E526025286098E59E9BF2DC631AFAC5AEDF6F2CEDC10A"
+  },
+  "navigation_verified": false,
+  "validation_only_additional_state_inputs": {
+    "validation_states/233.txt": "972E6395CB4899A668C8524A5F39AFA3937DB78A0AFB5162112FEFF6BEF7E74E",
+    "validation_states/234.txt": "A5C33DB49334788C66CD7CB09B663115FC8F9F8EE92B2D99AB735C3069D9A54A",
+    "validation_states/235.txt": "4553613C2F136AEFEB81009AE47747418EA9E5E5211A0A236F71CCE1885B7A98"
+  },
+  "recognised_poststage_reports": [
+    "USER_STATE_EDITS_MANIFEST.json",
+    "KAZ_REGIONS_MANIFEST.json",
+    "CITY_MANIFEST.json"
+  ],
+  "pipeline_notice": "Reapply USER_STATE_EDITS, KAZ_REGIONS and CITY stages after Caspian; their approved histories/building-state remaps are later stages."
+}

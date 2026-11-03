@@ -6,8 +6,8 @@ focus_tree = {
  initial_show_position = { focus = aof_v03_bra_entry1 }
  focus = {
   id = aof_v03_bra_entry1
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_navy_cruiser
+  x = 9
   y = 0
   cost = 5
   ai_will_do = { factor = 1 }
@@ -16,8 +16,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_entry2
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 9
   y = 1
   cost = 5
  prerequisite = { focus = aof_v03_bra_entry1 }
@@ -27,8 +27,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_entry3
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 9
   y = 2
   cost = 5
  prerequisite = { focus = aof_v03_bra_entry2 }
@@ -38,8 +38,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_republic1
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_national_unity
+  x = 12
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_bra_entry3 }
@@ -50,8 +50,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_republic2
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_army_doctrines
+  x = 12
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_bra_republic1 }
@@ -61,8 +61,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_republic3
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 12
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_bra_republic2 }
@@ -72,8 +72,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_republic4
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_national_unity
+  x = 12
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_bra_republic3 }
@@ -83,8 +83,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_officers1
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_army_doctrines
+  x = 18
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_bra_entry3 }
@@ -95,8 +95,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_officers2
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 18
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_bra_officers1 }
@@ -106,8 +106,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_officers3
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_construct_civ_factory
+  x = 18
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_bra_officers2 }
@@ -117,8 +117,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_officers4
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_national_unity
+  x = 18
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_bra_officers3 }
@@ -128,8 +128,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_federal1
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_alliance
+  x = 24
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_bra_entry3 }
@@ -140,8 +140,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_federal2
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 24
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_bra_federal1 }
@@ -151,8 +151,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_federal3
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_alliance
+  x = 24
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_bra_federal2 }
@@ -162,8 +162,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_federal4
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_national_unity
+  x = 24
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_bra_federal3 }
@@ -173,8 +173,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_peace1
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_national_unity
+  x = 4
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_bra_entry3 }
@@ -185,30 +185,30 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_peace2
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_alliance
+  x = 4
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_bra_peace1 }
   ai_will_do = { factor = 1 }
-  completion_reward = { if = { limit = { country_exists = ARG NOT = { has_war_with = ARG } } ARG = { country_event = { id = aof_diplomacy.90 days = 2 } } } }
+  completion_reward = { add_political_power = -35 if = { limit = { country_exists = ARG NOT = { has_war_with = ARG } } ARG = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = CHL NOT = { has_war_with = CHL } } CHL = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = PRU NOT = { has_war_with = PRU } } PRU = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = BOL NOT = { has_war_with = BOL } } BOL = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = PAR NOT = { has_war_with = PAR } } PAR = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = URG NOT = { has_war_with = URG } } URG = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = ECU NOT = { has_war_with = ECU } } ECU = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = COL NOT = { has_war_with = COL } } COL = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = VEN NOT = { has_war_with = VEN } } VEN = { country_event = { id = aof_diplomacy.90 days = 2 } } } }
   
  }
  focus = {
   id = aof_v03_bra_peace3
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_alliance
+  x = 4
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_bra_peace2 }
   ai_will_do = { factor = 1 }
-  completion_reward = { if = { limit = { country_exists = ARG NOT = { has_war_with = ARG } } ARG = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  completion_reward = { every_other_country = { limit = { has_country_flag = aof_conference_participant_bra is_subject = no NOT = { has_war_with = ROOT } } country_event = { id = aof_diplomacy.120 days = 2 } } army_experience = 15 }
   
  }
  focus = {
   id = aof_v03_bra_hegemony1
-  icon = GFX_goal_generic_political_pressure
-  x = -9
+  icon = GFX_goal_generic_national_unity
+  x = 0
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_bra_entry3 }
@@ -219,8 +219,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_hegemony2
-  icon = GFX_goal_generic_political_pressure
-  x = -9
+  icon = GFX_goal_generic_alliance
+  x = 0
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_bra_hegemony1 }
@@ -230,19 +230,19 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_bra_hegemony3
-  icon = GFX_goal_generic_political_pressure
-  x = -9
+  icon = GFX_goal_generic_alliance
+  x = 0
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_bra_hegemony2 }
   ai_will_do = { factor = 1 }
-  completion_reward = { set_country_flag = aof_brazil_hegemonic_conference if = { limit = { country_exists = ARG NOT = { has_war_with = ARG } } ARG = { country_event = { id = aof_diplomacy.90 days = 2 } } } add_stability = -0.04 }
+  completion_reward = { set_country_flag = aof_brazil_hegemonic_conference if = { limit = { country_exists = ARG NOT = { has_war_with = ARG } } ARG = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = CHL NOT = { has_war_with = CHL } } CHL = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = PRU NOT = { has_war_with = PRU } } PRU = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = BOL NOT = { has_war_with = BOL } } BOL = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = PAR NOT = { has_war_with = PAR } } PAR = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = URG NOT = { has_war_with = URG } } URG = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = ECU NOT = { has_war_with = ECU } } ECU = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = COL NOT = { has_war_with = COL } } COL = { country_event = { id = aof_diplomacy.90 days = 2 } } } if = { limit = { country_exists = VEN NOT = { has_war_with = VEN } } VEN = { country_event = { id = aof_diplomacy.90 days = 2 } } } add_stability = -0.04 }
   
  }
  focus = {
   id = aof_v03_bra_military_promise
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_national_unity
+  x = 18
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_bra_officers4 }

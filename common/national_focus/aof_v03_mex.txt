@@ -6,8 +6,8 @@ focus_tree = {
  initial_show_position = { focus = aof_v03_mex_entry1 }
  focus = {
   id = aof_v03_mex_entry1
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 5
   y = 0
   cost = 5
   ai_will_do = { factor = 1 }
@@ -16,8 +16,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_entry2
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_production
+  x = 5
   y = 1
   cost = 5
  prerequisite = { focus = aof_v03_mex_entry1 }
@@ -27,8 +27,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_entry3
-  icon = GFX_goal_generic_political_pressure
-  x = 0
+  icon = GFX_goal_generic_national_unity
+  x = 5
   y = 2
   cost = 5
  prerequisite = { focus = aof_v03_mex_entry2 }
@@ -38,8 +38,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_law1
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_alliance
+  x = 8
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_mex_entry3 }
@@ -50,8 +50,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_law2
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_alliance
+  x = 8
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_mex_law1 }
@@ -61,8 +61,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_law3
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 8
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_mex_law2 }
@@ -72,8 +72,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_law4
-  icon = GFX_goal_generic_political_pressure
-  x = 3
+  icon = GFX_goal_generic_national_unity
+  x = 8
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_mex_law3 }
@@ -83,8 +83,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_oil1
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_production
+  x = 14
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_mex_entry3 }
@@ -95,8 +95,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_oil2
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_national_unity
+  x = 14
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_mex_oil1 }
@@ -106,8 +106,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_oil3
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_alliance
+  x = 14
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_mex_oil2 }
@@ -117,8 +117,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_oil4
-  icon = GFX_goal_generic_political_pressure
-  x = 9
+  icon = GFX_goal_generic_alliance
+  x = 14
   y = 6
   cost = 5
  prerequisite = { focus = aof_v03_mex_oil3 }
@@ -128,8 +128,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_officers1
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_army_doctrines
+  x = 20
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_mex_entry3 }
@@ -140,8 +140,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_officers2
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_construct_infrastructure
+  x = 20
   y = 4
   cost = 5
  prerequisite = { focus = aof_v03_mex_officers1 }
@@ -151,8 +151,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_officers3
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_army_doctrines
+  x = 20
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_mex_officers2 }
@@ -162,8 +162,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_civil_return
-  icon = GFX_goal_generic_political_pressure
-  x = 15
+  icon = GFX_goal_generic_national_unity
+  x = 20
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_mex_officers3 }
@@ -174,8 +174,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_permanent
-  icon = GFX_goal_generic_political_pressure
-  x = 18
+  icon = GFX_goal_generic_national_unity
+  x = 23
   y = 7
   cost = 5
  prerequisite = { focus = aof_v03_mex_officers3 }
@@ -186,8 +186,8 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_neutral_bloc
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_neutrality_focus
+  x = 0
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_mex_entry3 }
@@ -197,13 +197,25 @@ focus_tree = {
  }
  focus = {
   id = aof_v03_mex_oil_settlement
-  icon = GFX_goal_generic_political_pressure
-  x = -5
+  icon = GFX_goal_generic_alliance
+  x = 0
   y = 5
   cost = 5
  prerequisite = { focus = aof_v03_mex_neutral_bloc }
   ai_will_do = { factor = 1 }
   completion_reward = { if = { limit = { country_exists = USA NOT = { has_war_with = USA } } USA = { country_event = { id = aof_diplomacy.10 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_mex_oil_outcome
+  icon = GFX_goal_generic_production
+  x = 0
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_mex_oil_settlement }
+ available = { OR = { has_country_flag = aof_oil_compromise_accepted has_country_flag = aof_oil_compromise_refused } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_nations.90 days = 1 } }
   
  }
 }

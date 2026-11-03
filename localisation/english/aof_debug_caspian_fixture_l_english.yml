@@ -1,0 +1,13 @@
+﻿l_english:
+ aof_debug_caspian_fixture: "Caspian test: fleet and canal"
+ aof_debug_caspian_fixture_desc: "Debug only. These are not historical starting fleets. Decision visibility and a load request do not prove operation: inspect the ship, base, route and log."
+ aof_debug_caspian_ship_kaz: "Test: one destroyer at base 1517"
+ aof_debug_caspian_ship_kaz_desc: "Request one early KAZ test destroyer once at the owned and controlled base 1517. MTG creates a modular escort; otherwise an early legacy destroyer is used. Grants only the needed early technologies and one ship. Its flag records the request, not confirmed spawning. This is neither canon nor proof of navigation."
+ aof_debug_caspian_ship_cau: "Test: one destroyer at base 3668"
+ aof_debug_caspian_ship_cau_desc: "Request one early CAU test destroyer once at the owned and controlled base 3668. MTG creates a modular escort; otherwise an early legacy destroyer is used. Grants only the needed early technologies and one ship. Its flag records the request, not confirmed spawning. This is neither canon nor proof of navigation."
+ aof_debug_caspian_convoys: "Test: 20 convoys for a trade route"
+ aof_debug_caspian_convoys_desc: "One debug-only allocation. Then place a real import order and inspect the route, convoy use and port. Does not automatically verify navigation."
+ aof_debug_caspian_close_canal: "Test: close canal — currently open"
+ aof_debug_caspian_close_canal_desc: "Changes only the native passage closure flag. The Caucasus must own and control all 31 corridor provinces. The title reflects the flag, not a proven route. Check actual fleet and trade passage after changing it."
+ aof_debug_caspian_open_canal: "Test: open canal — currently closed"
+ aof_debug_caspian_open_canal_desc: "Changes only the native passage closure flag. The Caucasus must own and control all 31 corridor provinces. The title reflects the flag, not a proven route. Check actual fleet and trade passage after changing it."

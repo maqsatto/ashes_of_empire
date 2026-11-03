@@ -84,6 +84,7 @@ focus_tree = {
  shared_focus = aof_v03_g_fin_communities
  shared_focus = aof_v03_g_fin_roads
  shared_focus = aof_v03_g_fin_border
+ shared_focus = aof_v03_g_fin_watch
  shared_focus = aof_v03_g_man_rail
  shared_focus = aof_v03_g_man_service
  shared_focus = aof_v03_g_man_garrison
@@ -100,6 +101,7 @@ focus_tree = {
  shared_focus = aof_v03_g_raj_cabinet
  shared_focus = aof_v03_g_raj_terms
  shared_focus = aof_v03_g_raj_future
+ shared_focus = aof_v03_g_raj_offensive
  shared_focus = aof_v03_g_pak_aid
  shared_focus = aof_v03_g_pak_supply
  shared_focus = aof_v03_g_pak_peace
@@ -125,7 +127,7 @@ focus_tree = {
 
 shared_focus = {
   id = aof_v03_g_priorities
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 0
   y = 0
   cost = 5
@@ -135,7 +137,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_census
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 0
   y = 1
   cost = 5
@@ -146,7 +148,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_service
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 0
   y = 2
   cost = 5
@@ -157,7 +159,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_local
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 0
   y = 3
   cost = 5
@@ -168,7 +170,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_budget
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 0
   y = 4
   cost = 5
@@ -179,7 +181,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_home
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 4
   y = 0
   cost = 5
@@ -190,7 +192,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_debris
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 4
   y = 1
   cost = 5
@@ -202,7 +204,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_supply
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 4
   y = 2
   cost = 5
@@ -214,7 +216,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_jobs
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 4
   y = 3
   cost = 5
@@ -226,7 +228,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_emergency
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 4
   y = 4
   cost = 5
@@ -238,7 +240,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_orders
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 7
   y = 0
   cost = 5
@@ -249,7 +251,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_civilian
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 7
   y = 1
   cost = 5
@@ -261,7 +263,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_market
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 7
   y = 2
   cost = 5
@@ -273,7 +275,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_exports
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 7
   y = 3
   cost = 5
@@ -285,7 +287,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_roads
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_infrastructure
   x = 10
   y = 0
   cost = 5
@@ -295,7 +297,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_workshops
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 10
   y = 1
   cost = 5
@@ -306,7 +308,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_power
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_infrastructure
   x = 10
   y = 2
   cost = 5
@@ -317,7 +319,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_raw
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 9
   y = 3
   cost = 5
@@ -329,7 +331,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_processing
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 11
   y = 3
   cost = 10
@@ -341,11 +343,11 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_centre
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_civ_factory
   x = 9
   y = 4
   cost = 5
- prerequisite = { focus = aof_v03_g_raw }
+ prerequisite = { focus = aof_v03_g_raw focus = aof_v03_g_processing }
  mutually_exclusive = { focus = aof_v03_g_network }
   ai_will_do = { factor = 1 }
   completion_reward = { custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
@@ -353,11 +355,11 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_network
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 11
   y = 4
   cost = 5
- prerequisite = { focus = aof_v03_g_processing }
+ prerequisite = { focus = aof_v03_g_raw focus = aof_v03_g_processing }
  mutually_exclusive = { focus = aof_v03_g_centre }
   ai_will_do = { factor = 1 }
   completion_reward = { add_ideas = aof_v03_workshop_network }
@@ -365,10 +367,10 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_capital
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 14
   y = 0
-  cost = 5
+  cost = 10
  mutually_exclusive = { focus = aof_v03_g_talks }
   ai_will_do = { factor = 1 }
   completion_reward = { add_political_power = -25 add_stability = 0.03 }
@@ -376,10 +378,10 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_procurement
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_civ_factory
   x = 14
   y = 1
-  cost = 5
+  cost = 10
  prerequisite = { focus = aof_v03_g_capital }
   ai_will_do = { factor = 1 }
   completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
@@ -387,7 +389,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_cooperation
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 14
   y = 2
   cost = 5
@@ -398,7 +400,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_talks
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 17
   y = 0
   cost = 5
@@ -409,19 +411,19 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_concession
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 17
   y = 1
   cost = 5
  prerequisite = { focus = aof_v03_g_talks }
  available = { has_country_flag = aof_v03_investment_signed }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_timed_idea = { idea = aof_v03_concession days = 730 } custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  completion_reward = { if = { limit = { has_country_flag = aof_v03_investment_foreign } add_timed_idea = { idea = aof_v03_concession days = 730 } } custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
   
  }
 shared_focus = {
   id = aof_v03_g_joint
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_civ_factory
   x = 17
   y = 2
   cost = 5
@@ -432,7 +434,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_teachers
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 20
   y = 0
   cost = 5
@@ -442,7 +444,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_schools
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 20
   y = 1
   cost = 5
@@ -453,7 +455,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_engineers
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 20
   y = 2
   cost = 5
@@ -464,18 +466,18 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_institute
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_scientific_exchange
   x = 20
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_g_engineers }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_ideas = aof_v03_applied_institute }
+  completion_reward = { add_ideas = aof_v03_applied_institute if = { limit = { has_country_flag = aof_war_exhausted capital_scope = { is_on_continent = europe } } country_event = { id = aof_v03_regions.43 days = 1 } } }
   
  }
 shared_focus = {
   id = aof_v03_g_representation
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 25
   y = 0
   cost = 5
@@ -485,7 +487,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_parliament
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 23
   y = 1
   cost = 5
@@ -497,7 +499,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_parliament_law
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 23
   y = 2
   cost = 5
@@ -508,7 +510,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_parliament_settlement
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 23
   y = 3
   cost = 5
@@ -519,7 +521,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_labour
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 25
   y = 1
   cost = 5
@@ -531,7 +533,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_labour_law
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 25
   y = 2
   cost = 5
@@ -542,7 +544,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_labour_settlement
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 25
   y = 3
   cost = 5
@@ -553,7 +555,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_order
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 27
   y = 1
   cost = 5
@@ -565,7 +567,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_order_law
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 27
   y = 2
   cost = 5
@@ -576,7 +578,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_order_settlement
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 27
   y = 3
   cost = 5
@@ -588,7 +590,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_exception
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 27
   y = 4
   cost = 5
@@ -600,7 +602,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_revolution
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 29
   y = 1
   cost = 5
@@ -613,7 +615,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_revolution_institutions
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 29
   y = 2
   cost = 5
@@ -625,7 +627,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_revolution_settlement
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 29
   y = 3
   cost = 5
@@ -637,7 +639,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_nationalmission
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 31
   y = 1
   cost = 5
@@ -650,7 +652,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_nationalmission_institutions
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 31
   y = 2
   cost = 5
@@ -662,7 +664,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_nationalmission_settlement
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 31
   y = 3
   cost = 5
@@ -674,7 +676,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_arsenals
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_mil_factory
   x = 33
   y = 0
   cost = 5
@@ -684,7 +686,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_calibre
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 33
   y = 1
   cost = 5
@@ -695,7 +697,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_ncos
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 33
   y = 2
   cost = 5
@@ -706,7 +708,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_logistics
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 33
   y = 3
   cost = 5
@@ -717,7 +719,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_motor
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 30
   y = 4
   cost = 5
@@ -729,7 +731,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_breakthrough
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 32
   y = 4
   cost = 5
@@ -741,7 +743,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_territorial
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 34
   y = 4
   cost = 5
@@ -753,7 +755,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_expedition
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 36
   y = 4
   cost = 5
@@ -765,7 +767,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_flight
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_air_fighter
   x = 40
   y = 0
   cost = 5
@@ -775,7 +777,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_recon
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 40
   y = 1
   cost = 5
@@ -786,7 +788,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_airrepair
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_air_fighter
   x = 40
   y = 2
   cost = 5
@@ -797,7 +799,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_frontsky
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_air_fighter
   x = 38
   y = 3
   cost = 5
@@ -810,7 +812,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_interdiction
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_air_fighter
   x = 40
   y = 3
   cost = 5
@@ -823,7 +825,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_seasky
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 42
   y = 3
   cost = 5
@@ -836,19 +838,19 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_harbour
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 47
   y = 0
   cost = 5
  available = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
  allow_branch = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
   ai_will_do = { factor = 1 }
-  completion_reward = { navy_experience = 15 }
+  completion_reward = { navy_experience = 15 custom_effect_tooltip = aof_v03_one_coastal_port hidden_effect = { aof_v03_build_one_civilian_port = yes } }
   
  }
 shared_focus = {
   id = aof_v03_g_shiprepair
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 47
   y = 1
   cost = 5
@@ -861,7 +863,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_coastguard
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 47
   y = 2
   cost = 5
@@ -874,7 +876,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_commandsea
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 45
   y = 3
   cost = 5
@@ -888,7 +890,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_denysea
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 47
   y = 3
   cost = 5
@@ -902,7 +904,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_safepassage
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 49
   y = 3
   cost = 5
@@ -916,7 +918,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_recognition
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 53
   y = 0
   cost = 5
@@ -928,7 +930,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_neighbours
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 53
   y = 1
   cost = 5
@@ -941,7 +943,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_conference
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 53
   y = 2
   cost = 5
@@ -954,7 +956,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_neutral
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_neutrality_focus
   x = 52
   y = 3
   cost = 5
@@ -966,7 +968,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_defence
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 54
   y = 3
   cost = 5
@@ -978,7 +980,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_mandate
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 57
   y = 0
   cost = 5
@@ -989,7 +991,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_localpowers
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 57
   y = 1
   cost = 5
@@ -1001,7 +1003,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_guarantee
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 57
   y = 2
   cost = 5
@@ -1013,7 +1015,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_fin_karelia
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 0
   cost = 5
@@ -1024,7 +1026,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_fin_communities
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 1
   cost = 5
@@ -1036,7 +1038,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_fin_roads
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_infrastructure
   x = 62
   y = 2
   cost = 5
@@ -1048,19 +1050,34 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_fin_border
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_g_fin_roads }
+ mutually_exclusive = { focus = aof_v03_g_fin_watch }
+ available = { owns_state = 215 owns_state = 216 NOT = { has_war_with = SOV } }
  allow_branch = { OR = { tag = FIN } }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_stability = 0.06 }
+  completion_reward = { if = { limit = { SOV = { exists = yes } } SOV = { country_event = { id = aof_v03_regions.50 days = 1 } } } else = { set_country_flag = aof_v03_fin_border_uncontested add_stability = 0.05 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fin_watch
+  icon = GFX_goal_generic_army_doctrines
+  x = 64
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_fin_roads }
+ mutually_exclusive = { focus = aof_v03_g_fin_border }
+ allow_branch = { tag = FIN }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 25 add_war_support = 0.05 add_political_power = -25 }
   
  }
 shared_focus = {
   id = aof_v03_g_man_rail
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_infrastructure
   x = 62
   y = 0
   cost = 5
@@ -1071,7 +1088,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_man_service
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_construct_civ_factory
   x = 62
   y = 1
   cost = 5
@@ -1083,7 +1100,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_man_garrison
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 2
   cost = 5
@@ -1095,7 +1112,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_man_rights
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 3
   cost = 5
@@ -1107,7 +1124,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_fer_port
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 62
   y = 0
   cost = 5
@@ -1118,7 +1135,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_fer_trade
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 1
   cost = 5
@@ -1130,7 +1147,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_fer_service
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 2
   cost = 5
@@ -1142,7 +1159,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_fer_guarantee
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 3
   cost = 5
@@ -1154,7 +1171,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_trk_congress
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 0
   cost = 5
@@ -1165,7 +1182,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_trk_powers
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 1
   cost = 5
@@ -1177,7 +1194,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_trk_union
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 2
   cost = 5
@@ -1189,7 +1206,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_trk_settlement
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 3
   cost = 5
@@ -1201,7 +1218,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_raj_supply
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 0
   cost = 5
@@ -1212,7 +1229,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_raj_cabinet
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 1
   cost = 5
@@ -1224,11 +1241,12 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_raj_terms
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 2
   cost = 5
  prerequisite = { focus = aof_v03_g_raj_cabinet }
+ mutually_exclusive = { focus = aof_v03_g_raj_offensive }
  allow_branch = { OR = { tag = RAJ } }
   ai_will_do = { factor = 1 }
   completion_reward = { if = { limit = { PAK = { exists = yes } has_war_with = PAK } PAK = { country_event = { id = aof_diplomacy.130 } } } }
@@ -1236,19 +1254,33 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_raj_future
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 3
   cost = 5
- prerequisite = { focus = aof_v03_g_raj_terms }
+ prerequisite = { focus = aof_v03_g_raj_terms focus = aof_v03_g_raj_offensive }
  allow_branch = { OR = { tag = RAJ } }
   ai_will_do = { factor = 1 }
   completion_reward = { add_stability = 0.07 }
   
  }
 shared_focus = {
+  id = aof_v03_g_raj_offensive
+  icon = GFX_goal_generic_army_doctrines
+  x = 64
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_raj_cabinet }
+ mutually_exclusive = { focus = aof_v03_g_raj_terms }
+ available = { PAK = { exists = yes } has_war_with = PAK }
+ allow_branch = { tag = RAJ }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = -50 add_stability = -0.04 army_experience = 25 add_timed_idea = { idea = aof_v03_raj_wartime_priority days = 365 } if = { limit = { has_war_with = PAK } create_wargoal = { type = puppet_wargoal_focus target = PAK } } }
+  
+ }
+shared_focus = {
   id = aof_v03_g_pak_aid
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 0
   cost = 5
@@ -1259,7 +1291,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_pak_supply
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 1
   cost = 5
@@ -1271,7 +1303,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_pak_peace
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 2
   cost = 5
@@ -1283,7 +1315,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_pak_defence
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 3
   cost = 5
@@ -1295,7 +1327,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_can_obligations
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 0
   cost = 5
@@ -1306,19 +1338,19 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_can_treaties
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 1
   cost = 5
  prerequisite = { focus = aof_v03_g_can_obligations }
  allow_branch = { OR = { tag = CAN } }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_political_power = 60 }
+  completion_reward = { country_event = { id = aof_v03_regions.55 days = 1 } }
   
  }
 shared_focus = {
   id = aof_v03_g_can_ties
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_navy_cruiser
   x = 62
   y = 2
   cost = 5
@@ -1330,7 +1362,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_can_defence
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 3
   cost = 5
@@ -1342,7 +1374,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_central_summit
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 0
   cost = 5
@@ -1353,7 +1385,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_central_guarantees
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 1
   cost = 5
@@ -1365,7 +1397,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_central_transit
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 2
   cost = 5
@@ -1377,7 +1409,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_central_defence
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 3
   cost = 5
@@ -1389,7 +1421,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_central_compact
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 4
   cost = 5
@@ -1401,7 +1433,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_chaco_commission
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 0
   cost = 5
@@ -1412,7 +1444,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_chaco_supply
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_army_doctrines
   x = 62
   y = 1
   cost = 5
@@ -1424,31 +1456,31 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_chaco_mediation
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 2
   cost = 5
  prerequisite = { focus = aof_v03_g_chaco_supply }
  allow_branch = { OR = { tag = BOL tag = PAR } }
   ai_will_do = { factor = 1 }
-  completion_reward = { country_event = { id = aof_v03_regions.10 } }
+  completion_reward = { country_event = { id = aof_v03_regions.38 } }
   
  }
 shared_focus = {
   id = aof_v03_g_chaco_settlement
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 3
   cost = 5
  prerequisite = { focus = aof_v03_g_chaco_mediation }
  allow_branch = { OR = { tag = BOL tag = PAR } }
   ai_will_do = { factor = 1 }
-  completion_reward = { add_stability = 0.05 }
+  completion_reward = { country_event = { id = aof_v03_regions.47 } }
   
  }
 shared_focus = {
   id = aof_v03_g_ven_order
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 0
   cost = 5
@@ -1459,7 +1491,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_ven_technicians
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_national_unity
   x = 62
   y = 1
   cost = 5
@@ -1471,7 +1503,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_ven_refining
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_production
   x = 62
   y = 2
   cost = 5
@@ -1483,7 +1515,7 @@ shared_focus = {
  }
 shared_focus = {
   id = aof_v03_g_ven_contract
-  icon = GFX_goal_generic_political_pressure
+  icon = GFX_goal_generic_alliance
   x = 62
   y = 3
   cost = 5
