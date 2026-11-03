@@ -1,0 +1,1 @@
+opinion_modifiers = { aof_v03_diplomatic_pressure = { value = -25 months = 24 } }

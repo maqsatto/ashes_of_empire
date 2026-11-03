@@ -1,0 +1,184 @@
+focus_tree = {
+ id = aof_v03_naf_tree
+ country = { factor = 0 modifier = { add = 10000 OR = { tag = NAF } } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = aof_v03_naf_entry1 }
+ focus = {
+  id = aof_v03_naf_entry1
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+ focus = {
+  id = aof_v03_naf_entry2
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_entry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_naf_entry3
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { remove_ideas = aof_v03_naf_initial add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_naf_neutral1
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_entry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+ focus = {
+  id = aof_v03_naf_neutral2
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_neutral1 }
+ available = { any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 20 }
+  
+ }
+ focus = {
+  id = aof_v03_naf_neutral3
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_neutral2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_naf_neutral4
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_neutral3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_naf_neutral }
+  
+ }
+ focus = {
+  id = aof_v03_naf_citizen1
+  icon = GFX_goal_generic_political_pressure
+  x = 1
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_entry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } }
+  
+ }
+ focus = {
+  id = aof_v03_naf_citizen2
+  icon = GFX_goal_generic_political_pressure
+  x = 1
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_citizen1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_naf_citizen3
+  icon = GFX_goal_generic_political_pressure
+  x = 1
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_citizen2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_naf_citizen4
+  icon = GFX_goal_generic_political_pressure
+  x = 1
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_citizen3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_naf_citizen }
+  
+ }
+ focus = {
+  id = aof_v03_naf_voice1
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_entry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 }
+  
+ }
+ focus = {
+  id = aof_v03_naf_voice2
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_voice1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_naf_voice3
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_voice2 }
+ available = { any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_naf_voice4
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_voice3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+ focus = {
+  id = aof_v03_naf_aid_crisis
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_naf_voice4 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_nations.30 days = 1 } }
+  
+ }
+}

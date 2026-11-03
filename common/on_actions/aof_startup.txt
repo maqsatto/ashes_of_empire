@@ -1,0 +1,1 @@
+# Legacy startup superseded by aof_v03_startup.txt.

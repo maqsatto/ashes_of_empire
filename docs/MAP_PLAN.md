@@ -1,0 +1,5 @@
+# Provisional Kazakhstan MVP
+
+Only state 586 is assigned to KAZ for the initial boot. The installed file is named 586-Kyrgyzstan.txt; vanilla KAZ history also selects capital 586. Province 1591 is listed in that state and has its victory points. The source geometry, population and resources are preserved. This is not a canonical border or an assessment of historical resources. One military factory is added for a minimal production loop. The country has two research slots and one three-battalion infantry division. Neutral government is a temporary setup, not approved political lore.
+
+This is a history override, not a map geometry edit. No game installation files were changed. Full restart and new game required. Country startup, equipment production, research completion and save/load were subsequently verified in actual game runs; see TECH_NOTES.md for dates and limits. Wartime supply and combat have not been tested. The wider Kazakhstan territory and access to the Caspian remain unimplemented.

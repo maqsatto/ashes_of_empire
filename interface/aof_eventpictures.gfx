@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_aof_event_world_peace_1924"
+        texturefile = "gfx/event_pictures/aof_event_world_peace_1924.dds"
+    }
+    spriteType = {
+        name = "GFX_aof_event_kazakhstan_development"
+        texturefile = "gfx/event_pictures/aof_event_kazakhstan_development.dds"
+    }
+}

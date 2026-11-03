@@ -1,0 +1,8 @@
+ideas = { country = {
+ aof_v03_american_tools = { picture = generic_research_bonus allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.06 research_speed_factor = 0.03 consumer_goods_factor = 0.04 } }
+ aof_v03_japanese_training = { picture = generic_research_bonus allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.04 production_factory_efficiency_gain_factor = 0.05 political_power_gain = -0.05 } }
+ aof_v03_compensated_trade = { picture = generic_research_bonus allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.04 consumer_goods_factor = 0.02 } }
+ aof_v03_limited_autonomy = { picture = generic_research_bonus allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.05 political_power_gain = 0.08 } }
+ aof_v03_transit_guarantees = { picture = generic_research_bonus allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.04 production_factory_efficiency_gain_factor = 0.04 } }
+ aof_v03_research_commission = { picture = generic_research_bonus allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.04 consumer_goods_factor = 0.01 } }
+} }

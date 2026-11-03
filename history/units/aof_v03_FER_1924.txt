@@ -1,0 +1,10 @@
+division_template = { name = "AOF Territorial Infantry" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
+units = {
+ division = { name = "FER 1" location = 957 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "FER 2" location = 12189 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "FER 3" location = 1724 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "FER 4" location = 7851 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "FER 5" location = 1714 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "FER 6" location = 4705 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "FER 7" location = 1823 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+}

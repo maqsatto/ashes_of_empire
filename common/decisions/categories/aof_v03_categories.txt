@@ -1,0 +1,1 @@
+aof_v03_diplomacy_category = { icon = generic_political_actions visible = { is_ai = no } }

@@ -1,0 +1,2 @@
+# Inert vanilla identifier registry. No original effects, prerequisites, triggers or plots are restored.
+aof_legacy_compat = { allowed = { always = no } visible = { always = no } }

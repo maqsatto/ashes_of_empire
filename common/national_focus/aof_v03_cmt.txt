@@ -1,0 +1,185 @@
+focus_tree = {
+ id = aof_v03_cmt_tree
+ country = { factor = 0 modifier = { add = 10000 OR = { tag = CMT } } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = aof_v03_cmt_entry1 }
+ focus = {
+  id = aof_v03_cmt_entry1
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_entry2
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_entry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_entry3
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { remove_ideas = aof_v03_cmt_initial add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_residents1
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_entry3 }
+ mutually_exclusive = { focus = aof_v03_cmt_board1 focus = aof_v03_cmt_patrons1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_residents2
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_residents1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_residents3
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_residents2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_residents4
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_residents3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_cmt_residents_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_board1
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_entry3 }
+ mutually_exclusive = { focus = aof_v03_cmt_residents1 focus = aof_v03_cmt_patrons1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 6 neutrality = 70 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_board2
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_board1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = USA NOT = { has_war_with = USA } } USA = { country_event = { id = aof_diplomacy.110 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_board3
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_board2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_board4
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_board3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_cmt_board_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_patrons1
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_entry3 }
+ mutually_exclusive = { focus = aof_v03_cmt_residents1 focus = aof_v03_cmt_board1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 6 neutrality = 70 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_patrons2
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_patrons1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_patrons3
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_patrons2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = USA NOT = { has_war_with = USA } } USA = { country_event = { id = aof_diplomacy.110 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_patrons4
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_patrons3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_cmt_patrons_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_cmt_charter_end
+  icon = GFX_goal_generic_political_pressure
+  x = -4
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_cmt_entry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_nations.40 days = 1 } if = { limit = { country_exists = USA NOT = { has_war_with = USA } } USA = { country_event = { id = aof_diplomacy.110 days = 2 } } } }
+  
+ }
+}

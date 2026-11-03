@@ -1,0 +1,51 @@
+on_actions = {
+ on_startup = {
+  effect = {
+   if = {
+    limit = { NOT = { has_global_flag = aof_v03_world_initialized } }
+    set_global_flag = aof_v03_world_initialized
+    KAZ = { if = { limit = { exists = yes } add_ideas = { aof_v03_kaz_initial aof_v03_kaz_local_compacts aof_v03_kaz_resource_gap } } }
+    CAU = { if = { limit = { exists = yes } add_ideas = { aof_v03_cau_initial } } }
+    SIB = { if = { limit = { exists = yes } add_ideas = { aof_v03_sib_initial } } }
+    SOV = { if = { limit = { exists = yes } add_ideas = { aof_v03_sov_initial } } }
+    NAF = { if = { limit = { exists = yes } add_ideas = { aof_v03_naf_initial } } }
+    CMT = { if = { limit = { exists = yes } add_ideas = { aof_v03_cmt_initial } } }
+    MEX = { if = { limit = { exists = yes } add_ideas = { aof_v03_mex_initial } } }
+    BRA = { if = { limit = { exists = yes } add_ideas = { aof_v03_bra_initial } } }
+    ARG = { if = { limit = { exists = yes } add_ideas = { aof_v03_arg_initial } } }
+    CHI = { if = { limit = { exists = yes } add_ideas = { aof_v03_chi_initial } } }
+    USA = { if = { limit = { exists = yes } add_ideas = { aof_v03_usa_profit aof_v03_usa_contracts aof_v03_usa_universities } } }
+    JAP = { if = { limit = { exists = yes } add_ideas = { aof_v03_jap_labs aof_v03_jap_obligations aof_v03_jap_commands } } }
+    ENG = { set_country_flag = aof_war_exhausted }
+    FRA = { set_country_flag = aof_war_exhausted }
+    GER = { set_country_flag = aof_war_exhausted }
+    AUS = { set_country_flag = aof_war_exhausted }
+    SOV = { set_country_flag = aof_war_exhausted }
+    BEL = { set_country_flag = aof_war_exhausted }
+    ITA = { set_country_flag = aof_war_exhausted }
+    CAU = { set_country_flag = aof_war_exhausted }
+    SIB = { set_country_flag = aof_war_exhausted }
+    TRK = { set_country_flag = aof_war_exhausted }
+    NAF = { set_country_flag = aof_war_exhausted }
+    JAP = {
+     if = { limit = { MAN = { exists = yes } } set_autonomy = { target = MAN autonomy_state = autonomy_puppet } }
+     if = { limit = { FER = { exists = yes } } set_autonomy = { target = FER autonomy_state = autonomy_puppet } }
+    }
+    ENG = { if = { limit = { RAJ = { is_subject_of = ENG } } set_autonomy = { target = RAJ autonomy_state = autonomy_free } } }
+    RAJ = {
+     if = { limit = { PAK = { exists = yes } NOT = { has_war_with = PAK } }
+      declare_war_on = { target = PAK type = annex_everything }
+     }
+    }
+    PAK = {
+     add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = PER }
+     add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = AFG }
+     set_country_flag = aof_initial_persian_afghan_aid
+    }
+    KAZ = { country_event = { id = aof_kaz.1 hours = 6 } }
+    USA = { country_event = { id = aof_v03_pacific.3 hours = 8 } }
+    JAP = { country_event = { id = aof_v03_pacific.4 hours = 8 } }
+   }
+  }
+ }
+}

@@ -1,0 +1,37 @@
+add_namespace = aof_v03_pacific
+country_event = { id = aof_v03_pacific.1 title = aof_v03_pacific.1.t desc = aof_v03_pacific.1.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.1.a add_political_power = -75 add_timed_idea = { idea = aof_v03_usa_project days = 540 } }
+option = { name = aof_v03_pacific.1.b add_political_power = -35 add_tech_bonus = { name = aof_v03_applied_bonus bonus = 0.5 uses = 1 category = electronics } add_stability = 0.02 }
+option = { name = aof_v03_pacific.1.c add_stability = 0.04 add_political_power = 40 }
+}
+country_event = { id = aof_v03_pacific.2 title = aof_v03_pacific.2.t desc = aof_v03_pacific.2.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.2.a add_political_power = -60 add_stability = 0.03 add_war_support = -0.05 }
+option = { name = aof_v03_pacific.2.b add_timed_idea = { idea = aof_v03_jap_inquiry days = 365 } add_political_power = -25 }
+option = { name = aof_v03_pacific.2.c add_war_support = 0.08 add_stability = -0.04 army_experience = 20 add_named_threat = { threat = 2 name = aof_v03_pacific.2.t } }
+}
+country_event = { id = aof_v03_pacific.3 title = aof_v03_pacific.3.t desc = aof_v03_pacific.3.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.3.a add_political_power = 25 }
+}
+country_event = { id = aof_v03_pacific.4 title = aof_v03_pacific.4.t desc = aof_v03_pacific.4.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.4.a add_political_power = 25 }
+}
+country_event = { id = aof_v03_pacific.10 title = aof_v03_pacific.10.t desc = aof_v03_pacific.10.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.10.a set_popularities = { democratic = 70 communism = 6 fascism = 6 neutrality = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = 0.03 set_country_flag = aof_v03_usa_social_liberal }
+option = { name = aof_v03_pacific.10.b set_popularities = { democratic = 6 communism = 6 fascism = 6 neutrality = 6 aof_social_democracy = 70 aof_conservatism = 6 } set_politics = { ruling_party = aof_social_democracy elections_allowed = yes } add_political_power = -35 set_country_flag = aof_v03_usa_social_democrat }
+}
+country_event = { id = aof_v03_pacific.11 title = aof_v03_pacific.11.t desc = aof_v03_pacific.11.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.11.a set_popularities = { democratic = 6 communism = 6 fascism = 6 neutrality = 6 aof_social_democracy = 6 aof_conservatism = 70 } set_politics = { ruling_party = aof_conservatism elections_allowed = yes } add_stability = 0.04 set_country_flag = aof_v03_usa_constitutional_oceans }
+option = { name = aof_v03_pacific.11.b set_popularities = { democratic = 6 communism = 6 fascism = 6 neutrality = 70 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.08 add_war_support = 0.06 set_country_flag = aof_v03_usa_presidential_dictatorship }
+}
+country_event = { id = aof_v03_pacific.12 title = aof_v03_pacific.12.t desc = aof_v03_pacific.12.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.12.a set_popularities = { democratic = 70 communism = 6 fascism = 6 neutrality = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = 0.03 set_country_flag = aof_v03_usa_market_republic }
+option = { name = aof_v03_pacific.12.b set_popularities = { democratic = 6 communism = 6 fascism = 6 neutrality = 70 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.06 add_political_power = 50 set_country_flag = aof_v03_usa_corporate_authoritarian }
+}
+country_event = { id = aof_v03_pacific.13 title = aof_v03_pacific.13.t desc = aof_v03_pacific.13.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.13.a set_popularities = { democratic = 6 communism = 6 fascism = 6 neutrality = 6 aof_social_democracy = 6 aof_conservatism = 70 } set_politics = { ruling_party = aof_conservatism elections_allowed = yes } add_stability = 0.04 set_country_flag = aof_v03_jap_constitutional_conservative }
+option = { name = aof_v03_pacific.13.b set_popularities = { democratic = 70 communism = 6 fascism = 6 neutrality = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_political_power = 40 set_country_flag = aof_v03_jap_liberal_cabinet }
+}
+country_event = { id = aof_v03_pacific.14 title = aof_v03_pacific.14.t desc = aof_v03_pacific.14.d is_triggered_only = yes fire_only_once = yes
+option = { name = aof_v03_pacific.14.a set_popularities = { democratic = 6 communism = 6 fascism = 6 neutrality = 70 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_political_power = 30 }
+option = { name = aof_v03_pacific.14.b set_popularities = { democratic = 6 communism = 6 fascism = 70 neutrality = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = fascism elections_allowed = no } add_war_support = 0.10 add_stability = -0.06 set_country_flag = aof_v03_jap_radical_expansion }
+}

@@ -1,0 +1,16 @@
+ideas = {
+    country = {
+        aof_technical_network = {
+            picture = generic_research_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { research_speed_factor = 0.03 }
+        }
+        aof_production_standards_spirit = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.05 }
+        }
+    }
+}

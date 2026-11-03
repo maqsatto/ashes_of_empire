@@ -1,0 +1,27 @@
+division_template = { name = "AOF Territorial Infantry" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
+units = {
+ division = { name = "CHI 1" location = 11913 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 2" location = 10076 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 3" location = 4619 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 4" location = 6999 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 5" location = 1069 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 6" location = 6904 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 7" location = 4925 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 8" location = 4196 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 9" location = 1055 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 10" location = 1104 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 11" location = 1029 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 12" location = 3992 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 13" location = 7097 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 14" location = 4504 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 15" location = 11865 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 16" location = 1083 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 17" location = 9958 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 18" location = 9843 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 19" location = 7014 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 20" location = 4190 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 21" location = 1612 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 22" location = 10000 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 23" location = 7301 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "CHI 24" location = 1010 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+}

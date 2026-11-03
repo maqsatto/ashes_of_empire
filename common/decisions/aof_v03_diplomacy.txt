@@ -1,0 +1,86 @@
+aof_v03_diplomacy_category = {
+ aof_v03_offer_kaz_usa = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = KAZ country_exists = USA }
+ available = { NOT = { has_war_with = USA } NOT = { has_country_flag = aof_jap_partnership_accepted } }
+ complete_effect = { USA = { country_event = { id = aof_diplomacy.20 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_kaz_jap = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = KAZ country_exists = JAP }
+ available = { NOT = { has_war_with = JAP } NOT = { has_country_flag = aof_usa_partnership_accepted } }
+ complete_effect = { JAP = { country_event = { id = aof_diplomacy.30 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_kaz_cau = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = KAZ country_exists = CAU }
+ available = { NOT = { has_war_with = CAU } has_global_flag = aof_caspian_navigation_verified }
+ complete_effect = { CAU = { country_event = { id = aof_diplomacy.70 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_kaz_sib = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = KAZ country_exists = SIB }
+ available = { NOT = { has_war_with = SIB } }
+ complete_effect = { SIB = { country_event = { id = aof_diplomacy.120 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_fer_jap = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = FER country_exists = JAP }
+ available = { NOT = { has_war_with = JAP } }
+ complete_effect = { JAP = { country_event = { id = aof_diplomacy.40 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_fer_sib = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = FER country_exists = SIB }
+ available = { NOT = { has_war_with = SIB } }
+ complete_effect = { SIB = { country_event = { id = aof_diplomacy.80 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_man_jap = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = MAN country_exists = JAP }
+ available = { NOT = { has_war_with = JAP } }
+ complete_effect = { JAP = { country_event = { id = aof_diplomacy.50 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_mex_usa = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = MEX country_exists = USA }
+ available = { NOT = { has_war_with = USA } }
+ complete_effect = { USA = { country_event = { id = aof_diplomacy.10 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_cmt_usa = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = CMT country_exists = USA }
+ available = { NOT = { has_war_with = USA } }
+ complete_effect = { USA = { country_event = { id = aof_diplomacy.110 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_jap_usa = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = JAP country_exists = USA }
+ available = { NOT = { has_war_with = USA } }
+ complete_effect = { USA = { country_event = { id = aof_diplomacy.60 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_raj_pak = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = RAJ country_exists = PAK }
+ available = { has_war_with = PAK }
+ complete_effect = { PAK = { country_event = { id = aof_diplomacy.130 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_pak_raj = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = PAK country_exists = RAJ }
+ available = { has_war_with = RAJ }
+ complete_effect = { RAJ = { country_event = { id = aof_diplomacy.130 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_pak_per = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = PAK country_exists = PER }
+ available = { NOT = { has_war_with = PER } }
+ complete_effect = { PER = { country_event = { id = aof_diplomacy.140 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+ aof_v03_offer_pak_afg = { icon = generic_political_discourse cost = 35 days_re_enable = 365
+ visible = { tag = PAK country_exists = AFG }
+ available = { NOT = { has_war_with = AFG } }
+ complete_effect = { AFG = { country_event = { id = aof_diplomacy.140 days = 2 } } }
+ ai_will_do = { factor = 0 }
+ }
+}

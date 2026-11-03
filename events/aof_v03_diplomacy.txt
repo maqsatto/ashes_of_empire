@@ -1,0 +1,277 @@
+add_namespace = aof_diplomacy
+country_event = {
+ id = aof_diplomacy.201
+ title = aof_diplomacy.201.t
+ desc = aof_diplomacy.201.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ option = { name = aof_diplomacy.201.a ai_chance = { factor = 1 } set_country_flag = aof_diplomatic_answer_received }
+}
+country_event = {
+ id = aof_diplomacy.202
+ title = aof_diplomacy.202.t
+ desc = aof_diplomacy.202.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ option = { name = aof_diplomacy.202.a ai_chance = { factor = 1 } set_country_flag = aof_diplomatic_answer_received }
+}
+country_event = {
+ id = aof_diplomacy.203
+ title = aof_diplomacy.203.t
+ desc = aof_diplomacy.203.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ option = { name = aof_diplomacy.203.a ai_chance = { factor = 1 } set_country_flag = aof_diplomatic_answer_received }
+}
+country_event = {
+ id = aof_diplomacy.10
+ title = aof_diplomacy.10.t
+ desc = aof_diplomacy.10.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = USA FROM = { tag = MEX exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.10.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_oil_compromise_refused set_country_flag = aof_oil_compromise_accepted FROM = { clr_country_flag = aof_oil_compromise_refused set_country_flag = aof_oil_compromise_accepted add_timed_idea = { idea = aof_v03_compensated_trade days = 730 } add_political_power = -35 } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.10.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_oil_compromise_refused set_country_flag = aof_oil_compromise_accepted FROM = { clr_country_flag = aof_oil_compromise_refused set_country_flag = aof_oil_compromise_accepted add_timed_idea = { idea = aof_v03_compensated_trade days = 365 } add_stability = 0.02 } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.10.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_oil_compromise_refused FROM = { set_country_flag = aof_oil_compromise_refused add_stability = -0.02 set_country_flag = aof_oil_diversification_available } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.11
+ title = aof_diplomacy.11.t
+ desc = aof_diplomacy.11.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = MEX FROM = { tag = USA exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.11.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_oil_compromise_refused set_country_flag = aof_oil_compromise_accepted FROM = { clr_country_flag = aof_oil_compromise_refused set_country_flag = aof_oil_compromise_accepted add_timed_idea = { idea = aof_v03_compensated_trade days = 730 } add_political_power = -35 } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.11.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_oil_compromise_refused set_country_flag = aof_oil_compromise_accepted FROM = { clr_country_flag = aof_oil_compromise_refused set_country_flag = aof_oil_compromise_accepted add_timed_idea = { idea = aof_v03_compensated_trade days = 365 } add_stability = 0.02 } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.11.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_oil_compromise_refused FROM = { set_country_flag = aof_oil_compromise_refused add_stability = -0.02 set_country_flag = aof_oil_diversification_available } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.20
+ title = aof_diplomacy.20.t
+ desc = aof_diplomacy.20.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = USA FROM = { tag = KAZ exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.20.a trigger = { KAZ = { NOT = { has_completed_focus = aof_v03_kaz_diverse1 } NOT = { has_country_flag = aof_jap_partnership_accepted } } } ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_usa_partnership_refused set_country_flag = aof_usa_partnership_accepted FROM = { clr_country_flag = aof_usa_partnership_refused set_country_flag = aof_usa_partnership_accepted add_political_power = -40 KAZ = { add_timed_idea = { idea = aof_v03_american_tools days = 730 } set_country_flag = aof_usa_partnership_accepted } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.20.b trigger = { KAZ = { NOT = { has_completed_focus = aof_v03_kaz_diverse1 } NOT = { has_country_flag = aof_jap_partnership_accepted } } } ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_usa_partnership_refused set_country_flag = aof_usa_partnership_accepted FROM = { clr_country_flag = aof_usa_partnership_refused set_country_flag = aof_usa_partnership_accepted add_political_power = -20 KAZ = { add_timed_idea = { idea = aof_v03_american_tools days = 365 } set_country_flag = aof_usa_partnership_accepted } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.20.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_usa_partnership_refused FROM = { set_country_flag = aof_usa_partnership_refused KAZ = { set_country_flag = aof_usa_partnership_refused add_political_power = 15 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.21
+ title = aof_diplomacy.21.t
+ desc = aof_diplomacy.21.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = KAZ FROM = { tag = USA exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.21.a trigger = { KAZ = { NOT = { has_completed_focus = aof_v03_kaz_diverse1 } NOT = { has_country_flag = aof_jap_partnership_accepted } } } ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_usa_partnership_refused set_country_flag = aof_usa_partnership_accepted FROM = { clr_country_flag = aof_usa_partnership_refused set_country_flag = aof_usa_partnership_accepted add_political_power = -40 KAZ = { add_timed_idea = { idea = aof_v03_american_tools days = 730 } set_country_flag = aof_usa_partnership_accepted } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.21.b trigger = { KAZ = { NOT = { has_completed_focus = aof_v03_kaz_diverse1 } NOT = { has_country_flag = aof_jap_partnership_accepted } } } ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_usa_partnership_refused set_country_flag = aof_usa_partnership_accepted FROM = { clr_country_flag = aof_usa_partnership_refused set_country_flag = aof_usa_partnership_accepted add_political_power = -20 KAZ = { add_timed_idea = { idea = aof_v03_american_tools days = 365 } set_country_flag = aof_usa_partnership_accepted } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.21.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_usa_partnership_refused FROM = { set_country_flag = aof_usa_partnership_refused KAZ = { set_country_flag = aof_usa_partnership_refused add_political_power = 15 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.30
+ title = aof_diplomacy.30.t
+ desc = aof_diplomacy.30.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = JAP FROM = { tag = KAZ exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.30.a trigger = { KAZ = { NOT = { has_completed_focus = aof_v03_kaz_diverse1 } NOT = { has_country_flag = aof_usa_partnership_accepted } } } ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_jap_partnership_refused set_country_flag = aof_jap_partnership_accepted FROM = { clr_country_flag = aof_jap_partnership_refused set_country_flag = aof_jap_partnership_accepted add_political_power = -40 KAZ = { add_timed_idea = { idea = aof_v03_japanese_training days = 730 } set_country_flag = aof_jap_partnership_accepted } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.30.b trigger = { KAZ = { NOT = { has_completed_focus = aof_v03_kaz_diverse1 } NOT = { has_country_flag = aof_usa_partnership_accepted } } } ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_jap_partnership_refused set_country_flag = aof_jap_partnership_accepted FROM = { clr_country_flag = aof_jap_partnership_refused set_country_flag = aof_jap_partnership_accepted add_political_power = -20 KAZ = { add_timed_idea = { idea = aof_v03_japanese_training days = 365 } set_country_flag = aof_jap_partnership_accepted } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.30.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_jap_partnership_refused FROM = { set_country_flag = aof_jap_partnership_refused KAZ = { set_country_flag = aof_jap_partnership_refused add_political_power = 15 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.31
+ title = aof_diplomacy.31.t
+ desc = aof_diplomacy.31.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = KAZ FROM = { tag = JAP exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.31.a trigger = { KAZ = { NOT = { has_completed_focus = aof_v03_kaz_diverse1 } NOT = { has_country_flag = aof_usa_partnership_accepted } } } ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_jap_partnership_refused set_country_flag = aof_jap_partnership_accepted FROM = { clr_country_flag = aof_jap_partnership_refused set_country_flag = aof_jap_partnership_accepted add_political_power = -40 KAZ = { add_timed_idea = { idea = aof_v03_japanese_training days = 730 } set_country_flag = aof_jap_partnership_accepted } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.31.b trigger = { KAZ = { NOT = { has_completed_focus = aof_v03_kaz_diverse1 } NOT = { has_country_flag = aof_usa_partnership_accepted } } } ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_jap_partnership_refused set_country_flag = aof_jap_partnership_accepted FROM = { clr_country_flag = aof_jap_partnership_refused set_country_flag = aof_jap_partnership_accepted add_political_power = -20 KAZ = { add_timed_idea = { idea = aof_v03_japanese_training days = 365 } set_country_flag = aof_jap_partnership_accepted } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.31.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_jap_partnership_refused FROM = { set_country_flag = aof_jap_partnership_refused KAZ = { set_country_flag = aof_jap_partnership_refused add_political_power = 15 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.40
+ title = aof_diplomacy.40.t
+ desc = aof_diplomacy.40.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = JAP FROM = { tag = FER exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.40.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_far_east_revision_refused set_country_flag = aof_far_east_revision_accepted FROM = { clr_country_flag = aof_far_east_revision_refused set_country_flag = aof_far_east_revision_accepted JAP = { if = { limit = { FER = { is_subject_of = JAP } } set_autonomy = { target = FER autonomy_state = autonomy_free } } } FER = { set_country_flag = aof_far_east_revision_accepted add_stability = 0.04 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.40.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_far_east_revision_refused set_country_flag = aof_far_east_revision_accepted FROM = { clr_country_flag = aof_far_east_revision_refused set_country_flag = aof_far_east_revision_accepted FER = { set_country_flag = aof_far_east_revision_accepted add_timed_idea = { idea = aof_v03_limited_autonomy days = 730 } } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.40.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_far_east_revision_refused FROM = { set_country_flag = aof_far_east_revision_refused FER = { set_country_flag = aof_far_east_revision_refused add_political_power = 25 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.41
+ title = aof_diplomacy.41.t
+ desc = aof_diplomacy.41.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = FER FROM = { tag = JAP exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.41.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_far_east_revision_refused set_country_flag = aof_far_east_revision_accepted FROM = { clr_country_flag = aof_far_east_revision_refused set_country_flag = aof_far_east_revision_accepted JAP = { if = { limit = { FER = { is_subject_of = JAP } } set_autonomy = { target = FER autonomy_state = autonomy_free } } } FER = { set_country_flag = aof_far_east_revision_accepted add_stability = 0.04 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.41.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_far_east_revision_refused set_country_flag = aof_far_east_revision_accepted FROM = { clr_country_flag = aof_far_east_revision_refused set_country_flag = aof_far_east_revision_accepted FER = { set_country_flag = aof_far_east_revision_accepted add_timed_idea = { idea = aof_v03_limited_autonomy days = 730 } } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.41.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_far_east_revision_refused FROM = { set_country_flag = aof_far_east_revision_refused FER = { set_country_flag = aof_far_east_revision_refused add_political_power = 25 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.50
+ title = aof_diplomacy.50.t
+ desc = aof_diplomacy.50.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = JAP FROM = { tag = MAN exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.50.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_manchurian_revision_refused set_country_flag = aof_manchurian_revision_accepted FROM = { clr_country_flag = aof_manchurian_revision_refused set_country_flag = aof_manchurian_revision_accepted JAP = { if = { limit = { MAN = { is_subject_of = JAP } } set_autonomy = { target = MAN autonomy_state = autonomy_free } } } MAN = { set_country_flag = aof_manchurian_revision_accepted add_stability = 0.04 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.50.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_manchurian_revision_refused set_country_flag = aof_manchurian_revision_accepted FROM = { clr_country_flag = aof_manchurian_revision_refused set_country_flag = aof_manchurian_revision_accepted MAN = { set_country_flag = aof_manchurian_revision_accepted add_timed_idea = { idea = aof_v03_limited_autonomy days = 730 } } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.50.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_manchurian_revision_refused FROM = { set_country_flag = aof_manchurian_revision_refused MAN = { set_country_flag = aof_manchurian_revision_refused add_political_power = 25 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.51
+ title = aof_diplomacy.51.t
+ desc = aof_diplomacy.51.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = MAN FROM = { tag = JAP exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.51.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_manchurian_revision_refused set_country_flag = aof_manchurian_revision_accepted FROM = { clr_country_flag = aof_manchurian_revision_refused set_country_flag = aof_manchurian_revision_accepted JAP = { if = { limit = { MAN = { is_subject_of = JAP } } set_autonomy = { target = MAN autonomy_state = autonomy_free } } } MAN = { set_country_flag = aof_manchurian_revision_accepted add_stability = 0.04 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.51.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_manchurian_revision_refused set_country_flag = aof_manchurian_revision_accepted FROM = { clr_country_flag = aof_manchurian_revision_refused set_country_flag = aof_manchurian_revision_accepted MAN = { set_country_flag = aof_manchurian_revision_accepted add_timed_idea = { idea = aof_v03_limited_autonomy days = 730 } } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.51.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_manchurian_revision_refused FROM = { set_country_flag = aof_manchurian_revision_refused MAN = { set_country_flag = aof_manchurian_revision_refused add_political_power = 25 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.60
+ title = aof_diplomacy.60.t
+ desc = aof_diplomacy.60.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = USA FROM = { tag = JAP exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.60.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_pacific_detente_refused set_country_flag = aof_pacific_detente_accepted FROM = { clr_country_flag = aof_pacific_detente_refused set_country_flag = aof_pacific_detente_accepted add_stability = 0.03 JAP = { add_stability = 0.03 } USA = { add_stability = 0.03 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.60.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_pacific_detente_refused set_country_flag = aof_pacific_detente_accepted FROM = { clr_country_flag = aof_pacific_detente_refused set_country_flag = aof_pacific_detente_accepted add_political_power = 20 } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.60.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_pacific_detente_refused FROM = { set_country_flag = aof_pacific_detente_refused add_war_support = 0.02 } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.61
+ title = aof_diplomacy.61.t
+ desc = aof_diplomacy.61.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = JAP FROM = { tag = USA exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.61.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_pacific_detente_refused set_country_flag = aof_pacific_detente_accepted FROM = { clr_country_flag = aof_pacific_detente_refused set_country_flag = aof_pacific_detente_accepted add_stability = 0.03 JAP = { add_stability = 0.03 } USA = { add_stability = 0.03 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.61.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_pacific_detente_refused set_country_flag = aof_pacific_detente_accepted FROM = { clr_country_flag = aof_pacific_detente_refused set_country_flag = aof_pacific_detente_accepted add_political_power = 20 } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.61.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_pacific_detente_refused FROM = { set_country_flag = aof_pacific_detente_refused add_war_support = 0.02 } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.70
+ title = aof_diplomacy.70.t
+ desc = aof_diplomacy.70.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = CAU FROM = { tag = KAZ exists = yes } NOT = { has_war_with = FROM } has_global_flag = aof_caspian_navigation_verified }
+ option = { name = aof_diplomacy.70.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_caspian_agreement_refused set_country_flag = aof_caspian_agreement_accepted FROM = { clr_country_flag = aof_caspian_agreement_refused set_country_flag = aof_caspian_agreement_accepted KAZ = { set_country_flag = aof_caspian_agreement_accepted add_timed_idea = { idea = aof_v03_transit_guarantees days = 1095 } } CAU = { add_political_power = 40 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.70.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_caspian_agreement_refused set_country_flag = aof_caspian_agreement_accepted FROM = { clr_country_flag = aof_caspian_agreement_refused set_country_flag = aof_caspian_agreement_accepted KAZ = { set_country_flag = aof_caspian_agreement_accepted add_political_power = -35 } CAU = { add_stability = 0.03 } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.70.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_caspian_agreement_refused FROM = { set_country_flag = aof_caspian_agreement_refused KAZ = { set_country_flag = aof_caspian_agreement_refused set_country_flag = aof_siberian_land_route } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.71
+ title = aof_diplomacy.71.t
+ desc = aof_diplomacy.71.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = KAZ FROM = { tag = CAU exists = yes } NOT = { has_war_with = FROM } has_global_flag = aof_caspian_navigation_verified }
+ option = { name = aof_diplomacy.71.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_caspian_agreement_refused set_country_flag = aof_caspian_agreement_accepted FROM = { clr_country_flag = aof_caspian_agreement_refused set_country_flag = aof_caspian_agreement_accepted KAZ = { set_country_flag = aof_caspian_agreement_accepted add_timed_idea = { idea = aof_v03_transit_guarantees days = 1095 } } CAU = { add_political_power = 40 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.71.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_caspian_agreement_refused set_country_flag = aof_caspian_agreement_accepted FROM = { clr_country_flag = aof_caspian_agreement_refused set_country_flag = aof_caspian_agreement_accepted KAZ = { set_country_flag = aof_caspian_agreement_accepted add_political_power = -35 } CAU = { add_stability = 0.03 } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.71.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_caspian_agreement_refused FROM = { set_country_flag = aof_caspian_agreement_refused KAZ = { set_country_flag = aof_caspian_agreement_refused set_country_flag = aof_siberian_land_route } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.80
+ title = aof_diplomacy.80.t
+ desc = aof_diplomacy.80.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = SIB FROM = { tag = FER exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.80.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_siberian_corridor_refused set_country_flag = aof_siberian_corridor_accepted FROM = { clr_country_flag = aof_siberian_corridor_refused set_country_flag = aof_siberian_corridor_accepted SIB = { add_timed_idea = { idea = aof_v03_compensated_trade days = 730 } } FER = { add_political_power = 35 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.80.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_siberian_corridor_refused set_country_flag = aof_siberian_corridor_accepted FROM = { clr_country_flag = aof_siberian_corridor_refused set_country_flag = aof_siberian_corridor_accepted SIB = { add_stability = 0.03 } FER = { add_stability = 0.02 } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.80.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_siberian_corridor_refused FROM = { set_country_flag = aof_siberian_corridor_refused set_country_flag = aof_alternative_trade_route } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.81
+ title = aof_diplomacy.81.t
+ desc = aof_diplomacy.81.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = FER FROM = { tag = SIB exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.81.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_siberian_corridor_refused set_country_flag = aof_siberian_corridor_accepted FROM = { clr_country_flag = aof_siberian_corridor_refused set_country_flag = aof_siberian_corridor_accepted SIB = { add_timed_idea = { idea = aof_v03_compensated_trade days = 730 } } FER = { add_political_power = 35 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.81.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_siberian_corridor_refused set_country_flag = aof_siberian_corridor_accepted FROM = { clr_country_flag = aof_siberian_corridor_refused set_country_flag = aof_siberian_corridor_accepted SIB = { add_stability = 0.03 } FER = { add_stability = 0.02 } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.81.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_siberian_corridor_refused FROM = { set_country_flag = aof_siberian_corridor_refused set_country_flag = aof_alternative_trade_route } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.90
+ title = aof_diplomacy.90.t
+ desc = aof_diplomacy.90.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { FROM = { exists = yes OR = { tag = BRA tag = ARG } } NOT = { has_war_with = FROM } is_subject = no }
+ option = { name = aof_diplomacy.90.a trigger = { NOT = { FROM = { has_country_flag = aof_brazil_hegemonic_conference } } } ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } set_country_flag = aof_conference_participant FROM = { set_country_flag = aof_conference_accepted add_political_power = 30 } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } }
+ option = { name = aof_diplomacy.90.b ai_chance = { factor = 35 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } set_country_flag = aof_conference_participant FROM = { set_country_flag = aof_conference_counteroffer add_political_power = -40 } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } }
+ option = { name = aof_diplomacy.90.c ai_chance = { factor = 25 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_conference_refused FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.100
+ title = aof_diplomacy.100.t
+ desc = aof_diplomacy.100.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { OR = { tag = USA tag = JAP } FROM = { exists = yes } NOT = { has_war_with = FROM } }
+ option = { name = aof_diplomacy.100.a ai_chance = { factor = 35 } add_political_power = -60 add_timed_idea = { idea = aof_v03_research_commission days = 730 } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+ option = { name = aof_diplomacy.100.b ai_chance = { factor = 45 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } add_political_power = -30 add_tech_bonus = { name = aof_v03_joint_institute bonus = 0.5 uses = 1 category = industry } FROM = { add_tech_bonus = { name = aof_v03_joint_institute bonus = 0.5 uses = 1 category = industry } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } }
+ option = { name = aof_diplomacy.100.c ai_chance = { factor = 20 } add_stability = 0.03 FROM = { add_timed_idea = { idea = aof_v03_research_commission days = 365 } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.110
+ title = aof_diplomacy.110.t
+ desc = aof_diplomacy.110.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = USA FROM = { tag = CMT exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.110.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_charter_settlement_refused set_country_flag = aof_charter_settlement_accepted FROM = { clr_country_flag = aof_charter_settlement_refused set_country_flag = aof_charter_settlement_accepted CMT = { set_country_flag = aof_charter_reformed add_stability = 0.06 remove_ideas = aof_v03_cmt_initial } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.110.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_charter_settlement_refused set_country_flag = aof_charter_settlement_accepted FROM = { clr_country_flag = aof_charter_settlement_refused set_country_flag = aof_charter_settlement_accepted CMT = { add_timed_idea = { idea = aof_v03_compensated_trade days = 730 } add_stability = 0.02 } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.110.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_charter_settlement_refused FROM = { set_country_flag = aof_charter_settlement_refused CMT = { set_country_flag = aof_charter_domestic_alternative add_political_power = 30 } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.120
+ title = aof_diplomacy.120.t
+ desc = aof_diplomacy.120.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
+ option = { name = aof_diplomacy.120.a trigger = { is_subject = no is_in_faction = no FROM = { is_subject = no OR = { is_in_faction = no is_faction_leader = yes } } } ai_chance = { factor = 40 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } FROM = { if = { limit = { is_in_faction = no } set_rule = { can_create_factions = yes } if = { limit = { has_dlc = "No Compromise, No Surrender" } create_faction_from_template = { template = aof_v03_defensive_compact name = aof_v03_mutual_defence icon = GFX_faction_logo_generic } } else = { create_faction = aof_v03_mutual_defence } } add_to_faction = ROOT } if = { limit = { is_in_faction_with = FROM } set_country_flag = aof_alliance_accepted clr_country_flag = aof_alliance_refused FROM = { set_country_flag = aof_alliance_accepted clr_country_flag = aof_alliance_refused } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } } else = { FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } } }
+ option = { name = aof_diplomacy.120.b ai_chance = { factor = 35 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } set_country_flag = aof_alliance_limited FROM = { set_country_flag = aof_alliance_limited } add_stability = 0.02 FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } }
+ option = { name = aof_diplomacy.120.c ai_chance = { factor = 25 } set_country_flag = aof_alliance_refused FROM = { set_country_flag = aof_alliance_refused } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.130
+ title = aof_diplomacy.130.t
+ desc = aof_diplomacy.130.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { OR = { tag = RAJ tag = PAK } FROM = { OR = { tag = RAJ tag = PAK } } has_war_with = FROM }
+ option = { name = aof_diplomacy.130.a ai_chance = { factor = 65 } white_peace = FROM set_country_flag = aof_armistice_signed FROM = { set_country_flag = aof_armistice_signed } add_stability = 0.04 FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } }
+ option = { name = aof_diplomacy.130.b ai_chance = { factor = 35 } add_war_support = 0.03 FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.140
+ title = aof_diplomacy.140.t
+ desc = aof_diplomacy.140.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { OR = { tag = PER tag = AFG } FROM = { tag = PAK exists = yes } }
+ option = { name = aof_diplomacy.140.a ai_chance = { factor = 65 } add_political_power = -35 FROM = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = ROOT } set_country_flag = aof_pak_support_received } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } }
+ option = { name = aof_diplomacy.140.b ai_chance = { factor = 25 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } FROM = { add_political_power = 25 } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } }
+ option = { name = aof_diplomacy.140.c ai_chance = { factor = 10 } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}
+country_event = {
+ id = aof_diplomacy.150
+ title = aof_diplomacy.150.t
+ desc = aof_diplomacy.150.d
+ picture = GFX_aof_event_world_peace_1924
+ is_triggered_only = yes
+ trigger = { tag = CHI FROM = { tag = JAP exists = yes } NOT = { has_war_with = FROM }  }
+ option = { name = aof_diplomacy.150.a ai_chance = { factor = 50 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_sino_japanese_agreement_refused set_country_flag = aof_sino_japanese_agreement_accepted FROM = { clr_country_flag = aof_sino_japanese_agreement_refused set_country_flag = aof_sino_japanese_agreement_accepted JAP = { remove_ideas = aof_v03_jap_garrison add_stability = 0.04 } CHI = { add_stability = 0.04 } } FROM = { country_event = { id = aof_diplomacy.201 days = 1 } } add_political_power = -25 }
+ option = { name = aof_diplomacy.150.b ai_chance = { factor = 30 } add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } clr_country_flag = aof_sino_japanese_agreement_refused set_country_flag = aof_sino_japanese_agreement_accepted FROM = { clr_country_flag = aof_sino_japanese_agreement_refused set_country_flag = aof_sino_japanese_agreement_accepted JAP = { add_political_power = 35 } CHI = { add_political_power = 35 } } FROM = { country_event = { id = aof_diplomacy.202 days = 1 } } add_political_power = -10 }
+ option = { name = aof_diplomacy.150.c ai_chance = { factor = 20 } add_opinion_modifier = { target = FROM modifier = aof_v03_diplomatic_pressure } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_diplomatic_pressure } } set_country_flag = aof_sino_japanese_agreement_refused FROM = { set_country_flag = aof_sino_japanese_agreement_refused JAP = { set_country_flag = aof_chinese_negotiations_failed } } FROM = { country_event = { id = aof_diplomacy.203 days = 1 } } }
+}

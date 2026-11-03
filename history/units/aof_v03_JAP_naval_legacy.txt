@@ -1,0 +1,21 @@
+units = { fleet = { name = "1924 Training Fleet" naval_base = 9998 task_force = { name = "Home Squadron" location = 9998 ship = { name = "JAP destroyer 1" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 2" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 3" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 4" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 5" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 6" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 7" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 8" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 9" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 10" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 11" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 12" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 13" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 14" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 15" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP destroyer 16" definition = destroyer start_experience_factor = 0.2 equipment = { destroyer_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP battleship 1" definition = battleship start_experience_factor = 0.2 equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP battleship 2" definition = battleship start_experience_factor = 0.2 equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP battleship 3" definition = battleship start_experience_factor = 0.2 equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP battleship 4" definition = battleship start_experience_factor = 0.2 equipment = { battleship_1 = { amount = 1 owner = JAP } } }
+ship = { name = "JAP battleship 5" definition = battleship start_experience_factor = 0.2 equipment = { battleship_1 = { amount = 1 owner = JAP } } } } } }

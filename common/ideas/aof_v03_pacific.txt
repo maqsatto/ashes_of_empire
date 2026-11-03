@@ -1,0 +1,28 @@
+ideas = { country = {
+aof_v03_usa_profit = { picture = generic_production_bonus allowed = { always = yes } removal_cost = -1 modifier = { production_speed_buildings_factor = 0.08 } }
+aof_v03_usa_contracts = { picture = generic_foreign_capital allowed = { always = yes } removal_cost = -1 modifier = { consumer_goods_factor = 0.05 } }
+aof_v03_usa_universities = { picture = generic_research_bonus allowed = { always = yes } removal_cost = -1 modifier = { research_speed_factor = 0.05 } }
+aof_v03_usa_credit = { picture = generic_foreign_capital allowed = { always = yes } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.06 stability_factor = -0.03 } }
+aof_v03_usa_welfare = { picture = generic_goods_red_bonus allowed = { always = yes } removal_cost = -1 modifier = { production_speed_industrial_complex_factor = 0.12 production_speed_arms_factory_factor = -0.08 } }
+aof_v03_usa_labor = { picture = generic_morale_bonus allowed = { always = yes } removal_cost = -1 modifier = { stability_factor = 0.08 } }
+aof_v03_usa_antitrust = { picture = generic_constitutional_guarantees allowed = { always = yes } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = -0.08 political_power_gain = 0.15 } }
+aof_v03_usa_business = { picture = generic_central_management allowed = { always = yes } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.08 political_power_gain = -0.10 } }
+aof_v03_usa_oceans = { picture = generic_flexible_foreign_policy allowed = { always = yes } removal_cost = -1 modifier = { industrial_capacity_dockyard = 0.12 production_speed_arms_factory_factor = -0.05 } }
+aof_v03_usa_tutelage = { picture = generic_war_preparation allowed = { always = yes } removal_cost = -1 modifier = { war_support_factor = 0.08 stability_factor = -0.04 } }
+aof_v03_usa_tanks = { picture = generic_armor allowed = { always = yes } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.05 } }
+aof_v03_usa_repair = { picture = generic_infantry_bonus allowed = { always = yes } removal_cost = -1 modifier = { supply_consumption_factor = -0.06 } }
+aof_v03_usa_convoys = { picture = generic_coastal_navy allowed = { always = yes } removal_cost = -1 modifier = { industrial_capacity_dockyard = 0.06 } }
+aof_v03_usa_project = { picture = generic_research_bonus allowed = { always = yes } removal_cost = -1 modifier = { research_speed_factor = 0.03 consumer_goods_factor = 0.03 } }
+aof_v03_jap_labs = { picture = generic_research_bonus allowed = { always = yes } removal_cost = -1 modifier = { research_speed_factor = 0.05 } }
+aof_v03_jap_obligations = { picture = generic_foreign_capital allowed = { always = yes } removal_cost = -1 modifier = { consumer_goods_factor = 0.04 } }
+aof_v03_jap_commands = { picture = generic_reserve_divisions allowed = { always = yes } removal_cost = -1 modifier = { political_power_gain = -0.15 war_support_factor = 0.05 } }
+aof_v03_jap_treaty = { picture = generic_constitutional_guarantees allowed = { always = yes } removal_cost = -1 modifier = { stability_factor = 0.08 production_speed_arms_factory_factor = -0.05 } }
+aof_v03_jap_land = { picture = generic_reserve_divisions allowed = { always = yes } removal_cost = -1 modifier = { army_org_factor = 0.07 industrial_capacity_dockyard = -0.12 consumer_goods_factor = 0.03 } }
+aof_v03_jap_sea = { picture = generic_sea_focused_navy allowed = { always = yes } removal_cost = -1 modifier = { industrial_capacity_dockyard = 0.12 production_speed_arms_factory_factor = -0.10 } }
+aof_v03_jap_logistics = { picture = generic_infantry_bonus allowed = { always = yes } removal_cost = -1 modifier = { supply_consumption_factor = -0.08 } }
+aof_v03_jap_garrison = { picture = generic_reserve_divisions allowed = { always = yes } removal_cost = -1 modifier = { consumer_goods_factor = 0.04 stability_factor = -0.03 } }
+aof_v03_jap_pressure = { picture = generic_war_preparation allowed = { always = yes } removal_cost = -1 modifier = { war_support_factor = 0.08 stability_factor = -0.04 } }
+aof_v03_jap_shipping = { picture = generic_coastal_navy allowed = { always = yes } removal_cost = -1 modifier = { industrial_capacity_dockyard = 0.06 supply_consumption_factor = -0.03 } }
+aof_v03_jap_engineers = { picture = generic_research_bonus allowed = { always = yes } removal_cost = -1 modifier = { research_speed_factor = 0.03 } }
+aof_v03_jap_inquiry = { picture = generic_flexible_foreign_policy2 allowed = { always = yes } removal_cost = -1 modifier = { political_power_gain = -0.05 stability_factor = 0.03 } }
+} }

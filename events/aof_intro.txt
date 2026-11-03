@@ -1,0 +1,13 @@
+add_namespace = aof_intro
+
+country_event = {
+    id = aof_intro.1
+    title = aof_intro.1.t
+    desc = aof_intro.1.d
+    picture = GFX_aof_event_world_peace_1924
+    is_triggered_only = yes
+    option = {
+        name = aof_intro.1.a
+        add_political_power = 1
+    }
+}

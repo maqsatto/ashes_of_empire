@@ -1,0 +1,33 @@
+division_template = { name = "AOF Territorial Infantry" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
+units = {
+ division = { name = "SOV 1" location = 6380 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 2" location = 3686 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 3" location = 11670 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 4" location = 3568 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 5" location = 6232 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 6" location = 3151 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 7" location = 721 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 8" location = 11683 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 9" location = 476 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 10" location = 3457 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 11" location = 11405 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 12" location = 6593 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 13" location = 525 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 14" location = 488 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 15" location = 3350 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 16" location = 382 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 17" location = 11370 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 18" location = 11241 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 19" location = 9098 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 20" location = 11202 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 21" location = 11234 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 22" location = 3134 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 23" location = 3338 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 24" location = 3529 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 25" location = 9417 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 26" location = 3580 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 27" location = 418 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 28" location = 9355 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 29" location = 6262 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+ division = { name = "SOV 30" location = 3335 division_template = "AOF Territorial Infantry" start_experience_factor = 0.15 start_equipment_factor = 0.85 }
+}

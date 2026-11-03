@@ -1,0 +1,11 @@
+# PROVISIONAL UI PLACEHOLDERS: native art, not approved ideology emblems.
+spriteTypes = {
+ spriteType = {
+  name = "GFX_ideology_aof_social_democracy_group"
+  texturefile = "gfx/interface/ideologies/democratic_group.dds"
+ }
+ spriteType = {
+  name = "GFX_ideology_aof_conservatism_group"
+  texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+ }
+}

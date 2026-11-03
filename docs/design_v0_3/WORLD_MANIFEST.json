@@ -1,0 +1,4411 @@
+{
+  "status": "PROVISIONAL PLAYTEST FIXTURE, NOT CANON",
+  "date": "1924.9.1.12",
+  "countries": {
+    "KAZ": {
+      "states": [
+        402,
+        404,
+        406,
+        407,
+        583,
+        586,
+        587,
+        588,
+        589,
+        590,
+        881,
+        882
+      ],
+      "capital_state": 586,
+      "capital_province": 1591,
+      "divisions": 8,
+      "deployment": [
+        {
+          "state": 586,
+          "province": 1591
+        },
+        {
+          "state": 402,
+          "province": 7341
+        },
+        {
+          "state": 404,
+          "province": 7597
+        },
+        {
+          "state": 406,
+          "province": 3618
+        },
+        {
+          "state": 407,
+          "province": 11537
+        },
+        {
+          "state": 583,
+          "province": 10312
+        },
+        {
+          "state": 587,
+          "province": 1517
+        },
+        {
+          "state": 588,
+          "province": 12594
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 2,
+      "provisional": true
+    },
+    "SIB": {
+      "states": [
+        40,
+        403,
+        516,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        654,
+        824,
+        876,
+        877,
+        878
+      ],
+      "capital_state": 570,
+      "capital_province": 7274,
+      "divisions": 12,
+      "deployment": [
+        {
+          "state": 570,
+          "province": 7274
+        },
+        {
+          "state": 40,
+          "province": 1794
+        },
+        {
+          "state": 403,
+          "province": 4824
+        },
+        {
+          "state": 516,
+          "province": 4859
+        },
+        {
+          "state": 564,
+          "province": 7835
+        },
+        {
+          "state": 565,
+          "province": 1666
+        },
+        {
+          "state": 566,
+          "province": 4797
+        },
+        {
+          "state": 567,
+          "province": 1735
+        },
+        {
+          "state": 568,
+          "province": 4724
+        },
+        {
+          "state": 569,
+          "province": 10580
+        },
+        {
+          "state": 571,
+          "province": 10696
+        },
+        {
+          "state": 574,
+          "province": 10641
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 3,
+      "provisional": true
+    },
+    "CAU": {
+      "states": [
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        353,
+        821,
+        826,
+        827,
+        828
+      ],
+      "capital_state": 230,
+      "capital_province": 12320,
+      "divisions": 8,
+      "deployment": [
+        {
+          "state": 230,
+          "province": 12320
+        },
+        {
+          "state": 229,
+          "province": 7661
+        },
+        {
+          "state": 231,
+          "province": 1599
+        },
+        {
+          "state": 232,
+          "province": 6701
+        },
+        {
+          "state": 233,
+          "province": 9663
+        },
+        {
+          "state": 234,
+          "province": 3734
+        },
+        {
+          "state": 235,
+          "province": 11696
+        },
+        {
+          "state": 353,
+          "province": 876
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 2,
+      "provisional": true
+    },
+    "TRK": {
+      "states": [
+        405,
+        584,
+        585,
+        732,
+        742,
+        823,
+        830,
+        831,
+        832
+      ],
+      "capital_state": 405,
+      "capital_province": 1459,
+      "divisions": 7,
+      "deployment": [
+        {
+          "state": 405,
+          "province": 1459
+        },
+        {
+          "state": 584,
+          "province": 12333
+        },
+        {
+          "state": 585,
+          "province": 1554
+        },
+        {
+          "state": 732,
+          "province": 12583
+        },
+        {
+          "state": 742,
+          "province": 1384
+        },
+        {
+          "state": 823,
+          "province": 1614
+        },
+        {
+          "state": 830,
+          "province": 1573
+        }
+      ],
+      "government": "neutrality",
+      "research_slots": 2,
+      "provisional": true
+    },
+    "NAF": {
+      "states": [
+        273,
+        448,
+        449,
+        450,
+        451,
+        458,
+        459,
+        460,
+        461,
+        462,
+        513,
+        514,
+        661,
+        662,
+        663,
+        665
+      ],
+      "capital_state": 458,
+      "capital_province": 11969,
+      "divisions": 10,
+      "deployment": [
+        {
+          "state": 458,
+          "province": 11969
+        },
+        {
+          "state": 273,
+          "province": 1057
+        },
+        {
+          "state": 448,
+          "province": 1149
+        },
+        {
+          "state": 449,
+          "province": 1041
+        },
+        {
+          "state": 450,
+          "province": 11954
+        },
+        {
+          "state": 451,
+          "province": 1130
+        },
+        {
+          "state": 459,
+          "province": 1145
+        },
+        {
+          "state": 460,
+          "province": 12051
+        },
+        {
+          "state": 461,
+          "province": 7069
+        },
+        {
+          "state": 462,
+          "province": 4108
+        }
+      ],
+      "government": "neutrality",
+      "research_slots": 2,
+      "provisional": true
+    },
+    "CMT": {
+      "states": [
+        777
+      ],
+      "capital_state": 777,
+      "capital_province": 1951,
+      "divisions": 2,
+      "deployment": [
+        {
+          "state": 777,
+          "province": 1951
+        },
+        {
+          "state": 777,
+          "province": 1951
+        }
+      ],
+      "government": "neutrality",
+      "research_slots": 2,
+      "provisional": true
+    },
+    "FER": {
+      "states": [
+        408,
+        409,
+        560,
+        561,
+        562,
+        563,
+        637,
+        644,
+        655,
+        657,
+        822,
+        874,
+        875
+      ],
+      "capital_state": 408,
+      "capital_province": 957,
+      "divisions": 7,
+      "deployment": [
+        {
+          "state": 408,
+          "province": 957
+        },
+        {
+          "state": 409,
+          "province": 12189
+        },
+        {
+          "state": 560,
+          "province": 1724
+        },
+        {
+          "state": 561,
+          "province": 7851
+        },
+        {
+          "state": 562,
+          "province": 1714
+        },
+        {
+          "state": 563,
+          "province": 4705
+        },
+        {
+          "state": 637,
+          "province": 1823
+        }
+      ],
+      "government": "neutrality",
+      "research_slots": 2,
+      "provisional": true
+    },
+    "USA": {
+      "states": [
+        1072,
+        261,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        463,
+        629,
+        630,
+        631,
+        632,
+        638,
+        642,
+        650,
+        685,
+        686,
+        727,
+        816
+      ],
+      "capital_state": 361,
+      "capital_province": 3957,
+      "divisions": 30,
+      "deployment": [
+        {
+          "state": 361,
+          "province": 3957
+        },
+        {
+          "state": 1072,
+          "province": 13080
+        },
+        {
+          "state": 261,
+          "province": 6890
+        },
+        {
+          "state": 357,
+          "province": 6732
+        },
+        {
+          "state": 358,
+          "province": 3878
+        },
+        {
+          "state": 359,
+          "province": 6882
+        },
+        {
+          "state": 360,
+          "province": 6845
+        },
+        {
+          "state": 362,
+          "province": 10412
+        },
+        {
+          "state": 363,
+          "province": 7138
+        },
+        {
+          "state": 364,
+          "province": 7202
+        },
+        {
+          "state": 365,
+          "province": 12384
+        },
+        {
+          "state": 366,
+          "province": 1843
+        },
+        {
+          "state": 367,
+          "province": 7480
+        },
+        {
+          "state": 368,
+          "province": 12501
+        },
+        {
+          "state": 369,
+          "province": 6696
+        },
+        {
+          "state": 370,
+          "province": 4464
+        },
+        {
+          "state": 371,
+          "province": 7552
+        },
+        {
+          "state": 372,
+          "province": 12489
+        },
+        {
+          "state": 373,
+          "province": 4569
+        },
+        {
+          "state": 374,
+          "province": 1806
+        },
+        {
+          "state": 375,
+          "province": 3960
+        },
+        {
+          "state": 376,
+          "province": 4975
+        },
+        {
+          "state": 377,
+          "province": 853
+        },
+        {
+          "state": 378,
+          "province": 9814
+        },
+        {
+          "state": 379,
+          "province": 4799
+        },
+        {
+          "state": 380,
+          "province": 4865
+        },
+        {
+          "state": 381,
+          "province": 1815
+        },
+        {
+          "state": 382,
+          "province": 1827
+        },
+        {
+          "state": 383,
+          "province": 4740
+        },
+        {
+          "state": 384,
+          "province": 12586
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 4,
+      "provisional": true,
+      "naval_base": {
+        "province": 1562,
+        "state": 378
+      },
+      "naval_fixture": "26 ships",
+      "air_fixture": {
+        "state": 361,
+        "early_fighters": 100,
+        "modes": [
+          "bba",
+          "legacy"
+        ]
+      }
+    },
+    "JAP": {
+      "states": [
+        1018,
+        1019,
+        1020,
+        1028,
+        1029,
+        1030,
+        1031,
+        282,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        555,
+        609,
+        633,
+        645,
+        646,
+        647,
+        648,
+        684,
+        745
+      ],
+      "capital_state": 282,
+      "capital_province": 1182,
+      "divisions": 26,
+      "deployment": [
+        {
+          "state": 282,
+          "province": 1182
+        },
+        {
+          "state": 1018,
+          "province": 4102
+        },
+        {
+          "state": 1019,
+          "province": 7169
+        },
+        {
+          "state": 1020,
+          "province": 10055
+        },
+        {
+          "state": 1028,
+          "province": 898
+        },
+        {
+          "state": 1029,
+          "province": 1148
+        },
+        {
+          "state": 1030,
+          "province": 4056
+        },
+        {
+          "state": 1031,
+          "province": 4126
+        },
+        {
+          "state": 524,
+          "province": 7186
+        },
+        {
+          "state": 525,
+          "province": 7125
+        },
+        {
+          "state": 526,
+          "province": 11932
+        },
+        {
+          "state": 527,
+          "province": 4052
+        },
+        {
+          "state": 528,
+          "province": 9950
+        },
+        {
+          "state": 529,
+          "province": 1092
+        },
+        {
+          "state": 530,
+          "province": 4179
+        },
+        {
+          "state": 531,
+          "province": 7072
+        },
+        {
+          "state": 532,
+          "province": 10125
+        },
+        {
+          "state": 533,
+          "province": 6994
+        },
+        {
+          "state": 534,
+          "province": 1117
+        },
+        {
+          "state": 535,
+          "province": 10032
+        },
+        {
+          "state": 536,
+          "province": 10444
+        },
+        {
+          "state": 537,
+          "province": 12446
+        },
+        {
+          "state": 555,
+          "province": 1399
+        },
+        {
+          "state": 609,
+          "province": 11822
+        },
+        {
+          "state": 633,
+          "province": 13041
+        },
+        {
+          "state": 645,
+          "province": 13025
+        }
+      ],
+      "government": "aof_conservatism",
+      "research_slots": 4,
+      "provisional": true,
+      "naval_base": {
+        "province": 9998,
+        "state": 282
+      },
+      "naval_fixture": "21 ships",
+      "air_fixture": {
+        "state": 282,
+        "early_fighters": 80,
+        "modes": [
+          "bba",
+          "legacy"
+        ]
+      }
+    },
+    "SOV": {
+      "states": [
+        137,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        213,
+        214,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        262,
+        263,
+        264,
+        265,
+        351,
+        397,
+        398,
+        399,
+        400,
+        401,
+        572,
+        573,
+        581,
+        582,
+        651,
+        652,
+        653,
+        825,
+        829,
+        833,
+        834,
+        879,
+        880
+      ],
+      "capital_state": 219,
+      "capital_province": 6380,
+      "divisions": 30,
+      "deployment": [
+        {
+          "state": 219,
+          "province": 6380
+        },
+        {
+          "state": 137,
+          "province": 3686
+        },
+        {
+          "state": 192,
+          "province": 11670
+        },
+        {
+          "state": 193,
+          "province": 3568
+        },
+        {
+          "state": 194,
+          "province": 6232
+        },
+        {
+          "state": 195,
+          "province": 3151
+        },
+        {
+          "state": 196,
+          "province": 721
+        },
+        {
+          "state": 197,
+          "province": 11683
+        },
+        {
+          "state": 198,
+          "province": 476
+        },
+        {
+          "state": 199,
+          "province": 3457
+        },
+        {
+          "state": 200,
+          "province": 11405
+        },
+        {
+          "state": 201,
+          "province": 6593
+        },
+        {
+          "state": 202,
+          "province": 525
+        },
+        {
+          "state": 203,
+          "province": 488
+        },
+        {
+          "state": 204,
+          "province": 3350
+        },
+        {
+          "state": 205,
+          "province": 382
+        },
+        {
+          "state": 206,
+          "province": 11370
+        },
+        {
+          "state": 207,
+          "province": 11241
+        },
+        {
+          "state": 208,
+          "province": 9098
+        },
+        {
+          "state": 209,
+          "province": 11202
+        },
+        {
+          "state": 210,
+          "province": 11234
+        },
+        {
+          "state": 213,
+          "province": 3134
+        },
+        {
+          "state": 214,
+          "province": 3338
+        },
+        {
+          "state": 217,
+          "province": 3529
+        },
+        {
+          "state": 218,
+          "province": 9417
+        },
+        {
+          "state": 220,
+          "province": 3580
+        },
+        {
+          "state": 221,
+          "province": 418
+        },
+        {
+          "state": 222,
+          "province": 9355
+        },
+        {
+          "state": 223,
+          "province": 6262
+        },
+        {
+          "state": 224,
+          "province": 3335
+        }
+      ],
+      "government": "communism",
+      "research_slots": 3,
+      "provisional": true
+    },
+    "MEX": {
+      "states": [
+        277,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485
+      ],
+      "capital_state": 277,
+      "capital_province": 1965,
+      "divisions": 12,
+      "deployment": [
+        {
+          "state": 277,
+          "province": 1965
+        },
+        {
+          "state": 474,
+          "province": 4965
+        },
+        {
+          "state": 475,
+          "province": 1900
+        },
+        {
+          "state": 476,
+          "province": 2021
+        },
+        {
+          "state": 477,
+          "province": 8089
+        },
+        {
+          "state": 478,
+          "province": 13089
+        },
+        {
+          "state": 479,
+          "province": 4956
+        },
+        {
+          "state": 480,
+          "province": 12835
+        },
+        {
+          "state": 481,
+          "province": 7921
+        },
+        {
+          "state": 482,
+          "province": 8097
+        },
+        {
+          "state": 483,
+          "province": 10765
+        },
+        {
+          "state": 484,
+          "province": 12461
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 3,
+      "provisional": true
+    },
+    "BRA": {
+      "states": [
+        280,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        935,
+        936,
+        937,
+        938,
+        939,
+        940,
+        941,
+        942,
+        943,
+        944,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967,
+        968,
+        969
+      ],
+      "capital_state": 500,
+      "capital_province": 10980,
+      "divisions": 12,
+      "deployment": [
+        {
+          "state": 500,
+          "province": 10980
+        },
+        {
+          "state": 280,
+          "province": 2111
+        },
+        {
+          "state": 495,
+          "province": 10934
+        },
+        {
+          "state": 496,
+          "province": 7476
+        },
+        {
+          "state": 497,
+          "province": 12933
+        },
+        {
+          "state": 498,
+          "province": 10933
+        },
+        {
+          "state": 499,
+          "province": 10946
+        },
+        {
+          "state": 501,
+          "province": 10513
+        },
+        {
+          "state": 502,
+          "province": 10447
+        },
+        {
+          "state": 503,
+          "province": 4548
+        },
+        {
+          "state": 504,
+          "province": 12951
+        },
+        {
+          "state": 505,
+          "province": 12987
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 3,
+      "provisional": true
+    },
+    "ARG": {
+      "states": [
+        278,
+        508,
+        509,
+        510,
+        511,
+        512,
+        953,
+        954,
+        955,
+        956,
+        957,
+        958,
+        959,
+        960
+      ],
+      "capital_state": 278,
+      "capital_province": 12364,
+      "divisions": 10,
+      "deployment": [
+        {
+          "state": 278,
+          "province": 12364
+        },
+        {
+          "state": 508,
+          "province": 8216
+        },
+        {
+          "state": 509,
+          "province": 2106
+        },
+        {
+          "state": 510,
+          "province": 1449
+        },
+        {
+          "state": 511,
+          "province": 10964
+        },
+        {
+          "state": 512,
+          "province": 12321
+        },
+        {
+          "state": 953,
+          "province": 13300
+        },
+        {
+          "state": 954,
+          "province": 5173
+        },
+        {
+          "state": 955,
+          "province": 10953
+        },
+        {
+          "state": 956,
+          "province": 7500
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 3,
+      "provisional": true
+    },
+    "CHI": {
+      "states": [
+        1034,
+        1035,
+        1036,
+        1037,
+        1038,
+        1039,
+        1041,
+        595,
+        596,
+        597,
+        598,
+        600,
+        602,
+        603,
+        605,
+        606,
+        607,
+        608,
+        613,
+        614,
+        620,
+        743,
+        744,
+        748,
+        749,
+        750,
+        751,
+        752
+      ],
+      "capital_state": 1035,
+      "capital_province": 11913,
+      "divisions": 24,
+      "deployment": [
+        {
+          "state": 1035,
+          "province": 11913
+        },
+        {
+          "state": 1034,
+          "province": 10076
+        },
+        {
+          "state": 1036,
+          "province": 4619
+        },
+        {
+          "state": 1037,
+          "province": 6999
+        },
+        {
+          "state": 1038,
+          "province": 1069
+        },
+        {
+          "state": 1039,
+          "province": 6904
+        },
+        {
+          "state": 1041,
+          "province": 4925
+        },
+        {
+          "state": 595,
+          "province": 4196
+        },
+        {
+          "state": 596,
+          "province": 1055
+        },
+        {
+          "state": 597,
+          "province": 1104
+        },
+        {
+          "state": 598,
+          "province": 1029
+        },
+        {
+          "state": 600,
+          "province": 3992
+        },
+        {
+          "state": 602,
+          "province": 7097
+        },
+        {
+          "state": 603,
+          "province": 4504
+        },
+        {
+          "state": 605,
+          "province": 11865
+        },
+        {
+          "state": 606,
+          "province": 1083
+        },
+        {
+          "state": 607,
+          "province": 9958
+        },
+        {
+          "state": 608,
+          "province": 9843
+        },
+        {
+          "state": 613,
+          "province": 7014
+        },
+        {
+          "state": 614,
+          "province": 4190
+        },
+        {
+          "state": 620,
+          "province": 1612
+        },
+        {
+          "state": 743,
+          "province": 10000
+        },
+        {
+          "state": 744,
+          "province": 7301
+        },
+        {
+          "state": 748,
+          "province": 1010
+        }
+      ],
+      "government": "neutrality",
+      "research_slots": 3,
+      "provisional": true,
+      "air_fixture": {
+        "state": 1035,
+        "early_fighters": 30,
+        "modes": [
+          "bba",
+          "legacy"
+        ]
+      }
+    },
+    "MAN": {
+      "states": [
+        328,
+        610,
+        714,
+        715,
+        716,
+        717,
+        761
+      ],
+      "capital_state": 328,
+      "capital_province": 4572,
+      "divisions": 9,
+      "deployment": [
+        {
+          "state": 328,
+          "province": 4572
+        },
+        {
+          "state": 610,
+          "province": 11801
+        },
+        {
+          "state": 714,
+          "province": 1693
+        },
+        {
+          "state": 715,
+          "province": 11836
+        },
+        {
+          "state": 716,
+          "province": 11771
+        },
+        {
+          "state": 717,
+          "province": 10463
+        },
+        {
+          "state": 761,
+          "province": 1776
+        },
+        {
+          "state": 328,
+          "province": 4572
+        },
+        {
+          "state": 610,
+          "province": 11801
+        }
+      ],
+      "government": "neutrality",
+      "research_slots": 2,
+      "provisional": true
+    },
+    "RAJ": {
+      "states": [
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        441,
+        787,
+        982,
+        983,
+        984,
+        985,
+        986,
+        989,
+        990,
+        991,
+        992
+      ],
+      "capital_state": 439,
+      "capital_province": 2086,
+      "divisions": 18,
+      "deployment": [
+        {
+          "state": 439,
+          "province": 2086
+        },
+        {
+          "state": 423,
+          "province": 10278
+        },
+        {
+          "state": 424,
+          "province": 1228
+        },
+        {
+          "state": 425,
+          "province": 4315
+        },
+        {
+          "state": 426,
+          "province": 1059
+        },
+        {
+          "state": 427,
+          "province": 8087
+        },
+        {
+          "state": 428,
+          "province": 9975
+        },
+        {
+          "state": 429,
+          "province": 1349
+        },
+        {
+          "state": 430,
+          "province": 11929
+        },
+        {
+          "state": 431,
+          "province": 4245
+        },
+        {
+          "state": 432,
+          "province": 12366
+        },
+        {
+          "state": 433,
+          "province": 1908
+        },
+        {
+          "state": 434,
+          "province": 1116
+        },
+        {
+          "state": 435,
+          "province": 4516
+        },
+        {
+          "state": 436,
+          "province": 4950
+        },
+        {
+          "state": 437,
+          "province": 4106
+        },
+        {
+          "state": 438,
+          "province": 1377
+        },
+        {
+          "state": 441,
+          "province": 12754
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 3,
+      "provisional": true,
+      "air_fixture": {
+        "state": 439,
+        "early_fighters": 40,
+        "modes": [
+          "bba",
+          "legacy"
+        ]
+      }
+    },
+    "PAK": {
+      "states": [
+        1012,
+        440,
+        442,
+        443,
+        444,
+        445,
+        987,
+        988
+      ],
+      "capital_state": 443,
+      "capital_province": 3456,
+      "divisions": 12,
+      "deployment": [
+        {
+          "state": 443,
+          "province": 3456
+        },
+        {
+          "state": 1012,
+          "province": 8098
+        },
+        {
+          "state": 440,
+          "province": 10772
+        },
+        {
+          "state": 442,
+          "province": 12763
+        },
+        {
+          "state": 444,
+          "province": 12774
+        },
+        {
+          "state": 445,
+          "province": 4990
+        },
+        {
+          "state": 987,
+          "province": 1107
+        },
+        {
+          "state": 988,
+          "province": 5105
+        },
+        {
+          "state": 443,
+          "province": 3456
+        },
+        {
+          "state": 1012,
+          "province": 8098
+        },
+        {
+          "state": 440,
+          "province": 10772
+        },
+        {
+          "state": 442,
+          "province": 12763
+        }
+      ],
+      "government": "neutrality",
+      "research_slots": 2,
+      "provisional": true,
+      "air_fixture": {
+        "state": 443,
+        "early_fighters": 20,
+        "modes": [
+          "bba",
+          "legacy"
+        ]
+      }
+    },
+    "FIN": {
+      "states": [
+        111,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        215,
+        216,
+        722,
+        926,
+        927,
+        928,
+        929,
+        930
+      ],
+      "capital_state": 111,
+      "capital_province": 11105,
+      "divisions": 8,
+      "deployment": [
+        {
+          "state": 111,
+          "province": 11105
+        },
+        {
+          "state": 145,
+          "province": 9228
+        },
+        {
+          "state": 146,
+          "province": 9206
+        },
+        {
+          "state": 147,
+          "province": 197
+        },
+        {
+          "state": 148,
+          "province": 11164
+        },
+        {
+          "state": 149,
+          "province": 3122
+        },
+        {
+          "state": 150,
+          "province": 11141
+        },
+        {
+          "state": 215,
+          "province": 36
+        }
+      ],
+      "government": "democratic",
+      "research_slots": 3,
+      "provisional": true
+    }
+  },
+  "states": {
+    "402": {
+      "name_key": "STATE_402",
+      "installed_name": "Akhtubinsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "402-Akhtubinsk.txt",
+      "provinces": [
+        1220,
+        1247,
+        1314,
+        1371,
+        1429,
+        4227,
+        4254,
+        4294,
+        4300,
+        4303,
+        4374,
+        4376,
+        4394,
+        4581,
+        4638,
+        7243,
+        7313,
+        7337,
+        7341,
+        7354,
+        7370,
+        7410,
+        7486,
+        10131,
+        10164,
+        10253,
+        10264,
+        12108,
+        12179,
+        12227,
+        12235,
+        12254,
+        12294
+      ],
+      "victory_points": [
+        [
+          7341,
+          1.0
+        ]
+      ]
+    },
+    "404": {
+      "name_key": "STATE_404",
+      "installed_name": "Kyzyl Orda",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "404-Saykhin.txt",
+      "provinces": [
+        4578,
+        4636,
+        4686,
+        7392,
+        7556,
+        7597,
+        7600,
+        7657,
+        7777,
+        10148,
+        10353,
+        10366,
+        10452,
+        10506,
+        10601,
+        12329,
+        12340,
+        12397
+      ],
+      "victory_points": [
+        [
+          7597,
+          1.0
+        ]
+      ]
+    },
+    "406": {
+      "name_key": "STATE_406",
+      "installed_name": "Guryev",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "406-Krasnyy Yar.txt",
+      "provinces": [
+        464,
+        477,
+        554,
+        615,
+        3459,
+        3618,
+        3622,
+        6498,
+        6514,
+        6523,
+        6615,
+        7322,
+        9453,
+        9469,
+        11442,
+        11455,
+        11469,
+        11578,
+        11591
+      ],
+      "victory_points": [
+        [
+          3618,
+          1.0
+        ]
+      ]
+    },
+    "407": {
+      "name_key": "STATE_407",
+      "installed_name": "Ural'sk",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "407-Uralsk.txt",
+      "provinces": [
+        432,
+        468,
+        470,
+        508,
+        545,
+        566,
+        576,
+        1290,
+        1318,
+        3404,
+        3406,
+        3467,
+        3502,
+        3515,
+        3538,
+        4351,
+        6491,
+        6525,
+        6551,
+        6564,
+        6588,
+        7438,
+        9462,
+        9487,
+        9513,
+        9526,
+        9528,
+        9538,
+        9549,
+        11457,
+        11472,
+        11473,
+        11480,
+        11482,
+        11510,
+        11524,
+        11537,
+        11538,
+        11552
+      ],
+      "victory_points": [
+        [
+          11537,
+          1.0
+        ]
+      ]
+    },
+    "583": {
+      "name_key": "STATE_583",
+      "installed_name": "Kostanay",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "583-Kazakhstan.txt",
+      "provinces": [
+        1272,
+        1276,
+        1303,
+        1331,
+        1360,
+        1363,
+        4337,
+        4340,
+        4369,
+        7233,
+        7357,
+        7429,
+        10140,
+        10168,
+        10284,
+        10295,
+        10312,
+        12115,
+        12139,
+        12143,
+        12170,
+        12185,
+        12198,
+        12229,
+        12257,
+        12266,
+        12285
+      ],
+      "victory_points": [
+        [
+          10312,
+          1.0
+        ]
+      ]
+    },
+    "586": {
+      "name_key": "STATE_586",
+      "installed_name": "Alma-Ata",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "586-Kyrgyzstan.txt",
+      "provinces": [
+        1591,
+        1840,
+        4773,
+        4845,
+        7706,
+        10146,
+        10547,
+        10603,
+        12640,
+        12658
+      ],
+      "victory_points": [
+        [
+          1591,
+          3.0
+        ]
+      ]
+    },
+    "587": {
+      "name_key": "STATE_587",
+      "installed_name": "Ust Urt",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "587-Western Kazakstan.txt",
+      "provinces": [
+        475,
+        642,
+        1517,
+        3593,
+        4523,
+        4620,
+        7641,
+        10262,
+        11701,
+        12163,
+        12383,
+        13008
+      ],
+      "victory_points": [
+        [
+          1517,
+          1.0
+        ]
+      ]
+    },
+    "588": {
+      "name_key": "STATE_588",
+      "installed_name": "Semipalatinsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "588-Some Mountains.txt",
+      "provinces": [
+        1287,
+        1749,
+        1818,
+        1864,
+        4661,
+        4674,
+        4867,
+        7350,
+        7890,
+        10161,
+        10218,
+        10292,
+        10584,
+        10610,
+        10653,
+        12427,
+        12564,
+        12594,
+        12635,
+        13151
+      ],
+      "victory_points": [
+        [
+          12594,
+          2.0
+        ]
+      ]
+    },
+    "589": {
+      "name_key": "STATE_589",
+      "installed_name": "Ayaguz",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "589-Eastern Kazakhstan.txt",
+      "provinces": [
+        1239,
+        1668,
+        4651,
+        4764,
+        7332,
+        7405,
+        7711,
+        7784,
+        7795,
+        7856,
+        10290,
+        10550,
+        10619,
+        10680,
+        12529,
+        12662,
+        13148,
+        13149,
+        13197
+      ],
+      "victory_points": [
+        [
+          1668,
+          1.0
+        ]
+      ]
+    },
+    "590": {
+      "name_key": "STATE_590",
+      "installed_name": "Akmolinsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "590-Northern Kazakhstan.txt",
+      "provinces": [
+        1223,
+        1229,
+        1309,
+        1375,
+        1391,
+        1418,
+        1662,
+        1680,
+        1694,
+        4232,
+        4238,
+        4281,
+        4309,
+        4333,
+        4850,
+        7298,
+        7326,
+        7383,
+        7407,
+        7425,
+        7741,
+        7874,
+        10211,
+        10239,
+        10308,
+        10633,
+        12152,
+        12619
+      ],
+      "victory_points": [
+        [
+          4333,
+          1.0
+        ]
+      ]
+    },
+    "881": {
+      "name_key": "STATE_881",
+      "installed_name": "Karagandy",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "881-Karagandy.txt",
+      "provinces": [
+        1243,
+        1312,
+        1382,
+        1402,
+        4250,
+        4277,
+        4389,
+        4492,
+        4595,
+        7335,
+        10179,
+        10220,
+        10268,
+        10275,
+        10277,
+        10508,
+        12111,
+        12121,
+        12177,
+        12194,
+        12385,
+        12487
+      ],
+      "victory_points": []
+    },
+    "882": {
+      "name_key": "STATE_882",
+      "installed_name": "Pavlodar",
+      "installed_owner": "SOV",
+      "fixture_owner": "KAZ",
+      "source_file": "882-Pavlodar.txt",
+      "provinces": [
+        1879,
+        4670,
+        4685,
+        7317,
+        7708,
+        10202,
+        10235,
+        10630,
+        12616
+      ],
+      "victory_points": [
+        [
+          7708,
+          1.0
+        ]
+      ]
+    },
+    "405": {
+      "name_key": "STATE_405",
+      "installed_name": "Tashkent",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "405-Atyrau.txt",
+      "provinces": [
+        1459,
+        4629,
+        7682,
+        10488,
+        11687
+      ],
+      "victory_points": [
+        [
+          1459,
+          3.0
+        ],
+        [
+          10488,
+          1.0
+        ]
+      ]
+    },
+    "584": {
+      "name_key": "STATE_584",
+      "installed_name": "Ashkhabad",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "584-Turkmenistan.txt",
+      "provinces": [
+        756,
+        1593,
+        1632,
+        4482,
+        4549,
+        4563,
+        4599,
+        4958,
+        5003,
+        7477,
+        7491,
+        7560,
+        7563,
+        7635,
+        7924,
+        8099,
+        9605,
+        10357,
+        10359,
+        10406,
+        10414,
+        10510,
+        10742,
+        12333,
+        12359,
+        12491
+      ],
+      "victory_points": [
+        [
+          12333,
+          2.0
+        ]
+      ]
+    },
+    "585": {
+      "name_key": "STATE_585",
+      "installed_name": "Navoi",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "585-Uzbekistan.txt",
+      "provinces": [
+        1532,
+        1554,
+        4499,
+        7501,
+        7507,
+        10420
+      ],
+      "victory_points": [
+        [
+          1554,
+          1.0
+        ]
+      ]
+    },
+    "732": {
+      "name_key": "STATE_732",
+      "installed_name": "Pamir",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "732-Pamir.txt",
+      "provinces": [
+        1483,
+        1675,
+        1825,
+        2058,
+        4224,
+        4316,
+        4391,
+        4467,
+        4768,
+        4923,
+        5062,
+        10408,
+        10530,
+        10660,
+        12370,
+        12511,
+        12581,
+        12583,
+        13147
+      ],
+      "victory_points": [
+        [
+          12583,
+          1.0
+        ]
+      ]
+    },
+    "742": {
+      "name_key": "STATE_742",
+      "installed_name": "Stalinabad",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "742-Stalinabad.txt",
+      "provinces": [
+        1216,
+        1384,
+        1919,
+        4542,
+        7224,
+        8027,
+        10187,
+        10417,
+        12218,
+        12250,
+        12430,
+        12805
+      ],
+      "victory_points": [
+        [
+          1384,
+          1.0
+        ]
+      ]
+    },
+    "823": {
+      "name_key": "STATE_823",
+      "installed_name": "Karakalpakstan",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "823 - Karakalpakstan.txt",
+      "provinces": [
+        1479,
+        1576,
+        1614,
+        1721,
+        4488,
+        4618,
+        7541,
+        10348,
+        12233,
+        12471,
+        12474,
+        13207
+      ],
+      "victory_points": [
+        [
+          1614,
+          1.0
+        ]
+      ]
+    },
+    "830": {
+      "name_key": "STATE_830",
+      "installed_name": "Bukhara",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "830 - Bukhara.txt",
+      "provinces": [
+        1573,
+        1623,
+        7639,
+        7775,
+        10205,
+        10470,
+        10671,
+        12161,
+        12239,
+        12722
+      ],
+      "victory_points": [
+        [
+          1573,
+          2.0
+        ],
+        [
+          10671,
+          1.0
+        ]
+      ]
+    },
+    "831": {
+      "name_key": "STATE_831",
+      "installed_name": "Khiva",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "831 - Khiva.txt",
+      "provinces": [
+        10395,
+        10435,
+        12324,
+        12454,
+        12465
+      ],
+      "victory_points": [
+        [
+          12465,
+          1.0
+        ]
+      ]
+    },
+    "832": {
+      "name_key": "STATE_832",
+      "installed_name": "Tashauz",
+      "installed_owner": "SOV",
+      "fixture_owner": "TRK",
+      "source_file": "832 - Dashhowuz.txt",
+      "provinces": [
+        1493,
+        1649,
+        7618,
+        10485
+      ],
+      "victory_points": [
+        [
+          1493,
+          1.0
+        ]
+      ]
+    },
+    "229": {
+      "name_key": "STATE_229",
+      "installed_name": "Azerbaijan",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "229-baku.txt",
+      "provinces": [
+        1467,
+        1536,
+        1539,
+        1610,
+        4458,
+        4473,
+        4477,
+        4545,
+        4614,
+        6763,
+        7495,
+        7661,
+        9715,
+        11645,
+        11674,
+        11704,
+        12434
+      ],
+      "victory_points": [
+        [
+          7661,
+          10.0
+        ],
+        [
+          11674,
+          1.0
+        ]
+      ]
+    },
+    "230": {
+      "name_key": "STATE_230",
+      "installed_name": "Armenia",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "230-Armenia.txt",
+      "provinces": [
+        3564,
+        4660,
+        6642,
+        6997,
+        11708,
+        12320,
+        12380,
+        12441,
+        12450,
+        13123
+      ],
+      "victory_points": [
+        [
+          12320,
+          3.0
+        ],
+        [
+          12441,
+          1.0
+        ]
+      ]
+    },
+    "231": {
+      "name_key": "STATE_231",
+      "installed_name": "Georgia",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "231-Georgia.txt",
+      "provinces": [
+        654,
+        772,
+        1530,
+        1599,
+        3653,
+        3656,
+        3658,
+        4534,
+        4605,
+        6436,
+        6669,
+        6671,
+        9626,
+        9702,
+        12309
+      ],
+      "victory_points": [
+        [
+          1599,
+          5.0
+        ],
+        [
+          3653,
+          3.0
+        ]
+      ]
+    },
+    "232": {
+      "name_key": "STATE_232",
+      "installed_name": "Dagestan",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "232-Grozny.txt",
+      "provinces": [
+        683,
+        700,
+        712,
+        728,
+        1450,
+        3668,
+        3682,
+        3711,
+        4463,
+        6701,
+        6730,
+        6748,
+        7554,
+        7624,
+        9645,
+        11632
+      ],
+      "victory_points": [
+        [
+          6701,
+          3.0
+        ],
+        [
+          7624,
+          1.0
+        ]
+      ]
+    },
+    "233": {
+      "name_key": "STATE_233",
+      "installed_name": "Sochi",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "233-Caucasus Mountains.txt",
+      "provinces": [
+        3698,
+        6692,
+        6721,
+        9649,
+        9663,
+        9674,
+        11664
+      ],
+      "victory_points": [
+        [
+          9663,
+          1.0
+        ]
+      ]
+    },
+    "234": {
+      "name_key": "STATE_234",
+      "installed_name": "Krasnodar",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "234-Krasodar.txt",
+      "provinces": [
+        717,
+        719,
+        735,
+        750,
+        765,
+        3717,
+        3720,
+        3734,
+        3752,
+        3760,
+        3765,
+        6736,
+        6738,
+        6741,
+        6755,
+        6768,
+        6781,
+        6783,
+        9691,
+        9694,
+        9696,
+        9709,
+        9744,
+        11668,
+        11681,
+        11729
+      ],
+      "victory_points": [
+        [
+          3734,
+          5.0
+        ],
+        [
+          719,
+          3.0
+        ],
+        [
+          3720,
+          1.0
+        ]
+      ]
+    },
+    "235": {
+      "name_key": "STATE_235",
+      "installed_name": "Stavropol",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "235-Stravropol.txt",
+      "provinces": [
+        714,
+        731,
+        748,
+        3748,
+        6702,
+        6718,
+        6733,
+        6750,
+        6753,
+        9688,
+        9705,
+        9707,
+        9726,
+        9742,
+        11633,
+        11661,
+        11678,
+        11690,
+        11693,
+        11694,
+        11696
+      ],
+      "victory_points": [
+        [
+          11696,
+          3.0
+        ]
+      ]
+    },
+    "821": {
+      "name_key": "STATE_821",
+      "installed_name": "Chechnya-Ingushetia",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "821 - Chenchnya-Ingushetia.txt",
+      "provinces": [
+        666,
+        670,
+        1455,
+        3667,
+        3672,
+        6689
+      ],
+      "victory_points": [
+        [
+          3672,
+          5.0
+        ]
+      ]
+    },
+    "826": {
+      "name_key": "STATE_826",
+      "installed_name": "Abkhazia",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "826 - Abkhazia.txt",
+      "provinces": [
+        672,
+        11599,
+        11617,
+        11647
+      ],
+      "victory_points": [
+        [
+          11617,
+          1.0
+        ]
+      ]
+    },
+    "827": {
+      "name_key": "STATE_827",
+      "installed_name": "Kabardino-Balkaria",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "827 - Kabardino-Balkaria.txt",
+      "provinces": [
+        685,
+        6674,
+        9632,
+        11614
+      ],
+      "victory_points": [
+        [
+          11614,
+          1.0
+        ]
+      ]
+    },
+    "828": {
+      "name_key": "STATE_828",
+      "installed_name": "North Ossetia",
+      "installed_owner": "SOV",
+      "fixture_owner": "CAU",
+      "source_file": "828 - North Ossetia.txt",
+      "provinces": [
+        9628,
+        9647,
+        11609
+      ],
+      "victory_points": [
+        [
+          9628,
+          3.0
+        ]
+      ]
+    },
+    "353": {
+      "name_key": "STATE_353",
+      "installed_name": "Tunceli",
+      "installed_owner": "TUR",
+      "fixture_owner": "CAU",
+      "source_file": "353-Erzurum.txt",
+      "provinces": [
+        876,
+        9858,
+        9860,
+        9868,
+        9954,
+        10399,
+        11797
+      ],
+      "victory_points": [
+        [
+          876,
+          1.0
+        ],
+        [
+          9860,
+          1.0
+        ],
+        [
+          9868,
+          1.0
+        ]
+      ]
+    },
+    "40": {
+      "name_key": "STATE_40",
+      "installed_name": "Altai Krai",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "40-USSR.txt",
+      "provinces": [
+        1297,
+        1779,
+        1794,
+        1797,
+        4803,
+        7680,
+        10537,
+        10546,
+        11410,
+        12515,
+        12528,
+        12613
+      ],
+      "victory_points": [
+        [
+          1794,
+          1.0
+        ]
+      ]
+    },
+    "403": {
+      "name_key": "STATE_403",
+      "installed_name": "Tyumen",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "403-Kharabali.txt",
+      "provinces": [
+        1387,
+        1880,
+        3472,
+        4209,
+        4659,
+        4754,
+        4780,
+        4824,
+        6787,
+        7681,
+        7774,
+        7833,
+        7846,
+        9512,
+        10600,
+        10659,
+        10670,
+        12390,
+        12521
+      ],
+      "victory_points": [
+        [
+          4824,
+          1.0
+        ]
+      ]
+    },
+    "516": {
+      "name_key": "STATE_516",
+      "installed_name": "Dudinka",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "516-Northern Siberia.txt",
+      "provinces": [
+        2923,
+        2972,
+        3336,
+        4692,
+        4733,
+        4859,
+        10607,
+        10635,
+        11261,
+        11328,
+        12643,
+        13064
+      ],
+      "victory_points": [
+        [
+          4859,
+          1.0
+        ]
+      ]
+    },
+    "564": {
+      "name_key": "STATE_564",
+      "installed_name": "Buryatia",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "564-TS 6.txt",
+      "provinces": [
+        1696,
+        1762,
+        1810,
+        4716,
+        4766,
+        4835,
+        4837,
+        7736,
+        7816,
+        7835,
+        10524,
+        10528,
+        10543,
+        10658,
+        12506,
+        12575,
+        12644,
+        13152
+      ],
+      "victory_points": [
+        [
+          7835,
+          2.0
+        ],
+        [
+          12644,
+          1.0
+        ]
+      ]
+    },
+    "565": {
+      "name_key": "STATE_565",
+      "installed_name": "Bodaybo",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "565-TS 7.txt",
+      "provinces": [
+        1666,
+        1761,
+        4762,
+        4795,
+        4868,
+        7759,
+        7854,
+        10583,
+        10654,
+        12538
+      ],
+      "victory_points": []
+    },
+    "566": {
+      "name_key": "STATE_566",
+      "installed_name": "Irkutsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "566-TS 8.txt",
+      "provinces": [
+        1707,
+        1727,
+        1829,
+        4797,
+        4815,
+        7838,
+        10596,
+        10661,
+        12525,
+        12540,
+        12647
+      ],
+      "victory_points": [
+        [
+          4797,
+          3.0
+        ]
+      ]
+    },
+    "567": {
+      "name_key": "STATE_567",
+      "installed_name": "Bratsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "567-TS 9.txt",
+      "provinces": [
+        1735,
+        1803,
+        1813,
+        1876,
+        4750,
+        4808,
+        7713,
+        7769,
+        7802,
+        7841,
+        7876,
+        7902,
+        10549,
+        10562,
+        10570,
+        10664,
+        10699,
+        12523
+      ],
+      "victory_points": []
+    },
+    "568": {
+      "name_key": "STATE_568",
+      "installed_name": "Krasnoyarsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "568-TS 10.txt",
+      "provinces": [
+        1777,
+        1850,
+        4690,
+        4711,
+        4724,
+        4782,
+        4818,
+        4853,
+        7744,
+        7815,
+        10639,
+        10712,
+        12563,
+        12621,
+        12628,
+        12691
+      ],
+      "victory_points": [
+        [
+          4724,
+          1.0
+        ]
+      ]
+    },
+    "569": {
+      "name_key": "STATE_569",
+      "installed_name": "Khakassia",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "569-TS 11.txt",
+      "provinces": [
+        1369,
+        1685,
+        1702,
+        1816,
+        4665,
+        4789,
+        4793,
+        7757,
+        7822,
+        7886,
+        10580,
+        10649,
+        12631
+      ],
+      "victory_points": [
+        [
+          10580,
+          2.0
+        ],
+        [
+          7757,
+          1.0
+        ],
+        [
+          7822,
+          1.0
+        ]
+      ]
+    },
+    "570": {
+      "name_key": "STATE_570",
+      "installed_name": "Novosibirsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "570-TS 12.txt",
+      "provinces": [
+        1733,
+        1790,
+        1860,
+        4366,
+        4734,
+        4806,
+        4840,
+        4866,
+        7274,
+        7687,
+        7722,
+        7825,
+        10555,
+        10652,
+        12606,
+        12679
+      ],
+      "victory_points": [
+        [
+          7274,
+          3.0
+        ]
+      ]
+    },
+    "571": {
+      "name_key": "STATE_571",
+      "installed_name": "Omsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "571-TS 13.txt",
+      "provinces": [
+        1709,
+        1800,
+        1835,
+        4700,
+        7800,
+        10568,
+        10626,
+        10696,
+        12546,
+        12580,
+        12652
+      ],
+      "victory_points": [
+        [
+          10696,
+          3.0
+        ]
+      ]
+    },
+    "574": {
+      "name_key": "STATE_574",
+      "installed_name": "Yakutsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "574-Siberia 1.txt",
+      "provinces": [
+        1748,
+        1795,
+        1852,
+        1878,
+        4726,
+        4752,
+        4798,
+        4821,
+        4855,
+        7746,
+        7765,
+        7817,
+        7844,
+        7889,
+        10589,
+        10608,
+        10641,
+        10667,
+        10701,
+        10714,
+        12565,
+        12611,
+        12623,
+        12694
+      ],
+      "victory_points": [
+        [
+          10641,
+          1.0
+        ]
+      ]
+    },
+    "575": {
+      "name_key": "STATE_575",
+      "installed_name": "Kirensk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "575-Siberia 2.txt",
+      "provinces": [
+        1792,
+        4703,
+        4737,
+        7726,
+        7828,
+        10557,
+        10628,
+        10688,
+        12531,
+        12608,
+        12668,
+        12681,
+        13059
+      ],
+      "victory_points": []
+    },
+    "576": {
+      "name_key": "STATE_576",
+      "installed_name": "Yeniseisk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "576-Siberia 3.txt",
+      "provinces": [
+        1679,
+        1697,
+        1741,
+        1780,
+        1828,
+        1837,
+        4687,
+        4743,
+        4785,
+        4831,
+        4842,
+        7701,
+        7707,
+        7750,
+        7805,
+        7863,
+        10544,
+        10576,
+        10631,
+        10705,
+        12555,
+        12595,
+        12615,
+        12655,
+        12666
+      ],
+      "victory_points": [
+        [
+          7805,
+          1.0
+        ]
+      ]
+    },
+    "577": {
+      "name_key": "STATE_577",
+      "installed_name": "Surgut",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "577-Siberia 4.txt",
+      "provinces": [
+        1726,
+        1768,
+        1784,
+        1856,
+        4730,
+        4771,
+        4817,
+        7685,
+        7781,
+        7837,
+        7882,
+        10533,
+        10561,
+        10663,
+        10692,
+        12514,
+        12542,
+        12574,
+        12639,
+        12672
+      ],
+      "victory_points": []
+    },
+    "578": {
+      "name_key": "STATE_578",
+      "installed_name": "Tomsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "578-Siberia 5.txt",
+      "provinces": [
+        1674,
+        1718,
+        1765,
+        1824,
+        4681,
+        4767,
+        4827,
+        7655,
+        7789,
+        7793,
+        7849,
+        7861,
+        10529,
+        10613,
+        10617,
+        10673,
+        10686,
+        12174,
+        12510,
+        12536,
+        12599
+      ],
+      "victory_points": [
+        [
+          7789,
+          1.0
+        ]
+      ]
+    },
+    "579": {
+      "name_key": "STATE_579",
+      "installed_name": "Salekhard",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "579-Siberia 6.txt",
+      "provinces": [
+        1664,
+        1684,
+        3169,
+        4669,
+        7689,
+        7738,
+        8461,
+        9142,
+        13076
+      ],
+      "victory_points": [
+        [
+          1684,
+          1.0
+        ]
+      ]
+    },
+    "580": {
+      "name_key": "STATE_580",
+      "installed_name": "Tobolsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "580-Siberia 7.txt",
+      "provinces": [
+        1659,
+        1744,
+        1812,
+        4710,
+        4715,
+        4746,
+        4774,
+        4846,
+        7733,
+        7768,
+        7796,
+        7867,
+        7895,
+        10592,
+        10604,
+        10620,
+        12602,
+        12630,
+        12700
+      ],
+      "victory_points": [
+        [
+          1659,
+          1.0
+        ]
+      ]
+    },
+    "654": {
+      "name_key": "STATE_654",
+      "installed_name": "Oyrot Region",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "654-sov state 8.txt",
+      "provinces": [
+        4781,
+        4800,
+        10531,
+        10713,
+        12509
+      ],
+      "victory_points": [
+        [
+          4800,
+          1.0
+        ]
+      ]
+    },
+    "824": {
+      "name_key": "STATE_824",
+      "installed_name": "Yamalia",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "824 - Yamalia.txt",
+      "provinces": [
+        96,
+        1729,
+        1757,
+        3415,
+        4761,
+        7809,
+        10536,
+        10564,
+        12517,
+        12545
+      ],
+      "victory_points": []
+    },
+    "876": {
+      "name_key": "STATE_876",
+      "installed_name": "Udachny",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "876-Udachny.txt",
+      "provinces": [
+        1722,
+        2853,
+        3184,
+        6085,
+        13060
+      ],
+      "victory_points": []
+    },
+    "877": {
+      "name_key": "STATE_877",
+      "installed_name": "Verkhoyansk",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "877-Verkhoyansk.txt",
+      "provinces": [
+        1745,
+        2877,
+        4878,
+        6211,
+        12549,
+        12634
+      ],
+      "victory_points": [
+        [
+          12549,
+          1.0
+        ]
+      ]
+    },
+    "878": {
+      "name_key": "STATE_878",
+      "installed_name": "Khatangsky",
+      "installed_owner": "SOV",
+      "fixture_owner": "SIB",
+      "source_file": "878-Khatangsky.txt",
+      "provinces": [
+        2900,
+        4812,
+        9224,
+        11122,
+        12687,
+        13065
+      ],
+      "victory_points": []
+    },
+    "408": {
+      "name_key": "STATE_408",
+      "installed_name": "Vladivostok",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "408-Vladivostok.txt",
+      "provinces": [
+        664,
+        681,
+        810,
+        837,
+        957,
+        3695,
+        3723,
+        3739,
+        3753,
+        3787,
+        3811,
+        3815,
+        3843,
+        3977,
+        5427,
+        6684,
+        6686,
+        6715,
+        6833,
+        6838,
+        6961,
+        6989,
+        9639,
+        9641,
+        9762,
+        9895,
+        9926,
+        11624,
+        11626,
+        11629,
+        11643,
+        11745,
+        11750,
+        11765,
+        11777,
+        11879,
+        11904
+      ],
+      "victory_points": [
+        [
+          957,
+          15.0
+        ]
+      ]
+    },
+    "409": {
+      "name_key": "STATE_409",
+      "installed_name": "Khabarovsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "409-Khabarovsk.txt",
+      "provinces": [
+        725,
+        739,
+        753,
+        1267,
+        1325,
+        1343,
+        1397,
+        1504,
+        3756,
+        3963,
+        4404,
+        4841,
+        6774,
+        7249,
+        7266,
+        7309,
+        7868,
+        9589,
+        9604,
+        9733,
+        9749,
+        10466,
+        11575,
+        11719,
+        12136,
+        12189
+      ],
+      "victory_points": [
+        [
+          12189,
+          1.0
+        ]
+      ]
+    },
+    "560": {
+      "name_key": "STATE_560",
+      "installed_name": "Nikolayevsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "560-TS 2.txt",
+      "provinces": [
+        1724,
+        1772,
+        1807,
+        1842,
+        3664,
+        4290,
+        4844,
+        7748,
+        7871,
+        9659,
+        10571,
+        10577,
+        10590,
+        12559,
+        12569,
+        12638
+      ],
+      "victory_points": []
+    },
+    "561": {
+      "name_key": "STATE_561",
+      "installed_name": "Amur",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "561-TS 3.txt",
+      "provinces": [
+        1730,
+        1739,
+        1845,
+        4731,
+        4847,
+        7691,
+        7754,
+        7785,
+        7851,
+        10678,
+        12543,
+        12591,
+        12657,
+        12660
+      ],
+      "victory_points": [
+        [
+          7851,
+          1.0
+        ]
+      ]
+    },
+    "562": {
+      "name_key": "STATE_562",
+      "installed_name": "Okhotsk",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "562-TS 4.txt",
+      "provinces": [
+        1714,
+        1805,
+        4810,
+        4881,
+        7772,
+        10572,
+        10598,
+        11607,
+        12518,
+        12551,
+        12650
+      ],
+      "victory_points": []
+    },
+    "563": {
+      "name_key": "STATE_563",
+      "installed_name": "Chita",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "563-TS 5.txt",
+      "provinces": [
+        1672,
+        1826,
+        4675,
+        4677,
+        4705,
+        4719,
+        4832,
+        7725,
+        7751,
+        7786,
+        7860,
+        10559,
+        10565,
+        10574,
+        10643,
+        10681,
+        10683,
+        12507,
+        12556,
+        12622,
+        12641
+      ],
+      "victory_points": [
+        [
+          4705,
+          1.0
+        ]
+      ]
+    },
+    "637": {
+      "name_key": "STATE_637",
+      "installed_name": "Kamchatka",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "637-State 1.txt",
+      "provinces": [
+        1823,
+        1839,
+        1863,
+        4728,
+        7878,
+        12207,
+        12522
+      ],
+      "victory_points": []
+    },
+    "644": {
+      "name_key": "STATE_644",
+      "installed_name": "Kolyma",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "644-state 3.txt",
+      "provinces": [
+        1819,
+        4006,
+        4229,
+        4455,
+        12592,
+        13061
+      ],
+      "victory_points": [
+        [
+          1819,
+          1.0
+        ]
+      ]
+    },
+    "655": {
+      "name_key": "STATE_655",
+      "installed_name": "North Sakhalin",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "655-North Sakhalin.txt",
+      "provinces": [
+        855,
+        1742,
+        1755
+      ],
+      "victory_points": []
+    },
+    "657": {
+      "name_key": "STATE_657",
+      "installed_name": "Birobidzhan",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "657-Border state.txt",
+      "provinces": [
+        675,
+        1802,
+        4246,
+        4701,
+        4725,
+        4779,
+        4805,
+        4829,
+        7616,
+        7672,
+        7763,
+        7801,
+        10655,
+        10722,
+        12192,
+        12261,
+        12263,
+        12654,
+        12678
+      ],
+      "victory_points": []
+    },
+    "822": {
+      "name_key": "STATE_822",
+      "installed_name": "Chukotka",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "822 - Chukotka.txt",
+      "provinces": [
+        4744,
+        5264,
+        13062,
+        13063
+      ],
+      "victory_points": [
+        [
+          13063,
+          1.0
+        ]
+      ]
+    },
+    "874": {
+      "name_key": "STATE_874",
+      "installed_name": "Magadan",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "874-Magadan.txt",
+      "provinces": [
+        1865,
+        10540,
+        12683
+      ],
+      "victory_points": [
+        [
+          12683,
+          1.0
+        ]
+      ]
+    },
+    "875": {
+      "name_key": "STATE_875",
+      "installed_name": "Chukchi Peninsula",
+      "installed_owner": "SOV",
+      "fixture_owner": "FER",
+      "source_file": "875-Chukchi Peninsulay.txt",
+      "provinces": [
+        13204,
+        13254
+      ],
+      "victory_points": [
+        [
+          13204,
+          1.0
+        ]
+      ]
+    },
+    "273": {
+      "name_key": "STATE_273",
+      "installed_name": "Libyan Desert",
+      "installed_owner": "ITA",
+      "fixture_owner": "NAF",
+      "source_file": "273-Italian Africa.txt",
+      "provinces": [
+        1057,
+        1060,
+        1140,
+        1994,
+        4191,
+        4962,
+        5004,
+        7985,
+        10104,
+        10754,
+        10785,
+        10884,
+        11951,
+        12022,
+        12082,
+        12866
+      ],
+      "victory_points": []
+    },
+    "448": {
+      "name_key": "STATE_448",
+      "installed_name": "Tripoli",
+      "installed_owner": "ITA",
+      "fixture_owner": "NAF",
+      "source_file": "448-Tripoli.txt",
+      "provinces": [
+        1118,
+        1149,
+        1189,
+        4194,
+        7066,
+        7209,
+        9980,
+        12039
+      ],
+      "victory_points": [
+        [
+          1149,
+          10.0
+        ]
+      ]
+    },
+    "449": {
+      "name_key": "STATE_449",
+      "installed_name": "El Agheila",
+      "installed_owner": "ITA",
+      "fixture_owner": "NAF",
+      "source_file": "449-Libyan Coast.txt",
+      "provinces": [
+        1041,
+        1198,
+        4047,
+        4057,
+        10046,
+        10117,
+        12088
+      ],
+      "victory_points": []
+    },
+    "450": {
+      "name_key": "STATE_450",
+      "installed_name": "Benghasi",
+      "installed_owner": "ITA",
+      "fixture_owner": "NAF",
+      "source_file": "450-Benghasi.txt",
+      "provinces": [
+        1127,
+        4120,
+        10123,
+        11954
+      ],
+      "victory_points": [
+        [
+          11954,
+          3.0
+        ]
+      ]
+    },
+    "451": {
+      "name_key": "STATE_451",
+      "installed_name": "Derna",
+      "installed_owner": "ITA",
+      "fixture_owner": "NAF",
+      "source_file": "451-Derna.txt",
+      "provinces": [
+        1130,
+        1204,
+        4136,
+        4151,
+        7082,
+        9992,
+        10120,
+        12094
+      ],
+      "victory_points": [
+        [
+          1130,
+          5.0
+        ]
+      ]
+    },
+    "458": {
+      "name_key": "STATE_458",
+      "installed_name": "Tunisia",
+      "installed_owner": "FRA",
+      "fixture_owner": "NAF",
+      "source_file": "458-Tunisia.txt",
+      "provinces": [
+        1037,
+        1046,
+        4061,
+        4129,
+        4163,
+        7077,
+        7162,
+        7180,
+        9994,
+        10091,
+        11921,
+        11969
+      ],
+      "victory_points": [
+        [
+          11969,
+          10.0
+        ],
+        [
+          9994,
+          1.0
+        ],
+        [
+          11921,
+          1.0
+        ]
+      ]
+    },
+    "459": {
+      "name_key": "STATE_459",
+      "installed_name": "Algiers",
+      "installed_owner": "FRA",
+      "fixture_owner": "NAF",
+      "source_file": "459-Western Algeria.txt",
+      "provinces": [
+        1013,
+        1145,
+        4116,
+        4131,
+        4146,
+        7132,
+        9964,
+        11923,
+        11939,
+        12760
+      ],
+      "victory_points": [
+        [
+          1145,
+          5.0
+        ],
+        [
+          7132,
+          5.0
+        ]
+      ]
+    },
+    "460": {
+      "name_key": "STATE_460",
+      "installed_name": "Constantine",
+      "installed_owner": "FRA",
+      "fixture_owner": "NAF",
+      "source_file": "460-Eastern Algeria.txt",
+      "provinces": [
+        1058,
+        1160,
+        4046,
+        7065,
+        7081,
+        7166,
+        9976,
+        10078,
+        11953,
+        12051,
+        13077
+      ],
+      "victory_points": [
+        [
+          12051,
+          3.0
+        ],
+        [
+          7081,
+          1.0
+        ]
+      ]
+    },
+    "461": {
+      "name_key": "STATE_461",
+      "installed_name": "Casablanca",
+      "installed_owner": "FRA",
+      "fixture_owner": "NAF",
+      "source_file": "461-Northern Morocco.txt",
+      "provinces": [
+        989,
+        1079,
+        1111,
+        1194,
+        4084,
+        4097,
+        4139,
+        7069,
+        7100,
+        7116,
+        7173,
+        10013,
+        10023,
+        10070,
+        11943,
+        11987,
+        12042
+      ],
+      "victory_points": [
+        [
+          7069,
+          10.0
+        ],
+        [
+          10070,
+          2.0
+        ]
+      ]
+    },
+    "462": {
+      "name_key": "STATE_462",
+      "installed_name": "Marrakech",
+      "installed_owner": "FRA",
+      "fixture_owner": "NAF",
+      "source_file": "462-Southern Morocco.txt",
+      "provinces": [
+        1102,
+        1152,
+        1207,
+        1989,
+        4022,
+        4108,
+        4154,
+        4933,
+        5046,
+        7203,
+        7908,
+        7958,
+        8046,
+        10107
+      ],
+      "victory_points": [
+        [
+          4108,
+          3.0
+        ]
+      ]
+    },
+    "513": {
+      "name_key": "STATE_513",
+      "installed_name": "Tlemcen",
+      "installed_owner": "FRA",
+      "fixture_owner": "NAF",
+      "source_file": "513-Southern Algeria.txt",
+      "provinces": [
+        1126,
+        1128,
+        1141,
+        1967,
+        3991,
+        4018,
+        4150,
+        4970,
+        5053,
+        7008,
+        7033,
+        7040,
+        7149,
+        9943,
+        9960,
+        10045,
+        10059,
+        12018,
+        12020,
+        12034,
+        12888,
+        13074
+      ],
+      "victory_points": [
+        [
+          12034,
+          1.0
+        ]
+      ]
+    },
+    "514": {
+      "name_key": "STATE_514",
+      "installed_name": "Algerian Desert",
+      "installed_owner": "FRA",
+      "fixture_owner": "NAF",
+      "source_file": "514-North Africa.txt",
+      "provinces": [
+        1043,
+        1095,
+        1901,
+        1958,
+        2049,
+        4903,
+        5035,
+        5095,
+        7041,
+        8061,
+        8077,
+        8088,
+        10731,
+        10749,
+        12711,
+        12842,
+        12849
+      ],
+      "victory_points": []
+    },
+    "661": {
+      "name_key": "STATE_661",
+      "installed_name": "Tripolitania",
+      "installed_owner": "ITA",
+      "fixture_owner": "NAF",
+      "source_file": "661-Tripolitania.txt",
+      "provinces": [
+        1174,
+        4051,
+        4117,
+        4176,
+        7154,
+        7194,
+        10037,
+        10067,
+        11940,
+        12009
+      ],
+      "victory_points": []
+    },
+    "662": {
+      "name_key": "STATE_662",
+      "installed_name": "Sirte",
+      "installed_owner": "ITA",
+      "fixture_owner": "NAF",
+      "source_file": "662-Sirte.txt",
+      "provinces": [
+        4200,
+        7076,
+        7136,
+        8069,
+        13073
+      ],
+      "victory_points": []
+    },
+    "663": {
+      "name_key": "STATE_663",
+      "installed_name": "Cyrenaica",
+      "installed_owner": "ITA",
+      "fixture_owner": "NAF",
+      "source_file": "663-Cyrenaica.txt",
+      "provinces": [
+        1062,
+        1186,
+        4060,
+        4063,
+        4133,
+        7063,
+        7139,
+        7206,
+        9977,
+        10049,
+        12025,
+        12079,
+        13078
+      ],
+      "victory_points": []
+    },
+    "665": {
+      "name_key": "STATE_665",
+      "installed_name": "Gabès",
+      "installed_owner": "FRA",
+      "fixture_owner": "NAF",
+      "source_file": "665-Gabes.txt",
+      "provinces": [
+        1105,
+        3987,
+        4992,
+        7005,
+        9983,
+        10026,
+        10082,
+        11935,
+        11957,
+        12000,
+        13145,
+        13179
+      ],
+      "victory_points": [
+        [
+          7005,
+          1.0
+        ]
+      ]
+    },
+    "777": {
+      "name_key": "STATE_777",
+      "installed_name": "Togo",
+      "installed_owner": "FRA",
+      "fixture_owner": "CMT",
+      "source_file": "777-Togo.txt",
+      "provinces": [
+        1951,
+        12843,
+        13212
+      ],
+      "victory_points": [
+        [
+          1951,
+          1.0
+        ]
+      ]
+    },
+    "215": {
+      "name_key": "STATE_215",
+      "installed_name": "Onega",
+      "installed_owner": "SOV",
+      "fixture_owner": "FIN",
+      "source_file": "215-Eastern Karelia.txt",
+      "provinces": [
+        36,
+        80,
+        86,
+        94,
+        134,
+        155,
+        157,
+        170,
+        176,
+        2998,
+        3008,
+        3067,
+        3071,
+        3078,
+        3189,
+        6021,
+        6029,
+        6090,
+        6096,
+        6098,
+        6159,
+        6175,
+        9045,
+        9055,
+        9074,
+        9119,
+        9195,
+        9198,
+        11045,
+        11054,
+        11094,
+        11096,
+        11146,
+        11175,
+        11181,
+        11212,
+        13130
+      ],
+      "victory_points": []
+    },
+    "216": {
+      "name_key": "STATE_216",
+      "installed_name": "Olonets",
+      "installed_owner": "SOV",
+      "fixture_owner": "FIN",
+      "source_file": "216-Below Zero.txt",
+      "provinces": [
+        40,
+        90,
+        92,
+        2356,
+        2994,
+        3033,
+        3084,
+        3144,
+        6057,
+        6070,
+        6094,
+        6106,
+        6172,
+        9078,
+        9118,
+        9231,
+        11092,
+        11150,
+        11153,
+        11159,
+        13194,
+        13198
+      ],
+      "victory_points": [
+        [
+          11159,
+          1.0
+        ]
+      ]
+    },
+    "1012": {
+      "name_key": "STATE_1012",
+      "installed_name": "Kalat",
+      "installed_owner": "RAJ",
+      "fixture_owner": "PAK",
+      "source_file": "1012-Kalat.txt",
+      "provinces": [
+        7049,
+        8098,
+        8066
+      ],
+      "victory_points": [
+        [
+          8098,
+          1.0
+        ]
+      ]
+    },
+    "440": {
+      "name_key": "STATE_440",
+      "installed_name": "West Punjab",
+      "installed_owner": "RAJ",
+      "fixture_owner": "PAK",
+      "source_file": "440-West Punjab.txt",
+      "provinces": [
+        4979,
+        8007,
+        8022,
+        8106,
+        9084,
+        10066,
+        10139,
+        10173,
+        10772,
+        10887,
+        10898,
+        12005,
+        12822
+      ],
+      "victory_points": [
+        [
+          10772,
+          15.0
+        ],
+        [
+          10173,
+          3.0
+        ],
+        [
+          10898,
+          1.0
+        ]
+      ]
+    },
+    "442": {
+      "name_key": "STATE_442",
+      "installed_name": "Peshawar",
+      "installed_owner": "RAJ",
+      "fixture_owner": "PAK",
+      "source_file": "442-Peshawar.txt",
+      "provinces": [
+        4558,
+        12717,
+        12763
+      ],
+      "victory_points": [
+        [
+          12763,
+          3.0
+        ]
+      ]
+    },
+    "443": {
+      "name_key": "STATE_443",
+      "installed_name": "Sind",
+      "installed_owner": "RAJ",
+      "fixture_owner": "PAK",
+      "source_file": "443-Sind.txt",
+      "provinces": [
+        1147,
+        1971,
+        1980,
+        3456,
+        4003,
+        4110,
+        4382,
+        7084,
+        10108,
+        10735
+      ],
+      "victory_points": [
+        [
+          3456,
+          25.0
+        ]
+      ]
+    },
+    "444": {
+      "name_key": "STATE_444",
+      "installed_name": "South Baluchistan",
+      "installed_owner": "RAJ",
+      "fixture_owner": "PAK",
+      "source_file": "444-Baluchistan States.txt",
+      "provinces": [
+        1179,
+        5043,
+        7917,
+        12761,
+        12774
+      ],
+      "victory_points": [
+        [
+          12774,
+          1.0
+        ]
+      ]
+    },
+    "445": {
+      "name_key": "STATE_445",
+      "installed_name": "Sibi",
+      "installed_owner": "RAJ",
+      "fixture_owner": "PAK",
+      "source_file": "445-Quetta.txt",
+      "provinces": [
+        4990,
+        7847,
+        7903,
+        10813
+      ],
+      "victory_points": []
+    },
+    "987": {
+      "name_key": "STATE_987",
+      "installed_name": "Waziristan",
+      "installed_owner": "RAJ",
+      "fixture_owner": "PAK",
+      "source_file": "987 - Waziristan.txt",
+      "provinces": [
+        1107,
+        1978,
+        4998,
+        7975
+      ],
+      "victory_points": []
+    },
+    "988": {
+      "name_key": "STATE_988",
+      "installed_name": "North Baluchistan",
+      "installed_owner": "RAJ",
+      "fixture_owner": "PAK",
+      "source_file": "988-Baluchistan.txt",
+      "provinces": [
+        5075,
+        5105,
+        8013,
+        8044
+      ],
+      "victory_points": [
+        [
+          5105,
+          3.0
+        ]
+      ]
+    },
+    "328": {
+      "name_key": "STATE_328",
+      "installed_name": "Kirin",
+      "installed_owner": "MAN",
+      "fixture_owner": "MAN",
+      "source_file": "328-Manchukuo.txt",
+      "provinces": [
+        800,
+        861,
+        887,
+        927,
+        945,
+        946,
+        1567,
+        3888,
+        3913,
+        3929,
+        3932,
+        3947,
+        3949,
+        4503,
+        4572,
+        6868,
+        6905,
+        6947,
+        7523,
+        7591,
+        7652,
+        7663,
+        9759,
+        9782,
+        9803,
+        9841,
+        9848,
+        9866,
+        9883,
+        9913,
+        9928,
+        10433,
+        11744,
+        11781,
+        11823,
+        11850,
+        11862,
+        11864,
+        12412
+      ],
+      "victory_points": [
+        [
+          4572,
+          1.0
+        ],
+        [
+          10433,
+          1.0
+        ]
+      ]
+    },
+    "1035": {
+      "name_key": "STATE_1035",
+      "installed_name": "Nanjing",
+      "installed_owner": "CHI",
+      "fixture_owner": "CHI",
+      "source_file": "1035 - Nanjing.txt",
+      "provinces": [
+        1099,
+        1146,
+        4148,
+        11913
+      ],
+      "victory_points": [
+        [
+          11913,
+          20.0
+        ]
+      ]
+    }
+  }
+}

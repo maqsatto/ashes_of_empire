@@ -1,0 +1,1 @@
+air_wings = { 361 = { fighter_equipment_0 = { owner = "USA" amount = 100 } } }

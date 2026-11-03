@@ -1,0 +1,20 @@
+bookmarks = { bookmark = { name = "AOF_BROKEN_PEACE_NAME" desc = "AOF_BROKEN_PEACE_DESC" date = 1924.9.1.12 picture = "GFX_select_date_1936" default_country = "KAZ" default = yes filters = { continent } scrollable_country_list = yes
+"KAZ" = { history = "aof_world_KAZ_bookmark" ideology = democratic version = base_game }
+"SIB" = { history = "aof_world_SIB_bookmark" ideology = democratic version = base_game }
+"CAU" = { history = "aof_world_CAU_bookmark" ideology = democratic version = base_game }
+"TRK" = { history = "aof_world_TRK_bookmark" ideology = neutrality version = base_game }
+"NAF" = { history = "aof_world_NAF_bookmark" ideology = neutrality version = base_game }
+"CMT" = { history = "aof_world_CMT_bookmark" ideology = neutrality version = base_game }
+"FER" = { history = "aof_world_FER_bookmark" ideology = neutrality version = base_game }
+"USA" = { history = "aof_world_USA_bookmark" ideology = democratic version = base_game }
+"JAP" = { history = "aof_world_JAP_bookmark" ideology = aof_conservatism version = base_game }
+"SOV" = { history = "aof_world_SOV_bookmark" ideology = communism version = base_game }
+"MEX" = { history = "aof_world_MEX_bookmark" ideology = democratic version = base_game }
+"BRA" = { history = "aof_world_BRA_bookmark" ideology = democratic version = base_game }
+"ARG" = { history = "aof_world_ARG_bookmark" ideology = democratic version = base_game }
+"CHI" = { history = "aof_world_CHI_bookmark" ideology = neutrality version = base_game }
+"MAN" = { history = "aof_world_MAN_bookmark" ideology = neutrality version = base_game }
+"RAJ" = { history = "aof_world_RAJ_bookmark" ideology = democratic version = base_game }
+"PAK" = { history = "aof_world_PAK_bookmark" ideology = neutrality version = base_game }
+"FIN" = { history = "aof_world_FIN_bookmark" ideology = democratic version = base_game }
+} }

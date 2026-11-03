@@ -1,0 +1,1495 @@
+focus_tree = {
+ id = aof_v03_generic
+ country = { factor = 1 }
+ default = yes
+ reset_on_civilwar = no
+ initial_show_position = { focus = aof_v03_g_priorities }
+ shared_focus = aof_v03_g_priorities
+ shared_focus = aof_v03_g_census
+ shared_focus = aof_v03_g_service
+ shared_focus = aof_v03_g_local
+ shared_focus = aof_v03_g_budget
+ shared_focus = aof_v03_g_home
+ shared_focus = aof_v03_g_debris
+ shared_focus = aof_v03_g_supply
+ shared_focus = aof_v03_g_jobs
+ shared_focus = aof_v03_g_emergency
+ shared_focus = aof_v03_g_orders
+ shared_focus = aof_v03_g_civilian
+ shared_focus = aof_v03_g_market
+ shared_focus = aof_v03_g_exports
+ shared_focus = aof_v03_g_roads
+ shared_focus = aof_v03_g_workshops
+ shared_focus = aof_v03_g_power
+ shared_focus = aof_v03_g_raw
+ shared_focus = aof_v03_g_processing
+ shared_focus = aof_v03_g_centre
+ shared_focus = aof_v03_g_network
+ shared_focus = aof_v03_g_capital
+ shared_focus = aof_v03_g_procurement
+ shared_focus = aof_v03_g_cooperation
+ shared_focus = aof_v03_g_talks
+ shared_focus = aof_v03_g_concession
+ shared_focus = aof_v03_g_joint
+ shared_focus = aof_v03_g_teachers
+ shared_focus = aof_v03_g_schools
+ shared_focus = aof_v03_g_engineers
+ shared_focus = aof_v03_g_institute
+ shared_focus = aof_v03_g_representation
+ shared_focus = aof_v03_g_parliament
+ shared_focus = aof_v03_g_parliament_law
+ shared_focus = aof_v03_g_parliament_settlement
+ shared_focus = aof_v03_g_labour
+ shared_focus = aof_v03_g_labour_law
+ shared_focus = aof_v03_g_labour_settlement
+ shared_focus = aof_v03_g_order
+ shared_focus = aof_v03_g_order_law
+ shared_focus = aof_v03_g_order_settlement
+ shared_focus = aof_v03_g_exception
+ shared_focus = aof_v03_g_revolution
+ shared_focus = aof_v03_g_revolution_institutions
+ shared_focus = aof_v03_g_revolution_settlement
+ shared_focus = aof_v03_g_nationalmission
+ shared_focus = aof_v03_g_nationalmission_institutions
+ shared_focus = aof_v03_g_nationalmission_settlement
+ shared_focus = aof_v03_g_arsenals
+ shared_focus = aof_v03_g_calibre
+ shared_focus = aof_v03_g_ncos
+ shared_focus = aof_v03_g_logistics
+ shared_focus = aof_v03_g_motor
+ shared_focus = aof_v03_g_breakthrough
+ shared_focus = aof_v03_g_territorial
+ shared_focus = aof_v03_g_expedition
+ shared_focus = aof_v03_g_flight
+ shared_focus = aof_v03_g_recon
+ shared_focus = aof_v03_g_airrepair
+ shared_focus = aof_v03_g_frontsky
+ shared_focus = aof_v03_g_interdiction
+ shared_focus = aof_v03_g_seasky
+ shared_focus = aof_v03_g_harbour
+ shared_focus = aof_v03_g_shiprepair
+ shared_focus = aof_v03_g_coastguard
+ shared_focus = aof_v03_g_commandsea
+ shared_focus = aof_v03_g_denysea
+ shared_focus = aof_v03_g_safepassage
+ shared_focus = aof_v03_g_recognition
+ shared_focus = aof_v03_g_neighbours
+ shared_focus = aof_v03_g_conference
+ shared_focus = aof_v03_g_neutral
+ shared_focus = aof_v03_g_defence
+ shared_focus = aof_v03_g_mandate
+ shared_focus = aof_v03_g_localpowers
+ shared_focus = aof_v03_g_guarantee
+ shared_focus = aof_v03_g_fin_karelia
+ shared_focus = aof_v03_g_fin_communities
+ shared_focus = aof_v03_g_fin_roads
+ shared_focus = aof_v03_g_fin_border
+ shared_focus = aof_v03_g_man_rail
+ shared_focus = aof_v03_g_man_service
+ shared_focus = aof_v03_g_man_garrison
+ shared_focus = aof_v03_g_man_rights
+ shared_focus = aof_v03_g_fer_port
+ shared_focus = aof_v03_g_fer_trade
+ shared_focus = aof_v03_g_fer_service
+ shared_focus = aof_v03_g_fer_guarantee
+ shared_focus = aof_v03_g_trk_congress
+ shared_focus = aof_v03_g_trk_powers
+ shared_focus = aof_v03_g_trk_union
+ shared_focus = aof_v03_g_trk_settlement
+ shared_focus = aof_v03_g_raj_supply
+ shared_focus = aof_v03_g_raj_cabinet
+ shared_focus = aof_v03_g_raj_terms
+ shared_focus = aof_v03_g_raj_future
+ shared_focus = aof_v03_g_pak_aid
+ shared_focus = aof_v03_g_pak_supply
+ shared_focus = aof_v03_g_pak_peace
+ shared_focus = aof_v03_g_pak_defence
+ shared_focus = aof_v03_g_can_obligations
+ shared_focus = aof_v03_g_can_treaties
+ shared_focus = aof_v03_g_can_ties
+ shared_focus = aof_v03_g_can_defence
+ shared_focus = aof_v03_g_central_summit
+ shared_focus = aof_v03_g_central_guarantees
+ shared_focus = aof_v03_g_central_transit
+ shared_focus = aof_v03_g_central_defence
+ shared_focus = aof_v03_g_central_compact
+ shared_focus = aof_v03_g_chaco_commission
+ shared_focus = aof_v03_g_chaco_supply
+ shared_focus = aof_v03_g_chaco_mediation
+ shared_focus = aof_v03_g_chaco_settlement
+ shared_focus = aof_v03_g_ven_order
+ shared_focus = aof_v03_g_ven_technicians
+ shared_focus = aof_v03_g_ven_refining
+ shared_focus = aof_v03_g_ven_contract
+}
+
+shared_focus = {
+  id = aof_v03_g_priorities
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 30 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_census
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_priorities }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 30 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_service
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_census }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_local
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_service }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_budget
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_local }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_civil_service }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_home
+  icon = GFX_goal_generic_political_pressure
+  x = 4
+  y = 0
+  cost = 5
+ allow_branch = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_debris
+  icon = GFX_goal_generic_political_pressure
+  x = 4
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_home }
+ allow_branch = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_supply
+  icon = GFX_goal_generic_political_pressure
+  x = 4
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_debris }
+ allow_branch = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = logistics_tech } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_jobs
+  icon = GFX_goal_generic_political_pressure
+  x = 4
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_supply }
+ allow_branch = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_emergency
+  icon = GFX_goal_generic_political_pressure
+  x = 4
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_jobs }
+ allow_branch = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_orders
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 0
+  cost = 5
+ allow_branch = { NOT = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_civilian
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_orders }
+ allow_branch = { NOT = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_market
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_civilian }
+ allow_branch = { NOT = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_exports
+  icon = GFX_goal_generic_political_pressure
+  x = 7
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_market }
+ allow_branch = { NOT = { OR = { has_war = yes has_country_flag = aof_war_exhausted any_owned_state = { has_state_flag = aof_war_damaged } } } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_export_orders }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_roads
+  icon = GFX_goal_generic_political_pressure
+  x = 10
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_workshops
+  icon = GFX_goal_generic_political_pressure
+  x = 10
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_roads }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_power
+  icon = GFX_goal_generic_political_pressure
+  x = 10
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_workshops }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_raw
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_power }
+ mutually_exclusive = { focus = aof_v03_g_processing }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 75 add_ideas = aof_v03_export_orders }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_processing
+  icon = GFX_goal_generic_political_pressure
+  x = 11
+  y = 3
+  cost = 10
+ prerequisite = { focus = aof_v03_g_power }
+ mutually_exclusive = { focus = aof_v03_g_raw }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_centre
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_raw }
+ mutually_exclusive = { focus = aof_v03_g_network }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_network
+  icon = GFX_goal_generic_political_pressure
+  x = 11
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_processing }
+ mutually_exclusive = { focus = aof_v03_g_centre }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_workshop_network }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_capital
+  icon = GFX_goal_generic_political_pressure
+  x = 14
+  y = 0
+  cost = 5
+ mutually_exclusive = { focus = aof_v03_g_talks }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = -25 add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_procurement
+  icon = GFX_goal_generic_political_pressure
+  x = 14
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_capital }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_cooperation
+  icon = GFX_goal_generic_political_pressure
+  x = 14
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_procurement }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_workshop_network }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_talks
+  icon = GFX_goal_generic_political_pressure
+  x = 17
+  y = 0
+  cost = 5
+ mutually_exclusive = { focus = aof_v03_g_capital }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.1 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_concession
+  icon = GFX_goal_generic_political_pressure
+  x = 17
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_talks }
+ available = { has_country_flag = aof_v03_investment_signed }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_timed_idea = { idea = aof_v03_concession days = 730 } custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_joint
+  icon = GFX_goal_generic_political_pressure
+  x = 17
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_concession }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_teachers
+  icon = GFX_goal_generic_political_pressure
+  x = 20
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = -20 add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_schools
+  icon = GFX_goal_generic_political_pressure
+  x = 20
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_teachers }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_engineers
+  icon = GFX_goal_generic_political_pressure
+  x = 20
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_schools }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = electronics } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_institute
+  icon = GFX_goal_generic_political_pressure
+  x = 20
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_engineers }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_applied_institute }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_representation
+  icon = GFX_goal_generic_political_pressure
+  x = 25
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_parliament
+  icon = GFX_goal_generic_political_pressure
+  x = 23
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_representation }
+ mutually_exclusive = { focus = aof_v03_g_labour focus = aof_v03_g_order focus = aof_v03_g_revolution focus = aof_v03_g_nationalmission }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_popularity = { ideology = democratic popularity = 0.1 } add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_parliament_law
+  icon = GFX_goal_generic_political_pressure
+  x = 23
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_parliament }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 add_political_power = -35 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_parliament_settlement
+  icon = GFX_goal_generic_political_pressure
+  x = 23
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_parliament_law }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.41 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_labour
+  icon = GFX_goal_generic_political_pressure
+  x = 25
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_representation }
+ mutually_exclusive = { focus = aof_v03_g_parliament focus = aof_v03_g_order focus = aof_v03_g_revolution focus = aof_v03_g_nationalmission }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_popularity = { ideology = aof_social_democracy popularity = 0.1 } add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_labour_law
+  icon = GFX_goal_generic_political_pressure
+  x = 25
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_labour }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 add_political_power = -35 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_labour_settlement
+  icon = GFX_goal_generic_political_pressure
+  x = 25
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_labour_law }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_politics = { ruling_party = aof_social_democracy elections_allowed = yes } add_popularity = { ideology = aof_social_democracy popularity = 0.15 } add_stability = 0.05 add_political_power = -25 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_order
+  icon = GFX_goal_generic_political_pressure
+  x = 27
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_representation }
+ mutually_exclusive = { focus = aof_v03_g_parliament focus = aof_v03_g_labour focus = aof_v03_g_revolution focus = aof_v03_g_nationalmission }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_popularity = { ideology = neutrality popularity = 0.1 } add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_order_law
+  icon = GFX_goal_generic_political_pressure
+  x = 27
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_order }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 add_political_power = -35 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_order_settlement
+  icon = GFX_goal_generic_political_pressure
+  x = 27
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_order_law }
+ mutually_exclusive = { focus = aof_v03_g_exception }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.42 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_exception
+  icon = GFX_goal_generic_political_pressure
+  x = 27
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_order_law }
+ mutually_exclusive = { focus = aof_v03_g_order_settlement }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_politics = { ruling_party = neutrality elections_allowed = no } add_popularity = { ideology = neutrality popularity = 0.15 } add_war_support = 0.08 add_stability = -0.05 add_political_power = 75 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_revolution
+  icon = GFX_goal_generic_political_pressure
+  x = 29
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_representation }
+ mutually_exclusive = { focus = aof_v03_g_parliament focus = aof_v03_g_labour focus = aof_v03_g_order focus = aof_v03_g_nationalmission }
+ allow_branch = { OR = { has_government = communism communism > 0.2 } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_popularity = { ideology = communism popularity = 0.05 } add_stability = -0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_revolution_institutions
+  icon = GFX_goal_generic_political_pressure
+  x = 29
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_revolution }
+ allow_branch = { OR = { has_government = communism communism > 0.2 } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = -50 add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_revolution_settlement
+  icon = GFX_goal_generic_political_pressure
+  x = 29
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_revolution_institutions }
+ allow_branch = { OR = { has_government = communism communism > 0.2 } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_politics = { ruling_party = communism elections_allowed = no } add_popularity = { ideology = communism popularity = 0.15 } add_war_support = 0.05 add_stability = -0.02 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_nationalmission
+  icon = GFX_goal_generic_political_pressure
+  x = 31
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_representation }
+ mutually_exclusive = { focus = aof_v03_g_parliament focus = aof_v03_g_labour focus = aof_v03_g_order focus = aof_v03_g_revolution }
+ allow_branch = { OR = { has_government = fascism fascism > 0.2 } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_popularity = { ideology = fascism popularity = 0.05 } add_stability = -0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_nationalmission_institutions
+  icon = GFX_goal_generic_political_pressure
+  x = 31
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_nationalmission }
+ allow_branch = { OR = { has_government = fascism fascism > 0.2 } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = -50 add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_nationalmission_settlement
+  icon = GFX_goal_generic_political_pressure
+  x = 31
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_nationalmission_institutions }
+ allow_branch = { OR = { has_government = fascism fascism > 0.2 } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_politics = { ruling_party = fascism elections_allowed = no } add_popularity = { ideology = fascism popularity = 0.15 } add_war_support = 0.05 add_stability = -0.02 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_arsenals
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 15 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_calibre
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_arsenals }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = infantry_weapons } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_ncos
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_calibre }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 20 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_logistics
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_ncos }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = logistics_tech } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_motor
+  icon = GFX_goal_generic_political_pressure
+  x = 30
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_logistics }
+ mutually_exclusive = { focus = aof_v03_g_breakthrough focus = aof_v03_g_territorial focus = aof_v03_g_expedition }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = land_doctrine } add_ideas = aof_v03_mobile }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_breakthrough
+  icon = GFX_goal_generic_political_pressure
+  x = 32
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_logistics }
+ mutually_exclusive = { focus = aof_v03_g_motor focus = aof_v03_g_territorial focus = aof_v03_g_expedition }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = land_doctrine } add_ideas = aof_v03_breakthrough }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_territorial
+  icon = GFX_goal_generic_political_pressure
+  x = 34
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_logistics }
+ mutually_exclusive = { focus = aof_v03_g_motor focus = aof_v03_g_breakthrough focus = aof_v03_g_expedition }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = land_doctrine } add_ideas = aof_v03_territorial }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_expedition
+  icon = GFX_goal_generic_political_pressure
+  x = 36
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_logistics }
+ mutually_exclusive = { focus = aof_v03_g_motor focus = aof_v03_g_breakthrough focus = aof_v03_g_territorial }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = land_doctrine } add_ideas = aof_v03_expedition }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_flight
+  icon = GFX_goal_generic_political_pressure
+  x = 40
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { air_experience = 15 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_recon
+  icon = GFX_goal_generic_political_pressure
+  x = 40
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_flight }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = light_fighter } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_airrepair
+  icon = GFX_goal_generic_political_pressure
+  x = 40
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_recon }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = air_equipment } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_frontsky
+  icon = GFX_goal_generic_political_pressure
+  x = 38
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_airrepair }
+ mutually_exclusive = { focus = aof_v03_g_interdiction focus = aof_v03_g_seasky }
+ available = { always = yes }
+  ai_will_do = { factor = 1 }
+  completion_reward = { air_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = air_doctrine } add_ideas = aof_v03_frontsky }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_interdiction
+  icon = GFX_goal_generic_political_pressure
+  x = 40
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_airrepair }
+ mutually_exclusive = { focus = aof_v03_g_frontsky focus = aof_v03_g_seasky }
+ available = { always = yes }
+  ai_will_do = { factor = 1 }
+  completion_reward = { air_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = air_doctrine } add_ideas = aof_v03_interdiction }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_seasky
+  icon = GFX_goal_generic_political_pressure
+  x = 42
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_airrepair }
+ mutually_exclusive = { focus = aof_v03_g_frontsky focus = aof_v03_g_interdiction }
+ available = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { air_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = air_doctrine } add_ideas = aof_v03_seasky }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_harbour
+  icon = GFX_goal_generic_political_pressure
+  x = 47
+  y = 0
+  cost = 5
+ available = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+ allow_branch = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 15 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_shiprepair
+  icon = GFX_goal_generic_political_pressure
+  x = 47
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_harbour }
+ available = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+ allow_branch = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { random_owned_controlled_state = { limit = { is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_coastguard
+  icon = GFX_goal_generic_political_pressure
+  x = 47
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_shiprepair }
+ available = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+ allow_branch = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = naval_equipment } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_commandsea
+  icon = GFX_goal_generic_political_pressure
+  x = 45
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_coastguard }
+ mutually_exclusive = { focus = aof_v03_g_denysea focus = aof_v03_g_safepassage }
+ available = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+ allow_branch = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = naval_doctrine } add_ideas = aof_v03_commandsea }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_denysea
+  icon = GFX_goal_generic_political_pressure
+  x = 47
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_coastguard }
+ mutually_exclusive = { focus = aof_v03_g_commandsea focus = aof_v03_g_safepassage }
+ available = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+ allow_branch = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = naval_doctrine } add_ideas = aof_v03_denysea }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_safepassage
+  icon = GFX_goal_generic_political_pressure
+  x = 49
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_coastguard }
+ mutually_exclusive = { focus = aof_v03_g_commandsea focus = aof_v03_g_denysea }
+ available = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+ allow_branch = { any_owned_state = { is_coastal = yes is_controlled_by = ROOT } OR = { NOT = { tag = KAZ } has_global_flag = aof_caspian_navigation_verified } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 25 add_doctrine_cost_reduction = { name = aof_v03_doctrine_bonus cost_reduction = 0.35 uses = 2 category = naval_doctrine } add_ideas = aof_v03_safepassage }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_recognition
+  icon = GFX_goal_generic_political_pressure
+  x = 53
+  y = 0
+  cost = 5
+ available = { is_subject = no }
+ allow_branch = { is_subject = no }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_neighbours
+  icon = GFX_goal_generic_political_pressure
+  x = 53
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_recognition }
+ available = { is_subject = no }
+ allow_branch = { is_subject = no }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.10 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_conference
+  icon = GFX_goal_generic_political_pressure
+  x = 53
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_neighbours }
+ available = { is_subject = no }
+ allow_branch = { is_subject = no }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.11 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_neutral
+  icon = GFX_goal_generic_political_pressure
+  x = 52
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_conference }
+ mutually_exclusive = { focus = aof_v03_g_defence }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_armed_neutrality }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_defence
+  icon = GFX_goal_generic_political_pressure
+  x = 54
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_conference }
+ mutually_exclusive = { focus = aof_v03_g_neutral }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.12 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_mandate
+  icon = GFX_goal_generic_political_pressure
+  x = 57
+  y = 0
+  cost = 5
+ allow_branch = { is_subject = yes }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_localpowers
+  icon = GFX_goal_generic_political_pressure
+  x = 57
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_mandate }
+ allow_branch = { is_subject = yes }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_guarantee
+  icon = GFX_goal_generic_political_pressure
+  x = 57
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_localpowers }
+ allow_branch = { is_subject = yes }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.20 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fin_karelia
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = FIN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 30 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fin_communities
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_fin_karelia }
+ allow_branch = { OR = { tag = FIN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.30 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fin_roads
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_fin_communities }
+ allow_branch = { OR = { tag = FIN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fin_border
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_fin_roads }
+ allow_branch = { OR = { tag = FIN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.06 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_man_rail
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = MAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_man_service
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_man_rail }
+ allow_branch = { OR = { tag = MAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_man_garrison
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_man_service }
+ allow_branch = { OR = { tag = MAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { JAP = { exists = yes } } JAP = { country_event = { id = aof_diplomacy.50 } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_man_rights
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_man_garrison }
+ allow_branch = { OR = { tag = MAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.31 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fer_port
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = FER } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fer_trade
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_fer_port }
+ allow_branch = { OR = { tag = FER } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { SIB = { exists = yes } } SIB = { country_event = { id = aof_diplomacy.80 } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fer_service
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_fer_trade }
+ allow_branch = { OR = { tag = FER } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_export_orders }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_fer_guarantee
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_fer_service }
+ allow_branch = { OR = { tag = FER } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { JAP = { exists = yes } } JAP = { country_event = { id = aof_diplomacy.40 } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_trk_congress
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = TRK } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 30 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_trk_powers
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_trk_congress }
+ allow_branch = { OR = { tag = TRK } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.32 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_trk_union
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_trk_powers }
+ allow_branch = { OR = { tag = TRK } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 25 add_stability = 0.03 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_trk_settlement
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_trk_union }
+ allow_branch = { OR = { tag = TRK } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.33 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_raj_supply
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = RAJ } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 20 add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = logistics_tech } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_raj_cabinet
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_raj_supply }
+ allow_branch = { OR = { tag = RAJ } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.34 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_raj_terms
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_raj_cabinet }
+ allow_branch = { OR = { tag = RAJ } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { PAK = { exists = yes } has_war_with = PAK } PAK = { country_event = { id = aof_diplomacy.130 } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_raj_future
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_raj_terms }
+ allow_branch = { OR = { tag = RAJ } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.07 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_pak_aid
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = PAK } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { PER = { exists = yes } } PER = { country_event = { id = aof_diplomacy.140 } } } if = { limit = { AFG = { exists = yes } } AFG = { country_event = { id = aof_diplomacy.140 } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_pak_supply
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_pak_aid }
+ allow_branch = { OR = { tag = PAK } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = logistics_tech } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_pak_peace
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_pak_supply }
+ allow_branch = { OR = { tag = PAK } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { RAJ = { exists = yes } has_war_with = RAJ } RAJ = { country_event = { id = aof_diplomacy.130 } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_pak_defence
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_pak_peace }
+ allow_branch = { OR = { tag = PAK } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.12 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_can_obligations
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = CAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.35 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_can_treaties
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_can_obligations }
+ allow_branch = { OR = { tag = CAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 60 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_can_ties
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_can_treaties }
+ allow_branch = { OR = { tag = CAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.36 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_can_defence
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_can_ties }
+ allow_branch = { OR = { tag = CAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_central_summit
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = GUA tag = HON tag = ELS tag = NIC tag = COS tag = PAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.11 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_central_guarantees
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_central_summit }
+ allow_branch = { OR = { tag = GUA tag = HON tag = ELS tag = NIC tag = COS tag = PAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_central_transit
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_central_guarantees }
+ allow_branch = { OR = { tag = GUA tag = HON tag = ELS tag = NIC tag = COS tag = PAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_central_defence
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_central_transit }
+ allow_branch = { OR = { tag = GUA tag = HON tag = ELS tag = NIC tag = COS tag = PAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.12 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_central_compact
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_g_central_defence }
+ allow_branch = { OR = { tag = GUA tag = HON tag = ELS tag = NIC tag = COS tag = PAN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.37 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_chaco_commission
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = BOL tag = PAR } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.38 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_chaco_supply
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_chaco_commission }
+ allow_branch = { OR = { tag = BOL tag = PAR } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_chaco_mediation
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_chaco_supply }
+ allow_branch = { OR = { tag = BOL tag = PAR } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.10 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_chaco_settlement
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_chaco_mediation }
+ allow_branch = { OR = { tag = BOL tag = PAR } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_ven_order
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 0
+  cost = 5
+ allow_branch = { OR = { tag = VEN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_v03_regions.39 } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_ven_technicians
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_g_ven_order }
+ allow_branch = { OR = { tag = VEN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_ven_refining
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_g_ven_technicians }
+ allow_branch = { OR = { tag = VEN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+shared_focus = {
+  id = aof_v03_g_ven_contract
+  icon = GFX_goal_generic_political_pressure
+  x = 62
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_g_ven_refining }
+ allow_branch = { OR = { tag = VEN } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 add_political_power = 40 }
+  
+ }

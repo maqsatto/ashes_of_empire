@@ -1,0 +1,30 @@
+# PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
+
+state = {
+	id = 579
+	name = "STATE_579" # Salekhard
+	manpower = 45484
+	
+	state_category = pastoral
+
+	history = {
+		controller = SIB
+		victory_points = {
+			1684 1
+		}
+		owner = SIB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SOV
+		add_core_of = YAM
+	
+		add_core_of = SIB
+}
+
+	provinces = {
+		1664 1684 3169 4669 7689 7738 8461 9142 13076
+	}
+
+	local_supplies = 0.0 
+}

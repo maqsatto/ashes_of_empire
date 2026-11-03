@@ -1,0 +1,761 @@
+focus_tree = {
+ id = aof_v03_kaz_tree
+ country = { factor = 0 modifier = { add = 10000 OR = { tag = KAZ } } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = aof_v03_kaz_entry1 }
+ focus = {
+  id = aof_v03_kaz_entry1
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_entry2
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_entry3
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { remove_ideas = aof_v03_kaz_initial add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_service1
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_service2
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_service1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_service3
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_service2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 remove_ideas = aof_v03_kaz_local_compacts }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_constitution1
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_service3 }
+ mutually_exclusive = { focus = aof_v03_kaz_land1 focus = aof_v03_kaz_mandate1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_constitution2
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_constitution1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_constitution3
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_constitution2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_constitution4
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 9
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_constitution3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_constitution5
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 10
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_constitution4 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.03 add_ideas = aof_v03_kaz_constitution_settlement country_event = { id = aof_nations.1 days = 1 } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_land1
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_service3 }
+ mutually_exclusive = { focus = aof_v03_kaz_constitution1 focus = aof_v03_kaz_mandate1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 6 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 70 aof_conservatism = 6 } set_politics = { ruling_party = aof_social_democracy elections_allowed = yes } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_land2
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_land1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_land3
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_land2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_land4
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 9
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_land3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_land5
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 10
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_land4 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.03 add_ideas = aof_v03_kaz_land_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_mandate1
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_service3 }
+ mutually_exclusive = { focus = aof_v03_kaz_constitution1 focus = aof_v03_kaz_land1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 6 neutrality = 70 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_mandate2
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_mandate1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_mandate3
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_mandate2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_mandate4
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 9
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_mandate3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_kaz_mandate_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_return_mandate
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 10
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_mandate4 }
+ mutually_exclusive = { focus = aof_v03_kaz_directory }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } remove_ideas = aof_v03_kaz_mandate_settlement add_stability = 0.1 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_directory
+  icon = GFX_goal_generic_political_pressure
+  x = 18
+  y = 10
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_mandate4 }
+ mutually_exclusive = { focus = aof_v03_kaz_return_mandate }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_war_support = 0.1 add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_industry1
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_industry2
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = -25 add_stability = 0.02 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_industry3
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_industry4
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_industry5
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry4 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_industry6
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry5 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } remove_ideas = aof_v03_kaz_resource_gap }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_american1
+  icon = GFX_goal_generic_political_pressure
+  x = -12
+  y = 10
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry6 }
+ mutually_exclusive = { focus = aof_v03_kaz_japanese1 focus = aof_v03_kaz_diverse1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = USA NOT = { has_war_with = USA } } USA = { country_event = { id = aof_diplomacy.20 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_american2
+  icon = GFX_goal_generic_political_pressure
+  x = -12
+  y = 11
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_american1 }
+ available = { OR = { has_country_flag = aof_usa_partnership_accepted has_country_flag = aof_usa_partnership_refused } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { has_country_flag = aof_usa_partnership_accepted } add_political_power = 30 } else = { add_political_power = -25 army_experience = 10 } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_american3
+  icon = GFX_goal_generic_political_pressure
+  x = -12
+  y = 12
+  cost = 7
+ prerequisite = { focus = aof_v03_kaz_american2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { has_country_flag = aof_usa_partnership_accepted } add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } } else = { add_political_power = -25 army_experience = 10 } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_american4
+  icon = GFX_goal_generic_political_pressure
+  x = -12
+  y = 13
+  cost = 7
+ prerequisite = { focus = aof_v03_kaz_american3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { has_country_flag = aof_usa_partnership_accepted } add_stability = 0.04 } else = { add_political_power = -25 army_experience = 10 } country_event = { id = aof_nations.3 days = 1 } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_japanese1
+  icon = GFX_goal_generic_political_pressure
+  x = -9
+  y = 10
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry6 }
+ mutually_exclusive = { focus = aof_v03_kaz_american1 focus = aof_v03_kaz_diverse1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = JAP NOT = { has_war_with = JAP } } JAP = { country_event = { id = aof_diplomacy.30 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_japanese2
+  icon = GFX_goal_generic_political_pressure
+  x = -9
+  y = 11
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_japanese1 }
+ available = { OR = { has_country_flag = aof_jap_partnership_accepted has_country_flag = aof_jap_partnership_refused } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { has_country_flag = aof_jap_partnership_accepted } custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } } else = { add_political_power = -25 army_experience = 10 } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_japanese3
+  icon = GFX_goal_generic_political_pressure
+  x = -9
+  y = 12
+  cost = 7
+ prerequisite = { focus = aof_v03_kaz_japanese2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { has_country_flag = aof_jap_partnership_accepted } add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } } else = { add_political_power = -25 army_experience = 10 } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_japanese4
+  icon = GFX_goal_generic_political_pressure
+  x = -9
+  y = 13
+  cost = 7
+ prerequisite = { focus = aof_v03_kaz_japanese3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { has_country_flag = aof_jap_partnership_accepted } custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } } else = { add_political_power = -25 army_experience = 10 } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_diverse1
+  icon = GFX_goal_generic_political_pressure
+  x = -6
+  y = 10
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry6 }
+ mutually_exclusive = { focus = aof_v03_kaz_american1 focus = aof_v03_kaz_japanese1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = -50 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_diverse2
+  icon = GFX_goal_generic_political_pressure
+  x = -6
+  y = 11
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_diverse1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_diverse3
+  icon = GFX_goal_generic_political_pressure
+  x = -6
+  y = 12
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_diverse2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_diverse4
+  icon = GFX_goal_generic_political_pressure
+  x = -6
+  y = 13
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_diverse3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_kaz_standards }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_first_batch
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 15
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_industry6 }
+ prerequisite = { focus = aof_v03_kaz_american2 focus = aof_v03_kaz_japanese2 focus = aof_v03_kaz_diverse2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_nations.2 days = 1 } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_caspian1
+  icon = GFX_goal_generic_political_pressure
+  x = -17
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry2 }
+ available = { has_global_flag = aof_caspian_navigation_verified any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 10 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_caspian2
+  icon = GFX_goal_generic_political_pressure
+  x = -17
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_caspian1 }
+ available = { has_global_flag = aof_caspian_navigation_verified any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = CAU NOT = { has_war_with = CAU } } CAU = { country_event = { id = aof_diplomacy.70 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_caspian3
+  icon = GFX_goal_generic_political_pressure
+  x = -17
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_caspian2 }
+ available = { has_global_flag = aof_caspian_navigation_verified any_owned_state = { is_controlled_by = ROOT is_coastal = yes } has_country_flag = aof_caspian_agreement_accepted }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_caspian4
+  icon = GFX_goal_generic_political_pressure
+  x = -17
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_caspian3 }
+ available = { has_global_flag = aof_caspian_navigation_verified any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_equipment_to_stockpile = { type = convoy amount = 20 producer = KAZ } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_caspian5
+  icon = GFX_goal_generic_political_pressure
+  x = -17
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_caspian4 }
+ available = { has_global_flag = aof_caspian_navigation_verified any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 20 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_caspian6
+  icon = GFX_goal_generic_political_pressure
+  x = -17
+  y = 9
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_caspian5 }
+ available = { has_global_flag = aof_caspian_navigation_verified any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_siberia1
+  icon = GFX_goal_generic_political_pressure
+  x = -21
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 30 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_siberia2
+  icon = GFX_goal_generic_political_pressure
+  x = -21
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_siberia1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_siberia3
+  icon = GFX_goal_generic_political_pressure
+  x = -21
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_siberia2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = SIB NOT = { has_war_with = SIB } } SIB = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_soviet1
+  icon = GFX_goal_generic_political_pressure
+  x = 21
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 35 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_noninterference
+  icon = GFX_goal_generic_political_pressure
+  x = 21
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_soviet1 }
+ mutually_exclusive = { focus = aof_v03_kaz_border_defence }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.06 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_border_defence
+  icon = GFX_goal_generic_political_pressure
+  x = 24
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_soviet1 }
+ mutually_exclusive = { focus = aof_v03_kaz_noninterference }
+ available = { SOV = { has_country_flag = aof_v03_sov_external_pressure } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 20 custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_turkestan1
+  icon = GFX_goal_generic_political_pressure
+  x = 27
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = -25 add_stability = 0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_turkestan2
+  icon = GFX_goal_generic_political_pressure
+  x = 27
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_turkestan1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = TRK NOT = { has_war_with = TRK } } TRK = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_turk_union
+  icon = GFX_goal_generic_political_pressure
+  x = 27
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_turkestan2 }
+ mutually_exclusive = { focus = aof_v03_kaz_turk_exit }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_turk_exit
+  icon = GFX_goal_generic_political_pressure
+  x = 30
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_turkestan2 }
+ mutually_exclusive = { focus = aof_v03_kaz_turk_union }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 60 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_army1
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_entry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 15 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_army2
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_army1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 20 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_army3
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_army2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_army4
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_army3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 20 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_army5
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_army4 }
+ prerequisite = { focus = aof_v03_kaz_industry5 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_army6
+  icon = GFX_goal_generic_political_pressure
+  x = 33
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_army5 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_kaz_maintained_army }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_independent
+  icon = GFX_goal_generic_political_pressure
+  x = -3
+  y = 17
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_first_batch }
+ prerequisite = { focus = aof_v03_kaz_army6 }
+ mutually_exclusive = { focus = aof_v03_kaz_steppe focus = aof_v03_kaz_regional }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.1 add_political_power = 80 }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_steppe
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 17
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_first_batch }
+ prerequisite = { focus = aof_v03_kaz_army6 }
+ mutually_exclusive = { focus = aof_v03_kaz_independent focus = aof_v03_kaz_regional }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = TRK NOT = { has_war_with = TRK } } TRK = { country_event = { id = aof_diplomacy.120 days = 2 } } } if = { limit = { country_exists = SIB NOT = { has_war_with = SIB } } SIB = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_kaz_regional
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 17
+  cost = 5
+ prerequisite = { focus = aof_v03_kaz_first_batch }
+ prerequisite = { focus = aof_v03_kaz_army6 }
+ mutually_exclusive = { focus = aof_v03_kaz_independent focus = aof_v03_kaz_steppe }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_war_support = 0.1 army_experience = 40 }
+  
+ }
+}

@@ -1,0 +1,197 @@
+focus_tree = {
+ id = aof_v03_cau_tree
+ country = { factor = 0 modifier = { add = 10000 OR = { tag = CAU } } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = aof_v03_cau_entry1 }
+ focus = {
+  id = aof_v03_cau_entry1
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_entry2
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_entry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_cau_entry3
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { remove_ideas = aof_v03_cau_initial add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_compact1
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_entry3 }
+ mutually_exclusive = { focus = aof_v03_cau_central1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_compact2
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_compact1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_compact3
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_compact2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } add_political_power = 50 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_compact4
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_compact3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_cau_compact_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_cau_central1
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_entry3 }
+ mutually_exclusive = { focus = aof_v03_cau_compact1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 6 neutrality = 70 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.03 army_experience = 20 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_central2
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_central1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_central3
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_central2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_cau_central4
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_central3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_cau_central_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_cau_neutral1
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_entry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_neutral2
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_neutral1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_neutral3
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_neutral2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 20 }
+  
+ }
+ focus = {
+  id = aof_v03_cau_neutral4
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_neutral3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_cau_neutral }
+  
+ }
+ focus = {
+  id = aof_v03_cau_transit_crisis
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_neutral4 }
+ available = { has_global_flag = aof_caspian_navigation_verified }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_nations.10 days = 1 } }
+  
+ }
+ focus = {
+  id = aof_v03_cau_alash
+  icon = GFX_goal_generic_political_pressure
+  x = -9
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_cau_entry3 }
+ available = { has_global_flag = aof_caspian_navigation_verified country_exists = KAZ NOT = { has_war_with = KAZ } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = KAZ NOT = { has_war_with = KAZ } } KAZ = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  
+ }
+}

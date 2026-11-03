@@ -1,0 +1,1 @@
+air_wings = { 439 = { small_plane_airframe_0 = { owner = "RAJ" amount = 40 version_name = "AOF Scout Fighter 1924" } } }

@@ -1,0 +1,6 @@
+﻿l_english:
+ AOF_USA_PLACEHOLDER_DESC: "A temporary country selection for testing the 1924 start."
+ aof_intro.1.t: "The War Is Over"
+ aof_intro.1.d: "After ten years, the Great World War has come to an end. Europe is exhausted, and the task of rebuilding lies ahead."
+ aof_intro.1.a: "A new chapter begins."
+ aof_debug_intro_event: "Test: The War Is Over"

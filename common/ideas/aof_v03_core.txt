@@ -1,0 +1,18 @@
+ideas = { country = {
+aof_v03_civil_service = { picture = generic_pp_unity_bonus allowed = { always = yes } removal_cost = -1 modifier = { political_power_gain = 0.1 stability_factor = 0.03 } }
+aof_v03_export_orders = { picture = generic_foreign_capital allowed = { always = yes } removal_cost = -1 modifier = { trade_opinion_factor = 0.1 } }
+aof_v03_workshop_network = { picture = generic_production_bonus allowed = { always = yes } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.05 } }
+aof_v03_concession = { picture = generic_foreign_capital allowed = { always = yes } removal_cost = -1 modifier = { civilian_factory_use = 1 production_factory_efficiency_gain_factor = 0.1 } }
+aof_v03_applied_institute = { picture = generic_research_bonus allowed = { always = yes } removal_cost = -1 modifier = { research_speed_factor = 0.03 } }
+aof_v03_mobile = { picture = generic_armor allowed = { always = yes } removal_cost = -1 modifier = { new_mobile_warfare_mastery_gain_factor = 0.1 supply_consumption_factor = 0.03 } }
+aof_v03_breakthrough = { picture = generic_armor allowed = { always = yes } removal_cost = -1 modifier = { grand_battleplan_mastery_gain_factor = 0.1 superior_firepower_mastery_gain_factor = 0.1 } }
+aof_v03_territorial = { picture = generic_infantry_bonus allowed = { always = yes } removal_cost = -1 modifier = { mass_assault_mastery_gain_factor = 0.1 army_org_factor = 0.03 } }
+aof_v03_expedition = { picture = generic_volunteer_expedition_bonus allowed = { always = yes } removal_cost = -1 modifier = { supply_consumption_factor = -0.05 army_org_factor = 0.02 } }
+aof_v03_frontsky = { picture = generic_air_bonus allowed = { always = yes } removal_cost = -1 modifier = { new_battlefield_support_mastery_gain_factor = 0.15 } }
+aof_v03_interdiction = { picture = generic_air_research allowed = { always = yes } removal_cost = -1 modifier = { new_strategic_destruction_mastery_gain_factor = 0.15 } }
+aof_v03_seasky = { picture = generic_navy_bonus allowed = { always = yes } removal_cost = -1 modifier = { new_operational_integrity_mastery_gain_factor = 0.15 } }
+aof_v03_commandsea = { picture = generic_sea_focused_navy allowed = { always = yes } removal_cost = -1 modifier = { new_base_strike_mastery_gain_factor = 0.15 } }
+aof_v03_denysea = { picture = generic_coastal_defense_ships2 allowed = { always = yes } removal_cost = -1 modifier = { new_convoy_raiding_mastery_gain_factor = 0.15 } }
+aof_v03_safepassage = { picture = generic_coastal_navy allowed = { always = yes } removal_cost = -1 modifier = { new_fleet_in_being_mastery_gain_factor = 0.15 } }
+aof_v03_armed_neutrality = { picture = generic_fortify_the_borders allowed = { always = yes } removal_cost = -1 modifier = { war_support_factor = 0.05 army_org_factor = 0.03 } }
+} }

@@ -1,0 +1,5 @@
+SIB = "countries/AOF SIB.txt"
+CAU = "countries/AOF CAU.txt"
+TRK = "countries/AOF TRK.txt"
+NAF = "countries/AOF NAF.txt"
+CMT = "countries/AOF CMT.txt"

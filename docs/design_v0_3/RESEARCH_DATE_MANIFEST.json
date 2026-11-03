@@ -1,0 +1,482 @@
+{
+  "industry.txt": {
+    "basic_machine_tools": {
+      "installed": 1936,
+      "aof": 1924
+    },
+    "improved_machine_tools": {
+      "installed": 1937,
+      "aof": 1927
+    },
+    "advanced_machine_tools": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "assembly_line_production": {
+      "installed": 1941,
+      "aof": 1935
+    },
+    "flexible_line": {
+      "installed": 1943,
+      "aof": 1938
+    },
+    "streamlined_line": {
+      "installed": 1943,
+      "aof": 1938
+    },
+    "concentrated_industry": {
+      "installed": null,
+      "aof": 1924
+    },
+    "concentrated_industry2": {
+      "installed": 1937,
+      "aof": 1927
+    },
+    "concentrated_industry3": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "concentrated_industry4": {
+      "installed": 1941,
+      "aof": 1935
+    },
+    "concentrated_industry5": {
+      "installed": 1943,
+      "aof": 1938
+    },
+    "dispersed_industry": {
+      "installed": null,
+      "aof": 1924
+    },
+    "dispersed_industry2": {
+      "installed": 1937,
+      "aof": 1927
+    },
+    "dispersed_industry3": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "dispersed_industry4": {
+      "installed": 1941,
+      "aof": 1935
+    },
+    "dispersed_industry5": {
+      "installed": 1943,
+      "aof": 1938
+    },
+    "construction1": {
+      "installed": 1936,
+      "aof": 1924
+    },
+    "construction2": {
+      "installed": 1937,
+      "aof": 1927
+    },
+    "construction3": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "construction4": {
+      "installed": 1941,
+      "aof": 1935
+    },
+    "construction5": {
+      "installed": 1943,
+      "aof": 1938
+    },
+    "excavation1": {
+      "installed": null,
+      "aof": 1924
+    },
+    "excavation2": {
+      "installed": 1937,
+      "aof": 1927
+    },
+    "excavation3": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "excavation4": {
+      "installed": 1941,
+      "aof": 1935
+    },
+    "excavation5": {
+      "installed": 1943,
+      "aof": 1938
+    },
+    "fuel_refining": {
+      "installed": 1936,
+      "aof": 1924
+    },
+    "fuel_refining2": {
+      "installed": 1937,
+      "aof": 1927
+    },
+    "fuel_refining3": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "fuel_refining4": {
+      "installed": 1941,
+      "aof": 1935
+    },
+    "fuel_refining5": {
+      "installed": 1943,
+      "aof": 1938
+    },
+    "synth_oil_experiments": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "oil_processing": {
+      "installed": 1937,
+      "aof": 1930
+    },
+    "rubber_processing": {
+      "installed": 1937,
+      "aof": 1930
+    },
+    "fuel_silos": {
+      "installed": 1936,
+      "aof": 1924
+    }
+  },
+  "electronic_mechanical_engineering.txt": {
+    "electronic_mechanical_engineering": {
+      "installed": 1936,
+      "aof": 1924
+    },
+    "radio": {
+      "installed": null,
+      "aof": 1926
+    },
+    "mechanical_computing": {
+      "installed": null,
+      "aof": 1928
+    },
+    "computing_machine": {
+      "installed": 1938,
+      "aof": 1932
+    },
+    "radio_detection": {
+      "installed": null,
+      "aof": 1935
+    },
+    "basic_encryption": {
+      "installed": 1938,
+      "aof": 1932
+    },
+    "basic_decryption": {
+      "installed": 1938,
+      "aof": 1932
+    },
+    "improved_encryption": {
+      "installed": 1940,
+      "aof": 1935
+    },
+    "improved_decryption": {
+      "installed": 1940,
+      "aof": 1935
+    },
+    "improved_computing_machine": {
+      "installed": 1940,
+      "aof": 1935
+    }
+  },
+  "infantry.txt": {
+    "infantry_weapons1": {
+      "installed": 1936,
+      "aof": 1924
+    },
+    "improved_infantry_weapons": {
+      "installed": 1939,
+      "aof": 1929
+    },
+    "infantry_weapons2": {
+      "installed": 1938,
+      "aof": 1927
+    },
+    "improved_infantry_weapons_2": {
+      "installed": 1940,
+      "aof": 1932
+    },
+    "infantry_at": {
+      "installed": 1942,
+      "aof": 1935
+    },
+    "motorised_infantry": {
+      "installed": 1936,
+      "aof": 1926
+    },
+    "mechanised_infantry": {
+      "installed": 1940,
+      "aof": 1935
+    },
+    "tech_trucks": {
+      "installed": 1936,
+      "aof": 1924
+    }
+  },
+  "artillery.txt": {
+    "interwar_artillery": {
+      "installed": 1936,
+      "aof": 1924
+    },
+    "artillery1": {
+      "installed": 1939,
+      "aof": 1927
+    },
+    "artillery2": {
+      "installed": 1940,
+      "aof": 1931
+    },
+    "artillery3": {
+      "installed": 1941,
+      "aof": 1935
+    },
+    "interwar_antiair": {
+      "installed": 1936,
+      "aof": 1927
+    },
+    "antiair1": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "interwar_antitank": {
+      "installed": 1936,
+      "aof": 1927
+    },
+    "antitank1": {
+      "installed": 1939,
+      "aof": 1931
+    }
+  },
+  "NSB_armor.txt": {
+    "basic_light_tank_chassis": {
+      "installed": 1934,
+      "aof": 1924
+    },
+    "improved_light_tank_chassis": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "advanced_light_tank_chassis": {
+      "installed": 1941,
+      "aof": 1934
+    },
+    "basic_medium_tank_chassis": {
+      "installed": 1938,
+      "aof": 1934
+    },
+    "armor_tech_1": {
+      "installed": 1936,
+      "aof": 1927
+    },
+    "armor_tech_2": {
+      "installed": 1938,
+      "aof": 1931
+    },
+    "engine_tech_1": {
+      "installed": 1934,
+      "aof": 1927
+    },
+    "engine_tech_2": {
+      "installed": 1938,
+      "aof": 1931
+    }
+  },
+  "bba_air_techs.txt": {
+    "basic_small_airframe": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "improved_small_airframe": {
+      "installed": 1940,
+      "aof": 1934
+    },
+    "basic_medium_airframe": {
+      "installed": 1936,
+      "aof": 1929
+    },
+    "improved_medium_airframe": {
+      "installed": 1940,
+      "aof": 1935
+    },
+    "basic_large_airframe": {
+      "installed": 1936,
+      "aof": 1932
+    },
+    "engines_2": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "engines_3": {
+      "installed": 1940,
+      "aof": 1934
+    },
+    "iw_small_airframe": {
+      "installed": 1926,
+      "aof": 1924
+    },
+    "iw_medium_airframe": {
+      "installed": 1926,
+      "aof": 1924
+    },
+    "iw_large_airframe": {
+      "installed": 1926,
+      "aof": 1924
+    }
+  },
+  "armor.txt": {
+    "basic_light_tank": {
+      "installed": 1934,
+      "aof": 1924
+    },
+    "improved_light_tank": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "advanced_light_tank": {
+      "installed": 1941,
+      "aof": 1934
+    },
+    "basic_medium_tank": {
+      "installed": 1939,
+      "aof": 1934
+    }
+  },
+  "air_techs.txt": {
+    "fighter1": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "cv_fighter1": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "fighter2": {
+      "installed": 1940,
+      "aof": 1934
+    },
+    "cv_fighter2": {
+      "installed": 1940,
+      "aof": 1934
+    },
+    "tactical_bomber1": {
+      "installed": 1936,
+      "aof": 1929
+    },
+    "tactical_bomber2": {
+      "installed": 1940,
+      "aof": 1935
+    },
+    "naval_bomber1": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "naval_bomber2": {
+      "installed": 1940,
+      "aof": 1934
+    },
+    "heavy_fighter1": {
+      "installed": 1936,
+      "aof": 1929
+    },
+    "heavy_fighter2": {
+      "installed": 1940,
+      "aof": 1935
+    },
+    "early_fighter": {
+      "installed": 1933,
+      "aof": 1924
+    },
+    "cv_early_fighter": {
+      "installed": 1933,
+      "aof": 1924
+    },
+    "early_bomber": {
+      "installed": 1933,
+      "aof": 1924
+    }
+  },
+  "support.txt": {
+    "tech_engineers": {
+      "installed": 1936,
+      "aof": 1924
+    },
+    "tech_recon": {
+      "installed": 1936,
+      "aof": 1924
+    },
+    "tech_logistics_company": {
+      "installed": 1936,
+      "aof": 1926
+    },
+    "tech_engineers2": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "tech_recon2": {
+      "installed": 1939,
+      "aof": 1931
+    },
+    "tech_logistics_company2": {
+      "installed": 1939,
+      "aof": 1931
+    }
+  },
+  "MTG_naval.txt": {
+    "basic_ship_hull_light": {
+      "installed": 1936,
+      "aof": 1927
+    },
+    "improved_ship_hull_light": {
+      "installed": 1939,
+      "aof": 1934
+    },
+    "basic_ship_hull_cruiser": {
+      "installed": 1936,
+      "aof": 1928
+    },
+    "improved_ship_hull_cruiser": {
+      "installed": 1939,
+      "aof": 1935
+    },
+    "basic_ship_hull_heavy": {
+      "installed": 1936,
+      "aof": 1929
+    },
+    "improved_ship_hull_heavy": {
+      "installed": 1939,
+      "aof": 1936
+    },
+    "basic_ship_hull_submarine": {
+      "installed": 1936,
+      "aof": 1927
+    },
+    "improved_ship_hull_submarine": {
+      "installed": 1939,
+      "aof": 1934
+    },
+    "basic_ship_hull_carrier": {
+      "installed": 1936,
+      "aof": 1930
+    },
+    "basic_depth_charges": {
+      "installed": 1922,
+      "aof": 1924
+    },
+    "improved_depth_charges": {
+      "installed": 1936,
+      "aof": 1930
+    },
+    "sonar": {
+      "installed": 1922,
+      "aof": 1928
+    },
+    "improved_sonar": {
+      "installed": 1936,
+      "aof": 1934
+    }
+  }
+}

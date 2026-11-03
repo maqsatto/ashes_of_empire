@@ -1,0 +1,10 @@
+# Generated game data and local tooling
+.cache/
+logs/
+save games/
+crashes/
+*.dmp
+__pycache__/
+tools/console_automation/hoi4_queue.txt
+tools/console_automation/hoi4_queue_ack.log
+docs/verification/**/*.log

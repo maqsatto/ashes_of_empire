@@ -1,0 +1,27 @@
+# PROVISIONAL 1924 PLAYTEST SETUP; institutions replace unapproved named leaders.
+capital = 282
+oob = "aof_v03_JAP_1924"
+set_research_slots = 4
+set_stability = 0.55
+set_war_support = 0.25
+set_popularities = { democratic = 6 aof_social_democracy = 6 communism = 6 aof_conservatism = 70 neutrality = 6 fascism = 6 }
+set_politics = { ruling_party = aof_conservatism elections_allowed = yes last_election = "1924.9.1" election_frequency = 48 }
+set_technology = { infantry_weapons = 1 tech_support = 1 tech_engineers = 1 tech_recon = 1 gw_artillery = 1 infantry_weapons1 = 1 basic_machine_tools = 1 }
+create_country_leader = { name = "aof_world_JAP_democratic_cabinet" desc = "" expire = "1960.1.1" ideology = aof_constitutional_federalism traits = { } }
+create_country_leader = { name = "aof_world_JAP_aof_social_democracy_cabinet" desc = "" expire = "1960.1.1" ideology = aof_parliamentary_socialism traits = { } }
+create_country_leader = { name = "aof_world_JAP_communism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_soviet_centralism traits = { } }
+create_country_leader = { name = "aof_world_JAP_aof_conservatism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_parliamentary_conservatism traits = { } }
+create_country_leader = { name = "aof_world_JAP_neutrality_cabinet" desc = "" expire = "1960.1.1" ideology = aof_bureaucratic_technocracy traits = { } }
+create_country_leader = { name = "aof_world_JAP_fascism_cabinet" desc = "" expire = "1960.1.1" ideology = aof_national_revolution traits = { } }
+set_grand_doctrine = grand_battleplan
+starting_train_buffer = 5
+set_fuel_ratio = 0.7
+if = { limit = { has_dlc = "Man the Guns" } set_technology = { early_ship_hull_light = 1 early_ship_hull_heavy = 1 basic_battery = 1 basic_torpedo = 1 basic_fire_control_system = 1 mtg_transport = 1 } }
+if = { limit = { has_dlc = "Man the Guns" }
+create_equipment_variant = { name = "AOF Escort 1924" type = ship_hull_light_1 modules = { fixed_ship_battery_slot = ship_light_battery_1 fixed_ship_anti_air_slot = ship_anti_air_1 fixed_ship_fire_control_system_slot = ship_fire_control_system_0 fixed_ship_engine_slot = light_ship_engine_1 fixed_ship_torpedo_slot = ship_torpedo_1 } }
+create_equipment_variant = { name = "AOF Capital 1924" type = ship_hull_heavy_1 modules = { fixed_ship_battery_slot = ship_heavy_battery_1 fixed_ship_anti_air_slot = ship_anti_air_1 fixed_ship_fire_control_system_slot = ship_fire_control_system_0 fixed_ship_engine_slot = heavy_ship_engine_1 fixed_ship_armor_slot = ship_armor_bb_1 } }
+}
+if = { limit = { has_dlc = "Man the Guns" } set_naval_oob = "aof_v03_JAP_naval_mtg" }
+if = { limit = { NOT = { has_dlc = "Man the Guns" } } set_technology = { early_destroyer = 1 early_battleship = 1 transport = 1 } set_naval_oob = "aof_v03_JAP_naval_legacy" }
+if = { limit = { has_dlc = "By Blood Alone" } set_technology = { iw_small_airframe = 1 engines_1 = 1 aa_lmg = 1 aircraft_construction = 1 } create_equipment_variant = { name = "AOF Scout Fighter 1924" type = small_plane_airframe_0 modules = { fixed_main_weapon_slot = light_mg_2x engine_type_slot = engine_1_1x special_type_slot_1 = empty } } set_air_oob = "aof_v03_JAP_air_bba" }
+if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { early_fighter = 1 } set_air_oob = "aof_v03_JAP_air_legacy" }

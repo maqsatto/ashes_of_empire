@@ -1,0 +1,52 @@
+add_namespace = aof_nations
+country_event = { id = aof_nations.1 title = aof_nations.1.t desc = aof_nations.1.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.1.a ai_chance = { factor = 1 } add_political_power = 70 add_stability = -0.02 }
+ option = { name = aof_nations.1.b ai_chance = { factor = 1 } add_stability = 0.08 add_political_power = -30 }
+}
+country_event = { id = aof_nations.2 title = aof_nations.2.t desc = aof_nations.2.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.2.a ai_chance = { factor = 1 } add_political_power = 80 add_stability = 0.03 }
+ option = { name = aof_nations.2.b ai_chance = { factor = 1 } add_political_power = -30 add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+ option = { name = aof_nations.2.c ai_chance = { factor = 1 } add_stability = -0.07 custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+}
+country_event = { id = aof_nations.10 title = aof_nations.10.t desc = aof_nations.10.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.10.a ai_chance = { factor = 1 } add_stability = 0.08 add_political_power = -30 }
+ option = { name = aof_nations.10.b ai_chance = { factor = 1 } army_experience = 25 add_war_support = 0.05 }
+ option = { name = aof_nations.10.c ai_chance = { factor = 1 } add_political_power = 60 add_stability = -0.04 }
+}
+country_event = { id = aof_nations.20 title = aof_nations.20.t desc = aof_nations.20.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.20.a ai_chance = { factor = 1 } add_stability = 0.05 add_war_support = -0.05 }
+ option = { name = aof_nations.20.b ai_chance = { factor = 1 } if = { limit = { country_exists = SIB NOT = { has_war_with = SIB } } create_wargoal = { type = annex_everything target = SIB } } add_stability = -0.08 }
+}
+country_event = { id = aof_nations.30 title = aof_nations.30.t desc = aof_nations.30.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.30.a ai_chance = { factor = 1 } add_political_power = -30 add_stability = 0.06 }
+ option = { name = aof_nations.30.b ai_chance = { factor = 1 } army_experience = 30 add_war_support = 0.05 add_stability = -0.04 }
+ option = { name = aof_nations.30.c ai_chance = { factor = 1 } remove_ideas = aof_v03_naf_neutral add_war_support = 0.15 add_stability = -0.08 }
+}
+country_event = { id = aof_nations.40 title = aof_nations.40.t desc = aof_nations.40.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.40.a ai_chance = { factor = 1 } add_political_power = -50 add_stability = 0.08 }
+ option = { name = aof_nations.40.b ai_chance = { factor = 1 } add_political_power = 60 add_stability = -0.03 }
+ option = { name = aof_nations.40.c ai_chance = { factor = 1 } add_political_power = -80 add_stability = 0.1 set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } }
+}
+country_event = { id = aof_nations.50 title = aof_nations.50.t desc = aof_nations.50.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.50.a ai_chance = { factor = 1 } army_experience = 20 add_political_power = -30 }
+ option = { name = aof_nations.50.b ai_chance = { factor = 1 } army_experience = 10 add_stability = 0.05 add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+ option = { name = aof_nations.50.c ai_chance = { factor = 1 } army_experience = 40 add_stability = -0.06 }
+}
+country_event = { id = aof_nations.3 title = aof_nations.3.t desc = aof_nations.3.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.3.a ai_chance = { factor = 1 } add_political_power = 70 add_stability = -0.02 }
+ option = { name = aof_nations.3.b ai_chance = { factor = 1 } add_political_power = -60 add_stability = 0.07 add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+ option = { name = aof_nations.3.c ai_chance = { factor = 1 } clr_country_flag = aof_usa_partnership_accepted set_country_flag = aof_usa_partnership_ended add_stability = -0.06 custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+}
+country_event = { id = aof_nations.60 title = aof_nations.60.t desc = aof_nations.60.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.60.a ai_chance = { factor = 1 } set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } remove_ideas = aof_v03_bra_officers_settlement add_stability = 0.1 }
+ option = { name = aof_nations.60.b ai_chance = { factor = 1 } set_popularities = { democratic = 6 neutrality = 70 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_war_support = 0.1 add_stability = -0.05 }
+}
+country_event = { id = aof_nations.70 title = aof_nations.70.t desc = aof_nations.70.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.70.a ai_chance = { factor = 1 } if = { limit = { country_exists = FER NOT = { has_war_with = FER } } FER = { country_event = { id = aof_diplomacy.120 days = 2 } } } add_political_power = -30 }
+ option = { name = aof_nations.70.b ai_chance = { factor = 1 } custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } add_political_power = -25 }
+ option = { name = aof_nations.70.c ai_chance = { factor = 1 } if = { limit = { country_exists = FER NOT = { has_war_with = FER } } FER = { country_event = { id = aof_diplomacy.120 days = 2 } } } add_war_support = 0.08 add_stability = -0.03 }
+}
+country_event = { id = aof_nations.80 title = aof_nations.80.t desc = aof_nations.80.d picture = GFX_aof_event_kazakhstan_development is_triggered_only = yes
+ option = { name = aof_nations.80.a ai_chance = { factor = 1 } if = { limit = { country_exists = SHX NOT = { has_war_with = SHX } } SHX = { country_event = { id = aof_diplomacy.120 days = 2 } } }if = { limit = { country_exists = YUN NOT = { has_war_with = YUN } } YUN = { country_event = { id = aof_diplomacy.120 days = 2 } } }if = { limit = { country_exists = GXC NOT = { has_war_with = GXC } } GXC = { country_event = { id = aof_diplomacy.120 days = 2 } } }if = { limit = { country_exists = XSM NOT = { has_war_with = XSM } } XSM = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+ option = { name = aof_nations.80.b ai_chance = { factor = 1 } random_other_country = { limit = { OR = { tag = SHX tag = YUN tag = GXC tag = XSM } is_neighbor_of = ROOT is_subject = no NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } } add_stability = -0.08 }
+}

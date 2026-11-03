@@ -1,0 +1,33 @@
+# PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
+state = {
+	id = 876 
+	name = "STATE_876" #Udachny
+
+	history = {
+		controller = SIB
+		owner = SIB
+
+		#victory_points = {
+		#	6085 1  #Udachny was founded in 1955
+		#}
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_core_of = SOV
+		add_core_of = YAK
+
+	
+		add_core_of = SIB
+}
+
+	provinces = {
+		1722 2853 3184 6085 13060 
+	}
+	manpower = 12182
+	buildings_max_level_factor = 1
+	state_category = "wasteland"
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,21 @@
+# PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
+state={
+	id=445
+	name="STATE_445"
+	provinces={
+		4990 7847 7903 10813 
+	}
+	manpower=405100
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	history = {
+		controller = PAK
+		owner = PAK
+		add_core_of = PAK
+		add_core_of = KHL
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

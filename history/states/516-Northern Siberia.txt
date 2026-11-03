@@ -1,0 +1,30 @@
+# PROVISIONAL 1924 PLAYTEST FIXTURE; geometry and native resources preserved.
+
+state = {
+	id = 516
+	name = "STATE_516" # Taymyria / Dudinka
+	manpower = 6004
+	
+	state_category = pastoral
+
+	history = {
+		controller = SIB
+		victory_points = {
+			4859 1
+		}
+		owner = SIB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SOV
+		add_core_of = TAY
+	
+		add_core_of = SIB
+}
+
+	provinces = {
+		  2923 2972 3336 4692 4733  4859  10607 10635  11261 11328 12643  13064  
+	}
+
+	local_supplies = 0.0 
+}

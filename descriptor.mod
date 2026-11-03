@@ -1,0 +1,10 @@
+version="0.3.0-playtest"
+tags={ "Alternative History" }
+name="Ashes of Empires"
+supported_version="1.19.3.0"
+replace_path="common/bookmarks"
+replace_path="common/national_focus"
+replace_path="common/ai_strategy_plans"
+replace_path="common/on_actions"
+replace_path="common/decisions"
+replace_path="events"

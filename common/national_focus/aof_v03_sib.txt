@@ -1,0 +1,218 @@
+focus_tree = {
+ id = aof_v03_sib_tree
+ country = { factor = 0 modifier = { add = 10000 OR = { tag = SIB } } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = aof_v03_sib_entry1 }
+ focus = {
+  id = aof_v03_sib_entry1
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+ focus = {
+  id = aof_v03_sib_entry2
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_entry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_entry3
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { remove_ideas = aof_v03_sib_initial add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_sib_civil1
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_entry3 }
+ mutually_exclusive = { focus = aof_v03_sib_russia1 focus = aof_v03_sib_directory1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_sib_civil2
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_civil1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_sib_civil3
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_civil2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = KAZ NOT = { has_war_with = KAZ } } KAZ = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_civil4
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_civil3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_sib_civil_settlement if = { limit = { country_exists = FER NOT = { has_war_with = FER } } FER = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_russia1
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_entry3 }
+ mutually_exclusive = { focus = aof_v03_sib_civil1 focus = aof_v03_sib_directory1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_sib_russia2
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_russia1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_sib_russia3
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_russia2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_russia4
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_russia3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_sib_russia_settlement if = { limit = { country_exists = SOV NOT = { has_war_with = SOV } } SOV = { country_event = { id = aof_diplomacy.120 days = 2 } } } if = { limit = { country_exists = FER NOT = { has_war_with = FER } } FER = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_directory1
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_entry3 }
+ mutually_exclusive = { focus = aof_v03_sib_civil1 focus = aof_v03_sib_russia1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 6 neutrality = 70 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_sib_directory2
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_directory1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_directory3
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_directory2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } army_experience = 25 }
+  
+ }
+ focus = {
+  id = aof_v03_sib_directory4
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_directory3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_sib_directory_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_sib_workshops1
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_entry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_workshops2
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_workshops1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_workshops3
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_workshops2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_sib_port_conditions
+  icon = GFX_goal_generic_political_pressure
+  x = -5
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_sib_workshops3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { country_event = { id = aof_nations.70 days = 1 } }
+  
+ }
+}

@@ -1,0 +1,86 @@
+add_namespace = aof_v03_regions
+country_event = { id = aof_v03_regions.1 title = aof_v03_regions.1.t desc = aof_v03_regions.1.d is_triggered_only = yes
+option = { name = aof_v03_regions.1.a if = { limit = { USA = { exists = yes } NOT = { has_war_with = USA } } USA = { country_event = { id = aof_v03_regions.2 } } } }
+option = { name = aof_v03_regions.1.b if = { limit = { JAP = { exists = yes } NOT = { has_war_with = JAP } } JAP = { country_event = { id = aof_v03_regions.2 } } } }
+option = { name = aof_v03_regions.1.c set_country_flag = aof_v03_investment_signed add_political_power = -50 }
+}
+country_event = { id = aof_v03_regions.2 title = aof_v03_regions.2.t desc = aof_v03_regions.2.d is_triggered_only = yes
+option = { name = aof_v03_regions.2.a FROM = { set_country_flag = aof_v03_investment_signed add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } add_political_power = 25 }
+option = { name = aof_v03_regions.2.b FROM = { country_event = { id = aof_v03_regions.3 } } }
+}
+country_event = { id = aof_v03_regions.3 title = aof_v03_regions.3.t desc = aof_v03_regions.3.d is_triggered_only = yes
+option = { name = aof_v03_regions.3.a set_country_flag = aof_v03_investment_signed add_political_power = -50 }
+}
+country_event = { id = aof_v03_regions.10 title = aof_v03_regions.10.t desc = aof_v03_regions.10.d is_triggered_only = yes
+option = { name = aof_v03_regions.10.a random_neighbor_country = { limit = { NOT = { has_war_with = ROOT } } country_event = { id = aof_v03_regions.13 } } }
+option = { name = aof_v03_regions.10.b add_political_power = 20 }
+}
+country_event = { id = aof_v03_regions.11 title = aof_v03_regions.11.t desc = aof_v03_regions.11.d is_triggered_only = yes
+option = { name = aof_v03_regions.11.a every_neighbor_country = { limit = { NOT = { has_war_with = ROOT } } country_event = { id = aof_v03_regions.13 } } }
+}
+country_event = { id = aof_v03_regions.12 title = aof_v03_regions.12.t desc = aof_v03_regions.12.d is_triggered_only = yes
+option = { name = aof_v03_regions.12.a random_neighbor_country = { limit = { is_subject = no NOT = { has_war_with = ROOT } } country_event = { id = aof_diplomacy.120 } } }
+option = { name = aof_v03_regions.12.b army_experience = 20 }
+}
+country_event = { id = aof_v03_regions.13 title = aof_v03_regions.13.t desc = aof_v03_regions.13.d is_triggered_only = yes
+option = { name = aof_v03_regions.13.a add_stability = 0.02 add_opinion_modifier = { target = FROM modifier = aof_v03_cooperation } FROM = { add_opinion_modifier = { target = ROOT modifier = aof_v03_cooperation } } if = { limit = { FROM = { tag = GUA } } set_country_flag = aof_v03_cooperation_GUA } if = { limit = { tag = GUA } FROM = { set_country_flag = aof_v03_cooperation_GUA } } if = { limit = { FROM = { tag = HON } } set_country_flag = aof_v03_cooperation_HON } if = { limit = { tag = HON } FROM = { set_country_flag = aof_v03_cooperation_HON } } if = { limit = { FROM = { tag = ELS } } set_country_flag = aof_v03_cooperation_ELS } if = { limit = { tag = ELS } FROM = { set_country_flag = aof_v03_cooperation_ELS } } if = { limit = { FROM = { tag = NIC } } set_country_flag = aof_v03_cooperation_NIC } if = { limit = { tag = NIC } FROM = { set_country_flag = aof_v03_cooperation_NIC } } if = { limit = { FROM = { tag = COS } } set_country_flag = aof_v03_cooperation_COS } if = { limit = { tag = COS } FROM = { set_country_flag = aof_v03_cooperation_COS } } }
+option = { name = aof_v03_regions.13.b add_political_power = 15 }
+}
+country_event = { id = aof_v03_regions.20 title = aof_v03_regions.20.t desc = aof_v03_regions.20.d is_triggered_only = yes
+option = { name = aof_v03_regions.20.a overlord = { country_event = { id = aof_v03_regions.21 } } }
+}
+country_event = { id = aof_v03_regions.21 title = aof_v03_regions.21.t desc = aof_v03_regions.21.d is_triggered_only = yes
+option = { name = aof_v03_regions.21.a FROM = { add_stability = 0.05 add_political_power = 75 set_country_flag = aof_v03_local_powers } }
+option = { name = aof_v03_regions.21.b FROM = { add_stability = -0.03 add_political_power = 25 } }
+}
+country_event = { id = aof_v03_regions.30 title = aof_v03_regions.30.t desc = aof_v03_regions.30.d is_triggered_only = yes
+option = { name = aof_v03_regions.30.a add_stability = 0.06 add_political_power = -25 }
+option = { name = aof_v03_regions.30.b army_experience = 25 add_war_support = 0.04 }
+}
+country_event = { id = aof_v03_regions.31 title = aof_v03_regions.31.t desc = aof_v03_regions.31.d is_triggered_only = yes
+option = { name = aof_v03_regions.31.a add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+option = { name = aof_v03_regions.31.b country_event = { id = aof_v03_regions.1 } }
+}
+country_event = { id = aof_v03_regions.32 title = aof_v03_regions.32.t desc = aof_v03_regions.32.d is_triggered_only = yes
+option = { name = aof_v03_regions.32.a add_stability = 0.05 add_political_power = -25 }
+option = { name = aof_v03_regions.32.b add_political_power = 75 add_stability = -0.03 }
+}
+country_event = { id = aof_v03_regions.33 title = aof_v03_regions.33.t desc = aof_v03_regions.33.d is_triggered_only = yes
+option = { name = aof_v03_regions.33.a add_stability = 0.07 }
+option = { name = aof_v03_regions.33.b country_event = { id = aof_partition.1 days = 1 } }
+}
+country_event = { id = aof_v03_regions.34 title = aof_v03_regions.34.t desc = aof_v03_regions.34.d is_triggered_only = yes
+option = { name = aof_v03_regions.34.a add_stability = 0.06 add_war_support = -0.03 }
+option = { name = aof_v03_regions.34.b army_experience = 30 add_war_support = 0.06 add_stability = -0.03 }
+}
+country_event = { id = aof_v03_regions.35 title = aof_v03_regions.35.t desc = aof_v03_regions.35.d is_triggered_only = yes
+option = { name = aof_v03_regions.35.a if = { limit = { is_subject = yes } country_event = { id = aof_v03_regions.20 } } else = { add_political_power = 50 } }
+}
+country_event = { id = aof_v03_regions.36 title = aof_v03_regions.36.t desc = aof_v03_regions.36.d is_triggered_only = yes
+option = { name = aof_v03_regions.36.a navy_experience = 25 }
+option = { name = aof_v03_regions.36.b add_ideas = aof_v03_export_orders }
+}
+country_event = { id = aof_v03_regions.37 title = aof_v03_regions.37.t desc = aof_v03_regions.37.d is_triggered_only = yes
+option = { name = aof_v03_regions.37.a trigger = { is_subject = no has_war = no NOT = { any_owned_state = { NOT = { is_controlled_by = PREV } } } OR = { tag = GUA tag = HON tag = ELS tag = NIC tag = COS } } if = { limit = { NOT = { tag = GUA } GUA = { exists = yes is_subject = no has_war = no NOT = { any_owned_state = { NOT = { is_controlled_by = PREV } } } } } GUA = { country_event = { id = aof_v03_regions.40 days = 1 } } } if = { limit = { NOT = { tag = HON } HON = { exists = yes is_subject = no has_war = no NOT = { any_owned_state = { NOT = { is_controlled_by = PREV } } } } } HON = { country_event = { id = aof_v03_regions.40 days = 1 } } } if = { limit = { NOT = { tag = ELS } ELS = { exists = yes is_subject = no has_war = no NOT = { any_owned_state = { NOT = { is_controlled_by = PREV } } } } } ELS = { country_event = { id = aof_v03_regions.40 days = 1 } } } if = { limit = { NOT = { tag = NIC } NIC = { exists = yes is_subject = no has_war = no NOT = { any_owned_state = { NOT = { is_controlled_by = PREV } } } } } NIC = { country_event = { id = aof_v03_regions.40 days = 1 } } } if = { limit = { NOT = { tag = COS } COS = { exists = yes is_subject = no has_war = no NOT = { any_owned_state = { NOT = { is_controlled_by = PREV } } } } } COS = { country_event = { id = aof_v03_regions.40 days = 1 } } } }
+option = { name = aof_v03_regions.37.b add_stability = 0.04 country_event = { id = aof_v03_regions.12 } }
+}
+country_event = { id = aof_v03_regions.40 title = aof_v03_regions.40.t desc = aof_v03_regions.40.d is_triggered_only = yes
+option = { name = aof_v03_regions.40.a trigger = { is_subject = no has_war = no NOT = { any_owned_state = { NOT = { is_controlled_by = PREV } } } OR = { AND = { FROM = { tag = GUA } has_country_flag = aof_v03_cooperation_GUA } AND = { FROM = { tag = HON } has_country_flag = aof_v03_cooperation_HON } AND = { FROM = { tag = ELS } has_country_flag = aof_v03_cooperation_ELS } AND = { FROM = { tag = NIC } has_country_flag = aof_v03_cooperation_NIC } AND = { FROM = { tag = COS } has_country_flag = aof_v03_cooperation_COS } } FROM = { exists = yes is_subject = no has_war = no NOT = { any_owned_state = { NOT = { is_controlled_by = PREV } } } OR = { tag = GUA tag = HON tag = ELS tag = NIC tag = COS } } } ai_chance = { factor = 1 } every_owned_state = { limit = { is_core_of = ROOT } add_core_of = FROM } FROM = { set_cosmetic_tag = aof_central_american_federation annex_country = { target = ROOT transfer_troops = yes } } }
+option = { name = aof_v03_regions.40.b ai_chance = { factor = 99 } add_stability = 0.03 }
+}
+country_event = { id = aof_v03_regions.38 title = aof_v03_regions.38.t desc = aof_v03_regions.38.d is_triggered_only = yes
+option = { name = aof_v03_regions.38.a add_political_power = 35 }
+option = { name = aof_v03_regions.38.b army_experience = 25 add_stability = -0.03 }
+}
+country_event = { id = aof_v03_regions.39 title = aof_v03_regions.39.t desc = aof_v03_regions.39.d is_triggered_only = yes
+option = { name = aof_v03_regions.39.a add_ideas = aof_v03_export_orders add_political_power = 50 }
+option = { name = aof_v03_regions.39.b add_tech_bonus = { name = aof_v03_research_bonus bonus = 0.5 uses = 1 category = industry } }
+}
+country_event = { id = aof_v03_regions.41 title = aof_v03_regions.41.t desc = aof_v03_regions.41.d is_triggered_only = yes
+option = { name = aof_v03_regions.41.a set_politics = { ruling_party = democratic elections_allowed = yes } add_popularity = { ideology = democratic popularity = 0.15 } add_stability = 0.05 }
+option = { name = aof_v03_regions.41.b set_politics = { ruling_party = aof_conservatism elections_allowed = yes } add_popularity = { ideology = aof_conservatism popularity = 0.15 } add_stability = 0.05 }
+}
+country_event = { id = aof_v03_regions.42 title = aof_v03_regions.42.t desc = aof_v03_regions.42.d is_triggered_only = yes
+option = { name = aof_v03_regions.42.a set_politics = { ruling_party = aof_conservatism elections_allowed = yes } add_popularity = { ideology = aof_conservatism popularity = 0.15 } add_stability = 0.05 }
+option = { name = aof_v03_regions.42.b set_politics = { ruling_party = democratic elections_allowed = yes } add_popularity = { ideology = democratic popularity = 0.15 } add_stability = 0.03 add_political_power = 20 }
+}

@@ -1,0 +1,26 @@
+units = { fleet = { name = "1924 Training Fleet" naval_base = 1562 task_force = { name = "Home Squadron" location = 1562 ship = { name = "USA destroyer 1" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 2" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 3" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 4" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 5" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 6" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 7" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 8" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 9" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 10" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 11" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 12" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 13" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 14" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 15" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 16" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 17" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 18" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 19" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA destroyer 20" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "AOF Escort 1924" } } }
+ship = { name = "USA battleship 1" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "AOF Capital 1924" } } }
+ship = { name = "USA battleship 2" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "AOF Capital 1924" } } }
+ship = { name = "USA battleship 3" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "AOF Capital 1924" } } }
+ship = { name = "USA battleship 4" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "AOF Capital 1924" } } }
+ship = { name = "USA battleship 5" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "AOF Capital 1924" } } }
+ship = { name = "USA battleship 6" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "AOF Capital 1924" } } } } } }

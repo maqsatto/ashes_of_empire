@@ -1,0 +1,236 @@
+# Generic MVP slice; assigned to Kazakhstan and two contrasting test tags.
+shared_focus = {
+    id = aof_public_administration
+    icon = GFX_goal_generic_political_pressure
+    x = 4
+    y = 0
+    cost = 5
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    ai_will_do = { factor = 1 }
+    completion_reward = { add_political_power = 35 }
+}
+
+focus_tree = {
+    id = aof_generic_pilot
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            OR = { tag = BHU tag = CUB tag = KAZ }
+        }
+    }
+    default = no
+    reset_on_civilwar = no
+    initial_show_position = { focus = aof_public_administration }
+    shared_focus = aof_public_administration
+
+    focus = {
+        id = aof_civic_cooperation
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = aof_public_administration }
+        x = 2
+        y = 1
+        cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        ai_will_do = { factor = 1 }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = aof_industrial_study
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = aof_public_administration }
+        x = 4
+        y = 1
+        cost = 5
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_tech_bonus = {
+                name = aof_industrial_study_bonus
+                bonus = 0.25
+                uses = 1
+                category = industry
+            }
+        }
+    }
+    focus = {
+        id = aof_army_training
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 7
+        y = 0
+        cost = 5
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        ai_will_do = { factor = 1 }
+        completion_reward = { army_experience = 10 }
+    }
+    focus = {
+        id = aof_coastal_planning
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 10
+        y = 0
+        cost = 5
+        allow_branch = { any_owned_state = { is_coastal = yes } }
+        available = { any_controlled_state = { is_coastal = yes } }
+        ai_will_do = { factor = 1 }
+        search_filters = { FOCUS_FILTER_NAVY_XP }
+        completion_reward = { navy_experience = 10 }
+    }
+    focus = {
+        id = aof_independent_diplomacy
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = aof_public_administration }
+        x = 6
+        y = 1
+        cost = 5
+        allow_branch = { is_subject = no }
+        available = { is_subject = no }
+        ai_will_do = { factor = 1 }
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = { add_political_power = 25 }
+    }
+    # MVP extension
+    focus = {
+        id = aof_local_workshops
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = aof_industrial_study }
+        x = 2
+        y = 2
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+    }
+    focus = {
+        id = aof_transport_links
+        icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = aof_industrial_study }
+        x = 4
+        y = 2
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+    }
+    focus = {
+        id = aof_technical_school
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = aof_industrial_study }
+        x = 6
+        y = 2
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { add_tech_bonus = { name = aof_technical_school bonus = 0.5 uses = 2 category = industry } }
+    }
+    focus = {
+        id = aof_public_services
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = aof_civic_cooperation }
+        x = 0
+        y = 2
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { add_stability = 0.05 add_political_power = 25 }
+    }
+    focus = {
+        id = aof_small_arms
+        icon = GFX_goal_generic_small_arms
+        prerequisite = { focus = aof_army_training }
+        x = 9
+        y = 1
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { add_tech_bonus = { name = aof_small_arms bonus = 0.5 uses = 1 category = infantry_weapons } }
+    }
+    focus = {
+        id = aof_officer_courses
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = { focus = aof_army_training }
+        x = 11
+        y = 1
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { army_experience = 15 }
+    }
+    focus = {
+        id = aof_defence_workshops
+        icon = GFX_goal_generic_construct_mil_factory
+        prerequisite = { focus = aof_small_arms }
+        x = 9
+        y = 2
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
+    }
+    focus = {
+        id = aof_civil_research
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = aof_technical_school }
+        x = 6
+        y = 3
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { add_ideas = aof_technical_network }
+    }
+    focus = {
+        id = aof_production_standards
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = aof_local_workshops }
+        x = 2
+        y = 3
+        cost = 5
+        
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { add_ideas = aof_production_standards_spirit }
+    }
+    focus = {
+        id = aof_kaz_resource_survey
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = aof_transport_links }
+        x = 4
+        y = 3
+        cost = 5
+        allow_branch = { tag = KAZ } available = { tag = KAZ }
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { country_event = { id = aof_kaz.2 hours = 1 } }
+    }
+    focus = {
+        id = aof_kaz_development_programme
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = aof_kaz_resource_survey }
+        x = 4
+        y = 4
+        cost = 5
+        allow_branch = { tag = KAZ } available = { tag = KAZ }
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { country_event = { id = aof_kaz.3 hours = 1 } }
+    }
+    focus = {
+        id = aof_kaz_consolidate
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = aof_kaz_development_programme }
+        x = 4
+        y = 5
+        cost = 5
+        allow_branch = { tag = KAZ } available = { tag = KAZ }
+        ai_will_do = { factor = 1 }
+        
+        completion_reward = { add_stability = 0.05 add_political_power = 75 country_event = { id = aof_kaz.4 hours = 1 } }
+    }
+}

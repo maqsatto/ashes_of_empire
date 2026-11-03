@@ -1,0 +1,176 @@
+focus_tree = {
+ id = aof_v03_arg_tree
+ country = { factor = 0 modifier = { add = 10000 OR = { tag = ARG } } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = aof_v03_arg_entry1 }
+ focus = {
+  id = aof_v03_arg_entry1
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+ focus = {
+  id = aof_v03_arg_entry2
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_entry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_arg_entry3
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_entry2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { remove_ideas = aof_v03_arg_initial add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_arg_industry1
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_entry3 }
+ mutually_exclusive = { focus = aof_v03_arg_league1 focus = aof_v03_arg_atlantic1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = -0.03 custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_arg_industry2
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_industry1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 custom_effect_tooltip = aof_capital_military_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } add_tech_bonus = { name = aof_v03_practical_school bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_arg_industry3
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_industry2 }
+ available = { any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 20 add_equipment_to_stockpile = { type = convoy amount = 20 producer = ARG } random_owned_controlled_state = { limit = { is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } } }
+  
+ }
+ focus = {
+  id = aof_v03_arg_industry4
+  icon = GFX_goal_generic_political_pressure
+  x = 3
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_industry3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_arg_industry_settlement }
+  
+ }
+ focus = {
+  id = aof_v03_arg_league1
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_entry3 }
+ mutually_exclusive = { focus = aof_v03_arg_industry1 focus = aof_v03_arg_atlantic1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 70 neutrality = 6 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = -0.03 if = { limit = { country_exists = BRA NOT = { has_war_with = BRA } } BRA = { country_event = { id = aof_diplomacy.90 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_arg_league2
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_league1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.04 }
+  
+ }
+ focus = {
+  id = aof_v03_arg_league3
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_league2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } navy_experience = 25 }
+  
+ }
+ focus = {
+  id = aof_v03_arg_league4
+  icon = GFX_goal_generic_political_pressure
+  x = 9
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_league3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_arg_league_settlement if = { limit = { country_exists = BRA NOT = { has_war_with = BRA } } BRA = { country_event = { id = aof_diplomacy.120 days = 2 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_arg_atlantic1
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_entry3 }
+ mutually_exclusive = { focus = aof_v03_arg_industry1 focus = aof_v03_arg_league1 }
+ available = { any_owned_state = { is_controlled_by = ROOT is_coastal = yes } }
+  ai_will_do = { factor = 1 }
+  completion_reward = { set_popularities = { democratic = 6 neutrality = 70 communism = 6 fascism = 6 aof_social_democracy = 6 aof_conservatism = 6 } set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = -0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_arg_atlantic2
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_atlantic1 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 25 }
+  
+ }
+ focus = {
+  id = aof_v03_arg_atlantic3
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_atlantic2 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_equipment_to_stockpile = { type = convoy amount = 20 producer = ARG } }
+  
+ }
+ focus = {
+  id = aof_v03_arg_atlantic4
+  icon = GFX_goal_generic_political_pressure
+  x = 15
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_arg_atlantic3 }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 50 add_ideas = aof_v03_arg_atlantic_settlement }
+  
+ }
+}

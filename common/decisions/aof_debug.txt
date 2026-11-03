@@ -1,0 +1,13 @@
+debug_decisions = {
+    aof_debug_intro_event = {
+        icon = generic_research
+        cost = 0
+        visible = {
+            is_debug = yes
+            is_ai = no
+        }
+        complete_effect = {
+            country_event = { id = aof_intro.1 hours = 1 }
+        }
+    }
+}

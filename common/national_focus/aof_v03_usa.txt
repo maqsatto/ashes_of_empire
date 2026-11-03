@@ -1,0 +1,421 @@
+focus_tree = {
+ id = aof_v03_usa
+ country = { factor = 0 modifier = { add = 10000 OR = { tag = USA } } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = aof_v03_usa_order }
+ focus = {
+  id = aof_v03_usa_order
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 0
+  cost = 3
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 35 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_audit
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 1
+  cost = 3
+ prerequisite = { focus = aof_v03_usa_order }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 40 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_commission
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 2
+  cost = 3
+ prerequisite = { focus = aof_v03_usa_audit }
+  ai_will_do = { factor = 1 }
+  completion_reward = { remove_ideas = aof_v03_usa_contracts }
+  
+ }
+ focus = {
+  id = aof_v03_usa_profits
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 3
+  cost = 3
+ prerequisite = { focus = aof_v03_usa_commission }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.03 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_credit
+  icon = GFX_goal_generic_political_pressure
+  x = 2
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_profits }
+ mutually_exclusive = { focus = aof_v03_usa_welfare focus = aof_v03_usa_oceans }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_credit add_political_power = -50 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_welfare
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_profits }
+ mutually_exclusive = { focus = aof_v03_usa_credit focus = aof_v03_usa_oceans }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_welfare }
+  
+ }
+ focus = {
+  id = aof_v03_usa_oceans
+  icon = GFX_goal_generic_political_pressure
+  x = 14
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_profits }
+ mutually_exclusive = { focus = aof_v03_usa_credit focus = aof_v03_usa_welfare }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_oceans }
+  
+ }
+ focus = {
+  id = aof_v03_usa_export
+  icon = GFX_goal_generic_political_pressure
+  x = 2
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_credit }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = KAZ NOT = { has_war_with = KAZ } } KAZ = { country_event = { id = aof_diplomacy.21 days = 1 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_debts
+  icon = GFX_goal_generic_political_pressure
+  x = 2
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_export }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_standards
+  icon = GFX_goal_generic_political_pressure
+  x = 2
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_debts }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_applied_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_long_contracts
+  icon = GFX_goal_generic_political_pressure
+  x = 2
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_standards }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_political_power = 100 country_event = { id = aof_v03_pacific.12 days = 1 } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_flag
+  icon = GFX_goal_generic_political_pressure
+  x = 0
+  y = 9
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_long_contracts }
+ mutually_exclusive = { focus = aof_v03_usa_investments }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 add_political_power = 60 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_investments
+  icon = GFX_goal_generic_political_pressure
+  x = 4
+  y = 9
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_long_contracts }
+ mutually_exclusive = { focus = aof_v03_usa_flag }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_war_support = 0.08 add_stability = -0.04 if = { limit = { country_exists = MEX NOT = { has_war_with = MEX } } MEX = { country_event = { id = aof_diplomacy.11 days = 1 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_civilian
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_welfare }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_civilian_factory hidden_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_labor
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_civilian }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_labor add_political_power = -50 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_education
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_labor }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_research_slot = 1 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_prosperity
+  icon = GFX_goal_generic_political_pressure
+  x = 8
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_education }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 add_war_support = -0.03 country_event = { id = aof_v03_pacific.10 days = 1 } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_trusts
+  icon = GFX_goal_generic_political_pressure
+  x = 6
+  y = 9
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_prosperity }
+ mutually_exclusive = { focus = aof_v03_usa_business }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_timed_idea = { idea = aof_v03_usa_antitrust days = 540 } add_political_power = 75 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_business
+  icon = GFX_goal_generic_political_pressure
+  x = 10
+  y = 9
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_prosperity }
+ mutually_exclusive = { focus = aof_v03_usa_trusts }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_business }
+  
+ }
+ focus = {
+  id = aof_v03_usa_coasts
+  icon = GFX_goal_generic_political_pressure
+  x = 14
+  y = 5
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_oceans }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 25 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_conference
+  icon = GFX_goal_generic_political_pressure
+  x = 14
+  y = 6
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_coasts }
+  ai_will_do = { factor = 1 }
+  completion_reward = { if = { limit = { country_exists = MEX NOT = { has_war_with = MEX } } MEX = { country_event = { id = aof_diplomacy.120 days = 1 } } } add_political_power = -35 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_neighbors
+  icon = GFX_goal_generic_political_pressure
+  x = 12
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_conference }
+ mutually_exclusive = { focus = aof_v03_usa_tutelage }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_stability = 0.05 if = { limit = { country_exists = MEX NOT = { has_war_with = MEX } } MEX = { country_event = { id = aof_diplomacy.11 days = 1 } } } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_tutelage
+  icon = GFX_goal_generic_political_pressure
+  x = 16
+  y = 7
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_conference }
+ mutually_exclusive = { focus = aof_v03_usa_neighbors }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_tutelage add_political_power = 50 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_continent
+  icon = GFX_goal_generic_political_pressure
+  x = 14
+  y = 8
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_neighbors focus = aof_v03_usa_tutelage }
+  ai_will_do = { factor = 1 }
+  completion_reward = { custom_effect_tooltip = aof_capital_infrastructure hidden_effect = { capital_scope = {  add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } add_political_power = 75 country_event = { id = aof_v03_pacific.11 days = 1 } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_labs
+  icon = GFX_goal_generic_political_pressure
+  x = 20
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_applied_bonus bonus = 0.5 uses = 1 category = electronics } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_production
+  icon = GFX_goal_generic_political_pressure
+  x = 20
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_labs }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_applied_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_machine
+  icon = GFX_goal_generic_political_pressure
+  x = 20
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_production }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_applied_bonus bonus = 0.5 uses = 1 category = industry } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_school
+  icon = GFX_goal_generic_political_pressure
+  x = 20
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_machine }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_research_slot = 1 country_event = { id = aof_v03_pacific.1 days = 30 } }
+  
+ }
+ focus = {
+  id = aof_v03_usa_tank
+  icon = GFX_goal_generic_political_pressure
+  x = 24
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_applied_bonus bonus = 0.5 uses = 1 category = armor } army_experience = 15 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_trials
+  icon = GFX_goal_generic_political_pressure
+  x = 24
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_tank }
+  ai_will_do = { factor = 1 }
+  completion_reward = { army_experience = 25 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_repair
+  icon = GFX_goal_generic_political_pressure
+  x = 24
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_trials }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_repair }
+  
+ }
+ focus = {
+  id = aof_v03_usa_series
+  icon = GFX_goal_generic_political_pressure
+  x = 24
+  y = 3
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_repair }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_tanks }
+  
+ }
+ focus = {
+  id = aof_v03_usa_motor_age
+  icon = GFX_goal_generic_political_pressure
+  x = 24
+  y = 4
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_series }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_applied_bonus bonus = 0.5 uses = 1 category = motorized_equipment } army_experience = 30 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_ports
+  icon = GFX_goal_generic_political_pressure
+  x = 28
+  y = 0
+  cost = 5
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 15 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_routes
+  icon = GFX_goal_generic_political_pressure
+  x = 27
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_ports }
+ mutually_exclusive = { focus = aof_v03_usa_project }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_ideas = aof_v03_usa_convoys }
+  
+ }
+ focus = {
+  id = aof_v03_usa_project
+  icon = GFX_goal_generic_political_pressure
+  x = 29
+  y = 1
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_ports }
+ mutually_exclusive = { focus = aof_v03_usa_routes }
+  ai_will_do = { factor = 1 }
+  completion_reward = { add_tech_bonus = { name = aof_v03_applied_bonus bonus = 0.5 uses = 1 category = naval_equipment } navy_experience = 25 }
+  
+ }
+ focus = {
+  id = aof_v03_usa_exercises
+  icon = GFX_goal_generic_political_pressure
+  x = 28
+  y = 2
+  cost = 5
+ prerequisite = { focus = aof_v03_usa_routes focus = aof_v03_usa_project }
+  ai_will_do = { factor = 1 }
+  completion_reward = { navy_experience = 35 }
+  
+ }
+}
